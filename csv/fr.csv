@@ -1,0 +1,344 @@
+action:prompt_begin Resumption interrupted !!!;action:prompt_begin Reprise interrompue !!!
+action:prompt_begin This is a test macro;action:prompt_begin Ceci est un macro de test
+action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg;action:prompt_text Ajoutez _GUPPY_MACRO à mod_data/user.cfg
+action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg;action:prompt_text Exemple de _GUPPY_MACRO dans mod/base.cfg
+Adaptive bed;Plateau adaptatif
+After clicking OK the printer will be powered off;L'imprimante s'éteindra après avoir cliqué sur OK
+After macro execution press Ctrl + F5;Appuyez sur Ctrl + F5 après l'exécution du macro
+Algorithm: {zclear};Algorithme : {zclear}
+Allow Chinese clouds;Autoriser les serveurs chinois
+All START_PRINT parameters for bed leveling are ignored;Tous les paramètres START_PRINT pour le nivellement sont ignorés
+Auto close dialogs on native screen after 20 sec (fast);Fermeture auto des dialogues en 20s (rapide)
+Auto close dialogs on native screen after 20 sec (slow);Fermeture auto des dialogues en 20s (lente)
+Auto disable motors after print/cancel in 25 sec;Désactivation auto des moteurs après impression/annulation (25s)
+Automatic printer shutdown in {pro_poweroff_timeout} min;Extinction auto de l'imprimante dans {pro_poweroff_timeout} min
+Automatic reboot in 1.5 minutes;Redémarrage automatique dans 1.5 minutes
+Auto reboot printer after 1.5 minutes;Redémarrage auto après 1.5 minutes
+Auto restart firmware after 1.5 minutes;Relance du firmware après 1.5 minutes
+Backup config files to archive;Sauvegarde des fichiers de config dans une archive
+Bed calibration. Profile {profile}. Extruder temp: {extruder_temp} / Bed temp: {bed_temp};Calibration du plateau. Profil {profile}. Température buse : {extruder_temp} / Plateau : {bed_temp}
+Bed calibration without temperature off;Calibration sans refroidissement
+Bed calibration with temperature off;Calibration avec refroidissement
+Bed mesh {mesh} loaded;Maillage {mesh} chargé
+Bed mesh {mesh} not found. Loaded auto profile;Maillage {mesh} introuvable. Profil auto chargé
+Bed mesh {mesh} not found. Loaded MESH_DATA profile;Maillage {mesh} introuvable. Profil MESH_DATA chargé
+Bed PID calibration;Calibration PID du plateau
+Bed screw calibration;Calibration des vis du plateau
+Bed temperature: {bed_temp};Température du plateau : {bed_temp}
+Before measurements, don't forget to clean the nozzle with CLEAR_NOZZLE macro;Avant les mesures, nettoyez la buse avec le macro CLEAR_NOZZLE
+Block Chinese clouds;Bloquer les serveurs chinois
+Build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Créer un maillage à chaque impression. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Build bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Créer un maillage via l'écran natif à chaque impression. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building auto mesh (no loaded profile);Création du maillage auto (aucun profil chargé)
+Building bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Création du maillage à chaque impression. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Création via l'écran natif à chaque impression. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building default mesh (FORCE_LEVELING={force_leveling});Création du maillage par défaut (FORCE_LEVELING={force_leveling})
+Building full bed mesh. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Création du maillage complet. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Building {mesh} mesh (not found). Save it AFTER print!;Création du maillage {mesh} (introuvable). Sauvegardez-le APRÈS l'impression !
+Cancellation sent to native screen;Annulation envoyée à l'écran natif
+Cancel print;Annuler l'impression
+Cancel the actual running print;Annuler l'impression en cours
+Cancel;Annuler
+Check file MD5 checksum;Vérifier la somme MD5 du fichier
+Check {iter+1}. {clp}. Weight: {we};Vérification {iter+1}. {clp}. Poids : {we}
+Check memory usage;Vérifier l'utilisation mémoire
+Check time;Vérifier l'heure
+Clear EMMC;Effacer l'EMMC
+Close dialogs on stock screen (fast);Fermer les dialogues sur l'écran natif (rapide)
+Close dialogs on stock screen (slow);Fermer les dialogues sur l'écran natif (lent)
+Closing dialog windows on native screen (fast);Fermeture des fenêtres (rapide)
+Closing dialog windows on native screen (slow);Fermeture des fenêtres (lent)
+Cold pull (nozzle cleaning) gently;Nettoyage doux de la buse (cold pull)
+Collecting X axis data;Collecte des données de l'axe X
+Collecting Y axis data;Collecte des données de l'axe Y
+Compare grid extremes with last probe;Comparer les extrêmes de la grille avec la dernière mesure
+Cooling down to {cold_temp}°C;Refroidissement à {cold_temp}°C
+CoreXY half-axis test for belt frequency analysis;Test des demi-axes CoreXY pour analyse des fréquences des courroies
+Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Impression en cours : {filename} ({progress | round(1)}%), récupération impossible
+Current profile: %s;Profil actuel : %s
+Custom Guppy button;Bouton Guppy personnalisé
+Delete data;Supprimer les données
+Detect part detachment or nozzle hit;Détection de détachement de pièce ou choc de buse
+Did you know you can enable KAMP globally?;Saviez-vous que vous pouvez activer KAMP globalement ?
+Disable alternative camera;Désactiver la caméra alternative
+Disable backlight;Désactiver le rétroéclairage
+Disable camera on printer screen;Désactiver la caméra sur l'écran
+Disable check with: MESH // SAVE_ZMOD_DATA MESH_TEST=0;Désactiver la vérification : MESH // SAVE_ZMOD_DATA MESH_TEST=0
+Disable circulation;Désactiver la circulation
+Disable filament sensor on native screen;Désactiver le détecteur de filament sur l'écran
+Disable heating and cooler;Désactiver chauffage et refroidissement
+Disable nozzle line purge;Désactiver la purge de buse
+Disable SSH port forwarding;Désactiver le transfert de port SSH
+Disable stock screen;Désactiver l'écran natif
+Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;Ne pas désactiver l'écran sans comprendre le nivellement, le Z-offset et les macros START/END_PRINT
+Don't build bed mesh with native screen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Ne pas créer de maillage via l'écran // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't check file MD5 checksum;Ne pas vérifier la somme MD5
+Don't close dialogs on native screen;Ne pas fermer les dialogues sur l'écran
+Don't disable motors automatically after print/cancel;Ne pas désactiver les moteurs automatiquement
+Don't fix E0011 error;Ne pas corriger l'erreur E0011
+Don't fix E0017 error;Ne pas corriger l'erreur E0017
+Don't load Z-OFFSET from global settings;Ne pas charger le Z-OFFSET des paramètres globaux
+Don't reboot printer automatically;Ne pas redémarrer automatiquement
+Don't save data for print recovery;Ne pas sauvegarder pour la récupération
+Don't test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test};Ne pas tester le maillage avant impression // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+Don't use KAMP instead of BED_MESH_CALIBRATE // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Ne pas utiliser KAMP à la place de BED_MESH_CALIBRATE
+Don't use nozzle pre-purge;Ne pas utiliser la pré-purge
+Download archive in 'Configuration' -> 'mod_data' -> config.tar;Téléchargez l'archive dans 'Configuration' -> 'mod_data' -> config.tar
+Enable backlight;Activer le rétroéclairage
+Enable camera on printer screen;Activer la caméra sur l'écran
+Enable/disable pause at specific layer;Activer/Désactiver la pause à une couche spécifique
+Enable external circulation;Activer la circulation externe
+Enable internal circulation;Activer la circulation interne
+Enable nozzle line purge;Activer la purge de buse
+Enable pause at next layer;Activer la pause à la prochaine couche
+Enable stock screen and reboot;Activer l'écran natif et redémarrer
+End G-code;Fin du G-code
+End of cleaning Z={zprobe+0.05};Fin du nettoyage Z={zprobe+0.05}
+Error: File {filename} not found. Print canceled.;Erreur : Fichier {filename} introuvable. Impression annulée.
+Error: File '{filename}' not specified. Print canceled.;Erreur : Fichier '{filename}' non spécifié. Impression annulée.
+Error: File '{filename}' was not verified in time. Print canceled.;Erreur : Fichier '{filename}' non vérifié à temps. Impression annulée.
+Error! Filename not specified.;Erreur ! Nom de fichier manquant.
+Error: {printer.print_stats.message};Erreur : {printer.print_stats.message}
+Extruder PID calibration;Calibration PID de l'extrudeur
+Extruder temperature: {extruder_temp};Température de l'extrudeur : {extruder_temp}
+Extrudes, if the extruder is hot enough;Extrusion si l'extrudeur est assez chaud
+Extruding 10 cm of filament;Extrusion de 10 cm de filament
+Failed to close windows? Use fast close: FAST_CLOSE_DIALOGS // SAVE_ZMOD_DATA CLOSE_DIALOGS=2;Échec fermeture ? Utilisez FAST_CLOSE_DIALOGS // SAVE_ZMOD_DATA CLOSE_DIALOGS=2
+Fans control;Contrôle des ventilateurs
+Far;Loing
+Filament change requested. Load new filament and click 'Resume'.;Changement demandé. Chargez le filament et cliquez sur 'Reprendre'.
+Filament Change;Changement de filament
+Filament change;Changement de filament
+Filament management;Gestion du filament
+Filament runout detected;Fin de filament détectée
+Filament runout or jam detected;Fin de filament ou blocage détecté
+Filament runout. Pausing in 30 seconds;Fin de filament. Pause dans 30 secondes
+File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;Fichier contient G2/G3. Désactivez-les dans Orca : Process Profile -> Arc Approximation
+File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;Fichier sans somme MD5. Activez-la dans Orca. Lien : [FAQ]
+File {filename} MD5 mismatch. File deleted. Print canceled;Somme MD5 incorrecte. Fichier supprimé. Impression annulée
+File {filename} MD5 mismatch. Print canceled;Somme MD5 incorrecte. Impression annulée
+File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;Fichier utilise G17/G18/G19. Remplacez le type Z-Hop.
+File {filename} verified successfully. MD5 checksum matches.;Fichier vérifié. Somme MD5 correcte.
+File MD5 sum check;Vérification de la somme MD5
+Final test;Test final
+Fix E0011 error;Corriger l'erreur E0011
+Fix E0017 error;Corriger l'erreur E0017
+Flashing MCU with original version for native Klipper;Flashage du MCU avec la version originale pour Klipper natif
+Forced bed leveling: disabled;Nivellement forcé : désactivé
+Forced bed leveling: enabled;Nivellement forcé : activé
+Generating belts frequency profile...;Génération du profil de fréquence des courroies...
+Getting data for KAMP.;Récupération des données pour KAMP
+Get ZMOD parameters;Obtenir les paramètres ZMOD
+Global Z-OFFSET load: ignored (working with screen);Chargement global Z-OFFSET : ignoré (écran actif)
+GuppyScreen is not used;GuppyScreen non utilisé
+has detected that the filament has run out, please load it and press RESUME;Détection de fin de filament. Chargez-en et appuyez sur RESUME
+Heating bed and extruder.;Chauffage du plateau et de l'extrudeur
+Helper;Assistant
+https://github.com/ghzserg/zmod/wiki/FAQ_en;https://github.com/ghzserg/zmod/wiki/FAQ
+Image saved: {png_out_path}. Configuration -> mod_data;Image sauvegardée : {png_out_path}. Configuration -> mod_data
+In Orca. Printer profile -> Extruder 1 -> Z Hop Type. Set Normal or Sloped.;Dans Orca : Profil -> Extrudeur 1 -> Z Hop Type. Choisissez Normal ou Incliné
+In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped;Même instruction qu'au-dessus
+Input shaper calibration;Calibration du shaper d'entrée
+Interrupted print detected;Impression interrompue détectée
+is not hot enough;n'est pas assez chaud
+KAMP: disabled;KAMP : désactivé
+KAMP: enabled;KAMP : activé
+KAMP started SKIP_LEVELING={skip_leveling} FORCE_KAMP={force_kamp};KAMP démarré avec SKIP_LEVELING={skip_leveling} FORCE_KAMP={force_kamp}
+Klipper process priority (1-min, 40-max): {znice};Priorité du processus Klipper (1-40) : {znice}
+LED brightness at power on: {zled};Luminosité LED au démarrage : {zled}
+Left;Gauche
+Linear move with gcode state save/restore;Déplacement linéaire avec sauvegarde/restauration de l'état G-code
+LINE_PURGE forced;Purge de ligne forcée
+Load bed mesh: {mesh};Charger le maillage : {mesh}
+Load cell reset error. Read FAQ: https://github.com/ghzserg/zmod/wiki/FAQ_en;Erreur de réinitialisation des capteurs. Consultez le FAQ
+Load cell reset successful. Weight: {we};Réinitialisation réussie. Poids : {we}
+Load cell triggered! Make sure the bed is clean!;Capteur activé ! Vérifiez la propreté du plateau !
+Loaded offset from global settings %s=%.4f;Décalage chargé depuis les paramètres globaux %s=%.4f
+Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Chargement du filament à {extruder_temp}°C pour {extrude_len}mm à {speed/60} mm/s
+Loading GuppyScreen;Chargement de GuppyScreen
+Loading skew_profile;Chargement du profil skew_profile
+Load Z-OFFSET from global settings;Charger le Z-OFFSET des paramètres globaux
+Load;Charger
+Maintain frequency for vibration diagnostics;Maintenir la fréquence pour diagnostic vibratoire
+Manual filament loading / change;Chargement/Changement manuel
+Material selection for loading;Sélection du matériau à charger
+Material selection;Sélection du matériau
+Maximum map: %.3f mm | Last probe: %.3f mm;Maximum : %.3f mm | Dernière mesure : %.3f mm
+MD5 check failed. Print canceled.;Échec vérification MD5. Impression annulée.
+MD5 check started;Vérification MD5 démarrée
+MD5: disabled;MD5 : désactivé
+MD5: enabled;MD5 : activé
+Minimum map: %.3f mm | Delta: %.3f mm;Minimum : %.3f mm | Delta : %.3f mm
+Moonlight sonata;Sonate au clair de lune
+Motors disabled;Moteurs désactivés
+moved to;déplacé vers
+Moving head to far right corner;Déplacement de la tête vers le coin droit éloigné
+Mute sound;Couper le son
+Native screen disabled;Écran natif désactivé
+Near;Proche
+No need for leveling. Loaded profile: {cur_mesh};Pas besoin de nivellement. Profil chargé : {cur_mesh}
+Nozzle cleaning;Nettoyage de la buse
+Nozzle line purge disabled. DISABLE_PRIMING={disable_priming};Purge de buse désactivée. DISABLE_PRIMING={disable_priming}
+Nozzle line purge;Purge de buse
+Nozzle pre-cleaning;Pré-nettoyage de la buse
+Nozzle priming: disabled;Purge de buse : désactivée
+Nozzle priming: enabled;Purge de buse : activée
+Nozzle temperature {extruder_temp};Température de buse {extruder_temp}
+OK;OK
+OK: Probe within mesh extremes;OK : Mesure dans les limites du maillage
+OK;OK
+OS check;Vérification du système
+Override to get pause_next_layer and pause_at_layer functions;Surcharge pour obtenir les fonctions pause_next_layer et pause_at_layer
+Parameters used at print end and cancellation [END_PRINT];Paramètres utilisés en fin d'impression/annulation [END_PRINT]
+Parameters used at print start and bed leveling [START_PRINT];Paramètres utilisés au démarrage/nivellement [START_PRINT]
+Parameter;Paramètre
+Pause and filament change;Pause et changement de filament
+Paused: {filename}, print recovery impossible;En pause : {filename}, récupération impossible
+Pause print;Mettre en pause
+Pause the actual running print;Mettre en pause l'impression en cours
+Play MIDI at power on: {zmidi_on};Jouer MIDI au démarrage : {zmidi_on}
+Play MIDI at print end: {zmidi_end};Jouer MIDI en fin d'impression : {zmidi_end}
+Play MIDI file;Jouer un fichier MIDI
+Play MIDI on print pause: {zmidi_pause};Jouer MIDI lors de la pause : {zmidi_pause}
+Play MIDI on print start: {zmidi_start};Jouer MIDI au démarrage : {zmidi_start}
+Play tone;Jouer un son
+please heat it up and press RESUME again;réchauffez et appuyez à nouveau sur RESUME
+Possible wrong profile loaded (different plate/temperature);Profil potentiellement incorrect (plaque/température différente)
+Power off FF5M Pro after (min): {timeout};Extinction du FF5M Pro après (min) : {pro_poweroff_timeout}
+Power off printer;Éteindre l'imprimante
+Pre-cleaning completed;Pré-nettoyage terminé
+Priming algorithm: {zclear};Algorithme de purge : {zclear}
+Print completed;Impression terminée
+Printer screen will freeze until pre-cleaning is complete.;L'écran sera gelé pendant le pré-nettoyage
+Printer will boot into stock firmware;Démarrage sur le firmware d'origine
+Print file from native screen;Imprimer depuis l'écran natif
+Print file with bed leveling from native screen;Imprimer avec nivellement depuis l'écran natif
+Print file;Imprimer le fichier
+Printing file {filename} from native screen;Impression de {filename} depuis l'écran natif
+Printing file {filename} with bed leveling from native screen;Impression de {filename} avec nivellement
+Printing file from native screen;Impression depuis l'écran natif
+Printing file with bed leveling from native screen;Impression avec nivellement depuis l'écran natif
+Printing in progress. Movement is disabled.;Impression en cours. Déplacements désactivés.
+Printing with bed mesh: {cur_mesh};Impression avec maillage : {cur_mesh}
+Probe sensor {probe};Capteur de palpage {probe}
+Profile or mesh matrix not found;Profil ou matrice de maillage introuvable
+Pulling the filament;Retrait du filament
+Purge algorithm: {zclear};Algorithme de purge : {zclear}
+Purge code from FF group;Code de purge du groupe FF
+Purge code from Orca Slicer;Code de purge d'Orca Slicer
+Purge code with cleaner from top-right to bottom;Code de purge avec nettoyage de haut en bas
+Purge;Purger
+Reboot printer;Redémarrer l'imprimante
+Reboot to original system (no zmod);Redémarrage sur le système original (sans zmod)
+Redirect moonraker and camera to SSH server;Rediriger moonraker et caméra vers le serveur SSH
+Remove the remaining filament manually;Retirer manuellement le filament restant
+Remove zmod;Supprimer zmod
+Replace default start G-code;Remplacer le G-code de démarrage par défaut
+Replace Spiral/Auto Z-Hop. In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped;Remplacer Spiral/Auto Z-Hop dans Orca : Profil -> Extrudeur 1 -> Z Hop Type
+Replace Spiral/Auto Z-Hop. Printer doesn't support it.;Remplacer Spiral/Auto Z-Hop. Non supporté par l'imprimante
+Requires 256MB RAM + enabled SWAP. !!;256MB RAM + SWAP activé requis !!
+Resending cancellation to native screen canceled;Annulation de la résiliation vers l'écran natif
+Reset load cell weight;Réinitialiser le poids des capteurs
+Resetting load cell weight;Réinitialisation du poids des capteurs
+Restart alternative camera;Redémarrer la caméra alternative
+Restart Guppy;Redémarrer Guppy
+Restore Z-Offset;Restaurer le Z-Offset
+Restore;Restaurer
+Restoring;Restauration en cours
+Resume interrupted print;Reprendre l'impression interrompue
+Resume print;Reprendre l'impression
+Resume the actual running print;Reprendre l'impression en cours
+Resume;Reprendre
+Resumption interrupted;Reprise interrompue
+Retracts, if the extruder is hot enough;Retrait si l'extrudeur est assez chaud
+Right;Droit
+Running native nozzle cleaning {extruder_temp}/{bed_temp};Nettoyage natif de la buse {extruder_temp}/{bed_temp}
+Save data for print recovery;Sauvegarder pour la récupération
+Saved data deleted;Données sauvegardées supprimées
+Save Fluidd/Mainsail button changes;Sauvegarder les changements des boutons Fluidd/Mainsail
+Save parameters without stock screen freeze;Sauvegarder sans figer l'écran natif
+Save ZMOD parameters;Sauvegarder les paramètres ZMOD
+Save Z-Offset;Sauvegarder le Z-Offset
+Saving controlled by native screen;Sauvegarde contrôlée par l'écran natif
+Schreider purge code from top-right to bottom;Code de purge Schreider de haut en bas
+Select action;Sélectionner l'action
+Select material to clean the nozzle;Choisir le matériau pour nettoyer la buse
+Select material to load;Sélectionner le matériau à charger
+Set 1/4->1/2->1 speed for 60s on print resume;Réglage de la vitesse 1/4->1/2->1 pendant 60s à la reprise
+Set date and time (format: 2024.01.01-00:00:00);Définir la date et l'heure (format : 2024.01.01-00:00:00)
+Setting Z-offset {zoffset}, SKIP_ZOFFSET={skip_zoffset};Réglage du Z-offset {zoffset}, SKIP_ZOFFSET={skip_zoffset}
+Shutdown printer?;Éteindre l'imprimante ?
+SKEW correction disabled;Correction SKEW désactivée
+SKEW correction enabled. Profile skew_profile;Correction SKEW activée. Profil skew_profile
+SKEW: disabled;SKEW : désactivé
+SKEW: enabled;SKEW : activé
+Skip bed leveling: disabled;Ignorer le nivellement : désactivé
+Skip bed leveling: enabled;Ignorer le nivellement : activé
+Skipping bed leveling. SKIP_LEVELING={skip_leveling};Nivellement ignoré. SKIP_LEVELING={skip_leveling}
+SSH restart;Redémarrage SSH
+Started MD5 check {filename};Vérification MD5 démarrée pour {filename}
+Start fluidd/mainsail and moonraker after STOP_ZMOD;Démarrer fluidd/mainsail et moonraker après STOP_ZMOD
+Start of cleaning Z={zprobe+0.15};Début du nettoyage Z={zprobe+0.15}
+Start SSH if not running;Démarrer SSH si non actif
+Status: {state};Statut : {state}
+Stop fluidd/mainsail and moonraker;Arrêter fluidd/mainsail et moonraker
+SWAP not used;SWAP non utilisé
+SWAP used on EMMC;SWAP sur EMMC
+SWAP used on USB FLASH;SWAP sur clé USB
+Switch to console to view recovery stages;Passer en console pour voir les étapes de récupération
+Switch web interface (fluidd/mainsail);Changer d'interface web (fluidd/mainsail)
+System-wide parameters;Paramètres système
+temperature to;température à
+Temporary ZMOD disable;Désactivation temporaire de ZMOD
+Test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test};Tester le maillage avant impression // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+Test EMMC;Tester l'EMMC
+The printer was not homed (G28);L'imprimante n'a pas été homée (G28)
+This will take some time (3-5 minutes);Cela prendra du temps (3-5 minutes)
+Timezone change;Changement de fuseau horaire
+triggered;déclenché
+Trying to load bed mesh: {mesh};Tentative de chargement du maillage : {mesh}
+Turn off native screen after (sec): {display_off_timeout};Éteindre l'écran natif après (sec) : {display_off_timeout}
+Unload;Décharger
+Update MCU;Mettre à jour le MCU
+Update printer via USB;Mettre à jour via USB
+Use adaptive mesh (KAMP) where possible instead of full bed mesh // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Préférer le maillage adaptatif (KAMP) // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Use alternative camera;Utiliser la caméra alternative
+Use alternative NEW_SAVE_CONFIG;Utiliser l'alternative NEW_SAVE_CONFIG
+Use bed leveling mode from native screen. // SAVE_ZMOD_DATA PRINT_LEVELING=1;Utiliser le mode nivellement de l'écran natif // SAVE_ZMOD_DATA PRINT_LEVELING=1
+Use Fluidd/Mainsail button settings from ZMOD;Utiliser les paramètres de boutons ZMOD pour Fluidd/Mainsail
+Use nozzle pre-purge;Utiliser la pré-purge
+Use SCV = 5 for shaper graphs;Utiliser SCV = 5 pour les graphiques du shaper
+Use SCV from config for shaper graphs;Utiliser SCV du config pour les graphiques
+Use standard SAVE_CONFIG;Utiliser SAVE_CONFIG standard
+Use Z-OFFSET loading from global parameters to control Z-OFFSET with GuppyScreen;Charger Z-OFFSET des paramètres globaux pour contrôle via GuppyScreen
+Use;Utiliser
+Using BED_MESH_CALIBRATE;Utilisation de BED_MESH_CALIBRATE
+Using filament motion sensor;Utilisation du détecteur de mouvement
+Using filament presence sensor;Utilisation du détecteur de présence
+Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;Contrôle global du Z-Offset. SKIP_ZOFFSET et Z_OFFSET ignorés
+Using KAMP from global settings. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Utilisation de KAMP des paramètres globaux // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Using KAMP;Utilisation de KAMP
+Using Klipper 12;Utilisation de Klipper 12.
+Using native Klipper;Utilisation de Klipper natif.
+Wait 10 seconds and power on again. MCU update will begin.;Attendez 10s et rallumez. Mise à jour du MCU
+Wait for the music and power off the printer.;Attendez la musique et éteignez l'imprimante
+Waiting for check to complete;En attente de vérification
+Waiting for nozzle to heat up to {extruder_temp};En attente du chauffage de la buse à {extruder_temp}°C
+WARNING: Bed mesh not loaded!;ALERTE : Maillage non chargé !
+WARNING: Last probe ABOVE mesh maximum by %.3f mm!;ALERTE : Dernière mesure %.3f mm AU-DESSUS du maximum !
+WARNING: Last probe BELOW mesh minimum by %.3f mm!;ALERTE : Dernière mesure %.3f mm EN-DESSOUS du minimum !
+Weight at error: {we};Poids lors de l'erreur : {we}
+Work completed;Travail terminé
+Yes;Oui
+You are NOT using native screen;Vous n'utilisez PAS l'écran natif
+You are using KAMP. Recommended to use LINE_PURGE: // SAVE_ZMOD_DATA CLEAR=LINE_PURGE;Vous utilisez KAMP. Utilisez LINE_PURGE : // SAVE_ZMOD_DATA CLEAR=LINE_PURGE
+You are using native screen // DISPLAY_ON;Vous utilisez l'écran natif // DISPLAY_ON
+You are using native screen;Vous utilisez l'écran natif
+You are working WITHOUT native screen // DISPLAY_OFF GUPPY=0;Vous travaillez SANS écran natif // DISPLAY_OFF GUPPY=0
+You are working WITHOUT native screen with GuppyScreen // DISPLAY_OFF GUPPY=1;Vous travaillez SANS écran mais AVEC GuppyScreen // DISPLAY_OFF GUPPY=1
+You need to disconnect power cord and then reconnect it;Débranchez/rebranchez l'alimentation
+You're using native screen. No need to restart GuppyScreen;Écran natif utilisé. Pas besoin de redémarrer GuppyScreen
+Zeroing confirmed;Zéro confirmé
+Zeroing not confirmed;Zéro non confirmé
+ZMOD parameters. Set via SAVE_ZMOD_DATA;Paramètres ZMOD. Régler via SAVE_ZMOD_DATA
+Z-offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Réglage Z-offset ignoré, SKIP_ZOFFSET={skip_zoffset}
