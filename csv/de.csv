@@ -344,3 +344,4 @@ ZMOD parameters. Set via SAVE_ZMOD_DATA;ZMOD-Parameter. Über SAVE_ZMOD_DATA set
 Z-offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Z-Offset-Einrichtung übersprungen, SKIP_ZOFFSET={skip_zoffset}
 Available languages;Verfügbare Sprachen
 Restore backup config files from archive;Wiederherstellen von Backup-Konfigurationsdateien aus dem Archiv
+To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar and call RESTORE_TAR_CONFIG;Um die Konfiguration wiederherzustellen, kopieren Sie sie nach 'Konfiguration' -> 'mod_data' -> config.tar und rufen Sie RESTORE_TAR_CONFIG auf

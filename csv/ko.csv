@@ -344,3 +344,4 @@ ZMOD parameters. Set via SAVE_ZMOD_DATA;ZMOD 매개변수. SAVE_ZMOD_DATA로 설
 Z-offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Z-오프셋 설정 건너뜀, SKIP_ZOFFSET={skip_zoffset}
 Available languages;사용 가능한 언어
 Restore backup config files from archive;아카이브에서 백업 구성 파일 복원
+To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar and call RESTORE_TAR_CONFIG;구성을 복원하려면 '구성' -> 'mod_data' -> config.tar로 복사하고 RESTORE_TAR_CONFIG를 호출하세요.
