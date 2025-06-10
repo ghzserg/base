@@ -71,7 +71,7 @@ Disable nozzle line purge;禁用喷嘴线性清洗
 Disable SSH port forwarding;禁用SSH端口转发
 Disable stock screen;禁用原生屏幕
 Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;若不完全理解调平、Z偏移和START/END宏，请勿禁用屏幕
-Don't build bed mesh with native screen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};不使用原生屏幕构建床面网格 // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};不要在每次打印时都建立床网 // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
 Don't check file MD5 checksum;不检查文件MD5
 Don't close dialogs on native screen;不自动关闭原生屏幕对话框
 Don't disable motors automatically after print/cancel;打印/取消后不自动禁用电机

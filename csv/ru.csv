@@ -71,7 +71,7 @@ Disable nozzle line purge;Выключить очистку сопла лини�
 Disable SSH port forwarding;Отключить проброс портов SSH
 Disable stock screen;Выключить стандартный экран
 Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;Не отключайте экран, если вы четко не понимаете как работает карта стола, z-offset и макросы START_PRINT и END_PRINT
-Don't build bed mesh with native screen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Не строить карту стола средствами родного экрана // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Не строить карту стола при каждой печати // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
 Don't check file MD5 checksum;Не проверять MD5 сумму файла
 Don't close dialogs on native screen;Не закрывать диалоги на родном экране
 Don't disable motors automatically after print/cancel;Не выключать моторы автоматически после печати/отмены печати

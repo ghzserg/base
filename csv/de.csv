@@ -71,7 +71,7 @@ Disable nozzle line purge;Düsenreinigungslinie deaktivieren
 Disable SSH port forwarding;SSH-Portweiterleitung deaktivieren
 Disable stock screen;Standard-Display deaktivieren
 Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;Display nicht deaktivieren, falls Sie Bett-Nivellierung, Z-Offset und Makros nicht vollständig verstehen
-Don't build bed mesh with native screen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Bett-Mesh nicht mit natives Display erstellen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Bauen Sie nicht bei jedem Druck ein Bettnetz ein // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
 Don't check file MD5 checksum;MD5-Prüfsumme nicht überprüfen
 Don't close dialogs on native screen;Dialoge auf natives Display nicht schließen
 Don't disable motors automatically after print/cancel;Motoren nicht automatisch nach Druck/Abbruch abschalten

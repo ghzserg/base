@@ -71,7 +71,7 @@ Disable nozzle line purge;노즐 라인 퓨지 끄기
 Disable SSH port forwarding;SSH 포트 포워딩 끄기
 Disable stock screen;기본 화면 끄기
 Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;베드 레벨링/z-offset/매크로 이해 없이 화면 끄지 마세요
-Don't build bed mesh with native screen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};기본 화면으로 베드 메시 생성 안 함 // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};각 인쇄물에 침대 메시를 만들지 마세요 // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
 Don't check file MD5 checksum;파일 MD5 체크섬 검사 안 함
 Don't close dialogs on native screen;기본 화면 대화상자 닫지 않기
 Don't disable motors automatically after print/cancel;인쇄/취소 후 모터 자동 차단 안 함

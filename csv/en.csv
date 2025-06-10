@@ -71,7 +71,7 @@ Disable nozzle line purge;Disable nozzle line purge
 Disable SSH port forwarding;Disable SSH port forwarding
 Disable stock screen;Disable stock screen
 Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros
-Don't build bed mesh with native screen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Don't build bed mesh with native screen // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
 Don't check file MD5 checksum;Don't check file MD5 checksum
 Don't close dialogs on native screen;Don't close dialogs on native screen
 Don't disable motors automatically after print/cancel;Don't disable motors automatically after print/cancel
