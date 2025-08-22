@@ -355,3 +355,4 @@ Loading filament;フィラメントをロード
 Unloading filament;フィラメントをアンロード
 Heating the nozzle to {extruder_temp} degrees;ノズルを{extruder_temp}度に加熱
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};フィラメントを排出 {filament_drop_length} + {filament_drop_length_add}. 速度 {filament_load_speed}
+Go to trash;ゴミ箱に移動

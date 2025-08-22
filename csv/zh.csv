@@ -355,3 +355,4 @@ Loading filament;装载耗材
 Unloading filament;卸载耗材
 Heating the nozzle to {extruder_temp} degrees;将喷嘴加热到{extruder_temp}度
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};排出耗材 {filament_drop_length} + {filament_drop_length_add}. 速度 {filament_load_speed}
+Go to trash;转到垃圾箱

@@ -355,3 +355,4 @@ Loading filament;Loading filament
 Unloading filament;Unloading filament
 Heating the nozzle to {extruder_temp} degrees;Heating the nozzle to {extruder_temp} degrees
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed}
+Go to trash;Go to trash
