@@ -356,3 +356,4 @@ Unloading filament;Scaricare il filamento
 Heating the nozzle to {extruder_temp} degrees;Riscaldare l'ugello a {extruder_temp} gradi
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Depositare il filamento {filament_drop_length} + {filament_drop_length_add}. Velocità {filament_load_speed}
 Go to trash;Andare al cestino
+Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Utilizzate RESUME_MOTION_SENSOR per riprendere la stampa dopo che il filamento nell'estrusore si esaurisce.
