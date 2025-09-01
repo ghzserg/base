@@ -357,3 +357,4 @@ Heating the nozzle to {extruder_temp} degrees;Düse auf {extruder_temp} Grad auf
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Filament abwerfen {filament_drop_length} + {filament_drop_length_add}. Geschwindigkeit {filament_load_speed}
 Go to trash;Zum Abfallbehälter gehen
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Verwenden Sie RESUME_MOTION_SENSOR, um den Druck fortzusetzen, nachdem das Filament im Extruder ausgegangen ist.
+Purge filament;Filament spülen

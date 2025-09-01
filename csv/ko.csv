@@ -357,3 +357,4 @@ Heating the nozzle to {extruder_temp} degrees;노즐을 {extruder_temp}도로 �
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};필라멘트 배출 {filament_drop_length} + {filament_drop_length_add}. 속도 {filament_load_speed}
 Go to trash;쓰레기통으로 이동
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;RESUME_MOTION_SENSOR를 사용하여 익스트루더 내 필라멘트가 소진된 후 인쇄를 재개하십시오.
+Purge filament;필라멘트 퍼지

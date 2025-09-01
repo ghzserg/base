@@ -357,3 +357,4 @@ Heating the nozzle to {extruder_temp} degrees;将喷嘴加热到{extruder_temp}�
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};排出耗材 {filament_drop_length} + {filament_drop_length_add}. 速度 {filament_load_speed}
 Go to trash;转到垃圾箱
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;使用 RESUME_MOTION_SENSOR 在挤出机内耗材用尽后恢复打印。
+Purge filament;Продувка филамента
