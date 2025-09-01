@@ -323,7 +323,7 @@ Using native Klipper;Используется родной Klipper
 Wait 10 seconds and power on again. MCU update will begin.;Подождите 10 секунд и включите обратно. Начнется обновление MCU.
 Wait for the music and power off the printer.;Дождитесь музыкальной композиции и выключите питание принтера.
 Waiting for check to complete;Ожидаем, когда проверка закончится
-Waiting for nozzle to heat up to {extruder_temp};Ждем нагревани сопла до {extruder_temp} градусов
+Waiting for nozzle to heat up to {extruder_temp};Ждем нагревание сопла до {extruder_temp} градусов
 WARNING: Bed mesh not loaded!;WARNING: Карта стола не загружена!
 WARNING: Last probe ABOVE mesh maximum by %.3f mm!;WARNING: Последний probe ВЫШЕ карты стола на %.3f мм!
 WARNING: Last probe BELOW mesh minimum by %.3f mm!;WARNING: Последний probe НИЖЕ минимума карты стола на %.3f мм!
