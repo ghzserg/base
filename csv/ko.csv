@@ -112,6 +112,7 @@ Filament change;필라멘트 변경
 Filament management;필라멘트 관리
 Filament runout detected;필라멘트 부족 감지
 Filament runout or jam detected;필라멘트 부족/막힘 감지
+Filament jam detected;필라멘트 부족/막힘 감지
 Filament runout. Pausing in 30 seconds;필라멘트 부족. 30초 후 일시정지
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;파일 {filename}에 호 명령(G2, G3) 포함. Orca에서 비활성화: 프로세스 프로필 -> 호 근사 -> 체크 해제
 File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;파일 {filename}에 MD5 체크섬 없음. Orca에서 활성화: https://github.com/ghzserg/zmod/wiki/Recomendations

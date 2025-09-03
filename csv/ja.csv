@@ -112,6 +112,7 @@ Filament change;フィラメント変更
 Filament management;フィラメント管理
 Filament runout detected;フィラメント切れを検出
 Filament runout or jam detected;フィラメント切れまたは詰まりを検出
+Filament jam detected;フィラメント切れまたは詰まりを検出
 Filament runout. Pausing in 30 seconds;フィラメント切れ。30秒後に一時停止
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;ファイル{filename}に円弧コマンド（G2, G3）が含まれています。無効化してください。Orcaで: プロセスプロファイル -> 円弧近似 -> チェックを外す
 File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;ファイル{filename}にMD5チェックサムがありません。Orcaで有効化してください。https://github.com/ghzserg/zmod/wiki/Recomendations

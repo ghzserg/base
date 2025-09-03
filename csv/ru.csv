@@ -112,6 +112,7 @@ Filament change;Смена филамента
 Filament management;Загрузка филамента
 Filament runout detected;Кончился филамент
 Filament runout or jam detected;Кончился или остановился филамент
+Filament jam detected;Остановился филамент
 Filament runout. Pausing in 30 seconds;Кончился филамент. Через 30 секунд будет пауза
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;В файле {filename} найдено использование дуг(G2, G3). Отключите их. В Orca: Профиль процесса -> Аппроксимация дугами. Убрать галочку.
 File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;В файле {filename} нет MD5 суммы. Включите ее в Orca. https://github.com/ghzserg/zmod/wiki/Recomendations

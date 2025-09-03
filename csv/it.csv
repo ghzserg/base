@@ -112,6 +112,7 @@ Filament change;Cambio filamento
 Filament management;Gestione del filamento
 Filament runout detected;Rilevata fine del filamento
 Filament runout or jam detected;Rilevata fine del filamento o blocco
+Filament jam detected;Filamento o blocco
 Filament runout. Pausing in 30 seconds;Fine del filamento. Pausa in 30 secondi
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;Il file {filename} contiene comandi ad arco (G2, G3). Disattivali. In Orca: Process Profile -> Arc Approximation -> Deseleziona
 File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;Il file {filename} non ha checksum MD5. Abilitalo in Orca. Link: [FAQ]

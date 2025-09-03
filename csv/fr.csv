@@ -112,6 +112,7 @@ Filament change;Changement de filament
 Filament management;Gestion du filament
 Filament runout detected;Fin de filament détectée
 Filament runout or jam detected;Fin de filament ou blocage détecté
+Filament jam detected;Blocage détecté
 Filament runout. Pausing in 30 seconds;Fin de filament. Pause dans 30 secondes
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;Fichier contient G2/G3. Désactivez-les dans Orca : Process Profile -> Arc Approximation
 File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;Fichier sans somme MD5. Activez-la dans Orca. Lien : [FAQ]
