@@ -359,3 +359,5 @@ Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filame
 Go to trash;Паркуюсь в корзину
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Используйте RESUME_MOTION_SENSOR для печати, до окончания филамента в экструдере
 Purge filament;Продувка филамента
+Insert rod automatically:Вставлять пруток автоматически
+Don't Insert rod automatically;Не вставлять пруток автоматически
