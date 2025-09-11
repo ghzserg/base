@@ -361,3 +361,4 @@ Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder r
 Purge filament;フィラメントをパージする
 Insert rod automatically;自動的にフィラメントを装填する
 Don't Insert rod automatically;自動的にフィラメントを装填しない
+Extracting filament from the extruder;エクストルーダからフィラメントを抽出
