@@ -362,3 +362,5 @@ Purge filament;필라멘트 퍼지
 Insert rod automatically;필라멘트를 자동으로 삽입하기
 Don't Insert rod automatically;필라멘트를 자동으로 삽입하지 않기
 Extracting filament from the extruder;익스트루더에서 필라멘트 추출
+Use trash when printing;인쇄 시 퍼지 컨테이너 사용
+Don`t Use trash when printing;인쇄 시 퍼지 컨테이너 사용하지 마십시오

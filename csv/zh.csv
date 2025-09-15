@@ -362,3 +362,5 @@ Purge filament;Продувка филамента
 Insert rod automatically;自动装入线材
 Don't Insert rod automatically;不要自动装入线材
 Extracting filament from the extruder;从挤出机中取出耗材
+Use trash when printing;打印时使用清洗箱
+Don`t Use trash when printing;打印时不使用清洗箱

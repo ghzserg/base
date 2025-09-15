@@ -362,3 +362,5 @@ Purge filament;Продувка филамента
 Insert rod automatically:Вставлять пруток автоматически
 Don't Insert rod automatically;Не вставлять пруток автоматически
 Extracting filament from the extruder;Извлечение филамента из экструдера
+Use trash when printing;Использовать корзину при печати
+Don`t Use trash when printing;Не использовать корзину при печати

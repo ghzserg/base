@@ -362,3 +362,5 @@ Purge filament;Purger le filament
 Insert rod automatically;Charger le filament automatiquement
 Don't Insert rod automatically;Ne pas charger le filament automatiquement
 Extracting filament from the extruder;Extraire le filament de l'extrudeuse
+Use trash when printing;Utiliser le bac de purge pendant l'impression
+Don`t Use trash when printing;Ne pas utiliser le bac de purge pendant l'impression

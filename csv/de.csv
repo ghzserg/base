@@ -362,3 +362,5 @@ Purge filament;Filament spülen
 Insert rod automatically;Filament automatisch einlegen
 Don't Insert rod automatically;Filament nicht automatisch einlegen
 Extracting filament from the extruder;Filament aus dem Extruder entnehmen
+Use trash when printing;Abfallbehälter beim Drucken verwenden
+Don`t Use trash when printing;Abfallbehälter beim Drucken nicht verwenden
