@@ -1,0 +1,369 @@
+action:prompt_begin Resumption interrupted !!!;action:prompt_begin Obnovení přerušeno !!!
+action:prompt_begin This is a test macro;action:prompt_begin Toto je testovací makro
+action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg;action:prompt_text Přidejte _GUPPY_MACRO do mod_data/user.cfg
+action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg;action:prompt_text Příklad _GUPPY_MACRO je v mod/base.cfg
+Adaptive bed;Adaptivní podložka
+After clicking OK the printer will be powered off;Po kliknutí na OK bude tiskárna vypnuta
+After macro execution press Ctrl + F5;Po provedení makra stiskněte Ctrl + F5
+Algorithm: {zclear};Algoritmus: {zclear}
+Allow Chinese clouds;Povolit čínské cloudy
+All START_PRINT parameters for bed leveling are ignored;Všechny parametry START_PRINT pro nivelaci podložky jsou ignorovány
+Auto close dialogs on native screen after 20 sec (fast);Automaticky zavírat dialogy na nativním displeji po 20 sekundách (rychle)
+Auto close dialogs on native screen after 20 sec (slow);Automaticky zavírat dialogy na nativním displeji po 20 sekundách (pomalu)
+Auto disable motors after print/cancel in 25 sec;Automaticky vypnout motory po tisku/stornu za 25 sekund
+Automatic printer shutdown in {pro_poweroff_timeout} min;Automatické vypnutí tiskárny za {pro_poweroff_timeout} min
+Automatic reboot in 1.5 minutes;Automatický restart za 1,5 minuty
+Auto reboot printer after 1.5 minutes;Automaticky restartovat tiskárnu po 1,5 minutě
+Auto restart firmware after 1.5 minutes;Automaticky restartovat firmware po 1,5 minutě
+Backup config files to archive;Zálohovat konfigurační soubory do archivu
+Bed calibration. Profile {profile}. Extruder temp: {extruder_temp} / Bed temp: {bed_temp};Kalibrace podložky. Profil {profile}. Teplota extruderu: {extruder_temp} / Teplota podložky: {bed_temp}
+Bed calibration without temperature off;Kalibrace podložky bez vypnutí teploty
+Bed calibration with temperature off;Kalibrace podložky s vypnutím teploty
+Bed mesh {mesh} loaded;Síť podložky {mesh} načtena
+Bed mesh {mesh} not found. Loaded auto profile;Síť podložky {mesh} nenalezena. Načten automatický profil
+Bed mesh {mesh} not found. Loaded MESH_DATA profile;Síť podložky {mesh} nenalezena. Načten profil MESH_DATA
+Bed PID calibration;Kalibrace PID podložky
+Bed screw calibration;Kalibrace šroubů podložky
+Bed temperature: {bed_temp};Teplota podložky: {bed_temp}
+Before measurements, don't forget to clean the nozzle with CLEAR_NOZZLE macro;Před měřením nezapomeňte vyčistit trysku makrem CLEAR_NOZZLE
+Block Chinese clouds;Blokovat čínské cloudy
+Build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Vytvářet síť podložky při každém tisku. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Build bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Vytvářet síť podložky s nativním displejem při každém tisku. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building auto mesh (no loaded profile);Vytváření automatické sítě (žádný načtený profil)
+Building bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Vytváření sítě podložky při každém tisku. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Vytváření sítě podložky s nativním displejem při každém tisku. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building default mesh (FORCE_LEVELING={force_leveling});Vytváření výchozí sítě (FORCE_LEVELING={force_leveling})
+Building full bed mesh. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Vytváření plné sítě podložky. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Building {mesh} mesh (not found). Save it AFTER print!;Vytváření sítě {mesh} (nenalezeno). Uložte ji AŽ PO tisku!
+Cancellation sent to native screen;Storno odesláno na nativní displej
+Cancel print;Zrušit tisk
+Cancel the actual running print;Zrušit právě běžící tisk
+Cancel;Zrušit
+Check file MD5 checksum;Kontrolovat MD5 kontrolní součet souboru
+Check {iter+1}. {clp}. Weight: {we};Kontrola {iter+1}. {clp}. Hmotnost: {we}
+Check memory usage;Zkontrolovat využití paměti
+Check time;Zkontrolovat čas
+Clear EMMC;Vymazat EMMC
+Close dialogs on stock screen (fast);Zavřít dialogy na standardním displeji (rychle)
+Close dialogs on stock screen (slow);Zavřít dialogy na standardním displeji (pomalu)
+Closing dialog windows on native screen (fast);Zavírání dialogových oken na nativním displeji (rychle)
+Closing dialog windows on native screen (slow);Zavírání dialogových oken na nativním displeji (pomalu)
+Cold pull (nozzle cleaning) gently;Cold pull (čištění trysky) jemně
+Collecting X axis data;Sbírání dat osy X
+Collecting Y axis data;Sbírání dat osy Y
+Compare grid extremes with last probe;Porovnat extrémy mřížky s posledním probe
+Cooling down to {cold_temp}°C;Chlazení na {cold_temp}°C
+CoreXY half-axis test for belt frequency analysis;Test poloosy CoreXY pro analýzu frekvence pásů
+Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Právě tiskne: {filename} ({progress | round(1)}%), obnova tisku nemožná
+Current profile: %s;Aktuální profil: %s
+Custom Guppy button;Vlastní tlačítko Guppy
+Delete data;Smazat data
+Detect part detachment or nozzle hit;Detekovat odtržení dílu nebo náraz trysky
+Did you know you can enable KAMP globally?;Věděli jste, že můžete povolit KAMP globálně?
+Disable alternative camera;Zakázat alternativní kameru
+Disable backlight;Vypnout podsvícení
+Disable camera on printer screen;Vypnout kameru na displeji tiskárny
+Disable check with: MESH // SAVE_ZMOD_DATA MESH_TEST=0;Zakázat kontrolu pomocí: MESH // SAVE_ZMOD_DATA MESH_TEST=0
+Disable circulation;Vypnout cirkulaci
+Disable filament sensor on native screen;Vypnout senzor filamentu na nativním displeji
+Disable heating and cooler;Vypnout ohřev a chlazení
+Disable nozzle line purge;Vypnout čištění trysky linií
+Disable SSH port forwarding;Zakázat SSH port forwarding
+Disable stock screen;Vypnout standardní displej
+Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;Nevypínejte displej, pokud plně nerozumíte nivelaci podložky, z-offsetu a makrům START_PRINT/END_PRINT
+Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Nevytvářet síť podložky při každém tisku // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't check file MD5 checksum;Nekontrolovat MD5 kontrolní součet souboru
+Don't close dialogs on native screen;Nezavírat dialogy na nativním displeji
+Don't disable motors automatically after print/cancel;Nevypínat motory automaticky po tisku/stornu
+Don't fix E0011 error;Neopravovat chybu E0011
+Don't fix E0017 error;Neopravovat chybu E0017
+Don't load Z-OFFSET from global settings;Nenačítat Z-OFFSET z globálních nastavení
+Don't reboot printer automatically;Nerestartovat tiskárnu automaticky
+Don't save data for print recovery;Neukládat data pro obnovu tisku
+Don't test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test};Netestovat síť podložky před tiskem // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+Don't use KAMP instead of BED_MESH_CALIBRATE // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Nepoužívat KAMP místo BED_MESH_CALIBRATE // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Don't use nozzle pre-purge;Nepoužívat předčištění trysky
+Download archive in 'Configuration' -> 'mod_data' -> config.tar;Stáhnout archiv v 'Configuration' -> 'mod_data' -> config.tar
+Enable backlight;Zapnout podsvícení
+Enable camera on printer screen;Zapnout kameru na displeji tiskárny
+Enable/disable pause at specific layer;Povolit/zakázat pauzu na konkrétní vrstvě
+Enable external circulation;Povolit externí cirkulaci
+Enable internal circulation;Povolit interní cirkulaci
+Enable nozzle line purge;Povolit čištění trysky linií
+Enable pause at next layer;Povolit pauzu při další vrstvě
+Enable stock screen and reboot;Povolit standardní displej a restartovat
+End G-code;Koncový G-code
+End of cleaning Z={zprobe+0.05};Konec čištění Z={zprobe+0.05}
+Error: File {filename} not found. Print canceled.;Chyba: Soubor {filename} nenalezen. Tisk zrušen.
+Error: File '{filename}' not specified. Print canceled.;Chyba: Soubor '{filename}' nebyl specifikován. Tisk zrušen.
+Error: File '{filename}' was not verified in time. Print canceled.;Chyba: Soubor '{filename}' nebyl včas ověřen. Tisk zrušen.
+Error! Filename not specified.;Chyba! Název souboru nebyl specifikován.
+Error: {printer.print_stats.message};Chyba: {printer.print_stats.message}
+Extruder PID calibration;Kalibrace PID extruderu
+Extruder temperature: {extruder_temp};Teplota extruderu: {extruder_temp}
+Extrudes, if the extruder is hot enough;Vytlačuje, pokud je extruder dostatečně horký
+Extruding 10 cm of filament;Vytlačování 10 cm filamentu
+Failed to close windows? Use fast close: FAST_CLOSE_DIALOGS // SAVE_ZMOD_DATA CLOSE_DIALOGS=2;Nepodařilo se zavřít okna? Použijte rychlé zavření: FAST_CLOSE_DIALOGS // SAVE_ZMOD_DATA CLOSE_DIALOGS=2
+Fans control;Ovládání ventilátorů
+Far;Vzdálený
+Filament change requested. Load new filament and click 'Resume'.;Vyžádána výměna filamentu. Načtěte nový filament a klikněte 'Pokračovat'.
+Filament Change;Výměna filamentu
+Filament change;Výměna filamentu
+Filament management;Správa filamentu
+Filament runout detected;Detekován konec filamentu
+Filament runout or jam detected;Detekován konec nebo zaseknutí filamentu
+Filament jam detected;Detekováno zaseknutí filamentu
+Filament runout. Pausing in 30 seconds;Konec filamentu. Pozastavení za 30 sekund
+File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;Soubor {filename} obsahuje příkazy oblouků (G2, G3). Vypněte je. V Orca: Process Profile -> Arc Approximation -> Odškrtnout
+File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;Soubor {filename} nemá MD5 kontrolní součet. Povolte jej v Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en
+File {filename} MD5 mismatch. File deleted. Print canceled;Soubor {filename} má nesouhlasný MD5. Soubor smazán. Tisk zrušen
+File {filename} MD5 mismatch. Print canceled;Soubor {filename} má nesouhlasný MD5. Tisk zrušen
+File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;Soubor {filename} používá nepodporované příkazy G17/G18/G19. Nahraďte typ Z-Hop.
+File {filename} verified successfully. MD5 checksum matches.;Soubor {filename} úspěšně ověřen. MD5 kontrolní součet souhlasí.
+File MD5 sum check;Kontrola MD5 součtu souboru
+Final test;Závěrečný test
+Fix E0011 error;Opravit chybu E0011
+Fix E0017 error;Opravit chybu E0017
+Flashing MCU with original version for native Klipper;Flashování MCU původní verzí pro nativní Klipper
+Forced bed leveling: disabled;Vynucená nivelace podložky: vypnuta
+Forced bed leveling: enabled;Vynucená nivelace podložky: povolena
+Generating belts frequency profile...;Generování frekvenčního profilu pásů...
+Getting data for KAMP.;Získávání dat pro KAMP.
+Get ZMOD parameters;Získat parametry ZMOD
+Global Z-OFFSET load: ignored (working with screen);Globální načtení Z-OFFSET: ignorováno (práce s displejem)
+GuppyScreen is not used;GuppyScreen není používán
+has detected that the filament has run out, please load it and press RESUME;zjistil, že filament došel, načtěte jej a stiskněte RESUME
+Heating bed and extruder.;Ohřev podložky a extruderu.
+Helper;Pomocník
+https://github.com/ghzserg/zmod/wiki/FAQ_en;https://github.com/ghzserg/zmod/wiki/FAQ_en
+Image saved: {png_out_path}. Configuration -> mod_data;Obrázek uložen: {png_out_path}. Configuration -> mod_data
+In Orca. Printer profile -> Extruder 1 -> Z Hop Type. Set Normal or Sloped.;V Orca. Printer profile -> Extruder 1 -> Z Hop Type. Nastavte Normal nebo Sloped.
+In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped;V Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Nastavte na Normal nebo Sloped
+Input shaper calibration;Kalibrace input shaperu
+Interrupted print detected;Detekován přerušený tisk
+is not hot enough;není dostatečně horký
+KAMP: disabled;KAMP: vypnuto
+KAMP: enabled;KAMP: povoleno
+KAMP started SKIP_LEVELING={skip_leveling} FORCE_KAMP={force_kamp};KAMP spuštěn SKIP_LEVELING={skip_leveling} FORCE_KAMP={force_kamp}
+Klipper process priority (1-min, 40-max): {znice};Priorita procesu Klipper (1-min, 40-max): {znice}
+LED brightness at power on: {zled};Jas LED při zapnutí: {zled}
+Left;Levý
+Linear move with gcode state save/restore;Lineární pohyb s uložením/obnovením stavu gcode
+LINE_PURGE forced;LINE_PURGE vynucen
+Load bed mesh: {mesh};Načíst síť podložky: {mesh}
+Load cell reset error. Read FAQ: https://github.com/ghzserg/zmod/wiki/FAQ_en;Chyba resetu zátěžové články. Přečtěte si FAQ: https://github.com/ghzserg/zmod/wiki/FAQ_en
+Load cell reset successful. Weight: {we};Reset zátěžové články úspěšný. Hmotnost: {we}
+Load cell triggered! Make sure the bed is clean!;Zátěžová článka aktivována! Ujistěte se, že podložka je čistá!
+Loaded offset from global settings %s=%.4f;Načten offset z globálních nastavení %s=%.4f
+Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Načítání filamentu při {extruder_temp} pro {extrude_len}mm při {speed/60} mm/s
+Loading GuppyScreen;Načítání GuppyScreen
+Loading skew_profile;Načítání skew_profile
+Load Z-OFFSET from global settings;Načíst Z-OFFSET z globálních nastavení
+Load;Načíst
+Maintain frequency for vibration diagnostics;Udržovat frekvenci pro diagnostiku vibrací
+Manual filament loading / change;Manuální načítání/výměna filamentu
+Material selection for loading;Výběr materiálu pro načítání
+Material selection;Výběr materiálu
+Maximum map: %.3f mm | Last probe: %.3f mm;Maximální mapa: %.3f mm | Poslední probe: %.3f mm
+MD5 check failed. Print canceled.;Kontrola MD5 selhala. Tisk zrušen.
+MD5 check started;Kontrola MD5 zahájena
+MD5: disabled;MD5: vypnuto
+MD5: enabled;MD5: povoleno
+Minimum map: %.3f mm | Delta: %.3f mm;Minimální mapa: %.3f mm | Delta: %.3f mm
+Moonlight sonata;Měsíční sonáta
+Motors disabled;Motory vypnuty
+moved to;přesunuto na
+Moving head to far right corner;Přesun hlavy do vzdáleného pravého rohu
+Mute sound;Ztlumit zvuk
+Native screen disabled;Nativní displej vypnut
+Near;Blízký
+No need for leveling. Loaded profile: {cur_mesh};Není potřeba nivelace. Načten profil: {cur_mesh}
+Nozzle cleaning;Čištění trysky
+Nozzle line purge disabled. DISABLE_PRIMING={disable_priming};Čištění trysky linií vypnuto. DISABLE_PRIMING={disable_priming}
+Nozzle line purge;Čištění trysky linií
+Nozzle pre-cleaning;Předčištění trysky
+Nozzle priming: disabled;Priming trysky: vypnuto
+Nozzle priming: enabled;Priming trysky: povoleno
+Nozzle temperature {extruder_temp};Teplota trysky {extruder_temp}
+OK;OK
+OK: Probe within mesh extremes;OK: Probe v mezích sítě
+OK;OK
+OS check;Kontrola OS
+Override to get pause_next_layer and pause_at_layer functions;Přepsat pro získání funkcí pause_next_layer a pause_at_layer
+Parameters used at print end and cancellation [END_PRINT];Parametry použité na konci tisku a stornu [END_PRINT]
+Parameters used at print start and bed leveling [START_PRINT];Parametry použité na začátku tisku a nivelaci podložky [START_PRINT]
+Parameter;Parametr
+Pause and filament change;Pauza a výměna filamentu
+Paused: {filename}, print recovery impossible;Pozastaveno: {filename}, obnova tisku nemožná
+Pause print;Pozastavit tisk
+Pause the actual running print;Pozastavit právě běžící tisk
+Play MIDI at power on: {zmidi_on};Přehrát MIDI při zapnutí: {zmidi_on}
+Play MIDI at print end: {zmidi_end};Přehrát MIDI na konci tisku: {zmidi_end}
+Play MIDI file;Přehrát MIDI soubor
+Play MIDI on print pause: {zmidi_pause};Přehrát MIDI při pozastavení tisku: {zmidi_pause}
+Play MIDI on print start: {zmidi_start};Přehrát MIDI při spuštění tisku: {zmidi_start}
+Play tone;Přehrát tón
+please heat it up and press RESUME again;prosím zahřejte jej a stiskněte RESUME znovu
+Possible wrong profile loaded (different plate/temperature);Možná načten špatný profil (jiná deska/teplota)
+Power off FF5M Pro after (min): {timeout};Vypnout FF5M Pro po (min): {timeout}
+Power off printer;Vypnout tiskárnu
+Pre-cleaning completed;Předčištění dokončeno
+Priming algorithm: {zclear};Algoritmus primingu: {zclear}
+Print completed;Tisk dokončen
+Printer screen will freeze until pre-cleaning is complete.;Displej tiskárny zamrzne dokud není předčištění dokončeno.
+Printer will boot into stock firmware;Tiskárna nabootuje do standardního firmware
+Print file from native screen;Tisknout soubor z nativního displeje
+Print file with bed leveling from native screen;Tisknout soubor s nivelací podložky z nativního displeje
+Print file;Tisknout soubor
+Printing file {filename} from native screen;Tisk souboru {filename} z nativního displeje
+Printing file {filename} with bed leveling from native screen;Tisk souboru {filename} s nivelací podložky z nativního displeje
+Printing file from native screen;Tisk souboru z nativního displeje
+Printing file with bed leveling from native screen;Tisk souboru s nivelací podložky z nativního displeje
+Printing in progress. Movement is disabled.;Probíhá tisk. Pohyb zakázán.
+Printing with bed mesh: {cur_mesh};Tisk se sítí podložky: {cur_mesh}
+Probe sensor {probe};Snímač probe {probe}
+Profile or mesh matrix not found;Profil nebo matice sítě nenalezeny
+Pulling the filament;Tažení filamentu
+Purge algorithm: {zclear};Algoritmus čištění: {zclear}
+Purge code from FF group;Kód čištění ze skupiny FF
+Purge code from Orca Slicer;Kód čištění z Orca Slicer
+Purge code with cleaner from top-right to bottom;Kód čištění s čističem z pravé horní části dolů
+Purge;Čistit
+Reboot printer;Restartovat tiskárnu
+Reboot to original system (no zmod);Restartovat do původního systému (bez zmod)
+Redirect moonraker and camera to SSH server;Přesměrovat moonraker a kameru na SSH server
+Remove the remaining filament manually;Odstraňte zbývající filament ručně
+Remove zmod;Odstranit zmod
+Replace default start G-code;Nahradit výchozí startovní G-code
+Replace Spiral/Auto Z-Hop. In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped;Nahradit Spiral/Auto Z-Hop. V Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Nastavte na Normal nebo Sloped
+Replace Spiral/Auto Z-Hop. Printer doesn't support it.;Nahradit Spiral/Auto Z-Hop. Tiskárna to nepodporuje.
+Requires 256MB RAM + enabled SWAP. !!;Vyžaduje 256MB RAM + povolený SWAP. !!
+Resending cancellation to native screen canceled;Opětovné odeslání storna na nativní displej zrušeno
+Reset load cell weight;Resetovat hmotnost zátěžové články
+Resetting load cell weight;Resetování hmotnosti zátěžové články
+Restart alternative camera;Restartovat alternativní kameru
+Restart Guppy;Restartovat Guppy
+Restore Z-Offset;Obnovit Z-Offset
+Restore;Obnovit
+Restoring;Obnovování
+Resume interrupted print;Pokračovat v přerušeném tisku
+Resume print;Pokračovat v tisku
+Resume the actual running print;Pokračovat v právě běžícím tisku
+Resume;Pokračovat
+Resumption interrupted;Pokračování přerušeno
+Retracts, if the extruder is hot enough;Retrakce, pokud je extruder dostatečně horký
+Right;Pravý
+Running native nozzle cleaning {extruder_temp}/{bed_temp};Spuštěno nativní čištění trysky {extruder_temp}/{bed_temp}
+Save data for print recovery;Ukládat data pro obnovu tisku
+Saved data deleted;Uložená data smazána
+Save Fluidd/Mainsail button changes;Uložit změny tlačítek Fluidd/Mainsail
+Save parameters without stock screen freeze;Uložit parametry bez zamrznutí standardního displeje
+Save ZMOD parameters;Uložit parametry ZMOD
+Save Z-Offset;Uložit Z-Offset
+Saving controlled by native screen;Ukládání řízeno nativním displejem
+Schreider purge code from top-right to bottom;Schreiderův kód čištění z pravé horní části dolů
+Select action;Vybrat akci
+Select material to clean the nozzle;Vybrat materiál pro čištění trysky
+Select material to load;Vybrat materiál pro načtení
+Set 1/4->1/2->1 speed for 60s on print resume;Nastavit rychlost 1/4->1/2->1 na 60s při pokračování tisku
+Set date and time (format: 2024.01.01-00:00:00);Nastavit datum a čas (formát: 2024.01.01-00:00:00)
+Setting Z-offset {zoffset}, SKIP_ZOFFSET={skip_zoffset};Nastavení Z-offset {zoffset}, SKIP_ZOFFSET={skip_zoffset}
+Shutdown printer?;Vypnout tiskárnu?
+SKEW correction disabled;Korekce SKEW vypnuta
+SKEW correction enabled. Profile skew_profile;Korekce SKEW povolena. Profil skew_profile
+SKEW: disabled;SKEW: vypnut
+SKEW: enabled;SKEW: povolen
+Skip bed leveling: disabled;Přeskočit nivelaci podložky: vypnuto
+Skip bed leveling: enabled;Přeskočit nivelaci podložky: povoleno
+Skipping bed leveling. SKIP_LEVELING={skip_leveling};Přeskakování nivelace podložky. SKIP_LEVELING={skip_leveling}
+SSH restart;Restart SSH
+Started MD5 check {filename};Spuštěna kontrola MD5 {filename}
+Start fluidd/mainsail and moonraker after STOP_ZMOD;Spustit fluidd/mainsail a moonraker po STOP_ZMOD
+Start of cleaning Z={zprobe+0.15};Začátek čištění Z={zprobe+0.15}
+Start SSH if not running;Spustit SSH pokud neběží
+Status: {state};Stav: {state}
+Stop fluidd/mainsail and moonraker;Zastavit fluidd/mainsail a moonraker
+SWAP not used;SWAP nepoužit
+SWAP used on EMMC;SWAP použit na EMMC
+SWAP used on USB FLASH;SWAP použit na USB FLASH
+Switch to console to view recovery stages;Přepnout na konzoli pro zobrazení fází obnovy
+Switch web interface (fluidd/mainsail);Přepnout webové rozhraní (fluidd/mainsail)
+System-wide parameters;Systémové parametry
+temperature to;teplotu na
+Temporary ZMOD disable;Dočasné vypnutí ZMOD
+Test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test};Testovat síť podložky před tiskem // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+Test EMMC;Testovat EMMC
+The printer was not homed (G28);Tiskárna nebyla homována (G28)
+This will take some time (3-5 minutes);Toto bude chvíli trvat (3-5 minut)
+Timezone change;Změna časového pásma
+triggered;spuštěno
+Trying to load bed mesh: {mesh};Pokus o načtení sítě podložky: {mesh}
+Turn off native screen after (sec): {display_off_timeout};Vypnout nativní displej po (sek): {display_off_timeout}
+Unload;Vylodit
+Update MCU;Aktualizovat MCU
+Update printer via USB;Aktualizovat tiskárnu přes USB
+Use adaptive mesh (KAMP) where possible instead of full bed mesh // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Použít adaptivní síť (KAMP) kde je to možné místo plné sítě podložky // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Use alternative camera;Použít alternativní kameru
+Use alternative NEW_SAVE_CONFIG;Použít alternativní NEW_SAVE_CONFIG
+Use bed leveling mode from native screen. // SAVE_ZMOD_DATA PRINT_LEVELING=1;Použít režim nivelace podložky z nativního displeje. // SAVE_ZMOD_DATA PRINT_LEVELING=1
+Use Fluidd/Mainsail button settings from ZMOD;Použít nastavení tlačítek Fluidd/Mainsail ze ZMOD
+Use nozzle pre-purge;Použít předčištění trysky
+Use SCV = 5 for shaper graphs;Použít SCV = 5 pro grafy shaperu
+Use SCV from config for shaper graphs;Použít SCV z konfigurace pro grafy shaperu
+Use standard SAVE_CONFIG;Použít standardní SAVE_CONFIG
+Use Z-OFFSET loading from global parameters to control Z-OFFSET with GuppyScreen;Použít načítání Z-OFFSET z globálních parametrů pro ovládání Z-OFFSET s GuppyScreen
+Use;Použít
+Using BED_MESH_CALIBRATE;Používá se BED_MESH_CALIBRATE
+Using filament motion sensor;Používá se senzor pohybu filamentu
+Using filament presence sensor;Používá se senzor přítomnosti filamentu
+Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;Používá se globální ovládání Z-Offset. Parametry SKIP_ZOFFSET a Z_OFFSET ignorovány
+Using KAMP from global settings. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Používá se KAMP z globálních nastavení. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Using KAMP;Používá se KAMP
+Using Klipper 13;Používá se Klipper 13
+Using native Klipper;Používá se nativní Klipper
+Wait 10 seconds and power on again. MCU update will begin.;Počkejte 10 sekund a znovu zapněte. Aktualizace MCU začne.
+Wait for the music and power off the printer.;Počkejte na hudbu a vypněte tiskárnu.
+Waiting for check to complete;Čekání na dokončení kontroly
+Waiting for nozzle to heat up to {extruder_temp};Čekání na ohřev trysky na {extruder_temp}
+WARNING: Bed mesh not loaded!;VAROVÁNÍ: Síť podložky nebyla načtena!
+WARNING: Last probe ABOVE mesh maximum by %.3f mm!;VAROVÁNÍ: Poslední probe NAD maximem sítě o %.3f mm!
+WARNING: Last probe BELOW mesh minimum by %.3f mm!;VAROVÁNÍ: Poslední probe POD minimem sítě o %.3f mm!
+Weight at error: {we};Hmotnost při chybě: {we}
+Work completed;Práce dokončena
+Yes;Ano
+You are NOT using native screen;NEPoužíváte nativní displej
+You are using KAMP. Recommended to use LINE_PURGE: // SAVE_ZMOD_DATA CLEAR=LINE_PURGE;Používáte KAMP. Doporučeno použít LINE_PURGE: // SAVE_ZMOD_DATA CLEAR=LINE_PURGE
+You are using native screen // DISPLAY_ON;Používáte nativní displej // DISPLAY_ON
+You are using native screen;Používáte nativní displej
+You are working WITHOUT native screen // DISPLAY_OFF GUPPY=0;Pracujete BEZ nativního displeje // DISPLAY_OFF GUPPY=0
+You are working WITHOUT native screen with GuppyScreen // DISPLAY_OFF GUPPY=1;Pracujete BEZ nativního displeje s GuppyScreen // DISPLAY_OFF GUPPY=1
+You need to disconnect power cord and then reconnect it;Musíte odpojit napájecí kabel a poté jej znovu připojit
+You're using native screen. No need to restart GuppyScreen;Používáte nativní displej. Není potřeba restartovat GuppyScreen
+Zeroing confirmed;Nulování potvrzeno
+Zeroing not confirmed;Nulování nepotvrzeno
+ZMOD parameters. Set via SAVE_ZMOD_DATA;Parametry ZMOD. Nastavte přes SAVE_ZMOD_DATA
+Z-offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Nastavení Z-offset přeskočeno, SKIP_ZOFFSET={skip_zoffset}
+Available languages;Dostupné jazyky
+Restore backup config files from archive;Obnovit zálohované konfigurační soubory z archivu
+To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar and call RESTORE_TAR_CONFIG;Pro obnovení konfigurace zkopírujte do 'Configuration' -> 'mod_data' -> config.tar a zavolejte RESTORE_TAR_CONFIG
+Set LED;Nastavit LED
+Don't hide color selection when printing starts;Neskrývat výběr barvy při spuštění tisku
+Hide color selection, print with IFS;Skrýt výběr barvy, tisknout s IFS
+Hide color selection, print without IFS;Skrýt výběr barvy, tisknout bez IFS
+Cutting the filament;Řezání filamentu
+Cleaning the nozzle on rubber;Čištění trysky o gumu
+Loading filament;Načítání filamentu
+Unloading filament;Vylodění filamentu
+Heating the nozzle to {extruder_temp} degrees;Ohřev trysky na {extruder_temp} stupňů
+Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Odhození filamentu {filament_drop_length} + {filament_drop_length_add}. Rychlost {filament_load_speed}
+Go to trash;Jít do koše
+Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Použijte RESUME_MOTION_SENSOR pro pokračování tisku po dojití filamentu v extruderu.
+Purge filament;Vyčistit filament
+Insert rod automatically:Vkládat prut automaticky
+Don't Insert rod automatically;Nevkládat prut automaticky
+Extracting filament from the extruder;Vysouvání filamentu z extruderu
+Use trash when printing;Použít koš při tisku
+Don't Use trash when printing;Nepoužívat koš při tisku
+Waiting for temperature normalization. Bed: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1};Čekání na normalizaci teploty. Podložka: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1}
+If it takes a long time, calibrate the PID of the extruder and bed;Pokud to trvá dlouho, zkalibrujte PID extruderu a podložky
+Temperature normalization completed;Normalizace teploty dokončena
