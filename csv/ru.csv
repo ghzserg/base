@@ -367,3 +367,5 @@ Don't Use trash when printing;Не использовать корзину пр�
 Waiting for temperature normalization. Bed: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1};Ждем нормализации температуры. Стол: {bed_temp-1}-{bed_temp+1}. Экструдер: {extruder_temp-1}-{extruder_temp+1}
 If it takes a long time, calibrate the PID of the extruder and bed;Если это занимает много времени, откалибруйте PID экструдера и стола
 Temperature normalization completed;Нормализация температуры завершена
+Don't remove the filament after printing is completed;Не удалять филамент после завершения печати
+Remove filament after printing is complete;Удалить филамент после завершения печати

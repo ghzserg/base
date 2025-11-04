@@ -367,3 +367,5 @@ Don't Use trash when printing;Nepoužívat koš při tisku
 Waiting for temperature normalization. Bed: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1};Čekání na normalizaci teploty. Podložka: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1}
 If it takes a long time, calibrate the PID of the extruder and bed;Pokud to trvá dlouho, zkalibrujte PID extruderu a podložky
 Temperature normalization completed;Normalizace teploty dokončena
+Don't remove the filament after printing is completed;Po dokončení tisku filament neodstraňujte
+Remove filament after printing is complete;Po dokončení tisku filament odstraňte

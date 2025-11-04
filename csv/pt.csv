@@ -367,3 +367,5 @@ Don't Use trash when printing;Não usar lixo ao imprimir
 Waiting for temperature normalization. Bed: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1};A aguardar normalização da temperatura. Mesa: {bed_temp-1}-{bed_temp+1}. Extrusor: {extruder_temp-1}-{extruder_temp+1}
 If it takes a long time, calibrate the PID of the extruder and bed;Se demorar muito tempo, calibre o PID do extrusor e da mesa
 Temperature normalization completed;Normalização da temperatura concluída
+Don't remove the filament after printing is completed;Não remover o filamento após a impressão estar concluída
+Remove filament after printing is complete;Remover o filamento após a impressão estar concluída

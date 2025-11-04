@@ -367,3 +367,5 @@ Don't Use trash when printing;인쇄 시 퍼지 컨테이너 사용하지 마십
 Waiting for temperature normalization. Bed: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1};온도 정상화 대기 중. 베드: {bed_temp-1}-{bed_temp+1}. 익스트루더: {extruder_temp-1}-{extruder_temp+1}
 If it takes a long time, calibrate the PID of the extruder and bed;시간이 오래 걸리면, 익스트루더와 베드의 PID를 교정하십시오
 Temperature normalization completed;온도 정상화 완료
+Don't remove the filament after printing is completed;인쇄 완료 후 필라멘트를 제거하지 마십시오
+Remove filament after printing is complete;인쇄 완료 후 필라멘트를 제거하십시오

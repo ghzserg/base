@@ -367,3 +367,5 @@ Don't Use trash when printing;打印时不使用清洗箱
 Waiting for temperature normalization. Bed: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1};等待温度正常化。热床: {bed_temp-1}-{bed_temp+1}。挤出机: {extruder_temp-1}-{extruder_temp+1}
 If it takes a long time, calibrate the PID of the extruder and bed;如果耗时过长，请校准挤出机和热床的PID
 Temperature normalization completed;温度正常化已完成
+Don't remove the filament after printing is completed;打印完成后不要取出耗材
+Remove filament after printing is complete;打印完成后取出耗材
