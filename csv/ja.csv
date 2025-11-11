@@ -372,3 +372,4 @@ Remove filament after printing is complete;印刷完了後にフィラメント�
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;代替画面の読み込みに時間がかかりますか？デフォルト画面の読み込み時間を短縮します。
 Tired of problems with WiFi, let zmod manage it.;WiFiの問題に疲れていませんか？zmodに管理させましょう。
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;不正な開始コード START_PRINT EXTRUDER_TEMP BED_TEMP は1行で記述する必要があります !!
+Don't forget to turn off the camera on your printer's native screen.;プリンターのネイティブ画面でカメラをオフにすることを忘れないでください。

@@ -372,3 +372,4 @@ Remove filament after printing is complete;Po dokončení tisku filament odstra�
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;Trvá načítání alternativní obrazovky dlouho? Snižte dobu načítání výchozí obrazovky.
 Tired of problems with WiFi, let zmod manage it.;Unaveni z problémů s WiFi? Nechte zmod se o ni postarat.
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Nesprávný startovní kód START_PRINT EXTRUDER_TEMP BED_TEMP musí být zapsán na jednom řádku !!
+Don't forget to turn off the camera on your printer's native screen.;Nezapomeňte vypnout kameru na nativní obrazovce tiskárny.

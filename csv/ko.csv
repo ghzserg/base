@@ -372,3 +372,4 @@ Remove filament after printing is complete;인쇄 완료 후 필라멘트를 제
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;대체 화면 로딩 시간이 오래 걸리나요? 기본 화면 로딩 시간을 줄이세요.
 Tired of problems with WiFi, let zmod manage it.;WiFi 문제에 지치셨나요? zmod가 관리하도록 하세요.
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;잘못된 시작 코드 START_PRINT EXTRUDER_TEMP BED_TEMP는 한 줄에 작성해야 합니다 !!
+Don't forget to turn off the camera on your printer's native screen.;프린터의 기본 화면에서 카메라를 끄는 것을 잊지 마십시오.

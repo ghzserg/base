@@ -372,3 +372,4 @@ Remove filament after printing is complete;Retirer le filament après l'impressi
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;L'écran alternatif met-il trop de temps à charger ? Réduisez le temps de chargement de l'écran par défaut.
 Tired of problems with WiFi, let zmod manage it.;Fatigué des problèmes WiFi ? Laissez zmod les gérer.
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Code de démarrage incorrect START_PRINT EXTRUDER_TEMP BED_TEMP doit être écrit sur une seule ligne !!
+Don't forget to turn off the camera on your printer's native screen.;N'oubliez pas d'éteindre la caméra sur l'écran natif de votre imprimante.

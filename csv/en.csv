@@ -372,3 +372,4 @@ Remove filament after printing is complete;Remove filament after printing is com
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;Is the alternate screen taking a long time to load? Reduce the default screen's load time.
 Tired of problems with WiFi, let zmod manage it.;Tired of problems with WiFi, let zmod manage it.
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!
+Don't forget to turn off the camera on your printer's native screen.;Don't forget to turn off the camera on your printer's native screen.
