@@ -376,3 +376,4 @@ Don't forget to turn off the camera on your printer's native screen.;Don't forge
 START_PRINT has finished its work.;START_PRINT has finished its work.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Incorrect MCU version. Need run UPDATE_MCU FORCE=13
 Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.
+Use LOAD_ZOFFSET_NATIVE to copy the Z-offset from the native screen.;Use LOAD_ZOFFSET_NATIVE to copy the Z-offset from the native screen.

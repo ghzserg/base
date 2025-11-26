@@ -376,3 +376,4 @@ Don't forget to turn off the camera on your printer's native screen.;프린터�
 START_PRINT has finished its work.;START_PRINT가 작업을 완료했습니다.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;잘못된 MCU 버전. UPDATE_MCU FORCE=13을 실행하십시오
 Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;잘못된 ZLINK 데이터. http://zlink.info에서 프린터를 등록하고 ZLINK 문자열을 받으십시오.
+Use LOAD_ZOFFSET_NATIVE to copy the Z-offset from the native screen.;LOAD_ZOFFSET_NATIVE를 사용하여 기본 화면에서 Z-오프셋을 복사하십시오.
