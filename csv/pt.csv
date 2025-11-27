@@ -377,3 +377,4 @@ START_PRINT has finished its work.;START_PRINT terminou o seu trabalho.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Versão MCU incorreta. Execute UPDATE_MCU FORCE=13
 Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Dados ZLINK incorretos. Registe a sua impressora em http://zlink.info e receba uma string ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-offset from the native screen.;Use LOAD_ZOFFSET_NATIVE para copiar o Z-offset do ecrã nativo.
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Ligue NOZZLE_CONTROL para controlar o impacto do bico na mesa
