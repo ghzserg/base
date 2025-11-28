@@ -378,4 +378,4 @@ Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Version MCU incorrecte. Exé
 Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Données ZLINK incorrectes. Enregistrez votre imprimante sur http://zlink.info et recevez une chaîne ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-offset from the native screen.;Utilisez LOAD_ZOFFSET_NATIVE pour copier le Z-offset de l'écran natif.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Activez NOZZLE_CONTROL pour contrôler l'impact de la buse sur la table
-Loading a similar rod from coil 5;Chargement d'un filament similaire de la bobine 5
+Loading a similar rod from coil;Chargement d'un filament similaire de la bobine

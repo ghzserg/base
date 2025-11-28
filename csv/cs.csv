@@ -378,4 +378,4 @@ Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Nesprávná verze MCU. Spus�
 Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Nesprávná data ZLINK. Zaregistrujte svou tiskárnu na http://zlink.info a získejte řetězec ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-offset from the native screen.;Použijte LOAD_ZOFFSET_NATIVE pro kopírování Z-offsetu z nativní obrazovky.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Zapněte NOZZLE_CONTROL pro kontrolu dopadu trysky na stůl
-Loading a similar rod from coil 5;Načítání podobného filamentu z cívky 5
+Loading a similar rod from coil;Načítání podobného filamentu z cívky
