@@ -1,0 +1,381 @@
+action:prompt_begin Resumption interrupted !!!;action:prompt_begin Yeniden başlatma kesildi !!!
+action:prompt_begin This is a test macro;action:prompt_begin Bu bir test makrosudur
+action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg;action:prompt_text mod_data/user.cfg dosyasına _GUPPY_MACRO ekleyin
+action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg;action:prompt_text _GUPPY_MACRO örneği mod/base.cfg dosyasındadır
+Adaptive bed;Uyarlanabilir Yatak
+After clicking OK the printer will be powered off;OK butonuna tıklandıktan sonra yazıcı kapanacaktır.
+After macro execution press Ctrl + F5;Makro çalıştırıldıktan sonra Ctrl + F5 tuşlarına basın
+Algorithm: {zclear};Algoritma: {zclear}
+Allow Chinese clouds;Çin bulutlarına izin ver
+All START_PRINT parameters for bed leveling are ignored;Yatak hizalama için tüm START_PRINT parametreleri dikkate alınmaz
+Auto close dialogs on native screen after 20 sec (fast);Yerel ekrandaki iletişim kutularını 20 saniye sonra otomatik kapat (hızlı)
+Auto close dialogs on native screen after 20 sec (slow);Yerel ekrandaki iletişim kutularını 20 saniye sonra otomatik kapat (yavaş)
+Auto disable motors after print/cancel in 25 sec;Yazdırma/iptalden sonra motorları 25 saniyede otomatik devre dışı bırak
+Automatic printer shutdown in {pro_poweroff_timeout} min;Yazıcının otomatik kapanması {pro_poweroff_timeout} dakika içinde
+Automatic reboot in 1.5 minutes;Otomatik yeniden başlatma 1.5 dakika içinde
+Auto reboot printer after 1.5 minutes;Yazdırmadan sonra yazıcıyı 1.5 dakika içinde otomatik yeniden başlat
+Auto restart firmware after 1.5 minutes;Yazdırmadan sonra firmware'ı 1.5 dakika içinde otomatik yeniden başlat
+Backup config files to archive;Yapılandırma dosyalarını arşive yedekle
+Bed calibration. Profile {profile}. Extruder temp: {extruder_temp} / Bed temp: {bed_temp};Yatak Kalibrasyonu. Profil {profile}. Ekstrüder sıcaklığı: {extruder_temp} / Yatak sıcaklığı: {bed_temp}
+Bed calibration without temperature off;Sıcaklık kapatılmadan yatak kalibrasyonu
+Bed calibration with temperature off;Sıcaklık kapatılarak yatak kalibrasyonu
+Bed mesh {mesh} loaded;Yatak ağı {mesh} yüklendi
+Bed mesh {mesh} not found. Loaded auto profile;Yatak ağı {mesh} bulunamadı. Otomatik profil yüklendi
+Bed mesh {mesh} not found. Loaded MESH_DATA profile;Yatak ağı {mesh} bulunamadı. MESH_DATA profili yüklendi
+Bed PID calibration;Yatak PID Kalibrasyonu
+Bed screw calibration;Yatak vidaları kalibrasyonu
+Bed temperature: {bed_temp};Yatak Sıcaklığı: {bed_temp}
+Before measurements, don't forget to clean the nozzle with CLEAR_NOZZLE macro;Ölçümlerden önce, nozulu CLEAR_NOZZLE makrosu ile temizlemeyi unutmayın
+Block Chinese clouds;Çin bulutlarını engelle
+Build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Her yazdırmada yatak ağı oluştur. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Build bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Her yazdırmada yerel ekran ile yatak ağı oluştur. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building auto mesh (no loaded profile);Yüklenen profil olmadığı için otomatik yatak ağı oluşturuluyor
+Building bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Her yazdırmada yatak ağı oluştur. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Her yazdırmada yerel ekran ile yatak ağı oluştur. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Building default mesh (FORCE_LEVELING={force_leveling});Varsayılan yatak ağı oluşturuluyor (FORCE_LEVELING={force_leveling})
+Building full bed mesh. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Tam yatak ağı oluşturuluyor. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Building {mesh} mesh (not found). Save it AFTER print!;Yatak ağı {mesh} bulunamadığı için oluşturuluyor. Yazdırmadan SONRA kaydedin!
+Cancellation sent to native screen;İptal, yerel ekrana gönderildi
+Cancel print;Yazdırmayı İptal Et
+Cancel the actual running print;Mevcut çalışan yazdırmayı iptal et
+Cancel;İptal
+Check file MD5 checksum;Dosya MD5 sağlama toplamını kontrol et
+Check {iter+1}. {clp}. Weight: {we};Kontrol {iter+1}. {clp}. Ağırlık: {we}
+Check memory usage;Bellek kullanımını kontrol et
+Check time;Süreyi kontrol et
+Clear EMMC;EMMC'yi Temizle
+Close dialogs on stock screen (fast);Stok ekranındaki iletişim kutularını kapat (hızlı)
+Close dialogs on stock screen (slow);Stok ekranındaki iletişim kutularını kapat (yavaş)
+Closing dialog windows on native screen (fast);Yerel ekrandaki iletişim pencereleri kapatılıyor (hızlı)
+Closing dialog windows on native screen (slow);Yerel ekrandaki iletişim pencereleri kapatılıyor (yavaş)
+Cold pull (nozzle cleaning) gently;Soğuk çekme (nozul temizliği) nazikçe.
+Collecting X axis data;X ekseni verileri toplanıyor
+Collecting Y axis data;Y ekseni verileri toplanıyor
+Compare grid extremes with last probe;Izgara uç noktalarını son prob ile karşılaştır
+Cooling down to {cold_temp}°C;{cold_temp}°C'ye kadar soğutuluyor
+CoreXY half-axis test for belt frequency analysis;CoreXY yazıcılarda bant profillerini analiz etmek için özel yarı eksen testi yapılır
+Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Şu anda yazdırılıyor: {filename} ({progress | round(1)}%), yazdırma kurtarma işlemi mümkün değil
+Current profile: %s;Yüklenen profil: %s
+Custom Guppy button;Özel Guppy butonu
+Delete data;Verileri Sil
+Detect part detachment or nozzle hit;Parça kopması veya nozul çarpmasını algıla
+Did you know you can enable KAMP globally?;KAMP'ı genel olarak etkinleştirebileceğinizi biliyor muydunuz?
+Disable alternative camera;Alternatif kamerayı devre dışı bırak
+Disable backlight;Arka ışığı kapat
+Disable camera on printer screen;Yazıcı ekranındaki kamerayı devre dışı bırakın
+Disable check with: MESH // SAVE_ZMOD_DATA MESH_TEST=0;Bu mesajın hatalı olduğunu düşünüyorsanız, kontrolü devre dışı bırakın MESH // SAVE_ZMOD_DATA MESH_TEST=0
+Disable circulation;Dolaşımı kapat
+Disable filament sensor on native screen;Yerel ekrandaki filament sensörünü devre dışı bırakın
+Disable heating and cooler;Isıtma ve soğutucuyu devre dışı bırak
+Disable nozzle line purge;Nozul çizgi temizlemeyi kapat
+Disable SSH port forwarding;SSH port yönlendirmeyi devre dışı bırak
+Disable stock screen;Standart ekranı kapat
+Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros;Yatak hizalamasının, z-offset'in ve START_PRINT/END_PRINT makrolarının nasıl çalıştığını tam olarak anlamıyorsanız ekranı devre dışı bırakmayın
+Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling};Her yazdırmada yatak ağı oluşturma // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+Don't check file MD5 checksum;Dosya MD5 sağlama toplamını kontrol etme
+Don't close dialogs on native screen;Yerel ekrandaki iletişim kutularını kapatma
+Don't disable motors automatically after print/cancel;Yazdırma/iptalden sonra motorları otomatik devre dışı bırakma
+Don't fix E0011 error;E0011 hatasını düzeltme
+Don't fix E0017 error;E0017 hatasını düzeltme
+Don't load Z-OFFSET from global settings;Z-OFFSET'ı genel ayarlardan yükleme
+Don't reboot printer automatically;Yazıcıyı otomatik yeniden başlatma
+Don't save data for print recovery;Yazdırma kurtarma için veri kaydetme
+Don't test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test};Yazdırmadan önce yatak ağını test etme // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+Don't use KAMP instead of BED_MESH_CALIBRATE // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};BED_MESH_CALIBRATE yerine KAMP kullanma // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Don't use nozzle pre-purge;Nozul ön temizleme kullanma
+Download archive in 'Configuration' -> 'mod_data' -> config.tar;Arşiv, 'Yapılandırma' -> 'mod_data' -> config.tar yolundan indirilebilir
+Enable backlight;Arka ışığı aç
+Enable camera on printer screen;Yazıcı ekranındaki kamerayı etkinleştirin
+Enable/disable pause at specific layer;Belirli bir katmanda duraklamayı aç/kapat
+Enable external circulation;Harici dolaşımı etkinleştir
+Enable internal circulation;Dahili dolaşımı etkinleştir
+Enable nozzle line purge;Nozul çizgi temizlemeyi aç
+Enable pause at next layer;Bir sonraki katmanda duraklamayı etkinleştir
+Enable stock screen and reboot;Standart ekranı etkinleştir ve yeniden başlat
+End G-code;Son G-code
+End of cleaning Z={zprobe+0.05};Temizliğin sonu Z={zprobe+0.05}
+Error: File {filename} not found. Print canceled.;Hata: {filename} dosyası bulunamadı. Yazdırma iptal edildi.
+Error: File '{filename}' not specified. Print canceled.;Hata: '{filename}' dosyası belirtilmedi. Yazdırma iptal edildi.
+Error: File '{filename}' was not verified in time. Print canceled.;Hata: '{filename}' dosyası belirlenen sürede doğrulanamadı. Yazdırma iptal edildi.
+Error! Filename not specified.;Hata! Dosya adı belirtilmedi.
+Error: {printer.print_stats.message};Hata: {printer.print_stats.message}
+Extruder PID calibration;Ekstrüder PID Kalibrasyonu
+Extruder temperature: {extruder_temp};Ekstrüder Sıcaklığı: {extruder_temp}
+Extrudes, if the extruder is hot enough;Ekstrüder yeterince sıcaksa ekstrüzyon yapar
+Extruding 10 cm of filament;10 cm filament ekstrüde ediliyor
+Failed to close windows? Use fast close: FAST_CLOSE_DIALOGS // SAVE_ZMOD_DATA CLOSE_DIALOGS=2;Pencere kapatma işlemi başarısız mı? Hızlı kapatma kullanın: FAST_CLOSE_DIALOGS // SAVE_ZMOD_DATA CLOSE_DIALOGS=2
+Fans control;Fanları Kontrol Et
+Far;Uzak
+Filament change requested. Load new filament and click 'Resume'.;Filament değişimi istendi. Yeni filament yükleyin ve 'Devam Et' butonuna tıklayın.
+Filament Change;Filament Değişimi
+Filament change;Filament değişimi
+Filament management;Filament Yükleme
+Filament runout detected;Filament bitti algılandı
+Filament runout or jam detected;Filament bitti veya sıkıştı algılandı
+Filament jam detected;Filament sıkışması algılandı
+Filament runout. Pausing in 30 seconds;Filament bitti. 30 saniye içinde duraklatılacak
+File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;{filename} dosyasında ark komutları (G2, G3) bulundu. Bunları devre dışı bırakın. Orca'da: İşlem Profili -> Ark Yaklaşımı -> İşareti kaldırın.
+File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en;{filename} dosyasında MD5 sağlama toplamı yok. Orca'da etkinleştirin. https://github.com/ghzserg/zmod/wiki/Recomendations
+File {filename} MD5 mismatch. File deleted. Print canceled;{filename} dosyasının MD5 sağlama toplamı uyuşmuyor. Dosya silindi. Yazdırma iptal edildi
+File {filename} MD5 mismatch. Print canceled;{filename} dosyasının MD5 sağlama toplamı uyuşmuyor. Yazdırma iptal edildi
+File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;{filename} dosyasında desteklenmeyen (G17, G18, G19) komutları kullanılmış. Z-Hop tipini değiştirin.
+File {filename} verified successfully. MD5 checksum matches.;{filename} dosyası başarıyla doğrulandı. MD5 sağlama toplamı uyuşuyor.
+File MD5 sum check;Dosya MD5 sağlama toplamı kontrolü
+Final test;Son test
+Fix E0011 error;E0011 hatasını düzelt
+Fix E0017 error;E0017 hatasını düzelt
+Flashing MCU with original version for native Klipper;MCU, yerel Klipper için orijinal versiyonla yeniden yükleniyor
+Forced bed leveling: disabled;Zorunlu yatak hizalama: devre dışı
+Forced bed leveling: enabled;Zorunlu yatak hizalama: etkin
+Generating belts frequency profile...;Bant frekans profili oluşturuluyor...
+Getting data for KAMP.;KAMP için veri alınıyor.
+Get ZMOD parameters;ZMOD parametrelerini al
+Global Z-OFFSET load: ignored (working with screen);Genel Z-OFFSET yükleme: yoksayıldı (ekranla çalışılıyor)
+GuppyScreen is not used;GuppyScreen kullanılmıyor
+has detected that the filament has run out, please load it and press RESUME;filamentin bittiğini algıladı, lütfen yükleyin ve DEVAM ET'e basın
+Heating bed and extruder.;Yatak ve ekstrüder ısıtılacak.
+Helper;Yardımcı
+https://github.com/ghzserg/zmod/wiki/FAQ_en;https://github.com/ghzserg/zmod/wiki/FAQ
+Image saved: {png_out_path}. Configuration -> mod_data;Görüntü kaydedildi: {png_out_path}. Yapılandırma -> mod_data
+In Orca. Printer profile -> Extruder 1 -> Z Hop Type. Set Normal or Sloped.;Orca'da. Yazıcı profili -> Ekstrüder 1 -> Z Hop Tipi. Normal veya Eğimli olarak ayarlayın.
+In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped;Orca'da: Yazıcı Profili -> Ekstrüder 1 -> Z Hop Tipi -> Normal veya Eğimli olarak ayarlayın
+Input shaper calibration;Giriş Şekillendirici Kalibrasyonu
+Interrupted print detected;Yarıda kesilmiş yazdırma algılandı
+is not hot enough;yeterince sıcak değil
+KAMP: disabled;KAMP: devre dışı
+KAMP: enabled;KAMP: etkin
+KAMP started SKIP_LEVELING={skip_leveling} FORCE_KAMP={force_kamp};KAMP başlatıldı SKIP_LEVELING={skip_leveling} FORCE_KAMP={force_kamp}
+Klipper process priority (1-min, 40-max): {znice};Klipper işlem önceliği (1-en düşük, 40-en yüksek): {znice}
+LED brightness at power on: {zled};LED parlaklığı açılışta: {zled}
+Left;Sol
+Linear move with gcode state save/restore;Gcode durumunu kaydeden/geri yükleyen doğrusal hareket
+LINE_PURGE forced;LINE_PURGE zorla başlatıldı
+Load bed mesh: {mesh};Yatak ağını yükle: {mesh}
+Load cell reset error. Read FAQ: https://github.com/ghzserg/zmod/wiki/FAQ_en;Yük hücresi sıfırlama hatası. SSS'yi okuyun: https://github.com/ghzserg/zmod/wiki/FAQ
+Load cell reset successful. Weight: {we};Yük hücresi sıfırlama başarılı. Ağırlık: {we}
+Load cell triggered! Make sure the bed is clean!;Yük hücresi tetiklendi! Yatağın temiz olduğundan emin olun!
+Loaded offset from global settings %s=%.4f;Genel ayarlardan ofset yüklendi %s=%.4f
+Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;{extruder_temp} sıcaklıkta filament yükleniyor {extrude_len}mm, {speed/60} mm/s hızla
+Loading GuppyScreen;GuppyScreen yükleniyor
+Loading skew_profile;Çarpıklık profili yükleniyor
+Load Z-OFFSET from global settings;Z-OFFSET'ı genel ayarlardan yükle
+Load;Yükle
+Maintain frequency for vibration diagnostics;Titreşim teşhisi ve kaynak belirleme için belirli bir süre boyunca verilen frekansı koruyun.
+Manual filament loading / change;Manuel filament yükleme / değiştirme
+Material selection for loading;Yükleme için malzeme seçimi
+Material selection;Malzeme seçimi
+Maximum map: %.3f mm | Last probe: %.3f mm;Maksimum harita: %.3f mm | Son prob: %.3f mm
+MD5 check failed. Print canceled.;MD5 kontrolü başarısız oldu. Yazdırma iptal edildi.
+MD5 check started;MD5 kontrolü başlatıldı
+MD5: disabled;MD5: devre dışı
+MD5: enabled;MD5: etkin
+Minimum map: %.3f mm | Delta: %.3f mm;Minimum harita: %.3f mm | Delta: %.3f mm
+Moonlight sonata;Ay ışığı sonatı
+Motors disabled;Motorlar devre dışı
+moved to;taşındı
+Moving head to far right corner;Kafa uzak sağ köşeye hareket ettiriliyor
+Mute sound;Sesi kapat
+Native screen disabled;Yerel ekran devre dışı bırakıldı
+Near;Yakın
+No need for leveling. Loaded profile: {cur_mesh};Yatak hizalamaya gerek yok. Yüklenen profil: {cur_mesh}
+Nozzle cleaning;Nozul Temizliği
+Nozzle line purge disabled. DISABLE_PRIMING={disable_priming};Nozul çizgi temizleme devre dışı. DISABLE_PRIMING={disable_priming}
+Nozzle line purge;Nozul çizgi temizleme
+Nozzle pre-cleaning;Nozul ön temizleme
+Nozzle priming: disabled;Nozul ön temizleme: devre dışı
+Nozzle priming: enabled;Nozul ön temizleme: etkin
+Nozzle temperature {extruder_temp};Nozul sıcaklığı {extruder_temp}
+OK;Tamam
+OK: Probe within mesh extremes;Tamam: Prob, ağ uç noktaları içinde
+OK;Tamam
+OS check;İşletim sistemi kontrolü
+Override to get pause_next_layer and pause_at_layer functions;pause_next_layer ve pause_at_layer işlevlerini almak için geçersiz kıl
+Parameters used at print end and cancellation [END_PRINT];Yazdırma sonunda ve iptalinde kullanılan parametreler [END_PRINT]
+Parameters used at print start and bed leveling [START_PRINT];Yazdırma başlangıcında ve yatak hizalamada kullanılan parametreler [START_PRINT]
+Parameter;Parametre
+Pause and filament change;Duraklat ve filament değiştir
+Paused: {filename}, print recovery impossible;Duraklatıldı: {filename}, yazdırma kurtarma işlemi mümkün değil
+Pause print;Yazdırmayı Duraklat
+Pause the actual running print;Mevcut çalışan yazdırmayı duraklat
+Play MIDI at power on: {zmidi_on};Açılışta MIDI çal: {zmidi_on}
+Play MIDI at print end: {zmidi_end};Yazdırma sonunda MIDI çal: {zmidi_end}
+Play MIDI file;MIDI dosyası çal
+Play MIDI on print pause: {zmidi_pause};Yazdırma duraklatıldığında MIDI çal: {zmidi_pause}
+Play MIDI on print start: {zmidi_start};Yazdırma başladığında MIDI çal: {zmidi_start}
+Play tone;Ton çal
+please heat it up and press RESUME again;lütfen ısıtın ve tekrar DEVAM ET'e basın
+Possible wrong profile loaded (different plate/temperature);Muhtemelen yanlış profil yüklendi (farklı tabla/sıcaklık)
+Power off FF5M Pro after (min): {timeout};FF5M Pro'yu (dakika) sonra kapat: {pro_poweroff_timeout}
+Power off printer;Yazıcıyı Kapat
+Pre-cleaning completed;Ön temizleme tamamlandı
+Priming algorithm: {zclear};Ön temizleme algoritması: {zclear}
+Print completed;Yazdırma Tamamlandı
+Printer screen will freeze until pre-cleaning is complete.;Ön temizleme tamamlanana kadar yazıcı ekranı donacaktır.
+Printer will boot into stock firmware;Yazıcı, standart firmware'a önyükleme yapacak
+Print file from native screen;Yerel ekrandan dosya yazdır
+Print file with bed leveling from native screen;Yerel ekrandan yatak hizalama ile dosya yazdır
+Print file;Dosya Yazdır
+Printing file {filename} from native screen;{filename} dosyası yerel ekrandan yazdırılıyor
+Printing file {filename} with bed leveling from native screen;{filename} dosyası yerel ekrandan yatak hizalama ile yazdırılıyor
+Printing file from native screen;Yerel ekrandan dosya yazdırılıyor
+Printing file with bed leveling from native screen;Yerel ekrandan yatak hizalama ile dosya yazdırılıyor
+Printing in progress. Movement is disabled.;Yazdırma devam ediyor. Hareket devre dışı bırakıldı.
+Printing with bed mesh: {cur_mesh};Yatak ağı ile yazdırılıyor: {cur_mesh}
+Probe sensor {probe};Prob sensörü {probe}
+Profile or mesh matrix not found;Profil veya ağ matrisi bulunamadı
+Pulling the filament;Filament çekiliyor
+Purge algorithm: {zclear};Temizleme algoritması: {zclear}
+Purge code from FF group;FF grubundan temizleme kodu
+Purge code from Orca Slicer;Orca Slicer'dan temizleme kodu
+Purge code with cleaner from top-right to bottom;Sağ üstten alta temizleyici ile temizleme kodu
+Purge;Temizle
+Reboot printer;Yazıcıyı Yeniden Başlat
+Reboot to original system (no zmod);Orijinal sisteme yeniden başlat. zmod olmadan.
+Redirect moonraker and camera to SSH server;Moonraker ve kamerayı SSH sunucusuna yönlendir
+Remove the remaining filament manually;Kalan filamentleri manuel olarak çıkarın
+Remove zmod;zmod'u kaldır
+Replace default start G-code;Varsayılan başlangıç G-code'unu değiştir
+Replace Spiral/Auto Z-Hop. In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped;Sarmal/Otomatik Z-Hop'u değiştirin. Orca'da: Yazıcı Profili -> Ekstrüder 1 -> Z Hop Tipi -> Normal veya Eğimli olarak ayarlayın.
+Replace Spiral/Auto Z-Hop. Printer doesn't support it.;Sarmal/Otomatik Z-Hop'u değiştirin. Yazıcı bunu desteklemiyor.
+Requires 256MB RAM + enabled SWAP. !!;Çalışması için 256MB RAM + etkin SWAP gereklidir. !!
+Resending cancellation to native screen canceled;Yerel ekrana iptal gönderimi iptal edildi
+Reset load cell weight;Yük hücresi ağırlığını sıfırla
+Resetting load cell weight;Yük hücresi ağırlığı sıfırlanıyor
+Restart alternative camera;Alternatif kamerayı yeniden başlat
+Restart Guppy;Guppy'yi yeniden başlat
+Restore Z-Offset;Z-Offset'ı Geri Yükle
+Restore;Geri Yükle
+Restoring;Geri yükleniyor
+Resume interrupted print;Yarıda kesilen yazdırmayı sürdür
+Resume print;Yazdırmayı Sürdür
+Resume the actual running print;Mevcut çalışan yazdırmayı sürdür
+Resume;Devam Et
+Resumption interrupted;Yeniden başlatma kesildi
+Retracts, if the extruder is hot enough;Ekstrüder yeterince sıcaksa geri çeker
+Right;Sağ
+Running native nozzle cleaning {extruder_temp}/{bed_temp};Yerel nozul temizliği çalıştırılıyor {extruder_temp}/{bed_temp}
+Save data for print recovery;Yazdırma kurtarma için veri kaydet
+Saved data deleted;Kaydedilen veriler silindi
+Save Fluidd/Mainsail button changes;Fluidd/Mainsail buton değişikliklerini kaydet
+Save parameters without stock screen freeze;Parametreleri, standart ekran donması olmadan kaydet
+Save ZMOD parameters;ZMOD parametrelerini kaydet
+Save Z-Offset;Z-Offset'ı Kaydet
+Saving controlled by native screen;Kaydetme, yerel ekran tarafından kontrol ediliyor
+Schreider purge code from top-right to bottom;Schreider'ın sağ üstten alta temizleme kodu
+Select action;Ne yapılacak?
+Select material to clean the nozzle;Nozulu temizlemek için malzeme seçin
+Select material to load;Yüklenecek malzemeyi seçin
+Set 1/4->1/2->1 speed for 60s on print resume;Yazdırma sürdürüldüğünde 60 saniye boyunca 1/4->1/2->1 hız ayarla
+Set date and time (format: 2024.01.01-00:00:00);Tarih ve saati ayarla (biçim: 2024.01.01-00:00:00)
+Setting Z-offset {zoffset}, SKIP_ZOFFSET={skip_zoffset};Z-offset ayarlanıyor {zoffset}, SKIP_ZOFFSET={skip_zoffset}
+Shutdown printer?;Yazıcı kapatılsın mı?
+SKEW correction disabled;SKEW düzeltme devre dışı
+SKEW correction enabled. Profile skew_profile;SKEW düzeltme etkin. Profil skew_profile
+SKEW: disabled;SKEW: devre dışı
+SKEW: enabled;SKEW: etkin
+Skip bed leveling: disabled;Yatak hizalamayı atla: devre dışı
+Skip bed leveling: enabled;Yatak hizalamayı atla: etkin
+Skipping bed leveling. SKIP_LEVELING={skip_leveling};Yatak hizalama atlanıyor. SKIP_LEVELING={skip_leveling}
+SSH restart;SSH yeniden başlatma
+Started MD5 check {filename};MD5 kontrolü başlatıldı {filename}
+Start fluidd/mainsail and moonraker after STOP_ZMOD;STOP_ZMOD'dan sonra fluidd/mainsail ve moonraker'ı başlat
+Start of cleaning Z={zprobe+0.15};Temizliğin başlangıcı Z={zprobe+0.15}
+Start SSH if not running;Çalışmıyorsa SSH'yi başlat
+Status: {state};Durum: {state}
+Stop fluidd/mainsail and moonraker;fluidd/mainsail ve moonraker'ı durdur
+SWAP not used;SWAP kullanılmıyor
+SWAP used on EMMC;SWAP, EMMC üzerinde kullanılıyor
+SWAP used on USB FLASH;SWAP, USB FLASH üzerinde kullanılıyor
+Switch to console to view recovery stages;Kurtarma aşamalarını görmek için konsola geçin
+Switch web interface (fluidd/mainsail);Web arayüzünü değiştir (fluidd/mainsail)
+System-wide parameters;Sistem geneli parametreler
+temperature to;sıcaklığını şuna
+Temporary ZMOD disable;ZMOD'u geçici olarak devre dışı bırak
+Test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test};Yazdırmadan önce yatak ağını test et // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+Test EMMC;EMMC'yi test et
+The printer was not homed (G28);Yazıcı sıfırlanmadı (G28)
+This will take some time (3-5 minutes);Bu biraz zaman alacak (3-5 dakika)
+Timezone change;Saat dilimi değişikliği
+triggered;tetiklendi
+Trying to load bed mesh: {mesh};Yatak ağı yüklenmeye çalışılıyor: {mesh}
+Turn off native screen after (sec): {display_off_timeout};Yerel ekranı (saniye) sonra kapat: {display_off_timeout}
+Unload;Boşalt
+Update MCU;MCU'yu Güncelle
+Update printer via USB;Yazıcıyı USB bellek ile güncelle
+Use adaptive mesh (KAMP) where possible instead of full bed mesh // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Mümkün olduğunda tam yatak ağı yerine uyarlanabilir ağ (KAMP) kullan // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Use alternative camera;Alternatif kamerayı kullan
+Use alternative NEW_SAVE_CONFIG;Alternatif NEW_SAVE_CONFIG kullan
+Use bed leveling mode from native screen. // SAVE_ZMOD_DATA PRINT_LEVELING=1;Yatak hizalama modunu yerel ekrandan kullan. // SAVE_ZMOD_DATA PRINT_LEVELING=1
+Use Fluidd/Mainsail button settings from ZMOD;Fluidd/Mainsail buton ayarlarını ZMOD'dan kullan
+Use nozzle pre-purge;Nozul ön temizleme kullan
+Use SCV = 5 for shaper graphs;Şekillendirici grafikleri için SCV = 5 kullan
+Use SCV from config for shaper graphs;Şekillendirici grafikleri için yapılandırmadan SCV kullan
+Use standard SAVE_CONFIG;Standart SAVE_CONFIG kullan
+Use Z-OFFSET loading from global parameters to control Z-OFFSET with GuppyScreen;Z-OFFSET'ı GuppyScreen ile kontrol etmek için genel parametrelerden Z-OFFSET yüklemesi kullanın
+Use;Kullanın
+Using BED_MESH_CALIBRATE;BED_MESH_CALIBRATE kullanılıyor
+Using filament motion sensor;Filament hareket sensörü kullanılıyor
+Using filament presence sensor;Filament varlık sensörü kullanılıyor
+Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;Genel Z-Offset kontrolü kullanılıyor. SKIP_ZOFFSET ve Z_OFFSET parametreleri yoksayılıyor
+Using KAMP from global settings. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp};Genel ayarlardan KAMP kullanılıyor. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+Using KAMP;KAMP kullanılıyor
+Using Klipper 13;Klipper 13 kullanılıyor
+Using native Klipper;Yerel Klipper kullanılıyor
+Wait 10 seconds and power on again. MCU update will begin.;10 saniye bekleyin ve tekrar açın. MCU güncellemesi başlayacaktır.
+Wait for the music and power off the printer.;Müziği bekleyin ve yazıcının gücünü kapatın.
+Waiting for check to complete;Kontrolün tamamlanması bekleniyor
+Waiting for nozzle to heat up to {extruder_temp};Nozulun {extruder_temp}°C'ye ısınması bekleniyor
+WARNING: Bed mesh not loaded!;UYARI: Yatak ağı yüklenmedi!
+WARNING: Last probe ABOVE mesh maximum by %.3f mm!;UYARI: Son prob, yatak ağı maksimumunun %.3f mm ÜZERİNDE!
+WARNING: Last probe BELOW mesh minimum by %.3f mm!;UYARI: Son prob, yatak ağı minimumunun %.3f mm ALTINDA!
+Weight at error: {we};Hata anındaki ağırlık: {we}
+Work completed;İş Tamamlandı
+Yes;Evet
+You are NOT using native screen;Yerel ekranı KULLANMIYORSUNUZ
+You are using KAMP. Recommended to use LINE_PURGE: // SAVE_ZMOD_DATA CLEAR=LINE_PURGE;KAMP kullanıyorsunuz. Çizgi temizleme kullanılması önerilir: // SAVE_ZMOD_DATA CLEAR=LINE_PURGE
+You are using native screen // DISPLAY_ON;Yerel ekranla çalışıyorsunuz // DISPLAY_ON
+You are using native screen;Yerel ekranla çalışıyorsunuz
+You are working WITHOUT native screen // DISPLAY_OFF GUPPY=0;Yerel ekran OLMADAN çalışıyorsunuz // DISPLAY_OFF GUPPY=0
+You are working WITHOUT native screen with GuppyScreen // DISPLAY_OFF GUPPY=1;Yerel ekran OLMADAN GuppyScreen ile çalışıyorsunuz // DISPLAY_OFF GUPPY=1
+You need to disconnect power cord and then reconnect it;Yazıcının güç kablosunu çıkarmanız ve sonra tekrar takmanız gerekiyor
+You're using native screen. No need to restart GuppyScreen;Yerel ekranla çalışıyorsunuz. GuppyScreen'i yeniden başlatmaya gerek yok
+Zeroing confirmed;Sıfırlama onaylandı
+Zeroing not confirmed;Sıfırlama onayı yok
+ZMOD parameters. Set via SAVE_ZMOD_DATA;ZMOD parametreleri. SAVE_ZMOD_DATA ile ayarlanır.
+Z-offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Z-offset kurulumu atlandı, SKIP_ZOFFSET={skip_zoffset}
+Available languages;Mevcut diller
+Restore backup config files from archive;Yedek yapılandırma dosyalarını arşivden geri yükle
+To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar and call RESTORE_TAR_CONFIG;Yapılandırmayı geri yüklemek için, 'Yapılandırma' -> 'mod_data' -> config.tar yoluna kopyalayın ve RESTORE_TAR_CONFIG'u çağırın
+Set LED;LED'i ayarla
+Don't hide color selection when printing starts;Yazdırma başladığında renk seçimini gizleme
+Hide color selection, print with IFS;Renk seçimini gizle, IFS ile yazdır
+Hide color selection, print without IFS;Renk seçimini gizle, IFS olmadan yazdır
+Cutting the filament;Filament kesiliyor
+Cleaning the nozzle on rubber;Nozul lastik üzerinde temizleniyor
+Loading filament;Filament yükleniyor
+Unloading filament;Filament boşaltılıyor
+Heating the nozzle to {extruder_temp} degrees;Nozul {extruder_temp} dereceye ısıtılıyor
+Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Filament bırakılıyor {filament_drop_length} + {filament_drop_length_add}. Hız {filament_load_speed}
+Go to trash;Çöp kutusuna park et
+Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Ekstrüderdeki filament bitene kadar yazdırmaya devam etmek için RESUME_MOTION_SENSOR kullanın.
+Purge filament;Filament temizleme
+Insert rod automatically;Çubuğu otomatik yerleştir
+Don't Insert rod automatically;Çubuğu otomatik yerleştirme
+Extracting filament from the extruder;Filament ekstrüderden çıkarılıyor
+Use trash when printing;Yazdırırken çöp kutusunu kullan
+Don't Use trash when printing;Yazdırırken çöp kutusunu kullanma
+Waiting for temperature normalization. Bed: {bed_temp-3}-{bed_temp+4}. Extruder: {extruder_temp-2}-{extruder_temp+4};Sıcaklık normalleşmesi bekleniyor. Yatak: {bed_temp-3}-{bed_temp+4}. Ekstrüder: {extruder_temp-2}-{extruder_temp+4}
+If it takes a long time, calibrate the PID of the extruder and bed;Uzun sürüyorsa, ekstrüder ve yatağın PID'ini kalibre edin
+Temperature normalization completed;Sıcaklık normalleşmesi tamamlandı
+Don't remove the filament after printing is completed;Yazdırma tamamlandıktan sonra filamentleri çıkarma
+Remove filament after printing is complete;Yazdırma tamamlandıktan sonra filamentleri çıkar
+Is the alternate screen taking a long time to load? Reduce the default screen's load time.;Alternatif ekran uzun mu sürüyor? Standart ekranın yüklenme süresini azaltın.
+Tired of problems with WiFi, let zmod manage it.;WiFi sorunlarından sıkıldınız mı? zmod'un yönetmesine izin verin.
+Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Hatalı başlangıç kodu START_PRINT EXTRUDER_TEMP BED_TEMP tek satırda yazılmalıdır !!
+Don't forget to turn off the camera on your printer's native screen.;Yazıcınızın yerel ekranındaki kamerayı kapatmayı unutmayın.
+START_PRINT has finished its work.;START_PRINT işini tamamladı.
+Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Hatalı MCU sürümü. UPDATE_MCU FORCE=13 komutunu çalıştırmanız gerekiyor.
+Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Hatalı ZLINK verisi. Yazıcınızı http://zlink.info adresinde kaydedin ve bir ZLINK dizesi alın.
+Use LOAD_ZOFFSET_NATIVE to copy the Z-offset from the native screen.;Z-offset'ı yerel ekrandan kopyalamak için LOAD_ZOFFSET_NATIVE kullanın.
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Nozulun masaya çarpmasını kontrol etmek için NOZZLE_CONTROL'ü açın
+Loading a similar rod from coil;Bobinden benzer bir çubuk yükleniyor
