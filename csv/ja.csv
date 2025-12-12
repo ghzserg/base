@@ -386,3 +386,4 @@ Initial setting;初期設定
 You can browse and change global parameters if necessary. https://github.com/ghzserg/zmod/wiki/Global_ru;必要に応じてグローバルパラメータを閲覧および変更できます。 https://github.com/ghzserg/zmod/wiki/Global_en
 Enable the recommendations plugin? It allows you to configure basic settings with one click.;推奨プラグインを有効にしますか？基本的な設定をワンクリックで構成できます。
 Next;次へ
+Z-offset loaded from native screen;ネイティブ画面からZオフセットをロードしました
