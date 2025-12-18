@@ -317,7 +317,7 @@ Use;Используйте
 Using BED_MESH_CALIBRATE;Использую BED_MESH_CALIBRATE
 Using filament motion sensor;Используется датчик движения филамента
 Using filament presence sensor;Используется датчик наличия филамента
-Using global Z-Offset control. Z_OFFSET parameter ignored;Используется глобальное управление Z-Offset. Параметр Z_OFFSET игнорируются
+Using global Z-Offset control. Z_OFFSET parameter ignored;Используется глобальное управление Z-Offset. Параметр Z_OFFSET игнорируется
 Using KAMP from global settings.;Использую KAMP из глобальных параметров.
 Using KAMP;Использую KAMP
 Using Klipper 13;Используется Klipper 13
