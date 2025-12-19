@@ -288,7 +288,7 @@ SWAP used on EMMC;SWAP используется на EMMC
 SWAP used on USB FLASH;SWAP используется на USB FLASH
 Switch to console to view recovery stages;Переключитесь в консоль, чтобы посмотреть этапы восстановления
 Switch web interface (fluidd/mainsail);Сменить веб интерфейс fluidd/mainsail
-System-wide parameters;Текущие общиее параметры
+System-wide parameters;Текущие общие параметры
 temperature to;температуру до
 Temporary ZMOD disable;Временно отключение ZMOD
 Test bed mesh before printing;Тестировать карту стола перед печатью
