@@ -154,7 +154,7 @@ Load bed mesh: {mesh};Подгружать карту стола: {mesh}
 Load cell reset error. Read FAQ: https://github.com/ghzserg/zmod/wiki/FAQ_en;Ошибка сброса веса тензодатчиков. Читайте FAQ: https://github.com/ghzserg/zmod/wiki/FAQ
 Load cell reset successful. Weight: {we};Сброс веса тензодатчиков прошел успешно. Вес: {we}
 Load cell triggered! Make sure the bed is clean!;Обнаружена сработка тензодатчика! Убедитесь что стол чист!
-Loaded offset from global settings %s=%.4f;Загружен Z-Offset из глобальных параметров %s=%.4f
+Loaded offset from global settings %s=%.4f;Загружено смещение из глобальных параметров %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Загрузка филамента с температурой {extruder_temp} на {extrude_len} мм со скоростью {speed/60} мм/с
 Loading GuppyScreen;Будет загружен GuppyScreen
 Loading skew_profile;Загрузка skew_profile
