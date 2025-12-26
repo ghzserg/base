@@ -405,3 +405,5 @@ Moving the bed down 5 mm;将平台降低5毫米
 Start printer;打印机已开启
 Native Screen;原生屏幕
 Loading a similar rod for the tool;正在为工具加载相似耗材
+this cleanup macro does NOT exist. LINE_PURGE is used;此清理宏不存在，将使用 LINE_PURGE
+Available macros;可用宏

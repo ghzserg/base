@@ -405,3 +405,5 @@ Moving the bed down 5 mm;Abaissement du lit de 5 mm
 Start printer;Imprimante allumée
 Native Screen;Écran natif
 Loading a similar rod for the tool;Chargement d'un filament similaire pour l'outil
+this cleanup macro does NOT exist. LINE_PURGE is used;ce macro de nettoyage N'existe PAS. LINE_PURGE est utilisé
+Available macros;Macros disponibles

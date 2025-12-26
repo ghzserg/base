@@ -405,3 +405,5 @@ Moving the bed down 5 mm;Yatağı 5 mm aşağı hareket ettirme
 Start printer;Yazıcı açık
 Native Screen;Yerel Ekran
 Loading a similar rod for the tool;Alet için benzer bir filament yükleniyor
+this cleanup macro does NOT exist. LINE_PURGE is used;bu temizleme makrosu mevcut DEĞİL. LINE_PURGE kullanılıyor
+Available macros;Kullanılabilir Makrolar

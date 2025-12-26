@@ -405,3 +405,5 @@ Moving the bed down 5 mm;ベッドを5mm下げます
 Start printer;プリンター起動中
 Native Screen;ネイティブ画面
 Loading a similar rod for the tool;ツール用の類似フィラメントをロード中
+this cleanup macro does NOT exist. LINE_PURGE is used;このクリーンアップマクロは存在しません。LINE_PURGEが使用されます
+Available macros;利用可能なマクロ

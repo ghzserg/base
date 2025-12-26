@@ -405,3 +405,5 @@ Moving the bed down 5 mm;Posun podložky dolů o 5 mm
 Start printer;Tiskárna zapnuta
 Native Screen;Nativní obrazovka
 Loading a similar rod for the tool;Načítání podobného filamentu pro nástroj
+this cleanup macro does NOT exist. LINE_PURGE is used;tento čisticí makro NEexistuje. Používá se LINE_PURGE
+Available macros;Dostupná makra

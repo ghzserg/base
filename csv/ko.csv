@@ -405,3 +405,5 @@ Moving the bed down 5 mm;베드를 5mm 아래로 이동
 Start printer;프린터 켜짐
 Native Screen;네이티브 화면
 Loading a similar rod for the tool;도구용 유사 필라멘트 로딩 중
+this cleanup macro does NOT exist. LINE_PURGE is used;이 청소 매크로는 존재하지 않습니다. LINE_PURGE가 사용됩니다
+Available macros;사용 가능한 매크로

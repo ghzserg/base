@@ -402,3 +402,5 @@ Moving the bed down 5 mm;Сдвигаю стол ниже на 5 мм
 Start printer;Принтер включен
 Native Screen;Родной экран
 Loading a similar rod for the tool;Загрузка аналогичного прутка для инструмента
+this cleanup macro does NOT exist. LINE_PURGE is used;этот макрос очистки НЕ существует. Используется LINE_PURGE
+Available macros;Доступные макросы
