@@ -407,3 +407,4 @@ Native Screen;Pantalla nativa
 Loading a similar rod for the tool;Cargando filamento similar para la herramienta
 this cleanup macro does NOT exist. LINE_PURGE is used;este macro de limpieza NO existe. Se utiliza LINE_PURGE
 Available macros;Macros disponibles
+Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;Agregue la macro {macro_name|upper} a mod_data/user.cfg o desactive el uso de la línea de limpieza // SAVE_ZMOD_DATA DISABLE_PRIMING=1

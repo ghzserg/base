@@ -407,3 +407,4 @@ Native Screen;Nativní obrazovka
 Loading a similar rod for the tool;Načítání podobného filamentu pro nástroj
 this cleanup macro does NOT exist. LINE_PURGE is used;tento čisticí makro NEexistuje. Používá se LINE_PURGE
 Available macros;Dostupná makra
+Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;Přidejte makro {macro_name|upper} do mod_data/user.cfg nebo vypněte použití čisticí linie // SAVE_ZMOD_DATA DISABLE_PRIMING=1

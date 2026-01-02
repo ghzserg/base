@@ -407,3 +407,4 @@ Native Screen;原生屏幕
 Loading a similar rod for the tool;正在为工具加载相似耗材
 this cleanup macro does NOT exist. LINE_PURGE is used;此清理宏不存在，将使用 LINE_PURGE
 Available macros;可用宏
+Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;请将宏 {macro_name|upper} 添加到 mod_data/user.cfg 或禁用清理线功能 // SAVE_ZMOD_DATA DISABLE_PRIMING=1
