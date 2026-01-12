@@ -407,3 +407,5 @@ Available macros;Доступные макросы
 Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;Добавьте макрос {macro_name|upper} в mod_data/user.cfg или отключите использование линии очистки // SAVE_ZMOD_DATA DISABLE_PRIMING=1
 Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Пауза: Восстановление: {restore}, Температура: {temp}/{heater_bed_temp}
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Resume: Восстановление: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Статус: {printer.idle_timeout.state | upper}
+WARNING: Last probe MORE saved by %.4f mm!;ВНИМАНИЕ: Последний зонд ПРЕВЫШАЕТ сохранённое значение на %.4f мм!
+Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Используйте SAVE_ZMOD_DATA MESH_TEST=%d для автоматического запуска KAMP при ошибке

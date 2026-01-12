@@ -410,3 +410,5 @@ Available macros;Macros disponibles
 Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;Ajoutez la macro {macro_name|upper} à mod_data/user.cfg ou désactivez l'utilisation de la ligne de nettoyage // SAVE_ZMOD_DATA DISABLE_PRIMING=1
 Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Pause: Restaurer: {restore}, Temp: {temp}/{heater_bed_temp}
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Reprendre: Restaurer: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Statut: {printer.idle_timeout.state | upper}
+WARNING: Last probe MORE saved by %.4f mm!;AVERTISSEMENT : La dernière sonde DÉPASSE la valeur enregistrée de %.4f mm !
+Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Utilisez SAVE_ZMOD_DATA MESH_TEST=%d pour lancer automatiquement KAMP en cas d'erreur

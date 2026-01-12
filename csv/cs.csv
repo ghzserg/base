@@ -410,3 +410,5 @@ Available macros;Dostupná makra
 Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;Přidejte makro {macro_name|upper} do mod_data/user.cfg nebo vypněte použití čisticí linie // SAVE_ZMOD_DATA DISABLE_PRIMING=1
 Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Pauza: Obnovit: {restore}, Teplota: {temp}/{heater_bed_temp}
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Pokračovat: Obnovit: {last_extruder_temp.restore}, Teplota: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Stav: {printer.idle_timeout.state | upper}
+WARNING: Last probe MORE saved by %.4f mm!;VAROVÁNÍ: Poslední sonda PŘEKROČILA uloženou hodnotu o %.4f mm!
+Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Použijte SAVE_ZMOD_DATA MESH_TEST=%d pro automatické spuštění KAMP v případě chyby

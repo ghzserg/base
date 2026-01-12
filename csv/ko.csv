@@ -410,3 +410,5 @@ Available macros;사용 가능한 매크로
 Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;매크로 {macro_name|upper}를 mod_data/user.cfg에 추가하거나 청소 라인 사용을 비활성화하십시오 // SAVE_ZMOD_DATA DISABLE_PRIMING=1
 Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};일시 정지: 복원: {restore}, 온도: {temp}/{heater_bed_temp}
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};재개: 복원: {last_extruder_temp.restore}, 온도: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, 상태: {printer.idle_timeout.state | upper}
+WARNING: Last probe MORE saved by %.4f mm!;경고: 마지막 프로브가 저장된 값을 %.4f mm 초과했습니다!
+Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;오류 발생 시 KAMP를 자동으로 시작하려면 SAVE_ZMOD_DATA MESH_TEST=%d를 사용하십시오
