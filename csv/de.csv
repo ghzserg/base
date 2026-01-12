@@ -412,5 +412,5 @@ Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Pause: Wiederherstelle
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Fortsetzen: Wiederherstellen: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;WARNUNG: Letzte Sonde ÜBERSTEIGT gespeicherten Wert um %.4f mm!
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Verwenden Sie SAVE_ZMOD_DATA MESH_TEST=%d, um KAMP bei einem Fehler automatisch zu starten
-AutoZOffset: on // See https://github.com/ghzserg/zmod/wiki/Global_en#mesh_test;AutoZOffset: an // See https://github.com/ghzserg/zmod/wiki/Global_en#mesh_test
-AutoZOffset: off // See https://github.com/ghzserg/zmod/wiki/Global_en#mesh_test;AutoZOffset: aus // See https://github.com/ghzserg/zmod/wiki/Global_en#mesh_test
+AutoZOffset: on // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test;AutoZOffset: an // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test
+AutoZOffset: off // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test;AutoZOffset: aus // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test
