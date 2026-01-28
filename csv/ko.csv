@@ -414,3 +414,4 @@ WARNING: Last probe MORE saved by %.4f mm!;경고: 마지막 프로브가 저장
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;오류 발생 시 KAMP를 자동으로 시작하려면 SAVE_ZMOD_DATA MESH_TEST=%d를 사용하십시오
 AutoZOffset: on // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test;AutoZOffset: 켜짐 // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test
 AutoZOffset: off // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test;AutoZOffset: 꺼짐 // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test
+Photo;사진

@@ -414,3 +414,4 @@ WARNING: Last probe MORE saved by %.4f mm!;ADVERTENCIA: ¡La última sonda SUPER
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Use SAVE_ZMOD_DATA MESH_TEST=%d para lanzar automáticamente KAMP si se produce un error
 AutoZOffset: on // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test;AutoZOffset: activado // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test
 AutoZOffset: off // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test;AutoZOffset: desactivado // See https://github.com/ghzserg/zmod/wiki/Global_en mesh_test
+Photo;Foto
