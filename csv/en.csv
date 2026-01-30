@@ -55,7 +55,7 @@ Compare grid extremes with last probe;Compare grid extremes with last probe
 Cooling down to {cold_temp}°C;Cooling down to {cold_temp}°C
 CoreXY half-axis test for belt frequency analysis;CoreXY half-axis test for belt frequency analysis
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Currently printing: {filename} ({progress | round(1)}%), print recovery impossible
-Current profile: %s;Current profile: %s
+Current profile:;Current profile:
 Custom Guppy button;Custom Guppy button
 Delete data;Delete data
 Detect part detachment or nozzle hit;Detect part detachment or nozzle hit

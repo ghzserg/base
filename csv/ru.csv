@@ -55,7 +55,7 @@ Compare grid extremes with last probe;Сравнивает экстремумы 
 Cooling down to {cold_temp}°C;Остужаем до {cold_temp} градусов
 CoreXY half-axis test for belt frequency analysis;Выполнение специального теста полуоси для анализа и сравнения профилей частот отдельных ремней на принтерах CoreXY
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Сейчас печатается: {filename} ({progress | round(1)}%), восстановление печати невозможно
-Current profile: %s;Загружен профиль: %s
+Current profile:;Загружен профиль:
 Custom Guppy button;Кастомная кнопка Guppy
 Delete data;Удалить данные
 Detect part detachment or nozzle hit;Контроль отрыва детали или удара сопла о стол

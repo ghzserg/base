@@ -55,7 +55,7 @@ Compare grid extremes with last probe;Izgara uç noktalarını son prob ile kar�
 Cooling down to {cold_temp}°C;{cold_temp}°C'ye kadar soğutuluyor
 CoreXY half-axis test for belt frequency analysis;CoreXY yazıcılarda bant profillerini analiz etmek için özel yarı eksen testi yapılır
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Şu anda yazdırılıyor: {filename} ({progress | round(1)}%), yazdırma kurtarma işlemi mümkün değil
-Current profile: %s;Yüklenen profil: %s
+Current profile:;Yüklenen profil:
 Custom Guppy button;Özel Guppy butonu
 Delete data;Verileri Sil
 Detect part detachment or nozzle hit;Parça kopması veya nozul çarpmasını algıla

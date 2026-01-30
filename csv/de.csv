@@ -55,7 +55,7 @@ Compare grid extremes with last probe;Gitter-Extrema mit letzter Messung verglei
 Cooling down to {cold_temp}°C;Abkühlung auf {cold_temp}°C
 CoreXY half-axis test for belt frequency analysis;CoreXY Halbachsen-Test für Riemenfrequenzanalyse
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Druckt gerade: {filename} ({progress | round(1)}%), Wiederherstellung unmöglich
-Current profile: %s;Geladenes Profil: %s
+Current profile:;Geladenes Profil:
 Custom Guppy button;Benutzerdefinierter Guppy-Button
 Delete data;Daten löschen
 Detect part detachment or nozzle hit;Teilablösung oder Düsenaufprall erkennen

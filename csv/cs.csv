@@ -55,7 +55,7 @@ Compare grid extremes with last probe;Porovnat extrémy mřížky s posledním p
 Cooling down to {cold_temp}°C;Chlazení na {cold_temp}°C
 CoreXY half-axis test for belt frequency analysis;Test poloosy CoreXY pro analýzu frekvence pásů
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Právě tiskne: {filename} ({progress | round(1)}%), obnova tisku nemožná
-Current profile: %s;Aktuální profil: %s
+Current profile:;Aktuální profil:
 Custom Guppy button;Vlastní tlačítko Guppy
 Delete data;Smazat data
 Detect part detachment or nozzle hit;Detekovat odtržení dílu nebo náraz trysky

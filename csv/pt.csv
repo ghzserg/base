@@ -55,7 +55,7 @@ Compare grid extremes with last probe;Comparar extremos da grelha com última so
 Cooling down to {cold_temp}°C;Arrefecendo para {cold_temp}°C
 CoreXY half-axis test for belt frequency analysis;Teste de meio-eixo CoreXY para análise de frequência de correias
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;Imprimindo atualmente: {filename} ({progress | round(1)}%), recuperação impossível
-Current profile: %s;Perfil atual: %s
+Current profile:;Perfil atual:
 Custom Guppy button;Botão Guppy personalizado
 Delete data;Eliminar dados
 Detect part detachment or nozzle hit;Detetar descolamento de peça ou impacto no nozzle

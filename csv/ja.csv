@@ -55,7 +55,7 @@ Compare grid extremes with last probe;グリッドの極値と最後のプロー
 Cooling down to {cold_temp}°C;{cold_temp}°Cまで冷却中
 CoreXY half-axis test for belt frequency analysis;CoreXYのベルト周波数解析用半軸テスト
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;印刷中: {filename} ({progress | round(1)}%)、復旧不可
-Current profile: %s;現在のプロファイル: %s
+Current profile:;現在のプロファイル:
 Custom Guppy button;カスタムGuppyボタン
 Delete data;データを削除
 Detect part detachment or nozzle hit;部品剥離またはノズル衝突を検出
