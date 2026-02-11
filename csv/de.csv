@@ -415,3 +415,25 @@ Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;
 AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: an // See https://wiki.zmod.link/Global/ mesh_test
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: aus // See https://wiki.zmod.link/Global/ mesh_test
 There will be a SCHEDULED reboot now;Ein GEplanter Neustart wird jetzt durchgeführt
+Parameters used in color selection menu;Parameter für das Farbauswahlmenü
+Show {allowed_tool_count} colors;Zeige {allowed_tool_count} Farben
+Show {allowed_tool_count} colors when file colors cannot be scanned;Zeige {allowed_tool_count} Farben, wenn Dateifarben nicht gescannt werden können
+Don't scan files for color / material data;Dateien nicht nach Farb- / Materialdaten scannen
+Check files for pre-prepared color / material data only;Dateien nur auf vorbereitete Farb- / Materialdaten prüfen
+Scan files for color / material data;Dateien nach Farb- / Materialdaten scannen
+Do not auto-assign colors;Farben nicht automatisch zuweisen
+Auto-assign colors if file colors successfully scanned;Farben automatisch zuweisen, wenn Dateifarben erfolgreich gescannt wurden
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Farben bei Erfolg automatisch zuweisen, Silent-Modus-Druck bei schweren Zuweisungsfehlern anhalten
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Farben bei Erfolg automatisch zuweisen, Silent-Modus-Druck bei allen Zuweisungsfehlern anhalten
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Farben bei Erfolg automatisch zuweisen, Silent-Modus-Druck bei einigen Zuweisungsfehlern anhalten
+Display zero-based tool indexes (T0, T1, etc);Werkzeug-Indizes beginnend bei Null anzeigen (T0, T1, etc.)
+Display one-based tool indexes (Color 1, Color 2, etc);Werkzeug-Indizes beginnend bei Eins anzeigen (Color 1, Color 2, etc.)
+Skip color change process if old and new color are the same physical IFS channel;Farbwechsel überspringen, wenn alte und neue Farbe derselbe physische IFS-Kanal sind
+Do not skip color change process when old and new color are the same physical IFS channel;Farbwechsel nicht überspringen, wenn alte und neue Farbe derselbe physische IFS-Kanal sind
+Don't scan files for color data;Dateien nicht nach Farbdaten scannen
+Load pre-prepared color data only;Nur vorbereitete Farbdaten laden
+Scan files for color data;Dateien nach Farbdaten scannen
+Auto-assign colors, silent mode halts on any error;Automatische Farbuweisung, Silent-Modus stoppt bei jedem Fehler
+Auto-assign colors, silent mode halts on major error;Automatische Farbuweisung, Silent-Modus stoppt bei schwerem Fehler
+Auto-assign colors;Farben automatisch zuweisen
+Auto-assign colors, silent mode halts on some errors;Automatische Farbuweisung, Silent-Modus stoppt bei einigen Fehlern

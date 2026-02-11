@@ -416,3 +416,25 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: オ
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: オフ // See https://wiki.zmod.link/Global/ mesh_test
 Photo;写真
 There will be a SCHEDULED reboot now;スケジュールされた再起動を今から実行します
+Parameters used in color selection menu;カラー選択メニューで使用されるパラメータ
+Show {allowed_tool_count} colors;{allowed_tool_count} 色を表示
+Show {allowed_tool_count} colors when file colors cannot be scanned;ファイルのカラーがスキャンできない場合に {allowed_tool_count} 色を表示
+Don't scan files for color / material data;カラー/材質データのファイルをスキャンしない
+Check files for pre-prepared color / material data only;準備済みのカラー/材質データのみファイルをチェックする
+Scan files for color / material data;カラー/材質データのファイルをスキャンする
+Do not auto-assign colors;カラーを自動割り当てしない
+Auto-assign colors if file colors successfully scanned;ファイルのカラーが正常にスキャンされた場合にカラーを自動割り当てする
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;スキャン成功時に自動割り当て、重大なエラー時にサイレントモード印刷を停止
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;スキャン成功時に自動割り当て、エラー発生時にサイレントモード印刷を停止
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;スキャン成功時に自動割り当て、一部のエラー時にサイレントモード印刷を停止
+Display zero-based tool indexes (T0, T1, etc);0から始まるツールインデックスを表示 (T0, T1など)
+Display one-based tool indexes (Color 1, Color 2, etc);1から始まるツールインデックスを表示 (Color 1, Color 2など)
+Skip color change process if old and new color are the same physical IFS channel;新旧のカラーが同じ物理IFSチャンネルの場合は色替えプロセスをスキップする
+Do not skip color change process when old and new color are the same physical IFS channel;新旧のカラーが同じ物理IFSチャンネルであっても色替えプロセスをスキップしない
+Don't scan files for color data;カラーデータのファイルをスキャンしない
+Load pre-prepared color data only;準備済みのカラーデータのみ読み込む
+Scan files for color data;カラーデータのファイルをスキャンする
+Auto-assign colors, silent mode halts on any error;カラー自動割り当て、エラー発生時にサイレントモードを停止
+Auto-assign colors, silent mode halts on major error;カラー自動割り当て、重大なエラー時にサイレントモードを停止
+Auto-assign colors;カラーを自動割り当てする
+Auto-assign colors, silent mode halts on some errors;カラー自動割り当て、一部のエラー時にサイレントモードを停止

@@ -416,3 +416,25 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: aç
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: kapalı // See https://wiki.zmod.link/Global/ mesh_test
 Photo;Foto
 There will be a SCHEDULED reboot now;Şimdi PLANLANAN bir yeniden başlatma gerçekleşecek
+Parameters used in color selection menu;Renk seçim menüsünde kullanılan parametreler
+Show {allowed_tool_count} colors;{allowed_tool_count} rengi göster
+Show {allowed_tool_count} colors when file colors cannot be scanned;Dosya renkleri taranamadığında {allowed_tool_count} rengi göster
+Don't scan files for color / material data;Renk / malzeme verisi için dosyaları tarama
+Check files for pre-prepared color / material data only;Dosyaları yalnızca önceden hazırlanmış renk / malzeme verisi için kontrol et
+Scan files for color / material data;Renk / malzeme verisi için dosyaları tara
+Do not auto-assign colors;Renkleri otomatik atama
+Auto-assign colors if file colors successfully scanned;Dosya renkleri başarıyla tarandıysa renkleri otomatik ata
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Başarıyla tarandıysa otomatik ata, ciddi atama hatalarında sessiz mod yazımını durdur
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Başarıyla tarandıysa otomatik ata, tüm atama hatalarında sessiz mod yazımını durdur
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Başarıyla tarandıysa otomatik ata, bazı atama hatalarında sessiz mod yazımını durdur
+Display zero-based tool indexes (T0, T1, etc);Sıfır tabanlı araç dizinlerini görüntüle (T0, T1, vb.)
+Display one-based tool indexes (Color 1, Color 2, etc);Bir tabanlı araç dizinlerini görüntüle (Color 1, Color 2, vb.)
+Skip color change process if old and new color are the same physical IFS channel;Eski ve yeni renk aynı fiziksel IFS kanalıysa renk değiştirme işlemini atla
+Do not skip color change process when old and new color are the same physical IFS channel;Eski ve yeni renk aynı fiziksel IFS kanalı olduğunda renk değiştirme işlemini atlama
+Don't scan files for color data;Renk verisi için dosyaları tarama
+Load pre-prepared color data only;Yalnızca önceden hazırlanmış renk verilerini yükle
+Scan files for color data;Renk verisi için dosyaları tara
+Auto-assign colors, silent mode halts on any error;Renkleri otomatik ata, sessiz mod herhangi bir hatada durur
+Auto-assign colors, silent mode halts on major error;Renkleri otomatik ata, sessiz mod büyük hatalarda durur
+Auto-assign colors;Renkleri otomatik ata
+Auto-assign colors, silent mode halts on some errors;Renkleri otomatik ata, sessiz mod bazı hatalarda durur
