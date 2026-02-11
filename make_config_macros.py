@@ -57,6 +57,8 @@ def add_get_zmod_data(file_data, categories, settings):
     file_data.append(indent_level * STANDARD_INDENT)
     
     for category, cat_data in categories.items():
+        file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND PREFIX=\"info\" MSG=\"{cat_data.get("get_zmod_data_text", "")}\"")
+        file_data.append(indent_level * STANDARD_INDENT)
         for setting, set_data in settings.items():
             if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
                 continue
@@ -77,8 +79,10 @@ def add_get_zmod_data(file_data, categories, settings):
             setting_type = set_data.get('type', TYPE_ASSUMPTION)
             
             if setting_type == 'string':
+                quote = '"'
                 file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables.{setting.lower()}|default(\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\")|string %}}")
             else:
+                quote = ''
                 file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables.{setting.lower()}|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{setting_type} %}}")
                 
             had_generic = False
@@ -125,7 +129,7 @@ def add_get_zmod_data(file_data, categories, settings):
                     file_data.append((indent_level * STANDARD_INDENT) + f"{{% {condition_string} %}}")    
                     indent_level += 1
                     
-                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND PREFIX=\"//\" MSG=\"{text} // SAVE_ZMOD_DATA {setting.upper()}={{z{setting.lower()}}}\"")
+                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND PREFIX=\"//\" MSG=\"{text} // SAVE_ZMOD_DATA {setting.upper()}={quote}{{z{setting.lower()}}}{quote}\"")
                 
                 if had_generic:
                     break
@@ -135,16 +139,13 @@ def add_get_zmod_data(file_data, categories, settings):
             if not had_generic:
                 if not is_first:
                     file_data.append(((indent_level - 1) * STANDARD_INDENT) + "{% else %}")
-                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND PREFIX=\"//\" MSG=\"==Unrecognized value for {setting.upper()}\" // SAVE_ZMOD_DATA {setting.upper()}={{z{setting.lower()}}}")
+                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND PREFIX=\"//\" MSG=\"===Unrecognized value for setting:=== {setting.upper()} // SAVE_ZMOD_DATA {setting.upper()}={quote}{{z{setting.lower()}}}{quote}\"")
                 
             if not is_first or not had_generic:
                 indent_level -= 1
                 file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")                
                 
-            if setting_type == 'string':
-                file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE=\"{{z{setting.lower()}}}\"")
-            else:
-                file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={{z{setting.lower()}}}")
+            file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={quote}{{z{setting.lower()}}}{quote}")
 
             if condition != None:
                 indent_level -= 1
@@ -157,26 +158,52 @@ def add_get_zmod_data(file_data, categories, settings):
             file_data.append(indent_level * STANDARD_INDENT)                
     
     file_data.append((indent_level * STANDARD_INDENT) + '# ** END GET_ZMOD_DATA TEMPLATE SETTINGS ** #')
-    file_data.append(indent_level * STANDARD_INDENT)
-    
-                
-"""
-    {% set fix_scv = printer.save_variables.variables.fix_scv|default(1) | int %}
-    {% if fix_scv == 1 %}
-        RESPOND PREFIX="//" MSG="===Use SCV from config for shaper graphs=== // SAVE_ZMOD_DATA FIX_SCV={fix_scv}"
-    {% else %}
-        RESPOND PREFIX="//" MSG="===Use SCV = 5 for shaper graphs=== // SAVE_ZMOD_DATA FIX_SCV={fix_scv}"
-    {% endif %}
-    SAVE_VARIABLE VARIABLE=fix_scv VALUE={fix_scv|int}
-"""    
 
 def add_reset_zmod(file_data, categories, settings):
     indent_level = BASE_INDENT_RESET_ZMOD
     
-    file_data.append((indent_level * STANDARD_INDENT) + '# ** BEGIN _GLOBAL TEMPLATE SETTINGS ** #')
-    file_data.append(indent_level * STANDARD_INDENT)                
+    file_data.append((indent_level * STANDARD_INDENT) + '# ** BEGIN _RESET_ZMOD TEMPLATE SETTINGS ** #')
+    file_data.append(indent_level * STANDARD_INDENT)        
     
-    file_data.append((indent_level * STANDARD_INDENT) + '# ** END _GLOBAL TEMPLATE SETTINGS ** #')
+    for category, cat_data in categories.items():
+        file_data.append((indent_level * STANDARD_INDENT) + f"# {category}")
+        both_entries = []
+        ad5m_entries = []
+        ad5x_entries = []
+        for setting, set_data in settings.items():
+            if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
+                continue
+            check_ad5x = set_data.get('require_ad5x', 0)
+            if check_ad5x < 0:
+                target = ad5m_entries
+                extra_indent = 1
+            elif check_ad5x > 0:
+                target = ad5x_entries
+                extra_indent = 1
+            else:
+                target = both_entries
+                extra_indent = 0
+            
+            if set_data.get('type', TYPE_ASSUMPTION) == 'string':
+                target.append(((indent_level + extra_indent) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE=\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\"")
+            else:
+                target.append(((indent_level + extra_indent) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={set_data.get('default', DEFAULT_VALUE_ASSUMPTION)}")
+        
+        file_data += both_entries
+        
+        if len(ad5m_entries) > 0:
+            file_data.append((indent_level * STANDARD_INDENT) + "{% if not client.ad5x %}")
+            file_data += ad5m_entries
+            file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
+            
+        if len(ad5x_entries) > 0:
+            file_data.append((indent_level * STANDARD_INDENT) + "{% if client.ad5x %}")
+            file_data += ad5x_entries
+            file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
+            
+        file_data.append(indent_level * STANDARD_INDENT)        
+    
+    file_data.append((indent_level * STANDARD_INDENT) + '# ** END _RESET_ZMOD TEMPLATE SETTINGS ** #')
             
     
 def add_global(file_data, categories, settings):
@@ -206,7 +233,7 @@ def main():
                     add_save_zmod_data(file_data, categories, settings)
                 if line.strip() == '# ** BEGIN GET_ZMOD_DATA TEMPLATE SETTINGS ** #':
                     add_get_zmod_data(file_data, categories, settings)
-                if line.strip() == '# ** BEGIN RESET_ZMOD TEMPLATE SETTINGS ** #':
+                if line.strip() == '# ** BEGIN _RESET_ZMOD TEMPLATE SETTINGS ** #':
                     add_reset_zmod(file_data, categories, settings)
                 if line.strip() == '# ** BEGIN _GLOBAL TEMPLATE SETTINGS ** #':
                     add_global(file_data, categories, settings)
