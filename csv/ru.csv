@@ -413,5 +413,27 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: в�
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: выключен // See https://wiki.zmod.link/ru/Global/ mesh_test
 Photo;Фото
 There will be a SCHEDULED reboot now;Сейчас произойдёт ЗАПЛАНИРОВАННАЯ перезагрузка
+Parameters used in color selection menu;Параметры, используемые в меню выбора цвета
+Show {allowed_tool_count} colors;Показать {allowed_tool_count} цветов
+Show {allowed_tool_count} colors when file colors cannot be scanned;Показать {allowed_tool_count} цветов, когда цвета файла не могут быть сканированы
+Don't scan files for color / material data;Не сканировать файлы на наличие данных о цвете / материале
+Check files for pre-prepared color / material data only;Проверять файлы только на наличие подготовленных данных о цвете / материале
+Scan files for color / material data;Сканировать файлы на наличие данных о цвете / материале
+Do not auto-assign colors;Не назначать цвета автоматически
+Auto-assign colors if file colors successfully scanned;Автоматически назначать цвета, если цвета файла успешно сканированы
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Автоназначение при успехе, остановка печати в тихом режиме при серьезных ошибках
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Автоназначение при успехе, остановка печати в тихом режиме при любых ошибках
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Автоназначение при успехе, остановка печати в тихом режиме при некоторых ошибках
+Display zero-based tool indexes (T0, T1, etc);Отображать индексы инструментов от нуля (T0, T1 и т. д.)
+Display one-based tool indexes (Color 1, Color 2, etc);Отображать индексы инструментов от единицы (Color 1, Color 2 и т. д.)
+Skip color change process if old and new color are the same physical IFS channel;Пропустить процесс смены цвета, если старый и новый цвета — это один и тот же физический канал IFS
+Do not skip color change process when old and new color are the same physical IFS channel;Не пропускать процесс смены цвета, если старый и новый цвета — это один и тот же физический канал IFS
+Don't scan files for color data;Не сканировать файлы на наличие данных о цвете
+Load pre-prepared color data only;Загружать только подготовленные данные о цвете
+Scan files for color data;Сканировать файлы на наличие данных о цвете
+Auto-assign colors, silent mode halts on any error;Автоназначение цветов, тихий режим прерывается при любой ошибке
+Auto-assign colors, silent mode halts on major error;Автоназначение цветов, тихий режим прерывается при серьезной ошибке
+Auto-assign colors;Автоматически назначать цвета
+Auto-assign colors, silent mode halts on some errors;Автоназначение цветов, тихий режим прерывается при некоторых ошибках
 unknown value:;неизвестное значение:
 Unrecognized value for setting:;Нераспознанное значение для настройки:

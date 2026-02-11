@@ -1,5 +1,9 @@
 {
     "Categories": {
+        "Color Selection": {
+            "get_zmod_data_text": "===Parameters used in color selection menu===",
+            "global_text": "===Parameters used in color selection menu==="
+        },
         "Print Start": {
             "get_zmod_data_text": "===Parameters used at print start and bed leveling [START_PRINT]===",
             "global_text": "===Parameters used at print start and bed leveling [START_PRINT]==="
@@ -14,6 +18,54 @@
         }
     },
     "Settings": {
+        "allowed_tool_count": {
+            "type": "int",
+            "default": 4,
+            "category": "Color Selection",
+            "show_in_global": false,
+            "require_native_screen": -1,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "*": "===Show {zallowed_tool_count} colors when file colors cannot be scanned==="
+            }
+        },
+        "scan_file_colors": {
+            "type": "int",
+            "default": 0,
+            "category": "Color Selection",
+            "show_in_global": true,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Don't scan files for color / material data===",
+                "2": "===Check files for pre-prepared color / material data only===",
+                "1": "===Scan files for color / material data==="
+            }
+        },
+        "auto_assign_colors": {
+            "type": "int",
+            "default": 0,
+            "category": "Color Selection",
+            "show_in_global": true,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Do not auto-assign colors===",
+                "30": "===Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors===",
+                "2": "===Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors===",
+                "1": "===Auto-assign colors if file colors successfully scanned===",
+                "*": "===Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors==="
+            }
+        },
+        "color_menu_1_based": {
+            "type": "int",
+            "default": 0,
+            "category": "Color Selection",
+            "show_in_global": true,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Display zero-based tool indexes (T0, T1, etc)===",
+                "1": "===Display one-based tool indexes (Color 1, Color 2, etc)==="
+            }
+        },
         "print_leveling": {
             "type": "int",
             "default": 0,
@@ -254,6 +306,17 @@
             "get_zmod_data_text": {
                 "0": "===Don't Use trash when printing===",
                 "1": "===Use trash when printing==="
+            }
+        },
+        "always_full_color_change": {
+            "type": "int",
+            "default": 0,
+            "category": "Color Selection",
+            "show_in_global": false,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Skip color change process if old and new color are the same physical IFS channel===",
+                "1": "===Do not skip color change process when old and new color are the same physical IFS channel==="
             }
         },
         "fix_scv": {
