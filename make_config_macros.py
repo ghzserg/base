@@ -171,6 +171,8 @@ def add_reset_zmod(file_data, categories, settings):
         for setting, set_data in settings.items():
             if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
                 continue
+            if set_data.get('exclude_from_reset', False):
+                continue
             check_ad5x = set_data.get('require_ad5x', 0)
             if check_ad5x < 0:
                 target = ad5m_entries

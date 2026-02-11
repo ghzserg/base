@@ -53,6 +53,7 @@
             "default": "",
             "category": "Print Start",
             "show_in_global": false,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Play MIDI on print start: {zmidi_start}==="
             }
@@ -62,6 +63,7 @@
             "default": "",
             "category": "Print Start",
             "show_in_global": false,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Play MIDI on print pause: {zmidi_pause}==="
             }
@@ -136,6 +138,7 @@
             "category": "Print Start",
             "show_condition": "not zdisable_priming",
             "show_in_global": false,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Purge algorithm: {zclear}==="
             }
@@ -145,6 +148,7 @@
             "default": "",
             "category": "Print End",
             "show_in_global": false,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Play MIDI at print end: {zmidi_end}==="
             }
@@ -189,6 +193,7 @@
             "category": "Print End",
             "show_in_global": false,
             "require_ad5x": -1,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Power off FF5M Pro after (min): {zpro_poweroff_timeout}==="
             }
@@ -296,6 +301,7 @@
             "default": 50,
             "category": "System",
             "show_in_global": false,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===LED brightness at power on: {zled}==="
             }
@@ -305,6 +311,7 @@
             "default": "",
             "category": "System",
             "show_in_global": false,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Play MIDI at power on: {zmidi_on}==="
             }
@@ -368,6 +375,7 @@
             "category": "System",
             "show_in_global": false,
             "require_native_screen": -1,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Turn off native screen after (sec): {display_off_timeout}==="
             }
@@ -377,6 +385,7 @@
             "default": 0,
             "category": "System",
             "show_in_global": true,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "0": "===Using native Klipper=== 11",
                 "0x": "===Using native Klipper=== 12",
@@ -389,6 +398,7 @@
             "category": "System",
             "show_in_global": false,
             "require_native_screen": -1,
+            "exclude_from_reset": true,
             "get_zmod_data_text": {
                 "*": "===Klipper process priority (1-min, 40-max): {znice}==="
             }
@@ -398,6 +408,7 @@
             "default": 10,
             "category": "System",
             "show_in_global": false,
+            "exclude_from_reset": true,
             "require_native_screen": -1,
             "get_zmod_data_text": {
                 "*": "ZCONTROL_Z: {zzcontrol_z}"
