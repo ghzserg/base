@@ -416,3 +416,25 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: act
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: désactivé // See https://wiki.zmod.link/Global/ mesh_test
 Photo;Photo
 There will be a SCHEDULED reboot now;Un redémarrage PRÉvu va avoir lieu maintenant
+Parameters used in color selection menu;Paramètres utilisés dans le menu de sélection des couleurs
+Show {allowed_tool_count} colors;Afficher {allowed_tool_count} couleurs
+Show {allowed_tool_count} colors when file colors cannot be scanned;Afficher {allowed_tool_count} couleurs quand les couleurs du fichier ne peuvent pas être lues
+Don't scan files for color / material data;Ne pas numériser les fichiers pour les données de couleur / matériel
+Check files for pre-prepared color / material data only;Vérifier uniquement les données de couleur / matériel pré-préparées dans les fichiers
+Scan files for color / material data;Numériser les fichiers pour les données de couleur / matériel
+Do not auto-assign colors;Ne pas assigner les couleurs automatiquement
+Auto-assign colors if file colors successfully scanned;Assigner auto les couleurs si les couleurs du fichier sont lues avec succès
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Assigner auto si succès, arrêter l'impression en mode silencieux sur erreurs d'assignation graves
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Assigner auto si succès, arrêter l'impression en mode silencieux sur toute erreur d'assignation
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Assigner auto si succès, arrêter l'impression en mode silencieux sur certaines erreurs d'assignation
+Display zero-based tool indexes (T0, T1, etc);Afficher les index d'outils à partir de zéro (T0, T1, etc.)
+Display one-based tool indexes (Color 1, Color 2, etc);Afficher les index d'outils à partir de un (Color 1, Color 2, etc.)
+Skip color change process if old and new color are the same physical IFS channel;Sauter le processus de changement de couleur si l'ancienne et la nouvelle couleur sont sur le même canal physique IFS
+Do not skip color change process when old and new color are the same physical IFS channel;Ne pas sauter le processus de changement de couleur si l'ancienne et la nouvelle couleur sont sur le même canal physique IFS
+Don't scan files for color data;Ne pas numériser les fichiers pour les données de couleur
+Load pre-prepared color data only;Charger uniquement les données de couleur pré-préparées
+Scan files for color data;Numériser les fichiers pour les données de couleur
+Auto-assign colors, silent mode halts on any error;Assignation auto des couleurs, le mode silencieux s'arrête sur toute erreur
+Auto-assign colors, silent mode halts on major error;Assignation auto des couleurs, le mode silencieux s'arrête sur une erreur majeure
+Auto-assign colors;Assigner les couleurs automatiquement
+Auto-assign colors, silent mode halts on some errors;Assignation auto des couleurs, le mode silencieux s'arrête sur certaines erreurs

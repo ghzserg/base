@@ -416,3 +416,25 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: on 
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test
 Photo;Foto
 There will be a SCHEDULED reboot now;Nyní proběhne NAplánovaný restart
+Parameters used in color selection menu;Parametry použité v menu výběru barev
+Show {allowed_tool_count} colors;Zobrazit {allowed_tool_count} barev
+Show {allowed_tool_count} colors when file colors cannot be scanned;Zobrazit {allowed_tool_count} barev, když nelze naskenovat barvy souboru
+Don't scan files for color / material data;Neskenovat soubory pro data barev / materiálů
+Check files for pre-prepared color / material data only;Kontrolovat v souborech pouze předpřipravená data barev / materiálů
+Scan files for color / material data;Skenovat soubory pro data barev / materiálů
+Do not auto-assign colors;Automaticky nepřiřazovat barvy
+Auto-assign colors if file colors successfully scanned;Automaticky přiřadit barvy, pokud byly barvy souboru úspěšně naskenovány
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Automaticky přiřadit barvy při úspěšném naskenování, zastavit tisk v tichém režimu při vážných chybách přiřazení
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Automaticky přiřadit barvy při úspěšném naskenování, zastavit tisk v tichém režimu při jakékoli chybě přiřazení
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Automaticky přiřadit barvy při úspěšném naskenování, zastavit tisk v tichém režimu při některých chybách přiřazení
+Display zero-based tool indexes (T0, T1, etc);Zobrazit indexy nástrojů od nuly (T0, T1 atd.)
+Display one-based tool indexes (Color 1, Color 2, etc);Zobrazit indexy nástrojů od jedničky (Color 1, Color 2 atd.)
+Skip color change process if old and new color are the same physical IFS channel;Přeskočit proces výměny barvy, pokud je stará a nová barva na stejném fyzickém kanálu IFS
+Do not skip color change process when old and new color are the same physical IFS channel;Nepřeskakovat proces výměny barvy, i když je stará a nová barva na stejném fyzickém kanálu IFS
+Don't scan files for color data;Neskenovat soubory pro data barev
+Load pre-prepared color data only;Načíst pouze předpřipravená data barev
+Scan files for color data;Skenovat soubory pro data barev
+Auto-assign colors, silent mode halts on any error;Automatické přiřazení barev, tichý režim se zastaví při jakékoli chybě
+Auto-assign colors, silent mode halts on major error;Automatické přiřazení barev, tichý režim se zastaví při závažné chybě
+Auto-assign colors;Automaticky přiřadit barvy
+Auto-assign colors, silent mode halts on some errors;Automatické přiřazení barev, tichý režim se zastaví při některých chybách

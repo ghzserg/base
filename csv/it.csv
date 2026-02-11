@@ -416,3 +416,25 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: att
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: disattivo // See https://wiki.zmod.link/Global/ mesh_test
 Photo;Foto
 There will be a SCHEDULED reboot now;Ci sarà un riavvio programmato PROGRAMMATO ora
+Parameters used in color selection menu;Parametri utilizzati nel menu di selezione colore
+Show {allowed_tool_count} colors;Mostra {allowed_tool_count} colori
+Show {allowed_tool_count} colors when file colors cannot be scanned;Mostra {allowed_tool_count} colori quando non è possibile scansionare i colori del file
+Don't scan files for color / material data;Non scansionare i file per dati colore / materiale
+Check files for pre-prepared color / material data only;Controlla solo i dati colore / materiale pre-preparati nei file
+Scan files for color / material data;Scansiona i file per dati colore / materiale
+Do not auto-assign colors;Non assegnare automaticamente i colori
+Auto-assign colors if file colors successfully scanned;Assegna auto i colori se i colori del file sono scansionati con successo
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Assegna auto se successo, arresta stampa in modo silenzioso su errori gravi di assegnazione
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Assegna auto se successo, arresta stampa in modo silenzioso su qualsiasi errore di assegnazione
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Assegna auto se successo, arresta stampa in modo silenzioso su alcuni errori di assegnazione
+Display zero-based tool indexes (T0, T1, etc);Mostra indici strumenti basati su zero (T0, T1, ecc.)
+Display one-based tool indexes (Color 1, Color 2, etc);Mostra indici strumenti basati su uno (Color 1, Color 2, ecc.)
+Skip color change process if old and new color are the same physical IFS channel;Salta il cambio colore se il vecchio e il nuovo colore sono lo stesso canale fisico IFS
+Do not skip color change process when old and new color are the same physical IFS channel;Non saltare il cambio colore se il vecchio e il nuovo colore sono lo stesso canale fisico IFS
+Don't scan files for color data;Non scansionare i file per dati colore
+Load pre-prepared color data only;Carica solo dati colore pre-preparati
+Scan files for color data;Scansiona i file per dati colore
+Auto-assign colors, silent mode halts on any error;Assegnazione automatica, modo silenzioso si arresta su ogni errore
+Auto-assign colors, silent mode halts on major error;Assegnazione automatica, modo silenzioso si arresta su errore grave
+Auto-assign colors;Assegna automaticamente i colori
+Auto-assign colors, silent mode halts on some errors;Assegnazione automatica, modo silenzioso si arresta su alcuni errori

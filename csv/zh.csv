@@ -416,3 +416,25 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: 开
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: 关闭 // See https://wiki.zmod.link/Global/ mesh_test
 Photo;照片
 There will be a SCHEDULED reboot now;即将执行计划的重新启动
+Parameters used in color selection menu;颜色选择菜单中使用的参数
+Show {allowed_tool_count} colors;显示 {allowed_tool_count} 种颜色
+Show {allowed_tool_count} colors when file colors cannot be scanned;当无法扫描文件颜色时显示 {allowed_tool_count} 种颜色
+Don't scan files for color / material data;不扫描文件的颜色/材料数据
+Check files for pre-prepared color / material data only;仅检查文件中预先准备的颜色/材料数据
+Scan files for color / material data;扫描文件的颜色/材料数据
+Do not auto-assign colors;不自动分配颜色
+Auto-assign colors if file colors successfully scanned;如果文件颜色扫描成功，则自动分配颜色
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;成功扫描后自动分配，出现严重分配错误时停止静音模式打印
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;成功扫描后自动分配，出现任何分配错误时停止静音模式打印
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;成功扫描后自动分配，出现某些分配错误时停止静音模式打印
+Display zero-based tool indexes (T0, T1, etc);显示从零开始的工具索引 (T0, T1 等)
+Display one-based tool indexes (Color 1, Color 2, etc);显示从一开始的工具索引 (Color 1, Color 2 等)
+Skip color change process if old and new color are the same physical IFS channel;如果新旧颜色为同一物理 IFS 通道，则跳过换色过程
+Do not skip color change process when old and new color are the same physical IFS channel;当新旧颜色为同一物理 IFS 通道时，不跳过换色过程
+Don't scan files for color data;不扫描文件的颜色数据
+Load pre-prepared color data only;仅加载预先准备的颜色数据
+Scan files for color data;扫描文件的颜色数据
+Auto-assign colors, silent mode halts on any error;自动分配颜色，静音模式在出现任何错误时停止
+Auto-assign colors, silent mode halts on major error;自动分配颜色，静音模式在出现重大错误时停止
+Auto-assign colors;自动分配颜色
+Auto-assign colors, silent mode halts on some errors;自动分配颜色，静音模式在出现某些错误时停止
