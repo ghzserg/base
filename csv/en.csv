@@ -416,3 +416,25 @@ AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: on 
 AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test
 Photo;Photo
 There will be a SCHEDULED reboot now;There will be a SCHEDULED reboot now
+Parameters used in color selection menu;Parameters used in color selection menu
+Show {allowed_tool_count} colors;Show {allowed_tool_count} colors
+Show {allowed_tool_count} colors when file colors cannot be scanned;Show {allowed_tool_count} colors when file colors cannot be scanned
+Don't scan files for color / material data;Don't scan files for color / material data
+Check files for pre-prepared color / material data only;Check files for pre-prepared color / material data only
+Scan files for color / material data;Scan files for color / material data
+Do not auto-assign colors;Do not auto-assign colors
+Auto-assign colors if file colors successfully scanned;Auto-assign colors if file colors successfully scanned
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors
+Display zero-based tool indexes (T0, T1, etc);Display zero-based tool indexes (T0, T1, etc)
+Display one-based tool indexes (Color 1, Color 2, etc);Display one-based tool indexes (Color 1, Color 2, etc)
+Skip color change process if old and new color are the same physical IFS channel;Skip color change process if old and new color are the same physical IFS channel
+Do not skip color change process when old and new color are the same physical IFS channel;Do not skip color change process when old and new color are the same physical IFS channel
+Don't scan files for color data;Don't scan files for color data
+Load pre-prepared color data only;Load pre-prepared color data only
+Scan files for color data;Scan files for color data
+Auto-assign colors, silent mode halts on any error;Auto-assign colors, silent mode halts on any error
+Auto-assign colors, silent mode halts on major error;Auto-assign colors, silent mode halts on major error
+Auto-assign colors;Auto-assign colors
+Auto-assign colors, silent mode halts on some errors;Auto-assign colors, silent mode halts on some errors
