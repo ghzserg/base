@@ -10,9 +10,15 @@ def main():
         return
 
     translate_file = sys.argv[1]
+    translate_dir = sys.argv[2]
     lang_dir = os.path.splitext(translate_file)[0]
+    
+    if not translate_dir.strip():
+        translate_dir = "../../"
+        
+    translate_dir = os.path.join(translate_dir) # enforce trailing slash
 
-    os.makedirs(f"../../%s" % (lang_dir), exist_ok=True)
+    os.makedirs(f"{translate_dir}%s" % (lang_dir), exist_ok=True)
 
     translations = {}
     with open(translate_file, 'r', encoding='utf-8') as f:
@@ -42,7 +48,7 @@ def main():
             translated_line = translate_line(line)
             translated_lines.append(translated_line)
 
-        output_path = f"../../%s/%s" % (Path(lang_dir), cfg_file.name)
+        output_path = f"{translate_dir}%s/%s" % (Path(lang_dir), cfg_file.name)
         with open(output_path, 'w', encoding='utf-8') as f_out:
             f_out.writelines(translated_lines)
 
