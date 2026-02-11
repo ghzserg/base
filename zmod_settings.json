@@ -1,0 +1,408 @@
+{
+    "Categories": {
+        "Print Start": {
+            "get_zmod_data_text": "===Parameters used at print start and bed leveling [START_PRINT]===",
+            "global_text": ""
+        },
+        "Print End": {
+            "get_zmod_data_text": "===Parameters used at print end and cancellation [END_PRINT]===",
+            "global_text": ""
+        },
+        "System": {
+            "get_zmod_data_text": "===System-wide parameters===",
+            "global_text": ""
+        }
+    }
+    "Settings": {
+        "print_leveling": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't build bed mesh on each print.===",
+                "1n": "===Build bed mesh with native screen on each print.===",
+                "1": "===Build bed mesh on each print.==="
+            }
+        },
+        "use_kamp": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't use KAMP instead of BED_MESH_CALIBRATE===",
+                "1": "===Use adaptive mesh (KAMP) where possible instead of full bed mesh==="
+            }
+        },
+        "zmesh_test": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't test bed mesh before printing===",
+                "1": "===Test bed mesh before printing===",
+                "2": "===Test bed mesh before printing=== + KAMP",
+                "3": "===Test bed mesh before printing=== + AutoZOffset",
+                "4": "===Test bed mesh before printing=== + AutoZOffset + KAMP"
+            }
+        },
+        "midi_start": {
+            "type": "string",
+            "default": "",
+            "category": "Print Start",
+            "show_in_global": false,
+            "get_zmod_data_text": {
+                "*": "===Play MIDI on print start: {zmidi_start}==="
+            }
+        },
+        "midi_pause": {
+            "type": "string",
+            "default": "",
+            "category": "Print Start",
+            "show_in_global": false,
+            "get_zmod_data_text": {
+                "*": "===Play MIDI on print pause: {zmidi_pause}==="
+            }
+        },
+        "force_md5": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't check file MD5 checksum===",
+                "1": "===Check file MD5 checksum==="
+            }
+        },
+        "disable_skew": {
+            "type": "int",
+            "default": 1,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===SKEW correction enabled. Profile skew_profile===",
+                "1": "===SKEW correction disabled==="
+            }
+        },
+        "load_zoffset": {
+            "type": "int",
+            "default": 1,
+            "category": "Print Start",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "get_zmod_data_text": {
+                "0": "===Don't load Z-Offset from global settings===",
+                "1": "===Load Z-Offset from global settings==="
+            }
+        },
+        "disable_priming": {
+            "type": "int",
+            "default": 1,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Enable nozzle line purge===",
+                "1": "===Disable nozzle line purge==="
+            }
+        },
+        "preclear": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "require_ad5x": -1,
+            "get_zmod_data_text": {
+                "0": "===Don't use nozzle pre-purge===",
+                "1": "===Use nozzle pre-purge==="
+            }
+        },
+        "silent": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Don't hide color selection when printing starts===",
+                "1": "===Hide color selection, print with IFS===",
+                "2": "===Hide color selection, print without IFS==="
+            }
+        },
+        "clear": {
+            "type": "string",
+            "default": "LINE_PURGE",
+            "category": "Print Start",
+            "show_condition": "not zdisable_priming",
+            "show_in_global": false,
+            "get_zmod_data_text": {
+                "*": "===Purge algorithm: {zclear}==="
+            }
+        },
+        "midi_end": {
+            "type": "string",
+            "default": "",
+            "category": "Print End",
+            "show_in_global": false,
+            "get_zmod_data_text": {
+                "*": "===Play MIDI at print end: {zmidi_end}==="
+            }
+        },
+        "close_dialogs": {
+            "type": "int",
+            "default": 2,
+            "category": "Print End",
+            "show_in_global": true,
+            "require_native_screen": 1,
+            "get_zmod_data_text": {
+                "0": "===Don't close dialogs on native screen===",
+                "1": "===Auto close dialogs on native screen after 20 sec (slow)===",
+                "2": "===Auto close dialogs on native screen after 20 sec (fast)==="
+            }
+        },
+        "stop_motor": {
+            "type": "int",
+            "default": 1,
+            "category": "Print End",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't disable motors automatically after print/cancel===",
+                "1": "===Auto disable motors after print/cancel in 25 sec==="
+            }
+        },
+        "auto_reboot": {
+            "type": "int",
+            "default": 1,
+            "category": "Print End",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't reboot printer automatically===",
+                "1": "===Auto reboot printer after 1.5 minutes===",
+                "2s": "===Auto reboot printer after 1.5 minutes===",
+                "2": "===Auto restart firmware after 1.5 minutes==="
+            }
+        },
+        "pro_poweroff_timeout": {
+            "type": "int",
+            "default": 0,
+            "category": "Print End",
+            "show_in_global": false,
+            "require_ad5x": -1,
+            "get_zmod_data_text": {
+                "*": "===Power off FF5M Pro after (min): {zpro_poweroff_timeout}==="
+            }
+        },
+        "remove_filament": {
+            "type": "int",
+            "default": 0,
+            "category": "Print End",
+            "show_in_global": true,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Don't remove the filament after printing is completed===",
+                "1": "===Remove filament after printing is complete==="
+            }
+        },
+        "save_restore": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "get_zmod_data_text": {
+                "0": "===Don't save data for print recovery===",
+                "1": "===Save data for print recovery==="
+            }
+        },
+        "motion_sensor": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "require_ad5x": -1,
+            "get_zmod_data_text": {
+                "0": "===Using filament presence sensor===",
+                "1": "===Using filament motion sensor==="
+            }
+        },
+        "autoinsert": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Don't Insert rod automatically===",
+                "1": "===Insert rod automatically==="
+            }
+        },
+        "use_trash_on_print": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Don't Use trash when printing===",
+                "1": "===Use trash when printing==="
+            }
+        },
+        "fix_scv": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Use SCV = 5 for shaper graphs===",
+                "1": "===Use SCV from config for shaper graphs==="
+            }
+        },
+        "fix_e0011": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't fix E0011 error===",
+                "1": "===Fix E0011 error==="
+            }
+        },
+        "fix_e0011": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Don't fix E0017 error===",
+                "1": "===Fix E0017 error==="
+            }
+        },
+        "wifi": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Zmod Wifi Off===",
+                "1": "===Zmod Wifi On==="
+            }
+        },
+        "led": {
+            "type": "int",
+            "default": 50,
+            "category": "System",
+            "show_in_global": false,
+            "get_zmod_data_text": {
+                "*": "===LED brightness at power on: {zled}==="
+            }
+        },
+        "midi_on": {
+            "type": "string",
+            "default": "",
+            "category": "System",
+            "show_in_global": false,
+            "get_zmod_data_text": {
+                "*": "===Play MIDI at power on: {zmidi_on}==="
+            }
+        },
+        "new_save_config": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "require_ad5x": -1,
+            "get_zmod_data_text": {
+                "0": "===Use standard SAVE_CONFIG===",
+                "1": "===Use alternative NEW_SAVE_CONFIG==="
+            }
+        },
+        "use_swap": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "require_ad5x": -1,
+            "get_zmod_data_text": {
+                "0": "===SWAP not used===",
+                "1": "===SWAP used on EMMC===",
+                "2": "===SWAP used on USB FLASH==="
+            }
+        },
+        "china_cloud": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Block Chinese clouds===",
+                "1": "===Allow Chinese clouds==="
+            }
+        },
+        "save_moonraker": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Use Fluidd/Mainsail button settings from ZMOD===",
+                "1": "===Save Fluidd/Mainsail button changes==="
+            }
+        },
+        "save_filament_sensors": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Do not save the state of filament sensors===",
+                "1": "===Save the state of filament sensors==="
+            }
+        },
+        "display_off_timeout": {
+            "type": "int",
+            "default": 20,
+            "category": "System",
+            "show_in_global": false,
+            "require_native_screen": -1,
+            "get_zmod_data_text": {
+                "*": "===Turn off native screen after (sec): {display_off_timeout}==="
+            }
+        },
+        "klipper13": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Using native Klipper=== 11",
+                "0x": "===Using native Klipper=== 12",
+                "1": "===Using Klipper 13==="
+            }
+        },
+        "nice": {
+            "type": "int",
+            "default": 20,
+            "category": "System",
+            "show_in_global": false,
+            "require_native_screen": -1,
+            "get_zmod_data_text": {
+                "*": "===Klipper process priority (1-min, 40-max): {znice}==="
+            }
+        },
+        "zcontrol_z": {
+            "type": "int",
+            "default": 10,
+            "category": "System",
+            "show_in_global": false,
+            "require_native_screen": -1,
+            "get_zmod_data_text": {
+                "*": "ZCONTROL_Z: {zcontrol_z} // SAVE_ZMOD_DATA ZCONTROL_Z={zcontrol_z}"
+            }
+        }
+        
+    }
+}
