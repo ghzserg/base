@@ -35,7 +35,7 @@
                 "1": "===Use adaptive mesh (KAMP) where possible instead of full bed mesh==="
             }
         },
-        "zmesh_test": {
+        "mesh_test": {
             "type": "int",
             "default": 0,
             "category": "Print Start",
@@ -179,7 +179,7 @@
             "get_zmod_data_text": {
                 "0": "===Don't reboot printer automatically===",
                 "1": "===Auto reboot printer after 1.5 minutes===",
-                "2s": "===Auto reboot printer after 1.5 minutes===",
+                "2n": "===Auto reboot printer after 1.5 minutes===",
                 "2": "===Auto restart firmware after 1.5 minutes==="
             }
         },
@@ -271,7 +271,7 @@
                 "1": "===Fix E0011 error==="
             }
         },
-        "fix_e0011": {
+        "fix_e0017": {
             "type": "int",
             "default": 1,
             "category": "System",
