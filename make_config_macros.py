@@ -35,10 +35,10 @@ def add_save_zmod_data(file_data, categories, settings):
             indent_level += 1
             
             if set_data.get('type', TYPE_ASSUMPTION) == 'string':
-                file_data.append((indent_level * STANDARD_INDENT) + f"{{ set z{setting} = params.{setting.upper()}|default(\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\")|string %}}")
+                file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting} = params.{setting.upper()}|default(\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\")|string %}}")
                 file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE=\"{{z{setting.lower()}}}\"")
             else:
-                file_data.append((indent_level * STANDARD_INDENT) + f"{{ set z{setting} = params.{setting.upper()}|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{set_data.get('type', TYPE_ASSUMPTION)} %}}")
+                file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting} = params.{setting.upper()}|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{set_data.get('type', TYPE_ASSUMPTION)} %}}")
                 file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={{z{setting.lower()}}}")
             
             indent_level -= 1

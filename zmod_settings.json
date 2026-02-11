@@ -400,7 +400,7 @@
             "show_in_global": false,
             "require_native_screen": -1,
             "get_zmod_data_text": {
-                "*": "ZCONTROL_Z: {zcontrol_z} // SAVE_ZMOD_DATA ZCONTROL_Z={zcontrol_z}"
+                "*": "ZCONTROL_Z: {zzcontrol_z} // SAVE_ZMOD_DATA ZCONTROL_Z={zzcontrol_z}"
             }
         },
         "language": {
