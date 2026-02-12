@@ -183,6 +183,8 @@ def add_reset_zmod(file_data, categories, settings):
                 continue
             if set_data.get('exclude_from_reset', False):
                 continue
+            if not set_data.get('show_in_global', True):
+                continue
             check_ad5x = set_data.get('require_ad5x', 0)
             if check_ad5x < 0:
                 target = ad5m_entries
