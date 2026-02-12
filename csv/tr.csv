@@ -438,3 +438,5 @@ Auto-assign colors, silent mode halts on any error;Renkleri otomatik ata, sessiz
 Auto-assign colors, silent mode halts on major error;Renkleri otomatik ata, sessiz mod büyük hatalarda durur
 Auto-assign colors;Renkleri otomatik ata
 Auto-assign colors, silent mode halts on some errors;Renkleri otomatik ata, sessiz mod bazı hatalarda durur
+unknown value:;bilinmeyen değer:
+Unrecognized value for setting:;Ayar için tanınmayan değer:

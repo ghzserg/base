@@ -438,3 +438,5 @@ Auto-assign colors, silent mode halts on any error;Atribuição automática, mod
 Auto-assign colors, silent mode halts on major error;Atribuição automática, modo silencioso para em erro grave
 Auto-assign colors;Atribuir cores automaticamente
 Auto-assign colors, silent mode halts on some errors;Atribuição automática, modo silencioso para em alguns erros
+unknown value:;valor desconhecido:
+Unrecognized value for setting:;Valor não reconhecido para a configuração:

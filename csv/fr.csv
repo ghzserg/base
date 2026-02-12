@@ -438,3 +438,5 @@ Auto-assign colors, silent mode halts on any error;Assignation auto des couleurs
 Auto-assign colors, silent mode halts on major error;Assignation auto des couleurs, le mode silencieux s'arrête sur une erreur majeure
 Auto-assign colors;Assigner les couleurs automatiquement
 Auto-assign colors, silent mode halts on some errors;Assignation auto des couleurs, le mode silencieux s'arrête sur certaines erreurs
+unknown value:;valeur inconnue :
+Unrecognized value for setting:;Valeur non reconnue pour le paramètre :

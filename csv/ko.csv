@@ -438,3 +438,5 @@ Auto-assign colors, silent mode halts on any error;색상 자동 할당, 오류 
 Auto-assign colors, silent mode halts on major error;색상 자동 할당, 주요 오류 발생 시 저소음 모드 중단
 Auto-assign colors;색상 자동 할당
 Auto-assign colors, silent mode halts on some errors;색상 자동 할당, 일부 오류 발생 시 저소음 모드 중단
+unknown value:;알 수 없는 값:
+Unrecognized value for setting:;설정값을 인식할 수 없습니다:

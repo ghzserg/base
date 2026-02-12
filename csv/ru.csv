@@ -435,3 +435,5 @@ Auto-assign colors, silent mode halts on any error;Автоназначение 
 Auto-assign colors, silent mode halts on major error;Автоназначение цветов, тихий режим прерывается при серьезной ошибке
 Auto-assign colors;Автоматически назначать цвета
 Auto-assign colors, silent mode halts on some errors;Автоназначение цветов, тихий режим прерывается при некоторых ошибках
+unknown value:;неизвестное значение:
+Unrecognized value for setting:;Нераспознанное значение для настройки:

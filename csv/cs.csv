@@ -438,3 +438,5 @@ Auto-assign colors, silent mode halts on any error;Automatické přiřazení bar
 Auto-assign colors, silent mode halts on major error;Automatické přiřazení barev, tichý režim se zastaví při závažné chybě
 Auto-assign colors;Automaticky přiřadit barvy
 Auto-assign colors, silent mode halts on some errors;Automatické přiřazení barev, tichý režim se zastaví při některých chybách
+unknown value:;neznámá hodnota:
+Unrecognized value for setting:;Nerozpoznaná hodnota pro nastavení:

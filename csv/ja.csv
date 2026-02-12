@@ -438,3 +438,5 @@ Auto-assign colors, silent mode halts on any error;カラー自動割り当て�
 Auto-assign colors, silent mode halts on major error;カラー自動割り当て、重大なエラー時にサイレントモードを停止
 Auto-assign colors;カラーを自動割り当てする
 Auto-assign colors, silent mode halts on some errors;カラー自動割り当て、一部のエラー時にサイレントモードを停止
+unknown value:;不明な値:
+Unrecognized value for setting:;設定値が認識されません:
