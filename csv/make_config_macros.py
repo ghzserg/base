@@ -402,7 +402,13 @@ def add_global(file_data, categories, settings):
                 file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_show\"")
                 indent_level -= 1                         
                 file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")  
-                file_data.append(indent_level * STANDARD_INDENT)                
+                file_data.append(indent_level * STANDARD_INDENT)              
+                page += 1
+                
+            file_data.append((indent_level * STANDARD_INDENT) + f"{{% if n >= {page} and start == 0 %}}")
+            file_data.append(((indent_level + 1) * STANDARD_INDENT) + "_SHOW_MSG MSG=\"===If any parameters were changed, it is recommended to reboot the printer===. Macro GLOBAL\" COMMAND='_GLOBAL_SAVE PARAM=skip_global' COMMAND_REBOOT=\"_GLOBAL_SAVE PARAM=skip_global REBOOT=1\"")
+            file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
+            # _SHOW_MSG MSG=\"===If any parameters were changed, it is recommended to reboot the printer===. Macro GLOBAL\" COMMAND='_GLOBAL_SAVE PARAM=skip_global' COMMAND_REBOOT=\"_GLOBAL_SAVE PARAM=skip_global REBOOT=1\"
             
             indent_level -= 1
             file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
