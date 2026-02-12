@@ -8,6 +8,10 @@
             "get_zmod_data_text": "===Parameters used at print start and bed leveling [START_PRINT]===",
             "global_text": "===Parameters used at print start and bed leveling [START_PRINT]==="
         },
+        "Printing": {
+            "get_zmod_data_text": "===Parameters used during printing===",
+            "global_text": "===Parameters used during printing==="
+        }
         "Print End": {
             "get_zmod_data_text": "===Parameters used at print end and cancellation [END_PRINT]===",
             "global_text": "===Parameters used at print end and cancellation [END_PRINT]==="
@@ -73,6 +77,8 @@
                 "1": "===Display one-based tool indexes (Color 1, Color 2, etc)==="
             }
         },
+
+
         "print_leveling": {
             "type": "int",
             "default": 0,
@@ -202,6 +208,33 @@
                 "*": "===Purge algorithm: {zclear}==="
             }
         },
+
+
+        "use_trash_on_print": {
+            "type": "int",
+            "default": 1,
+            "category": "Printing",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Don't Use trash when printing===",
+                "1": "===Use trash when printing==="
+            }
+        },
+        "always_full_color_change": {
+            "type": "int",
+            "default": 0,
+            "category": "Printing",
+            "show_in_global": false,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Skip color change process if old and new color are the same physical IFS channel===",
+                "1": "===Do not skip color change process when old and new color are the same physical IFS channel==="
+            }
+        },
+
+
         "midi_end": {
             "type": "string",
             "default": "",
@@ -268,6 +301,8 @@
                 "1": "===Remove filament after printing is complete==="
             }
         },
+
+
         "save_restore": {
             "type": "int",
             "default": 1,
@@ -301,29 +336,6 @@
             "get_zmod_data_text": {
                 "0": "===Don't Insert rod automatically===",
                 "1": "===Insert rod automatically==="
-            }
-        },
-        "use_trash_on_print": {
-            "type": "int",
-            "default": 1,
-            "category": "System",
-            "show_in_global": true,
-            "require_native_screen": -1,
-            "require_ad5x": 1,
-            "get_zmod_data_text": {
-                "0": "===Don't Use trash when printing===",
-                "1": "===Use trash when printing==="
-            }
-        },
-        "always_full_color_change": {
-            "type": "int",
-            "default": 0,
-            "category": "Color Selection",
-            "show_in_global": false,
-            "require_ad5x": 1,
-            "get_zmod_data_text": {
-                "0": "===Skip color change process if old and new color are the same physical IFS channel===",
-                "1": "===Do not skip color change process when old and new color are the same physical IFS channel==="
             }
         },
         "fix_scv": {
@@ -487,7 +499,7 @@
         "language": {
             "type": "special",
             "category": "System",
-            "code": "{% set lang = printer.configfile.config.zmod.language|default(\"en\") | string %}\nRESPOND TYPE=command MSG=\"action:prompt_button Language {lang}|LANG|primary\""            
+            "code": "{% set lang = printer.configfile.config.zmod.language|default(\"en\") | string %}\nRESPOND TYPE=command MSG=\"action:prompt_button Language {lang}|LANG|primary\""
         },
         "reset": {
             "type": "special",

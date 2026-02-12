@@ -12,10 +12,10 @@ def main():
     translate_file = sys.argv[1]
     translate_dir = sys.argv[2]
     lang_dir = os.path.splitext(translate_file)[0]
-    
+
     if not translate_dir.strip():
         translate_dir = "../../"
-        
+
     translate_dir = os.path.join(translate_dir) # enforce trailing slash
 
     os.makedirs(f"{translate_dir}%s" % (lang_dir), exist_ok=True)
