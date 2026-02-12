@@ -121,7 +121,7 @@
             "get_zmod_data_text": {
                 "0": "===Halt print if trash or screen validation fails===",
                 "1": "===Change trash settings based on validation===",
-                "-1": "===Only warn on trash or screen validation fails==="
+                "2": "===Only warn on trash or screen validation fails==="
             }
         },
         "midi_start": {
