@@ -437,3 +437,10 @@ Auto-assign colors;Автоматически назначать цвета
 Auto-assign colors, silent mode halts on some errors;Автоназначение цветов, тихий режим прерывается при некоторых ошибках
 unknown value:;неизвестное значение:
 Unrecognized value for setting:;Нераспознанное значение для настройки:
+Halt print if trash or screen validation fails;Остановить печать, если проверка корзины или экрана не удалась
+Change trash settings based on validation;Изменить настройки корзины на основе проверки
+Only warn on trash or screen validation fails;Только предупреждать при сбое проверки корзины или экрана
+Go to trash then return to slicer control;Перейти к корзине, затем вернуться к управлению слайсером
+Never park on trash chute in nopoop mode;Никогда не парковаться над лотком для сброса в режиме nopoop
+Always park on trash chute in nopoop mode;Всегда парковаться над лотком для сброса в режиме nopoop
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;Парковаться в режиме nopoop при высоте ниже {znopoop_trash_skip_height}мм

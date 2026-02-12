@@ -440,3 +440,10 @@ Auto-assign colors;색상 자동 할당
 Auto-assign colors, silent mode halts on some errors;색상 자동 할당, 일부 오류 발생 시 저소음 모드 중단
 unknown value:;알 수 없는 값:
 Unrecognized value for setting:;설정값을 인식할 수 없습니다:
+Halt print if trash or screen validation fails;트래시 또는 화면 확인 실패 시 인쇄 중단
+Change trash settings based on validation;확인 결과에 따라 트래시 설정 변경
+Only warn on trash or screen validation fails;트래시 또는 화면 확인 실패 시 경고만 표시
+Go to trash then return to slicer control;트래시로 이동 후 슬라이서 제어로 복귀
+Never park on trash chute in nopoop mode;nopoop 모드에서 트래시 슈트에 주차하지 않음
+Always park on trash chute in nopoop mode;nopoop 모드에서 항상 트래시 슈트에 주차
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;높이가 {znopoop_trash_skip_height}mm 미만일 때 nopoop 모드로 주차

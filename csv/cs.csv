@@ -440,3 +440,10 @@ Auto-assign colors;Automaticky přiřadit barvy
 Auto-assign colors, silent mode halts on some errors;Automatické přiřazení barev, tichý režim se zastaví při některých chybách
 unknown value:;neznámá hodnota:
 Unrecognized value for setting:;Nerozpoznaná hodnota pro nastavení:
+Halt print if trash or screen validation fails;Zastavit tisk, pokud selže ověření koše nebo obrazovky
+Change trash settings based on validation;Změnit nastavení koše na základě ověření
+Only warn on trash or screen validation fails;Pouze varovat při selhání ověření koše nebo obrazovky
+Go to trash then return to slicer control;Přejít ke koši a poté se vrátit k řízení sliceru
+Never park on trash chute in nopoop mode;V režimu nopoop nikdy neparkovat nad odpadním žlabem
+Always park on trash chute in nopoop mode;V režimu nopoop vždy parkovat nad odpadním žlabem
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;Parkovat v režimu nopoop, pokud je výška pod {znopoop_trash_skip_height} mm

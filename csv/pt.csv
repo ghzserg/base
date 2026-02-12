@@ -440,3 +440,10 @@ Auto-assign colors;Atribuir cores automaticamente
 Auto-assign colors, silent mode halts on some errors;Atribuição automática, modo silencioso para em alguns erros
 unknown value:;valor desconhecido:
 Unrecognized value for setting:;Valor não reconhecido para a configuração:
+Halt print if trash or screen validation fails;Interromper impressão se a validação da lixeira ou tela falhar
+Change trash settings based on validation;Alterar configurações da lixeira com base na validação
+Only warn on trash or screen validation fails;Apenas avisar se a validação da lixeira ou tela falhar
+Go to trash then return to slicer control;Ir para a lixeira e retornar para o controle do fatiador
+Never park on trash chute in nopoop mode;Nunca estacionar na rampa de descarte no modo nopoop
+Always park on trash chute in nopoop mode;Sempre estacionar na rampa de descarte no modo nopoop
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;Estacionar no modo nopoop quando abaixo de {znopoop_trash_skip_height}mm

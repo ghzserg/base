@@ -440,3 +440,10 @@ Auto-assign colors;カラーを自動割り当てする
 Auto-assign colors, silent mode halts on some errors;カラー自動割り当て、一部のエラー時にサイレントモードを停止
 unknown value:;不明な値:
 Unrecognized value for setting:;設定値が認識されません:
+Halt print if trash or screen validation fails;トラッシュまたは画面の確認に失敗した場合は印刷を停止
+Change trash settings based on validation;確認結果に基づいてトラッシュ設定を変更
+Only warn on trash or screen validation fails;トラッシュまたは画面の確認に失敗した場合は警告のみ
+Go to trash then return to slicer control;トラッシュへ移動後、スライサー制御に戻る
+Never park on trash chute in nopoop mode;nopoopモードではトラッシュシュートにパークしない
+Always park on trash chute in nopoop mode;nopoopモードでは常にトラッシュシュートにパークする
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;高さが{znopoop_trash_skip_height}mm以下の場合はnopoopモードでパーク

@@ -439,3 +439,10 @@ Auto-assign colors;Farben automatisch zuweisen
 Auto-assign colors, silent mode halts on some errors;Automatische Farbuweisung, Silent-Modus stoppt bei einigen Fehlern
 unknown value:;unbekannter Wert:
 Unrecognized value for setting:;Unbekannter Wert für die Einstellung:
+Halt print if trash or screen validation fails;Druck anhalten, wenn die Behälter- oder Bildschirmvalidierung fehlschlägt
+Change trash settings based on validation;Behältereinstellungen basierend auf der Validierung ändern
+Only warn on trash or screen validation fails;Nur warnen, wenn die Behälter- oder Bildschirmvalidierung fehlschlägt
+Go to trash then return to slicer control;Zum Behälter fahren, dann zur Slicer-Steuerung zurückkehren
+Never park on trash chute in nopoop mode;Im Nopoop-Modus niemals über dem Abwurfschacht parken
+Always park on trash chute in nopoop mode;Im Nopoop-Modus immer über dem Abwurfschacht parken
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;Im Nopoop-Modus parken, wenn unter {znopoop_trash_skip_height} mm

@@ -440,3 +440,10 @@ Auto-assign colors;Auto-assign colors
 Auto-assign colors, silent mode halts on some errors;Auto-assign colors, silent mode halts on some errors
 unknown value:;unknown value:
 Unrecognized value for setting:;Unrecognized value for setting:
+Halt print if trash or screen validation fails;Halt print if trash or screen validation fails
+Change trash settings based on validation;Change trash settings based on validation
+Only warn on trash or screen validation fails;Only warn on trash or screen validation fails
+Go to trash then return to slicer control;Go to trash then return to slicer control
+Never park on trash chute in nopoop mode;Never park on trash chute in nopoop mode
+Always park on trash chute in nopoop mode;Always park on trash chute in nopoop mode
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;Park in nopoop mode when below {znopoop_trash_skip_height}mm

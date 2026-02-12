@@ -440,3 +440,10 @@ Auto-assign colors;自动分配颜色
 Auto-assign colors, silent mode halts on some errors;自动分配颜色，静音模式在出现某些错误时停止
 unknown value:;未知值:
 Unrecognized value for setting:;无法识别的设置值:
+Halt print if trash or screen validation fails;如果废料或屏幕校验失败则停止打印
+Change trash settings based on validation;根据校验结果更改废料设置
+Only warn on trash or screen validation fails;如果废料或屏幕校验失败仅提示警告
+Go to trash then return to slicer control;前往废料区然后返回切片软件控制
+Never park on trash chute in nopoop mode;在 nopoop 模式下禁止停留在废料滑道
+Always park on trash chute in nopoop mode;在 nopoop 模式下始终停留在废料滑道
+Park in nopoop mode when below {znopoop_trash_skip_height}mm;当高度低于 {znopoop_trash_skip_height}mm 时在 nopoop 模式下停留

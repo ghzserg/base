@@ -113,6 +113,17 @@
                 "4": "===Test bed mesh before printing=== + AutoZOffset + KAMP"
             }
         },
+        "validate_print_settings_auto_change": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Halt print if trash or screen validation fails===",
+                "1": "===Change trash settings based on validation===",
+                "-1": "===Only warn on trash or screen validation fails==="
+            }
+        },
         "midi_start": {
             "type": "string",
             "default": "",
@@ -219,7 +230,21 @@
             "require_ad5x": 1,
             "get_zmod_data_text": {
                 "0": "===Don't Use trash when printing===",
+                "2": "===Go to trash then return to slicer control===",
                 "1": "===Use trash when printing==="
+            }
+        },
+        "nopoop_trash_skip_height": {
+            "type": "float",
+            "default": 0,
+            "category": "Printing",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "require_ad5x": 1,
+            "get_zmod_data_text": {
+                "0": "===Never park on trash chute in nopoop mode===",
+                "220": "===Always park on trash chute in nopoop mode===",
+                "*": "===Park in nopoop mode when below {znopoop_trash_skip_height}mm==="
             }
         },
         "always_full_color_change": {
