@@ -1,6 +1,54 @@
 import json
 import re
 
+# todo: ad5x / screen exclusive set values
+# todo: investigate possible bug saving string values
+# todo: exclude customized values from reset
+
+# zmod_settings.json structure:
+# "Categories": A set of key-value pairs for the categories settings are divided into.
+#               The keys are purely for internal use. The values specify category texts.
+#       "get_zmod_data_text": String. Text displayed as the header for this category in GET_ZMOD_DATA results.
+#       "global_text": String. Text displayed as the header for this category in GLOBAL results. If not specified, will
+#                      use get_zmod_data_text for GLOBAL too.
+#
+# "Settings": A set of key-value pairs for the actual parameters. The keys should match the parameter name.
+#       "type": The type of data stored by the setting (int, string, etc). Assumed type if not specified is indicated by
+#               TYPE_ASSUMPTION. If set to "special", the parameter will do nothing in SAVE/GET_ZMOD_DATA or _RESET_ZMOD,
+#               and in GLOBAL will copy pre-written code exactly. (Used for LANG and _RESET_ZMOD buttons.)
+#       "default": The default value for the parameter. Assumed default if not specified is the value of
+#                  DEFAULT_STRING_ASSUMPTION for strings, or DEFAULT_VALUE_ASSUMPTION for anything else.
+#       "category": The category for the parameter (should match one of the keys from Categories).
+#       "show_condition": Additional condition(s) that need to be met for this parameter to be visible in GET_ZMOD_DATA or
+#                         GLOBAL. Note that this does not affect SAVE_ZMOD_DATA or _RESET_ZMOD. The value is copied verbatim
+#                         into a {% if ... %} in the output cfg file. You can reference the value of parameters in earlier
+#                         categories, or earlier parameters in the same category, by prefixing their name with a z, so for
+#                         example, you could write "zuse_trash_on_print == 0" to only show the option if USE_TRASH_ON_PRINT
+#                         is set to zero.
+#       "show_in_global": Whether or not the parameter shows up in GLOBAL. Defaults to true if not specified.
+#       "require_native_screen": Set whether the setting requires a certain native screen state. 1 for only show if native
+#                                screen is on, -1 for only if it's off, 0 for always show. Default is always show.
+#       "require_ad5x": Same, but 1 for AD5X, -1 for AD5M/Pro, 0 for all. Default is always show.
+#       "get_zmod_data_text": Key-value pairs to set the text for GET_ZMOD_DATA corresponding to the various values for
+#                             the setting. For non-string-value settings, "n" can be added at the end of the value to
+#                             specify a different text on native screen, or "x" for different text on AD5X. If doing this,
+#                             the order in the value (eg. "1nx" vs "1xn") doesn't matter, but the text with the n / x must
+#                             come before the one without it. A value of "*" can also be specified; this will be used if
+#                             no other value is matched. It must be the last entry, and cannot have n/x qualifiers. To
+#                             reference the user's current value of the setting in your text, use the setting name prefixed
+#                             with a z (eg. to show the raw value of USE_TRASH_ON_PRINT, put {zuse_trash_on_print}).
+#       "get_global_text": Same, but for GLOBAL. If absent, get_zmod_data_text values will be used for GLOBAL. If using a
+#                          seperate get_global_text, it must specify every value (ie: fallback to get_zmod_data_text is
+#                          all-or-nothing).
+#       "global_set_values": A list of values that will be cycled through when using the GLOBAL menu to change the setting.
+#                            If absent, the values from get_global_text will be used (including the get_zmod_data_text
+#                            fallback, where applicable). This is generally useful for numeric parameters (eg. LED) or
+#                            when it is not desirable to have every possible setting exposed in GLOBAL but you still want
+#                            to provide texts for the setting.
+#       "code": This is only used if the type is set to special. The contents of this will be copied verbatim into the output
+#               cfg file. This is used for buttons that need special handling like LANG and _RESET_ZMOD's buttons.
+
+
 STANDARD_INDENT = '    '
 BASE_INDENT_SAVE_ZMOD_DATA = 1
 BASE_INDENT_GET_ZMOD_DATA = 1
@@ -12,6 +60,101 @@ ITEMS_PER_GLOBAL_PAGE = 4
 DEFAULT_VALUE_ASSUMPTION = 0
 DEFAULT_STRING_ASSUMPTION = ""
 TYPE_ASSUMPTION = 'int'
+
+GLOBAL_CANNOT_CHANGE_COLOR = 'grey'
+
+def get_setting_global_settable_options(setting):
+    texts = setting.get("global_text", None)
+    if texts == None:
+        texts = setting.get("get_zmod_data_text", {})
+    
+    can_set_values = setting.get("global_set_values", None)
+    if can_set_values == None:
+        can_set_values = []
+        for condition, _ in texts.items():
+            if condition == '*':
+                break
+            if setting.get('type', TYPE_ASSUMPTION) != 'string':
+                condition = re.sub(r'[nx]', '', condition)
+            can_set_values += [condition]
+        
+    return list(dict.fromkeys(can_set_values))
+
+def get_setting_global_options(setting_name, setting):
+    result = []
+    
+    texts = setting.get("global_text", None)
+    if texts == None:
+        texts = setting.get("get_zmod_data_text", {})
+    
+    can_set_values = get_setting_global_settable_options(setting)
+    done_conditions = []
+    
+    generic_text = texts.get('*', None)
+    
+    for value in can_set_values:
+        next_value_index = can_set_values.index(value) + 1
+        if next_value_index == len(can_set_values):
+            next_value_index = 0
+        next_value = can_set_values[next_value_index]
+        
+        for condition, text in texts.items():
+            if setting['type'] != 'string':
+                condition_ad5x = 'x' in condition
+                condition_native_screen = 'n' in condition
+                condition_stripped = re.sub(r'[nx]', '', condition)
+            else:
+                condition_ad5x = False
+                condition_native_screen = False
+                condition_stripped = condition
+                
+            if condition_stripped != str(value):
+                continue
+            
+            result += [{
+                "condition": condition_stripped,
+                "ad5x": condition_ad5x,
+                "native_screen": condition_native_screen,
+                "text": text,
+                "next_value": next_value
+            }]
+            done_conditions += [condition]
+        if str(value) not in done_conditions:
+            if generic_text == None:
+                option_text = f"{setting_name.upper()} ===custom value:=== {{z{setting_name.lower()}}}"
+            else:
+                option_text = generic_text
+            result += [{
+                "condition": value,
+                "ad5x": False,
+                "native_screen": False,
+                "text": option_text,
+                "next_value": next_value
+            }]
+
+    for condition, text in texts.items():
+        if condition in done_conditions:
+            continue
+        if setting['type'] != 'string':
+            condition_ad5x = 'x' in condition
+            condition_native_screen = 'n' in condition
+        else:
+            condition_ad5x = False
+            condition_native_screen = False
+        condition_stripped = re.sub(r'[nx]', '', condition)
+        
+        result += [{
+            "condition": condition_stripped,
+            "ad5x": condition_ad5x,
+            "native_screen": condition_native_screen,
+            "text": text,
+            "next_value": None
+        }]
+        
+        if condition_stripped == '*':
+            break
+        
+    return result
 
 def add_save_zmod_data(file_data, categories, settings):
     indent_level = BASE_INDENT_SAVE_ZMOD_DATA
@@ -77,7 +220,7 @@ def add_get_zmod_data(file_data, categories, settings):
                     file_data.append((indent_level * STANDARD_INDENT) + f"{{% if screen == {"true" if set_data.get('require_native_screen', 0) > 0 else "false"} %}}")
                 indent_level += 1
 
-            condition = set_data.get('condition', None)
+            condition = set_data.get('show_condition', None)
             if condition != None:
                 file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {condition} %}}")
                 indent_level += 1
@@ -238,7 +381,10 @@ def add_global(file_data, categories, settings):
 
             for category, cat_data in categories.items():
                 category_entries = {}
-                setting_entries += [{"header": cat_data.get("global_text", ""), "settings": category_entries}]
+                header_text = cat_data.get("global_text", None)
+                if header_text == None
+                    header_text = cat_data.get("get_zmod_data_text", "")
+                setting_entries += [{"header": header_text, "settings": category_entries}]
 
                 for setting, set_data in settings.items():
                     if set_data.get('category', '') != category:
@@ -280,7 +426,6 @@ def add_global(file_data, categories, settings):
                         file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_begin Page {page} : {category_entry['header']}\"")
                         file_data.append('')
 
-                    # Add item here
                     setting_type = set_data.get('type', TYPE_ASSUMPTION)
 
                     if setting_type == "special":
@@ -291,9 +436,9 @@ def add_global(file_data, categories, settings):
                         file_data.append('')
                         items_on_page += 1
                     else:
-                        condition = set_data.get('condition', None)
-                        if condition != None:
-                            file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {condition} %}}")
+                        extra_condition = set_data.get('show_condition', None)
+                        if extra_condition != None:
+                            file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {extra_condition} %}}")
                             indent_level += 1
 
                         if setting_type == 'string':
@@ -301,95 +446,62 @@ def add_global(file_data, categories, settings):
                         else:
                             file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables.{setting.lower()}|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{setting_type} %}}")
 
-                        texts = set_data.get('global_text', None)
-                        if texts == None:
-                            texts = set_data.get('get_zmod_data_text', {})
-
-                        set_values = set_data.get('global_set_values', None)
-                        if set_values == None:
-                            set_values = []
-                            for text_condition in texts.keys():
-                                if setting_type != 'string':
-                                    text_condition = re.sub(r'[nx]', '', text_condition)
-                                if text_condition == '*':
-                                    break
-                                if text_condition not in set_values:
-                                    set_values += [text_condition]
-
-                        complete = []
-                        had_generic = False
-                        is_first = True
-                        for text_condition, text in texts.items():
-                            if text_condition == '*':
-                                had_generic = True
-                                if not is_first:
-                                    file_data.append(((indent_level - 1) * STANDARD_INDENT) + "{% else %}")
+                        setting_conditions = get_setting_global_options(setting, set_data)
+                    
+                        # Filter out those that vary by screen / AD5X if condition not met
+                        last_condition_stripped = None
+                        for this_condition in setting_conditions[:]:
+                            this_condition_stripped = str(this_condition['condition'])
+                            remove = False
+                            if setting_type != 'string':
+                                if (this_condition['ad5x'] and not is_ad5x) or (this_condition['native_screen'] and not is_native_screen):
+                                    remove = True
+                                this_condition_stripped = re.sub(r'[nx]', '', this_condition_stripped)
+                            if this_condition_stripped == last_condition_stripped:
+                                remove = True
+                            if remove:
+                                setting_conditions.remove(this_condition)
                             else:
-                                prefix = "" if is_first else "el" # "if" or "elif"
-
-                                if setting_type != 'string':
-                                    if 'n' in text_condition and not is_native_screen:
-                                        continue
-                                    if 'x' in text_condition and not is_ad5x:
-                                        continue
-                                    text_condition = re.sub(r'[nx]', '', text_condition)
-
-                                if text_condition in complete:
-                                    continue
-
-                                complete += [text_condition]
-
-                                condition_string = f"{prefix}if z{setting.lower()} == "
-
+                                last_condition_stripped = this_condition_stripped                                
+                        
+                        if len(setting_conditions) == 0:
+                            file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {setting.upper()} ===custom value:=== {{z{setting.lower()}}}|_GLOBAL N={page}|{GLOBAL_CANNOT_CHANGE_COLOR}\"")
+                        elif len(setting_conditions) == 1 and setting_conditions[0]['condition'] == '*':
+                            file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {setting_conditions[0]['text']}|_GLOBAL N={page}|{GLOBAL_CANNOT_CHANGE_COLOR}\"")
+                        else:
+                            generic_option = setting_conditions[-1]
+                            if generic_option['condition'] == '*':
+                                setting_conditions.remove(generic_option)
+                            else:
+                                generic_option = None
+                            if_text = 'if'
+                            for this_condition in setting_conditions:
+                                local_condition = this_condition['condition']
                                 if setting_type == 'string':
-                                    condition_string += f"\"{text_condition}\""
+                                    local_condition = f"\"{local_condition}\""
+                                file_data.append((indent_level * STANDARD_INDENT) + f"{{% {if_text} z{setting} == {local_condition} %}}")
+                                if_text = 'elif'
+                                if this_condition['next_value'] == None:
+                                    file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {this_condition['text']}|_GLOBAL N={page}|{GLOBAL_CANNOT_CHANGE_COLOR}\"")
                                 else:
-                                    condition_string += f"{text_condition}"
-
-                                had_regular = True
-
-                                if not is_first:
-                                    indent_level -= 1
-                                file_data.append((indent_level * STANDARD_INDENT) + f"{{% {condition_string} %}}")
-                                indent_level += 1
-
-                            if len(set_values) > 0:
-                                try:
-                                    next_value_index = set_values.index(text_condition) + 1
-                                    if next_value_index >= len(set_values):
-                                        next_value_index = 0
-                                except ValueError:
-                                    next_value_index = 0
-
-                                next_value = set_values[next_value_index]
+                                    local_next_value = this_condition['next_value']
+                                    if setting_type == 'string':
+                                        local_next_value = f"\\\"{local_next_value}\\\""
+                                    file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {this_condition['text']}|SAVE_ZMOD_DATA {setting.upper()}={local_next_value} I={page}|primary\"")
+                            
+                            file_data.append((indent_level * STANDARD_INDENT) + "{% else %}")
+                            
+                            if generic_option == None:
+                                fallback_text = f"{setting.upper()} ===custom value:=== {{z{setting.lower()}}}"
                             else:
-                                next_value = None
-
-                            if next_value == None:
-                                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {text}|_GLOBAL N={page}|primary\"")
-                            else:
-                                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {text}|SAVE_ZMOD_DATA {setting.upper()}={next_value} I={page}|primary\"")
-
-                            if had_generic:
-                                break
-
-                            is_first = False
-
-                        if not had_generic:
-                            if not is_first:
-                                file_data.append(((indent_level - 1) * STANDARD_INDENT) + "{% else %}")
-                            if len(set_values) == 0:
-                                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {setting.upper()} ===unknown value:=== {{z{setting.lower()}}}|_GLOBAL N={page}|primary\"")
-                            else:
-                                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {setting.upper()} ===unknown value:=== {{z{setting.lower()}}}|SAVE_ZMOD_DATA {setting.upper()}={set_values[0]} I={page}|primary\"")
-
-                        if not is_first or not had_generic:
-                            indent_level -= 1
+                                fallback_text = generic_option['text']
+                                
+                            file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {fallback_text}|_GLOBAL N={page}|{GLOBAL_CANNOT_CHANGE_COLOR}\"")
                             file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
-
+                            
                         file_data.append((indent_level * STANDARD_INDENT) + "{% set this_page_visible_items = this_page_visible_items + 1 %}")
 
-                        if condition != None:
+                        if extra_condition != None:
                             indent_level -= 1
                             file_data.append((indent_level * STANDARD_INDENT) + f"{{% endif %}}")
 
@@ -410,7 +522,6 @@ def add_global(file_data, categories, settings):
             file_data.append((indent_level * STANDARD_INDENT) + f"{{% if n >= {page} and start == 0 %}}")
             file_data.append(((indent_level + 1) * STANDARD_INDENT) + "_SHOW_MSG MSG=\"===If any parameters were changed, it is recommended to reboot the printer===. Macro GLOBAL\" COMMAND='_GLOBAL_SAVE PARAM=skip_global' COMMAND_REBOOT=\"_GLOBAL_SAVE PARAM=skip_global REBOOT=1\"")
             file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
-            # _SHOW_MSG MSG=\"===If any parameters were changed, it is recommended to reboot the printer===. Macro GLOBAL\" COMMAND='_GLOBAL_SAVE PARAM=skip_global' COMMAND_REBOOT=\"_GLOBAL_SAVE PARAM=skip_global REBOOT=1\"
 
             indent_level -= 1
             file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")

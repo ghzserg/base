@@ -1,24 +1,19 @@
 {
     "Categories": {
         "Color Selection": {
-            "get_zmod_data_text": "===Parameters used in color selection menu===",
-            "global_text": "===Parameters used in color selection menu==="
+            "get_zmod_data_text": "===Parameters used in color selection menu==="
         },
         "Print Start": {
-            "get_zmod_data_text": "===Parameters used at print start and bed leveling [START_PRINT]===",
-            "global_text": "===Parameters used at print start and bed leveling [START_PRINT]==="
+            "get_zmod_data_text": "===Parameters used at print start and bed leveling [START_PRINT]==="
         },
         "Printing": {
-            "get_zmod_data_text": "===Parameters used during printing===",
-            "global_text": "===Parameters used during printing==="
+            "get_zmod_data_text": "===Parameters used during printing==="
         },
         "Print End": {
-            "get_zmod_data_text": "===Parameters used at print end and cancellation [END_PRINT]===",
-            "global_text": "===Parameters used at print end and cancellation [END_PRINT]==="
+            "get_zmod_data_text": "===Parameters used at print end and cancellation [END_PRINT]==="
         },
         "System": {
-            "get_zmod_data_text": "===System-wide parameters===",
-            "global_text": "===System-wide parameters==="
+            "get_zmod_data_text": "===System-wide parameters==="
         }
     },
     "Settings": {
@@ -26,12 +21,13 @@
             "type": "int",
             "default": 4,
             "category": "Color Selection",
-            "show_in_global": false,
+            "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
             "get_zmod_data_text": {
                 "*": "===Show {zallowed_tool_count} colors when file colors cannot be scanned==="
-            }
+            },
+            "global_set_values": [4, 8, 16]
         },
         "scan_file_colors": {
             "type": "int",
@@ -200,10 +196,11 @@
             "default": "LINE_PURGE",
             "category": "Print Start",
             "show_condition": "not zdisable_priming",
-            "show_in_global": false,
+            "show_in_global": true,
             "get_zmod_data_text": {
                 "*": "===Purge algorithm: {zclear}==="
-            }
+            },
+            "global_set_values": ["LINE_PURGE", "_CLEAR1", "_CLEAR2", "_CLEAR3", "_CLEAR4", "CLEAR_TRAP"]
         },
 
 
@@ -279,11 +276,12 @@
             "type": "int",
             "default": 0,
             "category": "Print End",
-            "show_in_global": false,
+            "show_in_global": true,
             "require_ad5x": -1,
             "get_zmod_data_text": {
                 "*": "===Power off FF5M Pro after (min): {zpro_poweroff_timeout}==="
-            }
+            },
+            "global_set_values": [0, 15, 30, 60]
         },
         "remove_filament": {
             "type": "int",
@@ -377,10 +375,11 @@
             "type": "int",
             "default": 50,
             "category": "System",
-            "show_in_global": false,
+            "show_in_global": true,
             "get_zmod_data_text": {
                 "*": "===LED brightness at power on: {zled}==="
-            }
+            },
+            "global_set_values": [0, 25, 50, 75, 100]
         },
         "midi_on": {
             "type": "string",
@@ -448,11 +447,12 @@
             "type": "int",
             "default": 20,
             "category": "System",
-            "show_in_global": false,
+            "show_in_global": true,
             "require_native_screen": -1,
             "get_zmod_data_text": {
-                "*": "===Turn off native screen after (sec): {display_off_timeout}==="
-            }
+                "*": "===Turn off native screen after (sec): {zdisplay_off_timeout}==="
+            },
+            "global_set_values": [5, 20, 60]
         },
         "klipper13": {
             "type": "int",

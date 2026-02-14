@@ -440,3 +440,4 @@ Auto-assign colors;Asignar colores automáticamente
 Auto-assign colors, silent mode halts on some errors;Asignación automática, el modo silencioso se detiene ante algunos errores
 unknown value:;valor desconocido:
 Unrecognized value for setting:;Valor no reconocido para el ajuste:
+custom value:;valor personalizado:

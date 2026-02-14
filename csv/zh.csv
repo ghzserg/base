@@ -440,3 +440,4 @@ Auto-assign colors;自动分配颜色
 Auto-assign colors, silent mode halts on some errors;自动分配颜色，静音模式在出现某些错误时停止
 unknown value:;未知值:
 Unrecognized value for setting:;无法识别的设置值:
+custom value:;自定义值:

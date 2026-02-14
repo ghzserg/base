@@ -440,3 +440,4 @@ Auto-assign colors;Renkleri otomatik ata
 Auto-assign colors, silent mode halts on some errors;Renkleri otomatik ata, sessiz mod bazı hatalarda durur
 unknown value:;bilinmeyen değer:
 Unrecognized value for setting:;Ayar için tanınmayan değer:
+custom value:;özel değer:
