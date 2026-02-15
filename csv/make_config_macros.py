@@ -3,7 +3,6 @@ import re
 
 # todo: ad5x / screen exclusive set values
 # todo: investigate possible bug saving string values
-# todo: exclude customized values from reset
 
 # zmod_settings.json structure:
 # "Categories": A set of key-value pairs for the categories settings are divided into.
@@ -338,11 +337,35 @@ def add_reset_zmod(file_data, categories, settings):
             else:
                 target = both_entries
                 extra_indent = 0
+                
+            settable_values = get_setting_global_settable_options(set_data)
+            if len(settable_values) == 0:
+                continue
+            
+            setting_type = set_data.get('type', TYPE_ASSUMPTION)
+            quotechar = '"' if setting_type == 'string' else ''
+            
+            target.append(((indent_level + extra_indent) * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables.{setting.lower()} %}}")
+            
+            if_line = None
+            for settable_value in settable_values:
+                if if_line == None:
+                    if_line = "{% if"
+                else:
+                    if_line += " or"
+                if_line += f" z{setting.lower()} == {quotechar}{settable_value}{quotechar}"
+                
+            if_line += " %}"
+            
+            target.append(((indent_level + extra_indent) * STANDARD_INDENT) + if_line)
 
-            if set_data.get('type', TYPE_ASSUMPTION) == 'string':
-                target.append(((indent_level + extra_indent) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE=\"\\\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\\\"s\"")
+            if setting_type == 'string':
+                target.append((((indent_level + 1) + extra_indent) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE=\"\\\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\\\"\"")
             else:
-                target.append(((indent_level + extra_indent) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={set_data.get('default', DEFAULT_VALUE_ASSUMPTION)}")
+                target.append((((indent_level + 1) + extra_indent) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={set_data.get('default', DEFAULT_VALUE_ASSUMPTION)}")
+                
+            target.append(((indent_level + extra_indent) * STANDARD_INDENT) + "{% endif %}")
+            target.append('')
 
         file_data += both_entries
 
@@ -382,7 +405,7 @@ def add_global(file_data, categories, settings):
             for category, cat_data in categories.items():
                 category_entries = {}
                 header_text = cat_data.get("global_text", None)
-                if header_text == None
+                if header_text == None:
                     header_text = cat_data.get("get_zmod_data_text", "")
                 setting_entries += [{"header": header_text, "settings": category_entries}]
 
