@@ -248,7 +248,8 @@
                 "0": "===Don't close dialogs on native screen===",
                 "1": "===Auto close dialogs on native screen after 20 sec (slow)===",
                 "2": "===Auto close dialogs on native screen after 20 sec (fast)==="
-            }
+            },
+            "global_set_values_ad5x": [0, 2]
         },
         "stop_motor": {
             "type": "int",
@@ -270,7 +271,8 @@
                 "1": "===Auto reboot printer after 1.5 minutes===",
                 "2n": "===Auto reboot printer after 1.5 minutes===",
                 "2": "===Auto restart firmware after 1.5 minutes==="
-            }
+            },
+            "global_set_values_native_screen": [0, 1]
         },
         "pro_poweroff_timeout": {
             "type": "int",

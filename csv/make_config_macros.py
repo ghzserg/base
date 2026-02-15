@@ -43,6 +43,11 @@ import re
 #                            fallback, where applicable). This is generally useful for numeric parameters (eg. LED) or
 #                            when it is not desirable to have every possible setting exposed in GLOBAL but you still want
 #                            to provide texts for the setting.
+#       "global_set_values_ad5x": If present, overrides global_set_values when on the AD5X.
+#       "global_set_values_native_screen": If present, overrides global_set_values and global_set_values_ad5x when the native
+#                                          screen is enabled.
+#       "global_set_values_native_screen_ad5x": If present, overrides the other global_set_values params when the native screen
+#                                               is enabled on an AD5X.
 #       "code": This is only used if the type is set to special. The contents of this will be copied verbatim into the output
 #               cfg file. This is used for buttons that need special handling like LANG and _RESET_ZMOD's buttons.
 
@@ -61,12 +66,18 @@ TYPE_ASSUMPTION = 'int'
 
 GLOBAL_CANNOT_CHANGE_COLOR = 'grey'
 
-def get_setting_global_settable_options(setting):
+def get_setting_global_settable_options(setting, is_ad5x, is_native_screen):
     texts = setting.get("global_text", None)
     if texts == None:
         texts = setting.get("get_zmod_data_text", {})
     
     can_set_values = setting.get("global_set_values", None)
+    if is_ad5x:
+        can_set_values = setting.get("global_set_values_ad5x", can_set_values)
+    if is_native_screen:
+        can_set_values = setting.get("global_set_values_native_screen", can_set_values)
+    if is_ad5x and is_native_screen:
+        can_set_values = setting.get("global_set_values_native_screen_ad5x", can_set_values)
     if can_set_values == None:
         can_set_values = []
         for condition, _ in texts.items():
@@ -75,17 +86,29 @@ def get_setting_global_settable_options(setting):
             if setting.get('type', TYPE_ASSUMPTION) != 'string':
                 condition = re.sub(r'[nx]', '', condition)
             can_set_values += [condition]
+            
+    can_set_values = [str(value) for value in can_set_values]
         
     return list(dict.fromkeys(can_set_values))
 
-def get_setting_global_options(setting_name, setting):
+def get_all_setting_global_settable_options(setting):
+    ad5m_guppy = get_setting_global_settable_options(setting, False, False)
+    ad5m_native = get_setting_global_settable_options(setting, False, True)
+    ad5x_guppy = get_setting_global_settable_options(setting, True, False)
+    ad5x_native = get_setting_global_settable_options(setting, True, True)
+    merged_list = ad5m_guppy + ad5m_native + ad5x_guppy + ad5x_native
+    
+    return list(dict.fromkeys(merged_list))
+    
+
+def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen):
     result = []
     
     texts = setting.get("global_text", None)
     if texts == None:
         texts = setting.get("get_zmod_data_text", {})
     
-    can_set_values = get_setting_global_settable_options(setting)
+    can_set_values = get_setting_global_settable_options(setting, is_ad5x, is_native_screen)
     done_conditions = []
     
     generic_text = texts.get('*', None)
@@ -106,51 +129,59 @@ def get_setting_global_options(setting_name, setting):
                 condition_native_screen = False
                 condition_stripped = condition
                 
-            if condition_stripped != str(value):
+            if condition_stripped != value:
+                continue
+                
+            if condition_ad5x and not is_ad5x:
+                continue
+            if condition_native_screen and not is_native_screen:
                 continue
             
             result += [{
                 "condition": condition_stripped,
-                "ad5x": condition_ad5x,
-                "native_screen": condition_native_screen,
                 "text": text,
                 "next_value": next_value
             }]
-            done_conditions += [condition]
-        if str(value) not in done_conditions:
+            done_conditions += [condition_stripped]
+            break
+        if value not in done_conditions:
             if generic_text == None:
                 option_text = f"{setting_name.upper()} ===custom value:=== {{z{setting_name.lower()}}}"
             else:
                 option_text = generic_text
             result += [{
                 "condition": value,
-                "ad5x": False,
-                "native_screen": False,
                 "text": option_text,
                 "next_value": next_value
             }]
 
     for condition, text in texts.items():
-        if condition in done_conditions:
-            continue
         if setting['type'] != 'string':
             condition_ad5x = 'x' in condition
             condition_native_screen = 'n' in condition
+            condition_stripped = re.sub(r'[nx]', '', condition)
         else:
             condition_ad5x = False
             condition_native_screen = False
-        condition_stripped = re.sub(r'[nx]', '', condition)
+            condition_stripped = condition
+            
+        if condition_stripped in done_conditions:
+            continue
+            
+        if condition_ad5x and not is_ad5x:
+            continue
+        if condition_native_screen and not is_native_screen:
+            continue
         
         result += [{
             "condition": condition_stripped,
-            "ad5x": condition_ad5x,
-            "native_screen": condition_native_screen,
             "text": text,
             "next_value": None
         }]
         
         if condition_stripped == '*':
             break
+        done_conditions += [condition_stripped]
         
     return result
 
@@ -337,7 +368,8 @@ def add_reset_zmod(file_data, categories, settings):
                 target = both_entries
                 extra_indent = 0
                 
-            settable_values = get_setting_global_settable_options(set_data)
+            settable_values = get_all_setting_global_settable_options(set_data)
+            
             if len(settable_values) == 0:
                 continue
             
@@ -468,23 +500,7 @@ def add_global(file_data, categories, settings):
                         else:
                             file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables['{setting.lower()}']|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{setting_type} %}}")
 
-                        setting_conditions = get_setting_global_options(setting, set_data)
-                    
-                        # Filter out those that vary by screen / AD5X if condition not met
-                        last_condition_stripped = None
-                        for this_condition in setting_conditions[:]:
-                            this_condition_stripped = str(this_condition['condition'])
-                            remove = False
-                            if setting_type != 'string':
-                                if (this_condition['ad5x'] and not is_ad5x) or (this_condition['native_screen'] and not is_native_screen):
-                                    remove = True
-                                this_condition_stripped = re.sub(r'[nx]', '', this_condition_stripped)
-                            if this_condition_stripped == last_condition_stripped:
-                                remove = True
-                            if remove:
-                                setting_conditions.remove(this_condition)
-                            else:
-                                last_condition_stripped = this_condition_stripped                                
+                        setting_conditions = get_setting_global_options(setting, set_data, is_ad5x, is_native_screen)                            
                         
                         if len(setting_conditions) == 0:
                             file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {setting.upper()} ===custom value:=== {{z{setting.lower()}}}|_GLOBAL N={page}|{GLOBAL_CANNOT_CHANGE_COLOR}\"")
