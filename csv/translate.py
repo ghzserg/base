@@ -12,10 +12,10 @@ def main():
     translate_file = sys.argv[1]
     translate_dir = sys.argv[2]
     lang_dir = os.path.splitext(translate_file)[0]
-    
+
     if not translate_dir.strip():
         translate_dir = "../../"
-        
+
     translate_dir = os.path.join(translate_dir) # enforce trailing slash
 
     os.makedirs(f"{translate_dir}%s" % (lang_dir), exist_ok=True)
@@ -40,8 +40,12 @@ def main():
         return pattern.sub(replace_match, line)
 
     for cfg_file in Path('../').glob('*.cfg'):
-        with open(cfg_file, 'r', encoding='utf-8') as f_in:
-            lines = f_in.readlines()
+        if Path(str(cfg_file) + ".tmp").is_file():
+            with open(str(cfg_file) + ".tmp", 'r', encoding='utf-8') as f_in:
+                lines = f_in.readlines()
+        else:
+            with open(cfg_file, 'r', encoding='utf-8') as f_in:
+                lines = f_in.readlines()
 
         translated_lines = []
         for line in lines:
