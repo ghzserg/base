@@ -437,6 +437,7 @@ Auto-assign colors;Автоматически назначать цвета
 Auto-assign colors, silent mode halts on some errors;Автоназначение цветов, тихий режим прерывается при некоторых ошибках
 unknown value:;неизвестное значение:
 Unrecognized value for setting:;Нераспознанное значение для настройки:
+custom value:;пользовательское значение:
 Halt print if trash or screen validation fails;Остановить печать, если проверка корзины или экрана не удалась
 Change trash settings based on validation;Изменить настройки корзины на основе проверки
 Only warn on trash or screen validation fails;Только предупреждать при сбое проверки корзины или экрана

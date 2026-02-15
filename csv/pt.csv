@@ -440,6 +440,7 @@ Auto-assign colors;Atribuir cores automaticamente
 Auto-assign colors, silent mode halts on some errors;Atribuição automática, modo silencioso para em alguns erros
 unknown value:;valor desconhecido:
 Unrecognized value for setting:;Valor não reconhecido para a configuração:
+custom value:;valor personalizado:
 Halt print if trash or screen validation fails;Interromper impressão se a validação da lixeira ou tela falhar
 Change trash settings based on validation;Alterar configurações da lixeira com base na validação
 Only warn on trash or screen validation fails;Apenas avisar se a validação da lixeira ou tela falhar

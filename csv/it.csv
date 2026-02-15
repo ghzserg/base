@@ -440,6 +440,7 @@ Auto-assign colors;Assegna automaticamente i colori
 Auto-assign colors, silent mode halts on some errors;Assegnazione automatica, modo silenzioso si arresta su alcuni errori
 unknown value:;valore sconosciuto:
 Unrecognized value for setting:;Valore non riconosciuto per l'impostazione:
+custom value:;valore personalizzato:
 Halt print if trash or screen validation fails;Arresta stampa se la validazione cestino o schermo fallisce
 Change trash settings based on validation;Cambia impostazioni cestino in base alla validazione
 Only warn on trash or screen validation fails;Avvisa solo se la validazione cestino o schermo fallisce

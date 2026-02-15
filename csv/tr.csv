@@ -440,6 +440,7 @@ Auto-assign colors;Renkleri otomatik ata
 Auto-assign colors, silent mode halts on some errors;Renkleri otomatik ata, sessiz mod bazı hatalarda durur
 unknown value:;bilinmeyen değer:
 Unrecognized value for setting:;Ayar için tanınmayan değer:
+custom value:;özel değer:
 Halt print if trash or screen validation fails;Atık veya ekran doğrulaması başarısız olursa baskıyı durdur
 Change trash settings based on validation;Doğrulamaya göre atık ayarlarını değiştir
 Only warn on trash or screen validation fails;Atık veya ekran doğrulaması başarısız olursa sadece uyar

@@ -439,6 +439,7 @@ Auto-assign colors;Farben automatisch zuweisen
 Auto-assign colors, silent mode halts on some errors;Automatische Farbuweisung, Silent-Modus stoppt bei einigen Fehlern
 unknown value:;unbekannter Wert:
 Unrecognized value for setting:;Unbekannter Wert für die Einstellung:
+custom value:;benutzerdefinierter Wert:
 Halt print if trash or screen validation fails;Druck anhalten, wenn die Behälter- oder Bildschirmvalidierung fehlschlägt
 Change trash settings based on validation;Behältereinstellungen basierend auf der Validierung ändern
 Only warn on trash or screen validation fails;Nur warnen, wenn die Behälter- oder Bildschirmvalidierung fehlschlägt
