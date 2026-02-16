@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;ベッドレベリング
 Auto close dialogs on native screen after 20 sec (fast);ネイティブ画面のダイアログを20秒で自動閉じ（高速）
 Auto close dialogs on native screen after 20 sec (slow);ネイティブ画面のダイアログを20秒で自動閉じ（低速）
 Auto disable motors after print/cancel in 25 sec;印刷/キャンセル後25秒でモーターを自動停止
-Automatic printer shutdown in {pro_poweroff_timeout} min;{pro_poweroff_timeout}分後にプリンタを自動シャットダウン
+Automatic printer shutdown in {zpro_poweroff_timeout} min;{zpro_poweroff_timeout}分後にプリンタを自動シャットダウン
 Automatic reboot in 1.5 minutes;1.5分後に自動再起動
 Auto reboot printer after 1.5 minutes;印刷後1.5分でプリンタを自動再起動
 Auto restart firmware after 1.5 minutes;印刷後1.5分でファームウェアを再起動
@@ -299,7 +299,7 @@ This will take some time (3-5 minutes);数分かかります（3-5分）
 Timezone change;タイムゾーン変更
 triggered;トリガーされました
 Trying to load bed mesh: {mesh};ベッドメッシュの読み込みを試行: {mesh}
-Turn off native screen after (sec): {display_off_timeout};ネイティブ画面を{display_off_timeout}秒後にオフ
+Turn off native screen after (sec): {zdisplay_off_timeout};ネイティブ画面を{zdisplay_off_timeout}秒後にオフ
 Unload;アンロード
 Update MCU;MCUを更新
 Update printer via USB;USB経由でプリンタを更新
@@ -417,8 +417,8 @@ AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: �
 Photo;写真
 There will be a SCHEDULED reboot now;スケジュールされた再起動を今から実行します
 Parameters used in color selection menu;カラー選択メニューで使用されるパラメータ
-Show {allowed_tool_count} colors;{allowed_tool_count} 色を表示
-Show {allowed_tool_count} colors when file colors cannot be scanned;ファイルのカラーがスキャンできない場合に {allowed_tool_count} 色を表示
+Show {zallowed_tool_count} colors;{zallowed_tool_count} 色を表示
+Show {zallowed_tool_count} colors when file colors cannot be scanned;ファイルのカラーがスキャンできない場合に {zallowed_tool_count} 色を表示
 Don't scan files for color / material data;カラー/材質データのファイルをスキャンしない
 Check files for pre-prepared color / material data only;準備済みのカラー/材質データのみファイルをチェックする
 Scan files for color / material data;カラー/材質データのファイルをスキャンする

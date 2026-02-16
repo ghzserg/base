@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;Todos os parâmetros STA
 Auto close dialogs on native screen after 20 sec (fast);Fechar automaticamente diálogos no ecrã nativo após 20 seg (rápido)
 Auto close dialogs on native screen after 20 sec (slow);Fechar automaticamente diálogos no ecrã nativo após 20 seg (lento)
 Auto disable motors after print/cancel in 25 sec;Desativar automaticamente motores após impressão/cancelamento em 25 seg
-Automatic printer shutdown in {pro_poweroff_timeout} min;Desligamento automático da impressora em {pro_poweroff_timeout} min
+Automatic printer shutdown in {zpro_poweroff_timeout} min;Desligamento automático da impressora em {zpro_poweroff_timeout} min
 Automatic reboot in 1.5 minutes;Reinício automático em 1,5 minutos
 Auto reboot printer after 1.5 minutes;Reiniciar automaticamente impressora após 1,5 minutos
 Auto restart firmware after 1.5 minutes;Reiniciar automaticamente firmware após 1,5 minutos
@@ -299,7 +299,7 @@ This will take some time (3-5 minutes);Isto irá demorar algum tempo (3-5 minuto
 Timezone change;Mudança de fuso horário
 triggered;acionado
 Trying to load bed mesh: {mesh};A tentar carregar malha da mesa: {mesh}
-Turn off native screen after (sec): {display_off_timeout};Desligar ecrã nativo após (seg): {display_off_timeout}
+Turn off native screen after (sec): {zdisplay_off_timeout};Desligar ecrã nativo após (seg): {zdisplay_off_timeout}
 Unload;Descarregar
 Update MCU;Atualizar MCU
 Update printer via USB;Atualizar impressora via USB
@@ -417,8 +417,8 @@ AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: de
 Photo;Foto
 There will be a SCHEDULED reboot now;Haverá um reinício AGendado agora
 Parameters used in color selection menu;Parâmetros usados no menu de seleção de cores
-Show {allowed_tool_count} colors;Mostrar {allowed_tool_count} cores
-Show {allowed_tool_count} colors when file colors cannot be scanned;Mostrar {allowed_tool_count} cores quando as cores do arquivo não puderem ser digitalizadas
+Show {zallowed_tool_count} colors;Mostrar {zallowed_tool_count} cores
+Show {zallowed_tool_count} colors when file colors cannot be scanned;Mostrar {zallowed_tool_count} cores quando as cores do arquivo não puderem ser digitalizadas
 Don't scan files for color / material data;Não escanear arquivos para dados de cor / material
 Check files for pre-prepared color / material data only;Verificar apenas dados de cor / material preparados nos arquivos
 Scan files for color / material data;Escanear arquivos para dados de cor / material

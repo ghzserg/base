@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;Yatak hizalama için tü
 Auto close dialogs on native screen after 20 sec (fast);Yerel ekrandaki iletişim kutularını 20 saniye sonra otomatik kapat (hızlı)
 Auto close dialogs on native screen after 20 sec (slow);Yerel ekrandaki iletişim kutularını 20 saniye sonra otomatik kapat (yavaş)
 Auto disable motors after print/cancel in 25 sec;Yazdırma/iptalden sonra motorları 25 saniyede otomatik devre dışı bırak
-Automatic printer shutdown in {pro_poweroff_timeout} min;Yazıcının otomatik kapanması {pro_poweroff_timeout} dakika içinde
+Automatic printer shutdown in {zpro_poweroff_timeout} min;Yazıcının otomatik kapanması {zpro_poweroff_timeout} dakika içinde
 Automatic reboot in 1.5 minutes;Otomatik yeniden başlatma 1.5 dakika içinde
 Auto reboot printer after 1.5 minutes;Yazdırmadan sonra yazıcıyı 1.5 dakika içinde otomatik yeniden başlat
 Auto restart firmware after 1.5 minutes;Yazdırmadan sonra firmware'ı 1.5 dakika içinde otomatik yeniden başlat
@@ -299,7 +299,7 @@ This will take some time (3-5 minutes);Bu biraz zaman alacak (3-5 dakika)
 Timezone change;Saat dilimi değişikliği
 triggered;tetiklendi
 Trying to load bed mesh: {mesh};Yatak ağı yüklenmeye çalışılıyor: {mesh}
-Turn off native screen after (sec): {display_off_timeout};Yerel ekranı (saniye) sonra kapat: {display_off_timeout}
+Turn off native screen after (sec): {zdisplay_off_timeout};Yerel ekranı (saniye) sonra kapat: {zdisplay_off_timeout}
 Unload;Boşalt
 Update MCU;MCU'yu Güncelle
 Update printer via USB;Yazıcıyı USB bellek ile güncelle
@@ -417,8 +417,8 @@ AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: ka
 Photo;Foto
 There will be a SCHEDULED reboot now;Şimdi PLANLANAN bir yeniden başlatma gerçekleşecek
 Parameters used in color selection menu;Renk seçim menüsünde kullanılan parametreler
-Show {allowed_tool_count} colors;{allowed_tool_count} rengi göster
-Show {allowed_tool_count} colors when file colors cannot be scanned;Dosya renkleri taranamadığında {allowed_tool_count} rengi göster
+Show {zallowed_tool_count} colors;{zallowed_tool_count} rengi göster
+Show {zallowed_tool_count} colors when file colors cannot be scanned;Dosya renkleri taranamadığında {zallowed_tool_count} rengi göster
 Don't scan files for color / material data;Renk / malzeme verisi için dosyaları tarama
 Check files for pre-prepared color / material data only;Dosyaları yalnızca önceden hazırlanmış renk / malzeme verisi için kontrol et
 Scan files for color / material data;Renk / malzeme verisi için dosyaları tara

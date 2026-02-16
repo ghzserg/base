@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;Tutti i parametri START_
 Auto close dialogs on native screen after 20 sec (fast);Chiudi automaticamente le finestre sullo schermo nativo dopo 20 secondi (veloce)
 Auto close dialogs on native screen after 20 sec (slow);Chiudi automaticamente le finestre sullo schermo nativo dopo 20 secondi (lento)
 Auto disable motors after print/cancel in 25 sec;Disattiva automaticamente i motori dopo la stampa/annullamento in 25 secondi
-Automatic printer shutdown in {pro_poweroff_timeout} min;Spegnimento automatico della stampante in {pro_poweroff_timeout} min
+Automatic printer shutdown in {zpro_poweroff_timeout} min;Spegnimento automatico della stampante in {zpro_poweroff_timeout} min
 Automatic reboot in 1.5 minutes;Riavvio automatico in 1.5 minuti
 Auto reboot printer after 1.5 minutes;Riavvia automaticamente la stampante dopo 1.5 minuti
 Auto restart firmware after 1.5 minutes;Riavvia automaticamente il firmware dopo 1.5 minuti
@@ -299,7 +299,7 @@ This will take some time (3-5 minutes);Ci vorrà del tempo (3-5 minuti)
 Timezone change;Cambio fuso orario
 triggered;attivato
 Trying to load bed mesh: {mesh};Tentativo di caricare la griglia del piatto: {mesh}
-Turn off native screen after (sec): {display_off_timeout};Spegni schermo nativo dopo (sec): {display_off_timeout}
+Turn off native screen after (sec): {zdisplay_off_timeout};Spegni schermo nativo dopo (sec): {zdisplay_off_timeout}
 Unload;Scarica
 Update MCU;Aggiorna MCU
 Update printer via USB;Aggiorna stampante tramite USB
@@ -417,8 +417,8 @@ AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: di
 Photo;Foto
 There will be a SCHEDULED reboot now;Ci sarà un riavvio programmato PROGRAMMATO ora
 Parameters used in color selection menu;Parametri utilizzati nel menu di selezione colore
-Show {allowed_tool_count} colors;Mostra {allowed_tool_count} colori
-Show {allowed_tool_count} colors when file colors cannot be scanned;Mostra {allowed_tool_count} colori quando non è possibile scansionare i colori del file
+Show {zallowed_tool_count} colors;Mostra {zallowed_tool_count} colori
+Show {zallowed_tool_count} colors when file colors cannot be scanned;Mostra {zallowed_tool_count} colori quando non è possibile scansionare i colori del file
 Don't scan files for color / material data;Non scansionare i file per dati colore / materiale
 Check files for pre-prepared color / material data only;Controlla solo i dati colore / materiale pre-preparati nei file
 Scan files for color / material data;Scansiona i file per dati colore / materiale

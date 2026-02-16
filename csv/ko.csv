@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;베드 레벨링 START_P
 Auto close dialogs on native screen after 20 sec (fast);기본 화면 대화상자 20초 후 자동 닫기 (빠름)
 Auto close dialogs on native screen after 20 sec (slow);기본 화면 대화상자 20초 후 자동 닫기 (느림)
 Auto disable motors after print/cancel in 25 sec;인쇄/취소 후 25초 모터 자동 차단
-Automatic printer shutdown in {pro_poweroff_timeout} min;{pro_poweroff_timeout}분 후 자동 프린터 종료
+Automatic printer shutdown in {zpro_poweroff_timeout} min;{zpro_poweroff_timeout}분 후 자동 프린터 종료
 Automatic reboot in 1.5 minutes;1.5분 후 자동 재부팅
 Auto reboot printer after 1.5 minutes;인쇄 후 1.5분 자동 재시작
 Auto restart firmware after 1.5 minutes;인쇄 후 1.5분 펌웨어 재시작
@@ -205,7 +205,7 @@ Play MIDI on print start: {zmidi_start};인쇄 시작 시 MIDI 재생: {zmidi_st
 Play tone;톤 재생
 please heat it up and press RESUME again;재가열 후 RESUME 다시 누르세요
 Possible wrong profile loaded (different plate/temperature);잘못된 프로필 로드 가능성 (다른 플레이트/온도)
-Power off FF5M Pro after (min): {timeout};FF5M Pro 자동 종료 시간(분): {pro_poweroff_timeout}
+Power off FF5M Pro after (min): {timeout};FF5M Pro 자동 종료 시간(분): {zpro_poweroff_timeout}
 Power off printer;프린터 끄기
 Pre-cleaning completed;사전 청소 완료
 Priming algorithm: {zclear};프라이밍 알고리즘: {zclear}
@@ -299,7 +299,7 @@ This will take some time (3-5 minutes);약간의 시간 소요 (3-5분)
 Timezone change;시간대 변경
 triggered;트리거됨
 Trying to load bed mesh: {mesh};베드 메시 로드 시도: {mesh}
-Turn off native screen after (sec): {display_off_timeout};기본 화면 자동 종료 시간(초): {display_off_timeout}
+Turn off native screen after (sec): {zdisplay_off_timeout};기본 화면 자동 종료 시간(초): {zdisplay_off_timeout}
 Unload;필라멘트 언로드
 Update MCU;MCU 업데이트
 Update printer via USB;USB로 프린터 업데이트
@@ -417,8 +417,8 @@ AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: �
 Photo;사진
 There will be a SCHEDULED reboot now;예정된 재시작을 지금 시작합니다
 Parameters used in color selection menu;색상 선택 메뉴에 사용되는 매개변수
-Show {allowed_tool_count} colors;{allowed_tool_count}개 색상 표시
-Show {allowed_tool_count} colors when file colors cannot be scanned;파일 색상을 스캔할 수 없을 때 {allowed_tool_count}개 색상 표시
+Show {zallowed_tool_count} colors;{zallowed_tool_count}개 색상 표시
+Show {zallowed_tool_count} colors when file colors cannot be scanned;파일 색상을 스캔할 수 없을 때 {zallowed_tool_count}개 색상 표시
 Don't scan files for color / material data;색상/재질 데이터에 대해 파일을 스캔하지 않음
 Check files for pre-prepared color / material data only;준비된 색상/재질 데이터만 파일에서 확인
 Scan files for color / material data;색상/재질 데이터에 대해 파일을 스캔
