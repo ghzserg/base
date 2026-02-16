@@ -205,7 +205,7 @@ Play MIDI on print start: {zmidi_start};Играть MIDI при запуске 
 Play tone;Воспроизвести тон
 please heat it up and press RESUME again;пожалуйста нагрейте его и снова нажмите RESUME
 Possible wrong profile loaded (different plate/temperature);Возможно загружен профиль от другой пластины или снятый для другой температуры
-Power off FF5M Pro after (min): {timeout};Выключать FF5M Pro через (мин): {pro_poweroff_timeout}
+Power off FF5M Pro after (min): {zpro_poweroff_timeout};Выключать FF5M Pro через (мин): {zpro_poweroff_timeout}
 Power off printer;Выключить принтер
 Pre-cleaning completed;Предочистка закончена
 Priming algorithm: {zclear};Алгоритм очистки: {zclear}

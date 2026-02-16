@@ -205,7 +205,7 @@ Play MIDI on print start: {zmidi_start};Yazdırma başladığında MIDI çal: {z
 Play tone;Ton çal
 please heat it up and press RESUME again;lütfen ısıtın ve tekrar DEVAM ET'e basın
 Possible wrong profile loaded (different plate/temperature);Muhtemelen yanlış profil yüklendi (farklı tabla/sıcaklık)
-Power off FF5M Pro after (min): {timeout};FF5M Pro'yu (dakika) sonra kapat: {pro_poweroff_timeout}
+Power off FF5M Pro after (min): {zpro_poweroff_timeout};FF5M Pro'yu (dakika) sonra kapat: {zpro_poweroff_timeout}
 Power off printer;Yazıcıyı Kapat
 Pre-cleaning completed;Ön temizleme tamamlandı
 Priming algorithm: {zclear};Ön temizleme algoritması: {zclear}

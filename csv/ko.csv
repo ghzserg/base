@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;베드 레벨링 START_P
 Auto close dialogs on native screen after 20 sec (fast);기본 화면 대화상자 20초 후 자동 닫기 (빠름)
 Auto close dialogs on native screen after 20 sec (slow);기본 화면 대화상자 20초 후 자동 닫기 (느림)
 Auto disable motors after print/cancel in 25 sec;인쇄/취소 후 25초 모터 자동 차단
-Automatic printer shutdown in {pro_poweroff_timeout} min;{pro_poweroff_timeout}분 후 자동 프린터 종료
+Automatic printer shutdown in {zpro_poweroff_timeout} min;{zpro_poweroff_timeout}분 후 자동 프린터 종료
 Automatic reboot in 1.5 minutes;1.5분 후 자동 재부팅
 Auto reboot printer after 1.5 minutes;인쇄 후 1.5분 자동 재시작
 Auto restart firmware after 1.5 minutes;인쇄 후 1.5분 펌웨어 재시작
