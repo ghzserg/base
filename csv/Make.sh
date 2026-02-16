@@ -6,4 +6,3 @@ for i in *.csv; do
     python3 translate.py $i ../../translate/
 done
 
-rm ../base.cfg.tmp

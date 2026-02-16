@@ -83,7 +83,7 @@
             "get_zmod_data_text": {
                 "0": "===Don't build bed mesh on each print.===",
                 "1n": "===Build bed mesh with native screen on each print.===",
-                "1": "===Build bed mesh on each print.==="
+                "1g": "===Build bed mesh on each print.==="
             }
         },
         "use_kamp": {
@@ -246,7 +246,7 @@
             "require_native_screen": 1,
             "get_zmod_data_text": {
                 "0": "===Don't close dialogs on native screen===",
-                "1": "===Auto close dialogs on native screen after 20 sec (slow)===",
+                "1m": "===Auto close dialogs on native screen after 20 sec (slow)===",
                 "2": "===Auto close dialogs on native screen after 20 sec (fast)==="
             },
             "global_set_values_ad5x": [0, 2]
@@ -270,7 +270,7 @@
                 "0": "===Don't reboot printer automatically===",
                 "1": "===Auto reboot printer after 1.5 minutes===",
                 "2n": "===Auto reboot printer after 1.5 minutes===",
-                "2": "===Auto restart firmware after 1.5 minutes==="
+                "2g": "===Auto restart firmware after 1.5 minutes==="
             },
             "global_set_values_native_screen": [0, 1]
         },
@@ -463,7 +463,7 @@
             "show_in_global": false,
             "get_zmod_data_text": {
                 "0x": "===Using native Klipper=== 12",
-                "0": "===Using native Klipper=== 11",
+                "0m": "===Using native Klipper=== 11",
                 "1": "===Using Klipper 13==="
             }
         },
