@@ -222,6 +222,7 @@
             "category": "Printing",
             "show_in_global": false,
             "require_ad5x": 1,
+            "require_native_screen": -1,
             "get_zmod_data_text": {
                 "0": "===Skip color change process if old and new color are the same physical IFS channel===",
                 "1": "===Do not skip color change process when old and new color are the same physical IFS channel==="
@@ -269,10 +270,8 @@
             "get_zmod_data_text": {
                 "0": "===Don't reboot printer automatically===",
                 "1": "===Auto reboot printer after 1.5 minutes===",
-                "2n": "===Auto reboot printer after 1.5 minutes===",
                 "2g": "===Auto restart firmware after 1.5 minutes==="
-            },
-            "global_set_values_native_screen": [0, 1]
+            }
         },
         "pro_poweroff_timeout": {
             "type": "int",

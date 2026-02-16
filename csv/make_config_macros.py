@@ -506,20 +506,20 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
     file_data.append((indent_level * STANDARD_INDENT) + '# End script-generated _GLOBAL code')
     file_data.append('')
     
-def process_file(output_file, is_native_screen, is_ad5x, categories, settings):
+def process_file(output_file, is_ad5x, is_native_screen, categories, settings):
     file_data = []
 
     with open('config-template.cfg', 'r', encoding='utf-8') as f:
         for line in f:
             if line.strip().startswith('# **'):
                 if line.strip() == '# ** SAVE_ZMOD_DATA ** #':
-                    add_save_zmod_data(file_data, is_native_screen, is_ad5x, categories, settings)
+                    add_save_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings)
                 if line.strip() == '# ** GET_ZMOD_DATA ** #':
-                    add_get_zmod_data(file_data, is_native_screen, is_ad5x, categories, settings)
+                    add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings)
                 if line.strip() == '# ** _RESET_ZMOD ** #':
-                    add_reset_zmod(file_data, is_native_screen, is_ad5x, categories, settings)
+                    add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings)
                 if line.strip() == '# ** _GLOBAL ** #':
-                    add_global(file_data, is_native_screen, is_ad5x, categories, settings)
+                    add_global(file_data, is_ad5x, is_native_screen, categories, settings)
             else:
                 file_data += [line]
 
@@ -537,10 +537,10 @@ def main():
     categories = settings_json_data['Categories']
     settings = settings_json_data['Settings']
     
-    process_file("../ff5m_config_native.cfg", True, False, categories, settings)
+    process_file("../ff5m_config_native.cfg", False, True, categories, settings)
     process_file("../ff5m_config_off.cfg", False, False, categories, settings)
     process_file("../ad5x_config_native.cfg", True, True, categories, settings)
-    process_file("../ad5x_config_off.cfg", False, True, categories, settings)
+    process_file("../ad5x_config_off.cfg", True, False, categories, settings)
 
 if __name__ == "__main__":
     main()
