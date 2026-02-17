@@ -205,7 +205,7 @@ Play MIDI on print start: {zmidi_start};인쇄 시작 시 MIDI 재생: {zmidi_st
 Play tone;톤 재생
 please heat it up and press RESUME again;재가열 후 RESUME 다시 누르세요
 Possible wrong profile loaded (different plate/temperature);잘못된 프로필 로드 가능성 (다른 플레이트/온도)
-Power off FF5M Pro after (min): {timeout};FF5M Pro 자동 종료 시간(분): {zpro_poweroff_timeout}
+Power off FF5M Pro after (min): {zpro_poweroff_timeout};FF5M Pro 자동 종료 시간(분): {zpro_poweroff_timeout}
 Power off printer;프린터 끄기
 Pre-cleaning completed;사전 청소 완료
 Priming algorithm: {zclear};프라이밍 알고리즘: {zclear}

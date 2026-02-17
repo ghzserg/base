@@ -27,7 +27,9 @@
             "get_zmod_data_text": {
                 "*": "===Show {zallowed_tool_count} colors when file colors cannot be scanned==="
             },
-            "global_set_values": [4, 8, 16]
+            "global_set_values": [4, 8, 16],
+            "min_valid_value": 1,
+            "max_valid_value": 16
         },
         "scan_file_colors": {
             "type": "int",
@@ -60,7 +62,9 @@
                 "2": "===Auto-assign colors, silent mode halts on major error===",
                 "1": "===Auto-assign colors===",
                 "*": "===Auto-assign colors, silent mode halts on some errors==="
-            }
+            },
+            "min_valid_value": 0,
+            "max_valid_value": 30
         },
         "color_menu_1_based": {
             "type": "int",
@@ -206,15 +210,15 @@
             "type": "string",
             "default": "LINE_PURGE",
             "category": "Print Start",
-            "show_condition": "not zdisable_priming",
+            "show_condition": "zdisable_priming == 0",
             "show_in_global": true,
             "get_zmod_data_text": {
                 "*": "===Purge algorithm: {zclear}==="
             },
             "global_set_values": ["LINE_PURGE", "_CLEAR1", "_CLEAR2", "_CLEAR3", "_CLEAR4", "CLEAR_TRAP"]
         },
-
-
+        
+        
         "use_trash_on_print": {
             "type": "int",
             "default": 1,
@@ -308,7 +312,8 @@
             "get_zmod_data_text": {
                 "*": "===Power off FF5M Pro after (min): {zpro_poweroff_timeout}==="
             },
-            "global_set_values": [0, 15, 30, 60]
+            "global_set_values": [0, 15, 30, 60],
+            "min_valid_value": 0
         },
         "remove_filament": {
             "type": "int",
@@ -406,7 +411,9 @@
             "get_zmod_data_text": {
                 "*": "===LED brightness at power on: {zled}==="
             },
-            "global_set_values": [0, 25, 50, 75, 100]
+            "global_set_values": [0, 25, 50, 75, 100],
+            "min_valid_value": 0,
+            "max_valid_value": 100
         },
         "midi_on": {
             "type": "string",
@@ -479,7 +486,8 @@
             "get_zmod_data_text": {
                 "*": "===Turn off native screen after (sec): {zdisplay_off_timeout}==="
             },
-            "global_set_values": [5, 20, 60]
+            "global_set_values": [5, 20, 60],
+            "min_valid_value": 5
         },
         "klipper13": {
             "type": "int",
@@ -499,7 +507,9 @@
             "show_in_global": false,
             "get_zmod_data_text": {
                 "*": "===Klipper process priority (1-min, 40-max): {znice}==="
-            }
+            },
+            "min_valid_value": 1,
+            "max_valid_value": 40
         },
         "zcontrol_z": {
             "type": "int",
@@ -508,7 +518,8 @@
             "show_in_global": false,
             "get_zmod_data_text": {
                 "*": "ZCONTROL_Z: {zzcontrol_z}"
-            }
+            },
+            "min_valid_value": 0
         },
         "language": {
             "type": "special",
