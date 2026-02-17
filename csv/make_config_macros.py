@@ -111,11 +111,11 @@ def get_setting_global_settable_options(setting, is_ad5x, is_native_screen):
     can_set_values = [str(value) for value in can_set_values]
 
     return list(dict.fromkeys(can_set_values))
-    
+
 def get_valid_options(setting, is_ad5x, is_native_screen):
     global_options = get_setting_global_options('placeholder', setting, is_ad5x, is_native_screen)
     global_options = [option['condition'] for option in global_options]
-    
+
     result = {
         'settable_values': get_setting_global_settable_options(setting, is_ad5x, is_native_screen),
         'valid_values': global_options,
@@ -123,11 +123,11 @@ def get_valid_options(setting, is_ad5x, is_native_screen):
         'max_value': setting.get('max_valid_value', None),
         'allow_generic': '*' in global_options
     }
-    
+
     if '*' in global_options:
         global_options.remove('*')
-        
-    return result    
+
+    return result 
 
 def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen):
     result = []
@@ -159,7 +159,7 @@ def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen)
 
             if condition_stripped != value:
                 continue
-                
+
             if not validate_setup(condition_ad5x, condition_native_screen, is_ad5x, is_native_screen):
                 continue
 
@@ -219,7 +219,7 @@ def add_save_zmod_data(file_data, is_ad5x, is_native_screen, categories, setting
         for setting, set_data in settings.items():
             if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
                 continue
-                
+
             if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_native_screen', 0), is_ad5x, is_native_screen):
                 continue
 
@@ -255,7 +255,7 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
         for setting, set_data in settings.items():
             if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
                 continue
-                
+
             if not validate_setup(set_data.get("require_ad5x", 0), set_data.get("require_native_screen", 0), is_ad5x, is_native_screen):
                 continue
 
@@ -271,12 +271,12 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
                 file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables['{setting.lower()}']|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{setting_type} %}}")
 
             valid_options = get_valid_options(set_data, is_ad5x, is_native_screen)
-            
+
             if valid_options['allow_generic']:
                 if setting_type != 'string':
                     min_valid_value = valid_options['min_value']
                     max_valid_value = valid_options['max_value']
-                    
+
                     if min_valid_value != None:
                         file_data.append((indent_level * STANDARD_INDENT) + f"{{% if z{setting.lower()} < {min_valid_value} %}}")
                         file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"{{% set z{setting.lower()} = {min_valid_value} %}}")
@@ -292,16 +292,16 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
                     if reset_condition != '':
                         reset_condition += ' and '
                     reset_condition += f"z{setting.lower()} != {quotechar}{valid_option}{quotechar}"
-                    
+
                 if reset_condition != '':
                     file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {reset_condition} %}}")
                     indent_level += 1
-                    
+
                     if setting_type == 'string':
                         file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = \"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\" %}}")
                     else:
                         file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = {set_data.get('default', DEFAULT_VALUE_ASSUMPTION)} %}}")
-                        
+
                     indent_level -= 1
                     file_data.append((indent_level * STANDARD_INDENT) + f"{{% endif %}}")
 
@@ -319,7 +319,7 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
                         text_condition = re.sub(r'[nxmg]', '', text_condition)
                         if not validate_setup(condition_ad5x, condition_native_screen, is_ad5x, is_native_screen):
                             continue
-                    
+
                     had_regular = True
                     prefix = "" if is_first else "el" # "if" or "elif"
 
@@ -384,7 +384,7 @@ def add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings):
                 continue
             if not set_data.get('show_in_global', True):
                 continue
-                
+
             if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_native_screen', 0), is_ad5x, is_native_screen):
                 continue
 
@@ -464,7 +464,7 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
                 file_data.append((indent_level * STANDARD_INDENT) + "{% if this_page_visible_items == 0 %}")
                 file_data.append(((indent_level + 1) * STANDARD_INDENT) + "RESPOND TYPE=command MSG=\"action:prompt_end\"")
                 file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"{{% set n = {page+1} %}}")
-                
+
                 file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
                 file_data.append(((indent_level - 1) * STANDARD_INDENT) + "{% endif %}")
                 file_data.append('')
@@ -561,7 +561,7 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
 
     file_data.append((indent_level * STANDARD_INDENT) + '# End script-generated _GLOBAL code')
     file_data.append('')
-    
+
 def process_file(output_file, is_ad5x, is_native_screen, categories, settings):
     file_data = []
 
@@ -584,7 +584,7 @@ def process_file(output_file, is_ad5x, is_native_screen, categories, settings):
             f.write(line)
             if not line.endswith('\n'):
                 f.write('\n')
-    
+
 
 def main():
     with open('zmod_settings.json', 'r', encoding='utf-8') as f:
@@ -592,7 +592,7 @@ def main():
 
     categories = settings_json_data['Categories']
     settings = settings_json_data['Settings']
-    
+
     process_file("../ff5m_config_native.cfg", False, True, categories, settings)
     process_file("../ff5m_config_off.cfg", False, False, categories, settings)
     process_file("../ad5x_config_native.cfg", True, True, categories, settings)
