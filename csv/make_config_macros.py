@@ -473,7 +473,7 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
             if items_on_page == 0:
                 file_data.append(((indent_level - 1) * STANDARD_INDENT) + f"{{% if n == {page} and start == 0 %}}")
                 file_data.append((indent_level * STANDARD_INDENT) + f"{{% set this_page_visible_items = 0 %}}")
-                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_begin Page {page} : {category_entry['header']}\"")
+                file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_begin {page}: {category_entry['header']}\"")
                 file_data.append('')
 
             setting_type = set_data.get('type', TYPE_ASSUMPTION)
