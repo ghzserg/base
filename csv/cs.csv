@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;Všechny parametry START
 Auto close dialogs on native screen after 20 sec (fast);Automaticky zavírat dialogy na nativním displeji po 20 sekundách (rychle)
 Auto close dialogs on native screen after 20 sec (slow);Automaticky zavírat dialogy na nativním displeji po 20 sekundách (pomalu)
 Auto disable motors after print/cancel in 25 sec;Automaticky vypnout motory po tisku/stornu za 25 sekund
-Automatic printer shutdown in {pro_poweroff_timeout} min;Automatické vypnutí tiskárny za {pro_poweroff_timeout} min
+Automatic printer shutdown in {zpro_poweroff_timeout} min;Automatické vypnutí tiskárny za {zpro_poweroff_timeout} min
 Automatic reboot in 1.5 minutes;Automatický restart za 1,5 minuty
 Auto reboot printer after 1.5 minutes;Automaticky restartovat tiskárnu po 1,5 minutě
 Auto restart firmware after 1.5 minutes;Automaticky restartovat firmware po 1,5 minutě
@@ -299,7 +299,7 @@ This will take some time (3-5 minutes);Toto bude chvíli trvat (3-5 minut)
 Timezone change;Změna časového pásma
 triggered;spuštěno
 Trying to load bed mesh: {mesh};Pokus o načtení sítě podložky: {mesh}
-Turn off native screen after (sec): {display_off_timeout};Vypnout nativní displej po (sek): {display_off_timeout}
+Turn off native screen after (sec): {zdisplay_off_timeout};Vypnout nativní displej po (sek): {zdisplay_off_timeout}
 Unload;Vylodit
 Update MCU;Aktualizovat MCU
 Update printer via USB;Aktualizovat tiskárnu přes USB
@@ -417,8 +417,8 @@ AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: of
 Photo;Foto
 There will be a SCHEDULED reboot now;Nyní proběhne NAplánovaný restart
 Parameters used in color selection menu;Parametry použité v menu výběru barev
-Show {allowed_tool_count} colors;Zobrazit {allowed_tool_count} barev
-Show {allowed_tool_count} colors when file colors cannot be scanned;Zobrazit {allowed_tool_count} barev, když nelze naskenovat barvy souboru
+Show {zallowed_tool_count} colors;Zobrazit {zallowed_tool_count} barev
+Show {zallowed_tool_count} colors when file colors cannot be scanned;Zobrazit {zallowed_tool_count} barev, když nelze naskenovat barvy souboru
 Don't scan files for color / material data;Neskenovat soubory pro data barev / materiálů
 Check files for pre-prepared color / material data only;Kontrolovat v souborech pouze předpřipravená data barev / materiálů
 Scan files for color / material data;Skenovat soubory pro data barev / materiálů

@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;所有START_PRINT的调�
 Auto close dialogs on native screen after 20 sec (fast);20秒后自动关闭原生屏幕对话框（快速）
 Auto close dialogs on native screen after 20 sec (slow);20秒后自动关闭原生屏幕对话框（慢速）
 Auto disable motors after print/cancel in 25 sec;打印/取消后25秒自动禁用电机
-Automatic printer shutdown in {pro_poweroff_timeout} min;{pro_poweroff_timeout}分钟后自动关机
+Automatic printer shutdown in {zpro_poweroff_timeout} min;{zpro_poweroff_timeout}分钟后自动关机
 Automatic reboot in 1.5 minutes;1.5分钟后自动重启
 Auto reboot printer after 1.5 minutes;打印完成后1.5分钟后自动重启打印机
 Auto restart firmware after 1.5 minutes;1.5分钟后自动重启固件
@@ -299,7 +299,7 @@ This will take some time (3-5 minutes);需要一些时间（3-5分钟）
 Timezone change;时区修改
 triggered;已触发
 Trying to load bed mesh: {mesh};尝试加载床面网格：{mesh}
-Turn off native screen after (sec): {display_off_timeout};原生屏幕在{display_off_timeout}秒后关闭
+Turn off native screen after (sec): {zdisplay_off_timeout};原生屏幕在{zdisplay_off_timeout}秒后关闭
 Unload;卸载
 Update MCU;更新MCU
 Update printer via USB;通过USB更新打印机
@@ -417,8 +417,8 @@ AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: �
 Photo;照片
 There will be a SCHEDULED reboot now;即将执行计划的重新启动
 Parameters used in color selection menu;颜色选择菜单中使用的参数
-Show {allowed_tool_count} colors;显示 {allowed_tool_count} 种颜色
-Show {allowed_tool_count} colors when file colors cannot be scanned;当无法扫描文件颜色时显示 {allowed_tool_count} 种颜色
+Show {zallowed_tool_count} colors;显示 {zallowed_tool_count} 种颜色
+Show {zallowed_tool_count} colors when file colors cannot be scanned;当无法扫描文件颜色时显示 {zallowed_tool_count} 种颜色
 Don't scan files for color / material data;不扫描文件的颜色/材料数据
 Check files for pre-prepared color / material data only;仅检查文件中预先准备的颜色/材料数据
 Scan files for color / material data;扫描文件的颜色/材料数据
