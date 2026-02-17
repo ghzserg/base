@@ -48,6 +48,8 @@ import re
 #                                          screen is enabled.
 #       "global_set_values_native_screen_ad5x": If present, overrides the other global_set_values params when the native screen
 #                                               is enabled on an AD5X.
+#       "min_valid_value": If present, values below this will be rejected.
+#       "max_valid_value": Same, but for maximum.
 #       "code": This is only used if the type is set to special. The contents of this will be copied verbatim into the output
 #               cfg file. This is used for buttons that need special handling like LANG and _RESET_ZMOD's buttons.
 
@@ -109,6 +111,25 @@ def get_setting_global_settable_options(setting, is_ad5x, is_native_screen):
     can_set_values = [str(value) for value in can_set_values]
 
     return list(dict.fromkeys(can_set_values))
+    
+def get_valid_options(setting, is_ad5x, is_native_screen):
+    global_options = get_setting_global_options('placeholder', setting, is_ad5x, is_native_screen)
+    global_options = [option['condition'] for option in global_options]
+    
+    result = {
+        'settable_values': get_setting_global_settable_options(setting, is_ad5x, is_native_screen),
+        'valid_values': global_options,
+        'min_value': setting.get('min_valid_value', None),
+        'max_value': setting.get('max_valid_value', None),
+        'allow_generic': '*' in global_options
+    }
+    
+    valid_values = result['valid_values']
+    
+    if '*' in global_options:
+        global_options.remove('*')
+        
+    return result    
 
 def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen):
     result = []
@@ -323,9 +344,6 @@ def add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings):
 
     for category, cat_data in categories.items():
         file_data.append((indent_level * STANDARD_INDENT) + f"# {category}")
-        both_entries = []
-        ad5m_entries = []
-        ad5x_entries = []
         for setting, set_data in settings.items():
             if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
                 continue
@@ -337,7 +355,8 @@ def add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings):
             if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_native_screen', 0), is_ad5x, is_native_screen):
                 continue
 
-            settable_values = get_setting_global_settable_options(set_data, is_ad5x, is_native_screen)
+            valid_options = get_valid_options(set_data, is_ad5x, is_native_screen)
+            settable_values = valid_options['settable_values']
 
             if len(settable_values) == 0:
                 continue
@@ -345,26 +364,29 @@ def add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings):
             setting_type = set_data.get('type', TYPE_ASSUMPTION)
             quotechar = '"' if setting_type == 'string' else ''
 
-            file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables['{setting.lower()}'] %}}")
+            if valid_options['allow_generic']:
+                file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables['{setting.lower()}'] %}}")
+                if_line = None
+                for settable_value in settable_values:
+                    if if_line == None:
+                        if_line = "{% if"
+                    else:
+                        if_line += " or"
+                    if_line += f" z{setting.lower()} == {quotechar}{settable_value}{quotechar}"
 
-            if_line = None
-            for settable_value in settable_values:
-                if if_line == None:
-                    if_line = "{% if"
-                else:
-                    if_line += " or"
-                if_line += f" z{setting.lower()} == {quotechar}{settable_value}{quotechar}"
+                if_line += " %}"
 
-            if_line += " %}"
-
-            file_data.append((indent_level * STANDARD_INDENT) + if_line)
+                file_data.append((indent_level * STANDARD_INDENT) + if_line)
+                indent_level += 1
 
             if setting_type == 'string':
-                file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE=\"\\\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\\\"\"")
+                file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE=\"\\\"{set_data.get('default', DEFAULT_STRING_ASSUMPTION)}\\\"\"")
             else:
-                file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={set_data.get('default', DEFAULT_VALUE_ASSUMPTION)}")
+                file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={set_data.get('default', DEFAULT_VALUE_ASSUMPTION)}")
 
-            file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
+            if valid_options['allow_generic']:
+                indent_level -= 1
+                file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
             file_data.append('')
 
     file_data.append((indent_level * STANDARD_INDENT) + '# End script-generated _RESET_ZMOD code')

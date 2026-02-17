@@ -27,7 +27,9 @@
             "get_zmod_data_text": {
                 "*": "===Show {zallowed_tool_count} colors when file colors cannot be scanned==="
             },
-            "global_set_values": [4, 8, 16]
+            "global_set_values": [4, 8, 16],
+            "min_valid_value": 0,
+            "max_valid_value": 100
         },
         "scan_file_colors": {
             "type": "int",
@@ -282,7 +284,8 @@
             "get_zmod_data_text": {
                 "*": "===Power off FF5M Pro after (min): {zpro_poweroff_timeout}==="
             },
-            "global_set_values": [0, 15, 30, 60]
+            "global_set_values": [0, 15, 30, 60],
+            "min_valid_value": 0
         },
         "remove_filament": {
             "type": "int",
@@ -380,7 +383,9 @@
             "get_zmod_data_text": {
                 "*": "===LED brightness at power on: {zled}==="
             },
-            "global_set_values": [0, 25, 50, 75, 100]
+            "global_set_values": [0, 25, 50, 75, 100],
+            "min_valid_value": 0,
+            "max_valid_value": 100
         },
         "midi_on": {
             "type": "string",
@@ -453,7 +458,8 @@
             "get_zmod_data_text": {
                 "*": "===Turn off native screen after (sec): {zdisplay_off_timeout}==="
             },
-            "global_set_values": [5, 20, 60]
+            "global_set_values": [5, 20, 60],
+            "min_valid_value": 5
         },
         "klipper13": {
             "type": "int",
@@ -473,7 +479,9 @@
             "show_in_global": false,
             "get_zmod_data_text": {
                 "*": "===Klipper process priority (1-min, 40-max): {znice}==="
-            }
+            },
+            "min_valid_value": 1,
+            "max_valid_value": 40
         },
         "zcontrol_z": {
             "type": "int",
@@ -482,7 +490,8 @@
             "show_in_global": false,
             "get_zmod_data_text": {
                 "*": "ZCONTROL_Z: {zzcontrol_z}"
-            }
+            },
+            "min_valid_value": 0
         },
         "language": {
             "type": "special",
