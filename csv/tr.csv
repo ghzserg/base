@@ -356,7 +356,7 @@ Cleaning the nozzle on rubber;Nozul lastik üzerinde temizleniyor
 Loading filament;Filament yükleniyor
 Unloading filament;Filament boşaltılıyor
 Heating the nozzle to {extruder_temp} degrees;Nozul {extruder_temp} dereceye ısıtılıyor
-Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Filament bırakılıyor {filament_drop_length} + {filament_drop_length_add}. Hız {filament_load_speed}
+Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_extruder_speed};Filament bırakılıyor {filament_drop_length} + {filament_drop_length_add}. Hız {filament_extruder_speed}
 Go to trash;Çöp kutusuna park et
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Ekstrüderdeki filament bitene kadar yazdırmaya devam etmek için RESUME_MOTION_SENSOR kullanın.
 Purge filament;Filament temizleme

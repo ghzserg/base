@@ -356,7 +356,7 @@ Cleaning the nozzle on rubber;Limpiando la boquilla sobre goma
 Loading filament;Cargando filamento
 Unloading filament;Descargando filamento
 Heating the nozzle to {extruder_temp} degrees;Calentando la boquilla a {extruder_temp} grados
-Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Expulsar filamento {filament_drop_length} + {filament_drop_length_add}. Velocidad {filament_load_speed}
+Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_extruder_speed};Expulsar filamento {filament_drop_length} + {filament_drop_length_add}. Velocidad {filament_extruder_speed}
 Go to trash;Ir al cubo de la basura
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Utilice RESUME_MOTION_SENSOR para reanudar la impresión después de que el filamento en el extrusor se agote.
 Purge filament;Purgar filamento

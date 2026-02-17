@@ -356,7 +356,7 @@ Cleaning the nozzle on rubber;Čištění trysky o gumu
 Loading filament;Načítání filamentu
 Unloading filament;Vylodění filamentu
 Heating the nozzle to {extruder_temp} degrees;Ohřev trysky na {extruder_temp} stupňů
-Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Odhození filamentu {filament_drop_length} + {filament_drop_length_add}. Rychlost {filament_load_speed}
+Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_extruder_speed};Odhození filamentu {filament_drop_length} + {filament_drop_length_add}. Rychlost {filament_extruder_speed}
 Go to trash;Jít do koše
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Použijte RESUME_MOTION_SENSOR pro pokračování tisku po dojití filamentu v extruderu.
 Purge filament;Vyčistit filament
