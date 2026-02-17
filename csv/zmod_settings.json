@@ -199,7 +199,7 @@
             "type": "string",
             "default": "LINE_PURGE",
             "category": "Print Start",
-            "show_condition": "zdisable_priming == 0",
+            "show_condition": "printer.save_variables.variables['disable_priming'] == 0",
             "show_in_global": true,
             "get_zmod_data_text": {
                 "*": "===Purge algorithm: {zclear}==="
