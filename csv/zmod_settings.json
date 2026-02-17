@@ -242,9 +242,11 @@
             "require_ad5x": 1,
             "get_zmod_data_text": {
                 "0": "===Never park on trash chute in nopoop mode===",
-                "220": "===Always park on trash chute in nopoop mode===",
+                "250": "===Always park on trash chute in nopoop mode===",
                 "*": "===Park in nopoop mode when below {znopoop_trash_skip_height}mm==="
-            }
+            },
+            "min_valid_value": 0,
+            "max_valid_value": 250
         },
         "always_full_color_change": {
             "type": "int",
