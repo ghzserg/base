@@ -465,9 +465,6 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
                 file_data.append(((indent_level + 1) * STANDARD_INDENT) + "RESPOND TYPE=command MSG=\"action:prompt_end\"")
                 file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"{{% set n = {page+1} %}}")
                 
-                #
-            #SET_GCODE_VARIABLE MACRO=_GLOBAL VARIABLE=reload_n VALUE=6
-            #UPDATE_DELAYED_GCODE ID=_GLOBAL_RELOAD  _GLOBAL N=6 DURATION=1
                 file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
                 file_data.append(((indent_level - 1) * STANDARD_INDENT) + "{% endif %}")
                 file_data.append('')
