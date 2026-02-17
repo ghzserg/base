@@ -463,7 +463,7 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
                 file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_show\"")
                 file_data.append((indent_level * STANDARD_INDENT) + "{% if this_page_visible_items == 0 %}")
                 file_data.append(((indent_level + 1) * STANDARD_INDENT) + "RESPOND TYPE=command MSG=\"action:prompt_end\"")
-                file_data.append(((indent_level + 1) * STANDARD_INDENT) + "_GLOBAL N={page+1}")
+                file_data.append(((indent_level + 1) * STANDARD_INDENT) + f"_GLOBAL N={page+1}")
                 file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
                 file_data.append(((indent_level - 1) * STANDARD_INDENT) + "{% endif %}")
                 file_data.append('')
