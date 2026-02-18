@@ -220,18 +220,6 @@
                 "1": "===Use trash when printing==="
             }
         },
-        "color_change_long_path": {
-            "type": "int",
-            "default": 0,
-            "category": "Printing",
-            "show_in_global": true,
-            "require_native_screen": -1,
-            "require_ad5x": 1,
-            "get_zmod_data_text": {
-                "0": "===Travel directly during color changes===",
-                "1": "===Travel via edges during color changes==="
-            }
-        },
         "always_full_color_change": {
             "type": "int",
             "default": 0,
