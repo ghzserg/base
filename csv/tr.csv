@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Yük hücresi tetiklendi! Yata�
 Loaded offset from global settings %s=%.4f;Genel ayarlardan ofset yüklendi %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;{extruder_temp} sıcaklıkta filament yükleniyor {extrude_len}mm, {speed/60} mm/s hızla
 Loading GuppyScreen;GuppyScreen yükleniyor
+Loading HelixScreen;HelixScreen yükleniyor
 Loading skew_profile;Çarpıklık profili yükleniyor
 Load Z-Offset from global settings;Z-Offset'ı genel ayarlardan yükle
 Load;Yükle

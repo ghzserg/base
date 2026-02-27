@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Lastzelle ausgelöst! Stellen S
 Loaded offset from global settings %s=%.4f;Offset aus globalen Einstellungen geladen %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Filament wird bei {extruder_temp}°C für {extrude_len}mm mit {speed/60} mm/s geladen
 Loading GuppyScreen;GuppyScreen wird geladen
+Loading HelixScreen;HelixScreen wird geladen
 Loading skew_profile;Skew-Profil wird geladen
 Load Z-Offset from global settings;Z-Offset aus globalen Einstellungen laden
 Load;Laden

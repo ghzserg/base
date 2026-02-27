@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Célula de carga acionada! Cert
 Loaded offset from global settings %s=%.4f;Offset carregado das definições globais %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;A carregar filamento a {extruder_temp} por {extrude_len}mm a {speed/60} mm/s
 Loading GuppyScreen;A carregar GuppyScreen
+Loading HelixScreen;A carregar HelixScreen
 Loading skew_profile;A carregar skew_profile
 Load Z-Offset from global settings;Carregar Z-Offset das definições globais
 Load;Carregar

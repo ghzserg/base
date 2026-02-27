@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Load cell triggered! Make sure 
 Loaded offset from global settings %s=%.4f;Loaded offset from global settings %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s
 Loading GuppyScreen;Loading GuppyScreen
+Loading HelixScreen;Loading HelixScreen
 Loading skew_profile;Loading skew_profile
 Load Z-Offset from global settings;Load Z-Offset from global settings
 Load;Load

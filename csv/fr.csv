@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Capteur activé ! Vérifiez la 
 Loaded offset from global settings %s=%.4f;Décalage chargé depuis les paramètres globaux %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Chargement du filament à {extruder_temp}°C pour {extrude_len}mm à {speed/60} mm/s
 Loading GuppyScreen;Chargement de GuppyScreen
+Loading HelixScreen;Chargement de HelixScreen
 Loading skew_profile;Chargement du profil skew_profile
 Load Z-Offset from global settings;Charger le Z-Offset des paramètres globaux
 Load;Charger

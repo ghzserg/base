@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Обнаружена срабо
 Loaded offset from global settings %s=%.4f;Загружено смещение из глобальных параметров %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Загрузка филамента с температурой {extruder_temp} на {extrude_len} мм со скоростью {speed/60} мм/с
 Loading GuppyScreen;Будет загружен GuppyScreen
+Loading HelixScreen;Будет загружен HelixScreen
 Loading skew_profile;Загрузка skew_profile
 Load Z-Offset from global settings;Загрузка Z-Offset из глобальных параметров
 Load;Загрузить

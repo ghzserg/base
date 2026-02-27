@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Zátěžová článka aktivová
 Loaded offset from global settings %s=%.4f;Načten offset z globálních nastavení %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Načítání filamentu při {extruder_temp} pro {extrude_len}mm při {speed/60} mm/s
 Loading GuppyScreen;Načítání GuppyScreen
+Loading HelixScreen;Načítání HelixScreen
 Loading skew_profile;Načítání skew_profile
 Load Z-Offset from global settings;Načíst Z-Offset z globálních nastavení
 Load;Načíst

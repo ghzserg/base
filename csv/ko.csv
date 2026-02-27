@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;로드 셀 트리거! 베드 �
 Loaded offset from global settings %s=%.4f;전역 설정 오프셋 로드됨 %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;{extruder_temp}°C에서 {speed/60}mm/s 속도로 {extrude_len}mm 필라멘트 로드
 Loading GuppyScreen;GuppyScreen 로딩 중
+Loading HelixScreen;HelixScreen 로딩 중
 Loading skew_profile;skew_profile 로딩 중
 Load Z-Offset from global settings;전역 설정 Z-Offset 로드
 Load;로드
