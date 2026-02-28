@@ -377,7 +377,7 @@ Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one l
 Don't forget to turn off the camera on your printer's native screen.;Yazıcınızın yerel ekranındaki kamerayı kapatmayı unutmayın.
 START_PRINT has finished its work.;START_PRINT işini tamamladı.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Hatalı MCU sürümü. UPDATE_MCU FORCE=13 komutunu çalıştırmanız gerekiyor.
-Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Hatalı ZLINK verisi. Yazıcınızı http://zlink.info adresinde kaydedin ve bir ZLINK dizesi alın.
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Hatalı ZLINK verisi. Yazıcınızı http://zmod.link adresinde kaydedin ve bir ZLINK dizesi alın.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Z-Offset'ı yerel ekrandan kopyalamak için LOAD_ZOFFSET_NATIVE kullanın.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Nozulun masaya çarpmasını kontrol etmek için NOZZLE_CONTROL'ü açın
 Loading a similar rod from coil;Bobinden benzer bir çubuk yükleniyor

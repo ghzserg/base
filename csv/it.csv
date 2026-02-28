@@ -377,7 +377,7 @@ Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one l
 Don't forget to turn off the camera on your printer's native screen.;Non dimenticare di spegnere la telecamera sullo schermo nativo della stampante.
 START_PRINT has finished its work.;START_PRINT ha terminato il suo lavoro.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Versione MCU non corretta. Eseguire UPDATE_MCU FORCE=13
-Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Dati ZLINK non corretti. Registra la tua stampante su http://zlink.info e ricevi una stringa ZLINK.
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Dati ZLINK non corretti. Registra la tua stampante su http://zmod.link e ricevi una stringa ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Usa LOAD_ZOFFSET_NATIVE per copiare lo Z-Offset dallo schermo nativo.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Attiva NOZZLE_CONTROL per controllare l'impatto dell'ugello sul tavolo
 Loading a similar rod from coil;Caricamento filamento simile dalla bobina

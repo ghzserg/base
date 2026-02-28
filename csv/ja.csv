@@ -377,7 +377,7 @@ Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one l
 Don't forget to turn off the camera on your printer's native screen.;プリンターのネイティブ画面でカメラをオフにすることを忘れないでください。
 START_PRINT has finished its work.;START_PRINTは作業を完了しました。
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;不正なMCUバージョン。UPDATE_MCU FORCE=13を実行してください
-Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;不正なZLINKデータ。http://zlink.info でプリンターを登録し、ZLINK文字列を受信してください。
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;不正なZLINKデータ。http://zmod.link でプリンターを登録し、ZLINK文字列を受信してください。
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;LOAD_ZOFFSET_NATIVEを使用して、ネイティブ画面からZオフセットをコピーします。
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;ノズルのテーブルへの影響を制御するにはNOZZLE_CONTROLをオンにします
 Loading a similar rod from coil;コイルから類似のフィラメントをロード中
