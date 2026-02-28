@@ -443,3 +443,8 @@ unknown value:;不明な値:
 Unrecognized value for setting:;設定値が認識されません:
 custom value:;カスタム値:
 Parameters used during printing;印刷中に使用されるパラメータ
+Restart Alter Screen;代替画面を再起動
+Alter Screen is not used;代替画面は使用されていません
+You're using native screen. No need to restart Alter Screen;ネイティブ画面を使用中です。代替画面を再起動する必要はありません
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;ネイティブ画面なしで HelixScreen を使用中 // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;グローバルパラメータからのZ-Offset読み込みを使用して、代替画面でZ-Offsetを制御します

@@ -443,3 +443,8 @@ unknown value:;neznámá hodnota:
 Unrecognized value for setting:;Nerozpoznaná hodnota pro nastavení:
 custom value:;vlastní hodnota:
 Parameters used during printing;Parametry použité během tisku
+Restart Alter Screen;Restartovat alternativní obrazovku
+Alter Screen is not used;Alternativní obrazovka není používána
+You're using native screen. No need to restart Alter Screen;Používáte nativní obrazovku. Není třeba restartovat alternativní obrazovku
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Pracujete BEZ nativní obrazovky s HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Použijte načítání Z-Offset z globálních parametrů pro ovládání Z-Offset s Alternativní obrazovkou

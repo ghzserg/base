@@ -443,3 +443,8 @@ unknown value:;bilinmeyen değer:
 Unrecognized value for setting:;Ayar için tanınmayan değer:
 custom value:;özel değer:
 Parameters used during printing;Yazdırma sırasında kullanılan parametreler
+Restart Alter Screen;Alternatif Ekranı Yeniden Başlat
+Alter Screen is not used;Alternatif Ekran kullanılmıyor
+You're using native screen. No need to restart Alter Screen;Yerel ekranı kullanıyorsunuz. Alternatif Ekranı yeniden başlatmaya gerek yok
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Yerel ekran OLMADAN HelixScreen ile çalışıyorsunuz // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Z-Offset'i Alternatif Ekranla kontrol etmek için genel parametrelerden Z-Offset yüklemeyi kullanın

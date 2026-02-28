@@ -443,3 +443,8 @@ unknown value:;valor desconocido:
 Unrecognized value for setting:;Valor no reconocido para el ajuste:
 custom value:;valor personalizado:
 Parameters used during printing;Parámetros utilizados durante la impresión
+Restart Alter Screen;Reiniciar pantalla alternativa
+Alter Screen is not used;La pantalla alternativa no se utiliza
+You're using native screen. No need to restart Alter Screen;Estás usando la pantalla nativa. No es necesario reiniciar la pantalla alternativa
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Estás trabajando SIN pantalla nativa con HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Use la carga de Z-Offset desde parámetros globales para controlar Z-Offset con la pantalla alternativa

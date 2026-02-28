@@ -443,3 +443,8 @@ unknown value:;未知值:
 Unrecognized value for setting:;无法识别的设置值:
 custom value:;自定义值:
 Parameters used during printing;打印期间使用的参数
+Restart Alter Screen;重启备用屏幕
+Alter Screen is not used;备用屏幕未使用
+You're using native screen. No need to restart Alter Screen;您正在使用原生屏幕。无需重启备用屏幕
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;您在没有原生屏幕的情况下使用 HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;使用从全局参数加载 Z-Offset 来控制备用屏幕的 Z-Offset

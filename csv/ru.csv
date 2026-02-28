@@ -440,3 +440,8 @@ unknown value:;неизвестное значение:
 Unrecognized value for setting:;Нераспознанное значение для настройки:
 custom value:;пользовательское значение:
 Parameters used during printing;Параметры, используемые во время печати
+Restart Alter Screen;Перезапустить альтернативный экран
+Alter Screen is not used;Альтернативный экран не используется
+You're using native screen. No need to restart Alter Screen;Вы используете родной экран. Нет необходимости перезапускать альтернативный экран
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Вы работаете БЕЗ родного экрана c HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Используйте загрузку Z-Offset из глобальных параметров, чтобы управлять Z-Offset c Альтернативным экраном
