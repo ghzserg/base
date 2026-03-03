@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Обнаружена срабо
 Loaded offset from global settings %s=%.4f;Загружено смещение из глобальных параметров %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Загрузка филамента с температурой {extruder_temp} на {extrude_len} мм со скоростью {speed/60} мм/с
 Loading GuppyScreen;Будет загружен GuppyScreen
+Loading HelixScreen;Будет загружен HelixScreen
 Loading skew_profile;Загрузка skew_profile
 Load Z-Offset from global settings;Загрузка Z-Offset из глобальных параметров
 Load;Загрузить
@@ -376,7 +377,7 @@ Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one l
 Don't forget to turn off the camera on your printer's native screen.;Не забудьте отключить камеру на родном экране принтера
 START_PRINT has finished its work.;START_PRINT закончил свою работу.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Неверная версия MCU. Запустите UPDATE_MCU FORCE=13
-Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Неверные данные ZLINK. Зарегистрируйте принтер на http://zlink.info и получите строку ZLINK.
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Неверные данные ZLINK. Зарегистрируйте принтер на http://zmod.link и получите строку ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Используйте LOAD_ZOFFSET_NATIVE для копирования Z-Offset с родного экрана.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Включите NOZZLE_CONTROL для контроля удара сопла о стол
 Loading a similar rod from coil;Загрузка аналогичного прутка с катушки
@@ -440,3 +441,8 @@ Unrecognized value for setting:;Нераспознанное значение д
 custom value:;пользовательское значение:
 Parameters used during printing;Параметры, используемые во время печати
 Go to rear edge via edges;Перейти к заднему краю через края
+Restart Alter Screen;Перезапустить альтернативный экран
+Alter Screen is not used;Альтернативный экран не используется
+You're using native screen. No need to restart Alter Screen;Вы используете родной экран. Нет необходимости перезапускать альтернативный экран
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Вы работаете БЕЗ родного экрана c HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Используйте загрузку Z-Offset из глобальных параметров, чтобы управлять Z-Offset c Альтернативным экраном

@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Lastzelle ausgelöst! Stellen S
 Loaded offset from global settings %s=%.4f;Offset aus globalen Einstellungen geladen %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Filament wird bei {extruder_temp}°C für {extrude_len}mm mit {speed/60} mm/s geladen
 Loading GuppyScreen;GuppyScreen wird geladen
+Loading HelixScreen;HelixScreen wird geladen
 Loading skew_profile;Skew-Profil wird geladen
 Load Z-Offset from global settings;Z-Offset aus globalen Einstellungen laden
 Load;Laden
@@ -376,7 +377,7 @@ Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one l
 Don't forget to turn off the camera on your printer's native screen.;Vergessen Sie nicht, die Kamera auf dem native Bildschirm Ihres Druckers auszuschalten.
 START_PRINT has finished its work.;START_PRINT hat seine Arbeit beendet.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Falsche MCU-Version. Führen Sie UPDATE_MCU FORCE=13 aus
-Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Falsche ZLINK-Daten. Registrieren Sie Ihren Drucker auf http://zlink.info und erhalten Sie einen ZLINK-String.
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Falsche ZLINK-Daten. Registrieren Sie Ihren Drucker auf http://zmod.link und erhalten Sie einen ZLINK-String.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Verwenden Sie LOAD_ZOFFSET_NATIVE, um den Z-Offset vom native Bildschirm zu kopieren.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Aktivieren Sie NOZZLE_CONTROL, um den Düseneinfluss auf den Tisch zu steuern
 Loading a similar rod from coil;Laden eines ähnlichen Filaments von Spule
@@ -442,3 +443,8 @@ Unrecognized value for setting:;Unbekannter Wert für die Einstellung:
 custom value:;benutzerdefinierter Wert:
 Parameters used during printing;Während des Drucks verwendete Parameter
 Go to rear edge via edges;Über die Kanten zur hinteren Kante fahren
+Restart Alter Screen;Alternativbildschirm neu starten
+Alter Screen is not used;Alternativbildschirm wird nicht verwendet
+You're using native screen. No need to restart Alter Screen;Sie verwenden den native Bildschirm. Kein Neustart des Alternativbildschirms erforderlich
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Sie arbeiten OHNE native Bildschirm mit HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Verwenden Sie das Laden des Z-Offset aus globalen Parametern, um Z-Offset mit dem Alternativbildschirm zu steuern

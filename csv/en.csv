@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Load cell triggered! Make sure 
 Loaded offset from global settings %s=%.4f;Loaded offset from global settings %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s
 Loading GuppyScreen;Loading GuppyScreen
+Loading HelixScreen;Loading HelixScreen
 Loading skew_profile;Loading skew_profile
 Load Z-Offset from global settings;Load Z-Offset from global settings
 Load;Load
@@ -376,7 +377,7 @@ Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one l
 Don't forget to turn off the camera on your printer's native screen.;Don't forget to turn off the camera on your printer's native screen.
 START_PRINT has finished its work.;START_PRINT has finished its work.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Incorrect MCU version. Need run UPDATE_MCU FORCE=13
-Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Turn on NOZZLE_CONTROL to control the nozzle impact on the table
 Loading a similar rod from coil;Loading a similar rod from coil
@@ -443,3 +444,8 @@ Unrecognized value for setting:;Unrecognized value for setting:
 custom value:;custom value:
 Parameters used during printing;Parameters used during printing
 Go to rear edge via edges;Go to rear edge via edges
+Restart Alter Screen;Restart Alter Screen
+Alter Screen is not used;Alter Screen is not used
+You're using native screen. No need to restart Alter Screen;You're using native screen. No need to restart Alter Screen
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen

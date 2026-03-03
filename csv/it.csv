@@ -157,6 +157,7 @@ Load cell triggered! Make sure the bed is clean!;Cella di carico attivata! Assic
 Loaded offset from global settings %s=%.4f;Offset caricato dalle impostazioni globali %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Caricamento del filamento a {extruder_temp} per {extrude_len}mm a {speed/60} mm/s
 Loading GuppyScreen;Caricamento di GuppyScreen
+Loading HelixScreen;Caricamento di HelixScreen
 Loading skew_profile;Caricamento di skew_profile
 Load Z-Offset from global settings;Carica Z-Offset dalle impostazioni globali
 Load;Carica
@@ -376,7 +377,7 @@ Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one l
 Don't forget to turn off the camera on your printer's native screen.;Non dimenticare di spegnere la telecamera sullo schermo nativo della stampante.
 START_PRINT has finished its work.;START_PRINT ha terminato il suo lavoro.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Versione MCU non corretta. Eseguire UPDATE_MCU FORCE=13
-Incorrect ZLINK data. Register your printer on the http://zlink.info and receive a ZLINK string.;Dati ZLINK non corretti. Registra la tua stampante su http://zlink.info e ricevi una stringa ZLINK.
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Dati ZLINK non corretti. Registra la tua stampante su http://zmod.link e ricevi una stringa ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Usa LOAD_ZOFFSET_NATIVE per copiare lo Z-Offset dallo schermo nativo.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Attiva NOZZLE_CONTROL per controllare l'impatto dell'ugello sul tavolo
 Loading a similar rod from coil;Caricamento filamento simile dalla bobina
@@ -443,3 +444,8 @@ Unrecognized value for setting:;Valore non riconosciuto per l'impostazione:
 custom value:;valore personalizzato:
 Parameters used during printing;Parametri utilizzati durante la stampa
 Go to rear edge via edges;Vai al bordo posteriore passando per i bordi
+Restart Alter Screen;Riavvia schermo alternativo
+Alter Screen is not used;Lo schermo alternativo non è utilizzato
+You're using native screen. No need to restart Alter Screen;Stai usando lo schermo nativo. Non è necessario riavviare lo schermo alternativo
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Stai lavorando SENZA schermo nativo con HelixScreen // DISPLAY_OFF HELIX=1
+Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Utilizza il caricamento Z-Offset dai parametri globali per controllare Z-Offset con lo schermo alternativo
