@@ -206,6 +206,8 @@
             },
             "global_set_values": ["LINE_PURGE", "_CLEAR1", "_CLEAR2", "_CLEAR3", "_CLEAR4", "CLEAR_TRAP"]
         },
+
+
         "use_trash_on_print": {
             "type": "int",
             "default": 1,

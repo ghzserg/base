@@ -444,6 +444,7 @@ Unrecognized value for setting:;설정값을 인식할 수 없습니다:
 custom value:;사용자 지정 값:
 Parameters used during printing;인쇄 중 사용되는 매개변수
 Slicer-controlled pooping;슬라이서 제어 퍼징
+Go to rear edge via edges;가장자리를 거쳐 뒷면 끝으로 이동
 Restart Alter Screen;대체 화면 다시 시작
 Alter Screen is not used;대체 화면이 사용되지 않음
 You're using native screen. No need to restart Alter Screen;네이티브 화면을 사용 중입니다. 대체 화면을 다시 시작할 필요가 없습니다

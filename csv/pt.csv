@@ -444,6 +444,7 @@ Unrecognized value for setting:;Valor não reconhecido para a configuração:
 custom value:;valor personalizado:
 Parameters used during printing;Parâmetros usados durante a impressão
 Slicer-controlled pooping;Purga controlada pelo fatiador
+Go to rear edge via edges;Ir para a borda traseira via bordas
 Restart Alter Screen;Reiniciar ecrã alternativo
 Alter Screen is not used;O ecrã alternativo não é usado
 You're using native screen. No need to restart Alter Screen;Está a usar o ecrã nativo. Não é necessário reiniciar o ecrã alternativo

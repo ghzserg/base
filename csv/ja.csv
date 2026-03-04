@@ -444,6 +444,7 @@ Unrecognized value for setting:;設定値が認識されません:
 custom value:;カスタム値:
 Parameters used during printing;印刷中に使用されるパラメータ
 Slicer-controlled pooping;スライサー制御によるパージ
+Go to rear edge via edges;エッジ経由で後端へ移動
 Restart Alter Screen;代替画面を再起動
 Alter Screen is not used;代替画面は使用されていません
 You're using native screen. No need to restart Alter Screen;ネイティブ画面を使用中です。代替画面を再起動する必要はありません

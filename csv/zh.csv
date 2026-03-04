@@ -444,6 +444,7 @@ Unrecognized value for setting:;无法识别的设置值:
 custom value:;自定义值:
 Parameters used during printing;打印期间使用的参数
 Slicer-controlled pooping;切片软件控制的排料
+Go to rear edge via edges;通过边缘前往后边缘
 Restart Alter Screen;重启备用屏幕
 Alter Screen is not used;备用屏幕未使用
 You're using native screen. No need to restart Alter Screen;您正在使用原生屏幕。无需重启备用屏幕

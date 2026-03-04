@@ -441,6 +441,7 @@ Unrecognized value for setting:;Нераспознанное значение д
 custom value:;пользовательское значение:
 Parameters used during printing;Параметры, используемые во время печати
 Slicer-controlled pooping;Сброс пластика, управляемый слайсером
+Go to rear edge via edges;Перейти к заднему краю через края
 Restart Alter Screen;Перезапустить альтернативный экран
 Alter Screen is not used;Альтернативный экран не используется
 You're using native screen. No need to restart Alter Screen;Вы используете родной экран. Нет необходимости перезапускать альтернативный экран
