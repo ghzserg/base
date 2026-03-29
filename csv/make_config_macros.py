@@ -127,7 +127,7 @@ def get_valid_options(setting, is_ad5x, is_native_screen):
     if '*' in global_options:
         global_options.remove('*')
 
-    return result 
+    return result
 
 def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen):
     result = []

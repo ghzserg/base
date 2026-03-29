@@ -6,10 +6,10 @@ Which is then migrated to
 
 https://github.com/ghzserg/z_ad5x
 
-Это базовый репозиторий из которого формируется код для 
+Это базовый репозиторий из которого формируется код для
 
 https://github.com/ghzserg/z_ff5m
 
-Который потом мигрирует в 
+Который потом мигрирует в
 
 https://github.com/ghzserg/z_ad5x
