@@ -253,7 +253,7 @@
             "require_native_screen": 1,
             "get_zmod_data_text": {
                 "0": "===Don't close dialogs on native screen===",
-                "1m": "===Auto close dialogs on native screen after 20 sec (slow)===",
+                "1": "===Auto close dialogs on native screen after 20 sec (slow)===",
                 "2": "===Auto close dialogs on native screen after 20 sec (fast)==="
             },
             "global_set_values_ad5x": [0, 2]
@@ -320,7 +320,6 @@
             "default": 0,
             "category": "System",
             "show_in_global": true,
-            "require_native_screen": -1,
             "require_ad5x": -1,
             "get_zmod_data_text": {
                 "0": "===Using filament presence sensor===",
