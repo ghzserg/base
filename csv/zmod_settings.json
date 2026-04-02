@@ -374,8 +374,8 @@
             "category": "System",
             "show_in_global": true,
             "get_zmod_data_text": {
-                "0": "===Zmod Wifi Off===",
-                "1": "===Zmod Wifi On==="
+                "0": "===Z-Mod Wifi Off===",
+                "1": "===Z-Mod Wifi On==="
             }
         },
         "led": {
