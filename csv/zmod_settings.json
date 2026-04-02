@@ -438,7 +438,7 @@
             "category": "System",
             "show_in_global": true,
             "get_zmod_data_text": {
-                "0": "===Use Fluidd/Mainsail button settings from ZMOD===",
+                "0": "===Use Fluidd/Mainsail button settings from Z-Mod===",
                 "1": "===Save Fluidd/Mainsail button changes==="
             }
         },
@@ -504,7 +504,7 @@
         "reset": {
             "type": "special",
             "category": "System",
-            "code": "RESPOND TYPE=command MSG=\"action:prompt_button Reset ZMOD Global| _RESET_ZMOD|orange\""
+            "code": "RESPOND TYPE=command MSG=\"action:prompt_button Reset Z-Mod Global| _RESET_ZMOD|orange\""
         }
     }
 }

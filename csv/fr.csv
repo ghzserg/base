@@ -129,7 +129,7 @@ Forced bed leveling: disabled;Nivellement forcé : désactivé
 Forced bed leveling: enabled;Nivellement forcé : activé
 Generating belts frequency profile...;Génération du profil de fréquence des courroies...
 Getting data for KAMP.;Récupération des données pour KAMP
-Get ZMOD parameters;Obtenir les paramètres ZMOD
+Get Z-Mod parameters;Obtenir les paramètres Z-Mod
 Global Z-Offset load: ignored (working with screen);Chargement global Z-Offset : ignoré (écran actif)
 GuppyScreen is not used;GuppyScreen non utilisé
 has detected that the filament has run out, please load it and press RESUME;Détection de fin de filament. Chargez-en et appuyez sur RESUME
@@ -259,7 +259,7 @@ Save data for print recovery;Sauvegarder pour la récupération
 Saved data deleted;Données sauvegardées supprimées
 Save Fluidd/Mainsail button changes;Sauvegarder les changements des boutons Fluidd/Mainsail
 Save parameters without stock screen freeze;Sauvegarder sans figer l'écran natif
-Save ZMOD parameters;Sauvegarder les paramètres ZMOD
+Save Z-Mod parameters;Sauvegarder les paramètres Z-Mod
 Save Z-Offset;Sauvegarder le Z-Offset
 Saving controlled by native screen;Sauvegarde contrôlée par l'écran natif
 Schreider purge code from top-right to bottom;Code de purge Schreider de haut en bas
@@ -291,7 +291,7 @@ Switch to console to view recovery stages;Passer en console pour voir les étape
 Switch web interface (fluidd/mainsail);Changer d'interface web (fluidd/mainsail)
 System-wide parameters;Paramètres système
 temperature to;température à
-Temporary ZMOD disable;Désactivation temporaire de ZMOD
+Temporary Z-Mod disable;Désactivation temporaire de Z-Mod
 Test bed mesh before printing;Tester le maillage avant impression
 Test bed mesh before printing + KAMP;Tester le maillage avant impression + KAMP
 Test EMMC;Tester l'EMMC
@@ -308,7 +308,7 @@ Use adaptive mesh (KAMP) where possible instead of full bed mesh;Préférer le m
 Use alternative camera;Utiliser la caméra alternative
 Use alternative NEW_SAVE_CONFIG;Utiliser l'alternative NEW_SAVE_CONFIG
 Use bed leveling mode from native screen.;Utiliser le mode nivellement de l'écran natif
-Use Fluidd/Mainsail button settings from ZMOD;Utiliser les paramètres de boutons ZMOD pour Fluidd/Mainsail
+Use Fluidd/Mainsail button settings from Z-Mod;Utiliser les paramètres de boutons Z-Mod pour Fluidd/Mainsail
 Use nozzle pre-purge;Utiliser la pré-purge
 Use SCV = 5 for shaper graphs;Utiliser SCV = 5 pour les graphiques du shaper
 Use SCV from config for shaper graphs;Utiliser SCV du config pour les graphiques
@@ -343,7 +343,7 @@ You need to disconnect power cord and then reconnect it;Débranchez/rebranchez l
 You're using native screen. No need to restart GuppyScreen;Écran natif utilisé. Pas besoin de redémarrer GuppyScreen
 Zeroing confirmed;Zéro confirmé
 Zeroing not confirmed;Zéro non confirmé
-ZMOD parameters. Set via SAVE_ZMOD_DATA;Paramètres ZMOD. Régler via SAVE_ZMOD_DATA
+Z-Mod parameters. Set via SAVE_ZMOD_DATA;Paramètres Z-Mod. Régler via SAVE_ZMOD_DATA
 Z-Offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Réglage Z-Offset ignoré, SKIP_ZOFFSET={skip_zoffset}
 Available languages;Langues disponibles
 Restore backup config files from archive;Restaurer les fichiers de configuration de sauvegarde à partir de l'archive

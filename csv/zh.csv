@@ -129,7 +129,7 @@ Forced bed leveling: disabled;强制调平：已禁用
 Forced bed leveling: enabled;强制调平：已启用
 Generating belts frequency profile...;正在生成皮带频率曲线...
 Getting data for KAMP.;正在获取KAMP数据
-Get ZMOD parameters;获取ZMOD参数
+Get Z-Mod parameters;获取ZMOD参数
 Global Z-Offset load: ignored (working with screen);全局Z偏移加载：已忽略（屏幕模式）
 GuppyScreen is not used;未使用GuppyScreen
 has detected that the filament has run out, please load it and press RESUME;检测到耗材用尽，请加载后按RESUME
@@ -259,7 +259,7 @@ Save data for print recovery;保存打印恢复数据
 Saved data deleted;已保存数据已删除
 Save Fluidd/Mainsail button changes;保存Fluidd/Mainsail按钮修改
 Save parameters without stock screen freeze;保存参数时不冻结原生屏幕
-Save ZMOD parameters;保存ZMOD参数
+Save Z-Mod parameters;保存ZMOD参数
 Save Z-Offset;保存Z偏移
 Saving controlled by native screen;由原生屏幕控制保存
 Schreider purge code from top-right to bottom;Schreider式右上至下清洗代码
@@ -291,7 +291,7 @@ Switch to console to view recovery stages;切换到控制台查看恢复阶段
 Switch web interface (fluidd/mainsail);切换网页界面（fluidd/mainsail）
 System-wide parameters;全局参数
 temperature to;温度至
-Temporary ZMOD disable;临时禁用ZMOD
+Temporary Z-Mod disable;临时禁用ZMOD
 Test bed mesh before printing;打印前测试床面网格
 Test bed mesh before printing + KAMP;打印前测试床面网格 + KAMP
 Test EMMC;测试EMMC
@@ -308,7 +308,7 @@ Use adaptive mesh (KAMP) where possible instead of full bed mesh;尽可能使用
 Use alternative camera;使用替代摄像头
 Use alternative NEW_SAVE_CONFIG;使用替代NEW_SAVE_CONFIG
 Use bed leveling mode from native screen.;使用原生屏幕调平模式
-Use Fluidd/Mainsail button settings from ZMOD;使用ZMOD的Fluidd/Mainsail按钮设置
+Use Fluidd/Mainsail button settings from Z-Mod;使用ZMOD的Fluidd/Mainsail按钮设置
 Use nozzle pre-purge;使用喷嘴预清洗
 Use SCV = 5 for shaper graphs;使用SCV=5生成整形器图表
 Use SCV from config for shaper graphs;使用配置中的SCV生成整形器图表
@@ -343,7 +343,7 @@ You need to disconnect power cord and then reconnect it;需要断开电源后重
 You're using native screen. No need to restart GuppyScreen;您正在使用原生屏幕。无需重启GuppyScreen
 Zeroing confirmed;归零已确认
 Zeroing not confirmed;未确认归零
-ZMOD parameters. Set via SAVE_ZMOD_DATA;ZMOD参数。通过SAVE_ZMOD_DATA设置
+Z-Mod parameters. Set via SAVE_ZMOD_DATA;ZMOD参数。通过SAVE_ZMOD_DATA设置
 Z-Offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Z偏移设置已跳过，SKIP_ZOFFSET={skip_zoffset}
 Available languages;可用语言
 Restore backup config files from archive;从存档中恢复备份配置文件

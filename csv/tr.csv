@@ -129,7 +129,7 @@ Forced bed leveling: disabled;Zorunlu yatak hizalama: devre dışı
 Forced bed leveling: enabled;Zorunlu yatak hizalama: etkin
 Generating belts frequency profile...;Bant frekans profili oluşturuluyor...
 Getting data for KAMP.;KAMP için veri alınıyor.
-Get ZMOD parameters;ZMOD parametrelerini al
+Get Z-Mod parameters;Z-Mod parametrelerini al
 Global Z-Offset load: ignored (working with screen);Genel Z-Offset yükleme: yoksayıldı (ekranla çalışılıyor)
 GuppyScreen is not used;GuppyScreen kullanılmıyor
 has detected that the filament has run out, please load it and press RESUME;filamentin bittiğini algıladı, lütfen yükleyin ve DEVAM ET'e basın
@@ -259,7 +259,7 @@ Save data for print recovery;Yazdırma kurtarma için veri kaydet
 Saved data deleted;Kaydedilen veriler silindi
 Save Fluidd/Mainsail button changes;Fluidd/Mainsail buton değişikliklerini kaydet
 Save parameters without stock screen freeze;Parametreleri, standart ekran donması olmadan kaydet
-Save ZMOD parameters;ZMOD parametrelerini kaydet
+Save Z-Mod parameters;Z-Mod parametrelerini kaydet
 Save Z-Offset;Z-Offset'ı Kaydet
 Saving controlled by native screen;Kaydetme, yerel ekran tarafından kontrol ediliyor
 Schreider purge code from top-right to bottom;Schreider'ın sağ üstten alta temizleme kodu
@@ -291,7 +291,7 @@ Switch to console to view recovery stages;Kurtarma aşamalarını görmek için 
 Switch web interface (fluidd/mainsail);Web arayüzünü değiştir (fluidd/mainsail)
 System-wide parameters;Sistem geneli parametreler
 temperature to;sıcaklığını şuna
-Temporary ZMOD disable;ZMOD'u geçici olarak devre dışı bırak
+Temporary Z-Mod disable;Z-Mod'u geçici olarak devre dışı bırak
 Test bed mesh before printing;Yazdırmadan önce yatak ağını test et
 Test bed mesh before printing + KAMP;Yazdırmadan önce yatak ağını test et + KAMP
 Test EMMC;EMMC'yi test et
@@ -308,7 +308,7 @@ Use adaptive mesh (KAMP) where possible instead of full bed mesh;Mümkün olduğ
 Use alternative camera;Alternatif kamerayı kullan
 Use alternative NEW_SAVE_CONFIG;Alternatif NEW_SAVE_CONFIG kullan
 Use bed leveling mode from native screen.;Yatak hizalama modunu yerel ekrandan kullan.
-Use Fluidd/Mainsail button settings from ZMOD;Fluidd/Mainsail buton ayarlarını ZMOD'dan kullan
+Use Fluidd/Mainsail button settings from Z-Mod;Fluidd/Mainsail buton ayarlarını Z-Mod'dan kullan
 Use nozzle pre-purge;Nozul ön temizleme kullan
 Use SCV = 5 for shaper graphs;Şekillendirici grafikleri için SCV = 5 kullan
 Use SCV from config for shaper graphs;Şekillendirici grafikleri için yapılandırmadan SCV kullan
@@ -343,7 +343,7 @@ You need to disconnect power cord and then reconnect it;Yazıcının güç kablo
 You're using native screen. No need to restart GuppyScreen;Yerel ekranla çalışıyorsunuz. GuppyScreen'i yeniden başlatmaya gerek yok
 Zeroing confirmed;Sıfırlama onaylandı
 Zeroing not confirmed;Sıfırlama onayı yok
-ZMOD parameters. Set via SAVE_ZMOD_DATA;ZMOD parametreleri. SAVE_ZMOD_DATA ile ayarlanır.
+Z-Mod parameters. Set via SAVE_ZMOD_DATA;Z-Mod parametreleri. SAVE_ZMOD_DATA ile ayarlanır.
 Z-Offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Z-Offset kurulumu atlandı, SKIP_ZOFFSET={skip_zoffset}
 Available languages;Mevcut diller
 Restore backup config files from archive;Yedek yapılandırma dosyalarını arşivden geri yükle
