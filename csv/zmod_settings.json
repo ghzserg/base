@@ -162,16 +162,6 @@
                 "1": "===Load Z-Offset from global settings==="
             }
         },
-        "disable_priming": {
-            "type": "int",
-            "default": 0,
-            "category": "Print Start",
-            "show_in_global": true,
-            "get_zmod_data_text": {
-                "0": "===Enable nozzle line purge===",
-                "1": "===Disable nozzle line purge==="
-            }
-        },
         "preclear": {
             "type": "int",
             "default": 0,
@@ -181,6 +171,16 @@
             "get_zmod_data_text": {
                 "0": "===Don't use nozzle pre-purge===",
                 "1": "===Use nozzle pre-purge==="
+            }
+        },
+        "disable_priming": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "===Enable nozzle line purge===",
+                "1": "===Disable nozzle line purge==="
             }
         },
         "silent": {

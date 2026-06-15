@@ -209,7 +209,7 @@ Possible wrong profile loaded (different plate/temperature);Возможно з�
 Power off FF5M Pro after (min): {zpro_poweroff_timeout};Выключать FF5M Pro через (мин): {zpro_poweroff_timeout}
 Power off printer;Выключить принтер
 Pre-cleaning completed;Предочистка закончена
-Priming algorithm: {zclear};Алгоритм очистки: {zclear}
+Priming algorithm: {zclear};Алгоритм очистки линией: {zclear}
 Print completed;Печать завершена
 Printer screen will freeze until pre-cleaning is complete.;Экран принтера замерзнет до окончания предочистки.
 Printer will boot into stock firmware;Принтер загрузится в родную прошивку
@@ -225,7 +225,7 @@ Printing with bed mesh: {cur_mesh};Печать идет с картой сто�
 Probe sensor {probe};Датчик касания {probe}
 Profile or mesh matrix not found;Профиль или матрица сетки не найдены
 Pulling the filament;Дергаем пруток
-Purge algorithm: {zclear};Алгоритм очистки: {zclear}
+Purge algorithm: {zclear};Алгоритм очистки линией: {zclear}
 Purge code from FF group;Код очистки из группы FF
 Purge code from Orca Slicer;Код очистки из Orca Slicer
 Purge code with cleaner from top-right to bottom;Код очистки с чистилкой справа сверху-вниз
