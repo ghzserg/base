@@ -115,7 +115,7 @@ Filament runout or jam detected;Filament bitti veya sıkıştı algılandı
 Filament jam detected;Filament sıkışması algılandı
 Filament runout. Pausing in 30 seconds;Filament bitti. 30 saniye içinde duraklatılacak
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;{filename} dosyasında ark komutları (G2, G3) bulundu. Bunları devre dışı bırakın. Orca'da: İşlem Profili -> Ark Yaklaşımı -> İşareti kaldırın.
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;{filename} dosyasında MD5 sağlama toplamı yok. Orca'da etkinleştirin. https://wiki.zmod.link/Recomendations/
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;{filename} dosyasında MD5 sağlama toplamı yok. Orca'da etkinleştirin. https://wiki.zmod.link/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;{filename} dosyasının MD5 sağlama toplamı uyuşmuyor. Dosya silindi. Yazdırma iptal edildi
 File {filename} MD5 mismatch. Print canceled;{filename} dosyasının MD5 sağlama toplamı uyuşmuyor. Yazdırma iptal edildi
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;{filename} dosyasında desteklenmeyen (G17, G18, G19) komutları kullanılmış. Z-Hop tipini değiştirin.

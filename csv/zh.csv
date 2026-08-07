@@ -115,7 +115,7 @@ Filament runout or jam detected;检测到耗材用尽或堵塞
 Filament jam detected;检测到耗材用尽或堵塞
 Filament runout. Pausing in 30 seconds;耗材用尽。30秒后暂停
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;文件{filename}包含圆弧指令（G2/G3）。需禁用。在Orca中：流程配置->圆弧逼近->取消勾选
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;文件{filename}无MD5校验。需在Orca中启用。参考链接
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;文件{filename}无MD5校验。需在Orca中启用。参考链接 https://wiki.zmod.link/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;文件{filename}MD5不匹配。文件已删除。打印取消
 File {filename} MD5 mismatch. Print canceled;文件{filename}MD5不匹配。打印取消
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;文件{filename}使用不支持的G17/G18/G19指令。需更换Z抬升类型

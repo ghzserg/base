@@ -115,7 +115,7 @@ Filament runout or jam detected;필라멘트 부족/막힘 감지
 Filament jam detected;필라멘트 부족/막힘 감지
 Filament runout. Pausing in 30 seconds;필라멘트 부족. 30초 후 일시정지
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;파일 {filename}에 호 명령(G2, G3) 포함. Orca에서 비활성화: 프로세스 프로필 -> 호 근사 -> 체크 해제
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;파일 {filename}에 MD5 체크섬 없음. Orca에서 활성화: https://wiki.zmod.link/Recomendations/
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;파일 {filename}에 MD5 체크섬 없음. Orca에서 활성화: https://wiki.zmod.link/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;파일 {filename} MD5 불일치. 파일 삭제됨. 인쇄 취소됨
 File {filename} MD5 mismatch. Print canceled;파일 {filename} MD5 불일치. 인쇄 취소됨
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;파일 {filename}에서 G17/G18/G19 사용. Z-Hop 유형 변경

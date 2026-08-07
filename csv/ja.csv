@@ -115,7 +115,7 @@ Filament runout or jam detected;フィラメント切れまたは詰まりを検
 Filament jam detected;フィラメント切れまたは詰まりを検出
 Filament runout. Pausing in 30 seconds;フィラメント切れ。30秒後に一時停止
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;ファイル{filename}に円弧コマンド（G2, G3）が含まれています。無効化してください。Orcaで: プロセスプロファイル -> 円弧近似 -> チェックを外す
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;ファイル{filename}にMD5チェックサムがありません。Orcaで有効化してください。https://wiki.zmod.link/Recomendations/
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;ファイル{filename}にMD5チェックサムがありません。Orcaで有効化してください。https://wiki.zmod.link/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;ファイル{filename}のMD5不一致。ファイルを削除し、印刷をキャンセルしました。
 File {filename} MD5 mismatch. Print canceled;ファイル{filename}のMD5不一致。印刷をキャンセルしました。
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;ファイル{filename}で未サポートのG17/G18/G19コマンドを使用。Z-Hopタイプを変更してください。

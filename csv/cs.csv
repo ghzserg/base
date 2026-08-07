@@ -115,7 +115,7 @@ Filament runout or jam detected;Detekován konec nebo zaseknutí filamentu
 Filament jam detected;Detekováno zaseknutí filamentu
 Filament runout. Pausing in 30 seconds;Konec filamentu. Pozastavení za 30 sekund
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;Soubor {filename} obsahuje příkazy oblouků (G2, G3). Vypněte je. V Orca: Process Profile -> Arc Approximation -> Odškrtnout
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;Soubor {filename} nemá MD5 kontrolní součet. Povolte jej v Orca. https://wiki.zmod.link/Recomendations/
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;Soubor {filename} nemá MD5 kontrolní součet. Povolte jej v Orca. https://wiki.zmod.link/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;Soubor {filename} má nesouhlasný MD5. Soubor smazán. Tisk zrušen
 File {filename} MD5 mismatch. Print canceled;Soubor {filename} má nesouhlasný MD5. Tisk zrušen
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;Soubor {filename} používá nepodporované příkazy G17/G18/G19. Nahraďte typ Z-Hop.

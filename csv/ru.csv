@@ -115,7 +115,7 @@ Filament runout or jam detected;Кончился или остановился �
 Filament jam detected;Остановился филамент
 Filament runout. Pausing in 30 seconds;Кончился филамент. Через 30 секунд будет пауза
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;В файле {filename} найдено использование дуг(G2, G3). Отключите их. В Orca: Профиль процесса -> Аппроксимация дугами. Убрать галочку.
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;В файле {filename} нет MD5 суммы. Включите ее в Orca. Подробнее: https://wiki.zmod.link/ru/Recomendations/
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;В файле {filename} нет MD5 суммы. Включите ее в Orca. Подробнее: https://wiki.zmod.link/ru/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;В файле {filename} не совпала MD5 сумма. Файл удален. Печать отменена
 File {filename} MD5 mismatch. Print canceled;В файле {filename} не совпала MD5 сумма. Печать отменена
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;В файле {filename} найдено использование (G17, G18, G19). Замените Cпиральный/Автоматич. Z-Hop. Принтер его не поддерживает.

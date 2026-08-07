@@ -115,7 +115,7 @@ Filament runout or jam detected;Filamentende oder Blockierung erkannt
 Filament jam detected;Blockierung erkannt
 Filament runout. Pausing in 30 seconds;Filamentende. Pause in 30 Sekunden
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;Datei {filename} enthält Bogenbefehle (G2, G3). Deaktivieren Sie diese in Orca: Prozessprofil -> Bogenapproximation -> Abwählen
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;Datei {filename} hat keine MD5-Prüfsumme. Aktivieren Sie diese in Orca. (Link)
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;Datei {filename} hat keine MD5-Prüfsumme. Aktivieren Sie diese in Orca. https://wiki.zmod.link/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;MD5-Fehler in {filename}. Datei gelöscht. Druck abgebrochen
 File {filename} MD5 mismatch. Print canceled;MD5-Fehler in {filename}. Druck abgebrochen
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;Datei {filename} enthält nicht unterstützte G17/G18/G19-Befehle. Z-Hop-Typ ersetzen.

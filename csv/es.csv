@@ -115,7 +115,7 @@ Filament runout or jam detected;Se detectó falta de filamento o atasco
 Filament jam detected;Se detectó falta de filamento o atasco
 Filament runout. Pausing in 30 seconds;Falta de filamento. Pausa en 30 segundos
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;El archivo {filename} contiene comandos de arco (G2, G3). Desactívalos. En Orca: Perfil de proceso -> Aproximación de arco -> Desmarcar
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recomendations/;El archivo {filename} no tiene suma MD5. Actívalo en Orca. https://wiki.zmod.link/Recomendations/
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;El archivo {filename} no tiene suma MD5. Actívalo en Orca. https://wiki.zmod.link/Recommendations/
 File {filename} MD5 mismatch. File deleted. Print canceled;Suma MD5 no coincide. Archivo eliminado. Impresión cancelada
 File {filename} MD5 mismatch. Print canceled;Suma MD5 no coincide. Impresión cancelada
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;El archivo {filename} usa comandos G17/G18/G19 no soportados. Reemplaza el tipo Z-Hop.
