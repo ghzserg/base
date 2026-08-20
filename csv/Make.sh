@@ -10,3 +10,5 @@ rm ../ff5m_config_native.cfg
 rm ../ff5m_config_off.cfg
 rm ../ad5x_config_native.cfg
 rm ../ad5x_config_off.cfg
+rm ../c5pro_config_native.cfg
+rm ../c5pro_config_off.cfg

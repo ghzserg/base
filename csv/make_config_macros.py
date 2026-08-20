@@ -24,7 +24,8 @@ import re
 #       "show_in_global": Whether or not the parameter shows up in GLOBAL. Defaults to true if not specified.
 #       "require_native_screen": Set whether the setting requires a certain native screen state. 1 for only show if native
 #                                screen is on, -1 for only if it's off, 0 for always show. Default is always show.
-#       "require_ad5x": Same, but 1 for AD5X, -1 for AD5M/Pro, 0 for all. Default is always show.
+#       "require_ad5x": Same, but 1 for AD5X, -1 for AD5M/Pro/C5Pro, 0 for all. Default is always show.
+#       "require_c5pro": Same, but 1 for C5Pro, -1 for AD5X/AD5M/Pro, 0 for all. Default is always show.
 #       "get_zmod_data_text": Key-value pairs to set the text for GET_ZMOD_DATA corresponding to the various values for
 #                             the setting. For non-string-value settings, certain characters can be appended to make the
 #                             text only apply to certain situations:
@@ -32,6 +33,7 @@ import re
 #                               g - only show when using GuppyScreen / no screen
 #                               x - only show on AD5X
 #                               m - only show on AD5M / AD5M Pro
+#                               c - only show on C5Pro (Creator 5)
 #                             Also, the last entry can have a value of "*". This will specify a custom text when the user's
 #                             setting does not match any of the available options. The value of the setting can be referenced
 #                             with the setting name prefixed with z, eg: {zuse_trash_on_print}
@@ -44,10 +46,13 @@ import re
 #                            when it is not desirable to have every possible setting exposed in GLOBAL but you still want
 #                            to provide texts for the setting.
 #       "global_set_values_ad5x": If present, overrides global_set_values when on the AD5X.
-#       "global_set_values_native_screen": If present, overrides global_set_values and global_set_values_ad5x when the native
-#                                          screen is enabled.
+#       "global_set_values_c5pro": If present, overrides global_set_values when on the C5Pro.
+#       "global_set_values_native_screen": If present, overrides global_set_values, global_set_values_ad5x and
+#                                          global_set_values_c5pro when the native screen is enabled.
 #       "global_set_values_native_screen_ad5x": If present, overrides the other global_set_values params when the native screen
 #                                               is enabled on an AD5X.
+#       "global_set_values_native_screen_c5pro": If present, overrides the other global_set_values params when the native screen
+#                                                is enabled on a C5Pro.
 #       "min_valid_value": If present, values below this will be rejected.
 #       "max_valid_value": Same, but for maximum.
 #       "code": This is only used if the type is set to special. The contents of this will be copied verbatim into the output
@@ -68,18 +73,25 @@ TYPE_ASSUMPTION = 'int'
 
 GLOBAL_CANNOT_CHANGE_COLOR = 'grey'
 
-def validate_setup(ad5x_requirement, native_screen_requirement, is_ad5x, is_native_screen):
-    if ad5x_requirement < 0 and is_ad5x:
+def validate_setup(ad5x_requirement, c5pro_requirement, native_screen_requirement, is_ad5x, is_c5pro, is_native_screen):
+    # 1. Проверка экрана
+    if (native_screen_requirement < 0 and is_native_screen) or (native_screen_requirement > 0 and not is_native_screen):
         return False
-    if ad5x_requirement > 0 and not is_ad5x:
+
+    # 2. Проверка запрещающих флагов (модели со значениями -1)
+    if (ad5x_requirement < 0 and is_ad5x) or (c5pro_requirement < 0 and is_c5pro):
         return False
-    if native_screen_requirement < 0 and is_native_screen:
-        return False
-    if native_screen_requirement > 0 and not is_native_screen:
-        return False
+
+    # 3. Проверка разрешающих флагов (если требуются конкретные модели > 0)
+    if ad5x_requirement > 0 or c5pro_requirement > 0:
+        is_ad5x_matched = (ad5x_requirement > 0 and is_ad5x)
+        is_c5pro_matched = (c5pro_requirement > 0 and is_c5pro)
+        if not (is_ad5x_matched or is_c5pro_matched):
+            return False
+
     return True
 
-def get_setting_global_settable_options(setting, is_ad5x, is_native_screen):
+def get_setting_global_settable_options(setting, is_ad5x, is_c5pro, is_native_screen):
     texts = setting.get("global_text", None)
     if texts == None:
         texts = setting.get("get_zmod_data_text", {})
@@ -87,10 +99,14 @@ def get_setting_global_settable_options(setting, is_ad5x, is_native_screen):
     can_set_values = setting.get("global_set_values", None)
     if is_ad5x:
         can_set_values = setting.get("global_set_values_ad5x", can_set_values)
+    if is_c5pro:
+        can_set_values = setting.get("global_set_values_c5pro", can_set_values)
     if is_native_screen:
         can_set_values = setting.get("global_set_values_native_screen", can_set_values)
     if is_ad5x and is_native_screen:
         can_set_values = setting.get("global_set_values_native_screen_ad5x", can_set_values)
+    if is_c5pro and is_native_screen:
+        can_set_values = setting.get("global_set_values_native_screen_c5pro", can_set_values)
     if can_set_values == None:
         can_set_values = []
         for condition, _ in texts.items():
@@ -103,21 +119,23 @@ def get_setting_global_settable_options(setting, is_ad5x, is_native_screen):
                     continue
                 if 'x' in condition and not is_ad5x:
                     continue
-                if 'm' in condition and is_ad5x:
+                if 'c' in condition and not is_c5pro:
                     continue
-                condition = re.sub(r'[nxmg]', '', condition)
+                if 'm' in condition and (is_ad5x or is_c5pro):
+                    continue
+                condition = re.sub(r'[nxcmg]', '', condition)
             can_set_values += [condition]
 
     can_set_values = [str(value) for value in can_set_values]
 
     return list(dict.fromkeys(can_set_values))
 
-def get_valid_options(setting, is_ad5x, is_native_screen):
-    global_options = get_setting_global_options('placeholder', setting, is_ad5x, is_native_screen)
+def get_valid_options(setting, is_ad5x, is_c5pro, is_native_screen):
+    global_options = get_setting_global_options('placeholder', setting, is_ad5x, is_c5pro, is_native_screen)
     global_options = [option['condition'] for option in global_options]
 
     result = {
-        'settable_values': get_setting_global_settable_options(setting, is_ad5x, is_native_screen),
+        'settable_values': get_setting_global_settable_options(setting, is_ad5x, is_c5pro, is_native_screen),
         'valid_values': global_options,
         'min_value': setting.get('min_valid_value', None),
         'max_value': setting.get('max_valid_value', None),
@@ -129,14 +147,14 @@ def get_valid_options(setting, is_ad5x, is_native_screen):
 
     return result
 
-def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen):
+def get_setting_global_options(setting_name, setting, is_ad5x, is_c5pro, is_native_screen):
     result = []
 
     texts = setting.get("global_text", None)
     if texts == None:
         texts = setting.get("get_zmod_data_text", {})
 
-    can_set_values = get_setting_global_settable_options(setting, is_ad5x, is_native_screen)
+    can_set_values = get_setting_global_settable_options(setting, is_ad5x, is_c5pro, is_native_screen)
     done_conditions = []
 
     generic_text = texts.get('*', None)
@@ -150,17 +168,19 @@ def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen)
         for condition, text in texts.items():
             if setting['type'] != 'string':
                 condition_ad5x = 1 if 'x' in condition else -1 if 'm' in condition else 0
+                condition_c5pro = 1 if 'c' in condition else -1 if 'm' in condition else 0
                 condition_native_screen = 1 if 'n' in condition else -1 if 'g' in condition else 0
-                condition_stripped = re.sub(r'[nxmg]', '', condition)
+                condition_stripped = re.sub(r'[nxmgc]', '', condition)
             else:
                 condition_ad5x = False
+                condition_c5pro = False
                 condition_native_screen = False
                 condition_stripped = condition
 
             if condition_stripped != value:
                 continue
 
-            if not validate_setup(condition_ad5x, condition_native_screen, is_ad5x, is_native_screen):
+            if not validate_setup(condition_ad5x, condition_c5pro, condition_native_screen, is_ad5x, is_c5pro, is_native_screen):
                 continue
 
             result += [{
@@ -184,17 +204,19 @@ def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen)
     for condition, text in texts.items():
         if setting['type'] != 'string':
             condition_ad5x = 1 if 'x' in condition else -1 if 'm' in condition else 0
+            condition_c5pro = 1 if 'c' in condition else -1 if 'm' in condition else 0
             condition_native_screen = 1 if 'n' in condition else -1 if 'g' in condition else 0
-            condition_stripped = re.sub(r'[nxmg]', '', condition)
+            condition_stripped = re.sub(r'[nxmgc]', '', condition)
         else:
             condition_ad5x = False
+            condition_c5pro = False
             condition_native_screen = False
             condition_stripped = condition
 
         if condition_stripped in done_conditions:
             continue
 
-        if not validate_setup(condition_ad5x, condition_native_screen, is_ad5x, is_native_screen):
+        if not validate_setup(condition_ad5x, condition_c5pro, condition_native_screen, is_ad5x, is_c5pro, is_native_screen):
             continue
 
         result += [{
@@ -209,7 +231,7 @@ def get_setting_global_options(setting_name, setting, is_ad5x, is_native_screen)
 
     return result
 
-def add_save_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings):
+def add_save_zmod_data(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings):
     indent_level = BASE_INDENT_SAVE_ZMOD_DATA
 
     file_data.append((indent_level * STANDARD_INDENT) + '# Begin script-generated SAVE_ZMOD_DATA code')
@@ -220,7 +242,7 @@ def add_save_zmod_data(file_data, is_ad5x, is_native_screen, categories, setting
             if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
                 continue
 
-            if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_native_screen', 0), is_ad5x, is_native_screen):
+            if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_c5pro', 0), set_data.get('require_native_screen', 0), is_ad5x, is_c5pro, is_native_screen):
                 continue
 
             file_data.append((indent_level * STANDARD_INDENT) + f"{{% if params.{setting.upper()} %}}")
@@ -243,7 +265,7 @@ def add_save_zmod_data(file_data, is_ad5x, is_native_screen, categories, setting
 
     file_data.append((indent_level * STANDARD_INDENT) + '# End script-generated SAVE_ZMOD_DATA code')
 
-def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings):
+def add_get_zmod_data(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings):
     indent_level = BASE_INDENT_GET_ZMOD_DATA
 
     file_data.append((indent_level * STANDARD_INDENT) + '# Begin script-generated GET_ZMOD_DATA code')
@@ -256,7 +278,7 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
             if set_data.get('category', '') != category or set_data.get('type', '') == 'special':
                 continue
 
-            if not validate_setup(set_data.get("require_ad5x", 0), set_data.get("require_native_screen", 0), is_ad5x, is_native_screen):
+            if not validate_setup(set_data.get("require_ad5x", 0), set_data.get("require_c5pro", 0), set_data.get("require_native_screen", 0), is_ad5x, is_c5pro, is_native_screen):
                 continue
 
             condition = set_data.get('show_condition', None)
@@ -270,7 +292,7 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
             else:
                 file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables['{setting.lower()}']|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{setting_type} %}}")
 
-            valid_options = get_valid_options(set_data, is_ad5x, is_native_screen)
+            valid_options = get_valid_options(set_data, is_ad5x, is_c5pro, is_native_screen)
 
             if valid_options['allow_generic']:
                 if setting_type != 'string':
@@ -315,9 +337,10 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
                 else:
                     if setting_type != 'string':
                         condition_ad5x = 1 if 'x' in text_condition else -1 if 'm' in text_condition else 0
+                        condition_c5pro = 1 if 'c' in text_condition else -1 if 'm' in text_condition else 0
                         condition_native_screen = 1 if 'n' in text_condition else -1 if 'g' in text_condition else 0
-                        text_condition = re.sub(r'[nxmg]', '', text_condition)
-                        if not validate_setup(condition_ad5x, condition_native_screen, is_ad5x, is_native_screen):
+                        text_condition = re.sub(r'[nxmgc]', '', text_condition)
+                        if not validate_setup(condition_ad5x, condition_c5pro, condition_native_screen, is_ad5x, is_c5pro, is_native_screen):
                             continue
 
                     had_regular = True
@@ -369,7 +392,7 @@ def add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings
 
     file_data.append((indent_level * STANDARD_INDENT) + '# End script-generated GET_ZMOD_DATA code')
 
-def add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings):
+def add_reset_zmod(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings):
     indent_level = BASE_INDENT_RESET_ZMOD
 
     file_data.append((indent_level * STANDARD_INDENT) + '# Begin script-generated _RESET_ZMOD code')
@@ -385,10 +408,10 @@ def add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings):
             if not set_data.get('show_in_global', True):
                 continue
 
-            if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_native_screen', 0), is_ad5x, is_native_screen):
+            if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_c5pro', 0), set_data.get('require_native_screen', 0), is_ad5x, is_c5pro, is_native_screen):
                 continue
 
-            valid_options = get_valid_options(set_data, is_ad5x, is_native_screen)
+            valid_options = get_valid_options(set_data, is_ad5x, is_c5pro, is_native_screen)
             settable_values = valid_options['settable_values']
 
             if len(settable_values) == 0:
@@ -420,12 +443,12 @@ def add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings):
             if valid_options['allow_generic']:
                 indent_level -= 1
                 file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
+
             file_data.append('')
 
     file_data.append((indent_level * STANDARD_INDENT) + '# End script-generated _RESET_ZMOD code')
 
-
-def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
+def add_global(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings):
     indent_level = BASE_INDENT_GLOBAL
 
     file_data.append((indent_level * STANDARD_INDENT) + '# Begin script-generated _GLOBAL code')
@@ -445,7 +468,7 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
         for setting, set_data in settings.items():
             if set_data.get('category', '') != category:
                 continue
-            if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_native_screen', 0), is_ad5x, is_native_screen):
+            if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_c5pro', 0), set_data.get('require_native_screen', 0), is_ad5x, is_c5pro, is_native_screen):
                 continue
             if set_data.get('show_in_global', True) == False:
                 continue
@@ -497,8 +520,7 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
                 else:
                     file_data.append((indent_level * STANDARD_INDENT) + f"{{% set z{setting.lower()} = printer.save_variables.variables['{setting.lower()}']|default({set_data.get('default', DEFAULT_VALUE_ASSUMPTION)})|{setting_type} %}}")
 
-                setting_conditions = get_setting_global_options(setting, set_data, is_ad5x, is_native_screen)
-
+                setting_conditions = get_setting_global_options(setting, set_data, is_ad5x, is_c5pro, is_native_screen)
                 if len(setting_conditions) == 0:
                     file_data.append((indent_level * STANDARD_INDENT) + f"RESPOND TYPE=command MSG=\"action:prompt_button {setting.upper()} ===custom value:=== {{z{setting.lower()}}}|_GLOBAL N={page}|{GLOBAL_CANNOT_CHANGE_COLOR}\"")
                 elif len(setting_conditions) == 1 and setting_conditions[0]['condition'] == '*':
@@ -558,24 +580,23 @@ def add_global(file_data, is_ad5x, is_native_screen, categories, settings):
     file_data.append(((indent_level + 1) * STANDARD_INDENT) + "_SHOW_MSG MSG=\"===If any parameters were changed, it is recommended to reboot the printer===. Macro GLOBAL\" COMMAND='_GLOBAL_SAVE PARAM=skip_global' COMMAND_REBOOT=\"_GLOBAL_SAVE PARAM=skip_global REBOOT=1\"")
     file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
 
-
     file_data.append((indent_level * STANDARD_INDENT) + '# End script-generated _GLOBAL code')
     file_data.append('')
 
-def process_file(output_file, is_ad5x, is_native_screen, categories, settings):
+def process_file(output_file, is_ad5x, is_c5pro, is_native_screen, categories, settings):
     file_data = []
 
     with open('config-template.cfg', 'r', encoding='utf-8') as f:
         for line in f:
             if line.strip().startswith('# **'):
                 if line.strip() == '# ** SAVE_ZMOD_DATA ** #':
-                    add_save_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings)
+                    add_save_zmod_data(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings)
                 if line.strip() == '# ** GET_ZMOD_DATA ** #':
-                    add_get_zmod_data(file_data, is_ad5x, is_native_screen, categories, settings)
+                    add_get_zmod_data(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings)
                 if line.strip() == '# ** _RESET_ZMOD ** #':
-                    add_reset_zmod(file_data, is_ad5x, is_native_screen, categories, settings)
+                    add_reset_zmod(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings)
                 if line.strip() == '# ** _GLOBAL ** #':
-                    add_global(file_data, is_ad5x, is_native_screen, categories, settings)
+                    add_global(file_data, is_ad5x, is_c5pro, is_native_screen, categories, settings)
             else:
                 file_data += [line]
 
@@ -585,7 +606,6 @@ def process_file(output_file, is_ad5x, is_native_screen, categories, settings):
             if not line.endswith('\n'):
                 f.write('\n')
 
-
 def main():
     with open('zmod_settings.json', 'r', encoding='utf-8') as f:
         settings_json_data = json.load(f)
@@ -593,10 +613,12 @@ def main():
     categories = settings_json_data['Categories']
     settings = settings_json_data['Settings']
 
-    process_file("../ff5m_config_native.cfg", False, True, categories, settings)
-    process_file("../ff5m_config_off.cfg", False, False, categories, settings)
-    process_file("../ad5x_config_native.cfg", True, True, categories, settings)
-    process_file("../ad5x_config_off.cfg", True, False, categories, settings)
+    process_file("../ff5m_config_native.cfg", False, False, True, categories, settings)
+    process_file("../ff5m_config_off.cfg", False, False, False, categories, settings)
+    process_file("../ad5x_config_native.cfg", True, False, True, categories, settings)
+    process_file("../ad5x_config_off.cfg", True, False, False, categories, settings)
+    process_file("../c5pro_config_native.cfg", False, True, True, categories, settings)
+    process_file("../c5pro_config_off.cfg", False, True, False, categories, settings)
 
 if __name__ == "__main__":
     main()

@@ -24,6 +24,7 @@
             "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "*": "===Show {zallowed_tool_count} colors when file colors cannot be scanned==="
             },
@@ -37,6 +38,7 @@
             "category": "Color Selection",
             "show_in_global": true,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Don't scan files for color / material data===",
                 "2": "===Check files for pre-prepared color / material data only===",
@@ -49,6 +51,7 @@
             "category": "Color Selection",
             "show_in_global": true,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Do not auto-assign colors===",
                 "30": "===Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors===",
@@ -72,6 +75,7 @@
             "category": "Color Selection",
             "show_in_global": true,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Display zero-based tool indexes (T0, T1, etc)===",
                 "1": "===Display one-based tool indexes (Color 1, Color 2, etc)==="
@@ -168,6 +172,7 @@
             "category": "Print Start",
             "show_in_global": true,
             "require_ad5x": -1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Don't use nozzle pre-purge===",
                 "1": "===Use nozzle pre-purge==="
@@ -189,6 +194,7 @@
             "category": "Print Start",
             "show_in_global": true,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Don't hide color selection when printing starts===",
                 "1": "===Hide color selection, print with IFS===",
@@ -215,6 +221,7 @@
             "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Don't Use trash when printing===",
                 "1": "===Use trash when printing===",
@@ -228,6 +235,7 @@
             "category": "Printing",
             "show_in_global": false,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "require_native_screen": -1,
             "get_zmod_data_text": {
                 "0": "===Skip color change process if old and new color are the same physical IFS channel===",
@@ -256,7 +264,8 @@
                 "1": "===Auto close dialogs on native screen after 20 sec (slow)===",
                 "2": "===Auto close dialogs on native screen after 20 sec (fast)==="
             },
-            "global_set_values_ad5x": [0, 2]
+            "global_set_values_ad5x": [0, 2],
+            "global_set_values_c5pro": [0, 2]
         },
         "stop_motor": {
             "type": "int",
@@ -285,6 +294,7 @@
             "category": "Print End",
             "show_in_global": true,
             "require_ad5x": -1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "*": "===Power off FF5M Pro after (min): {zpro_poweroff_timeout}==="
             },
@@ -297,6 +307,7 @@
             "category": "Print End",
             "show_in_global": true,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Don't remove the filament after printing is completed===",
                 "1": "===Remove filament after printing is complete==="
@@ -321,6 +332,7 @@
             "category": "System",
             "show_in_global": true,
             "require_ad5x": -1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Using filament presence sensor===",
                 "1": "===Using filament motion sensor==="
@@ -333,6 +345,7 @@
             "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Don't Insert rod automatically===",
                 "1": "===Insert rod automatically==="
@@ -405,6 +418,7 @@
             "category": "System",
             "show_in_global": true,
             "require_ad5x": -1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Use standard SAVE_CONFIG===",
                 "1": "===Use alternative NEW_SAVE_CONFIG==="
@@ -416,6 +430,7 @@
             "category": "System",
             "show_in_global": true,
             "require_ad5x": -1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===SWAP not used===",
                 "1": "===SWAP used on EMMC===",
@@ -470,7 +485,7 @@
             "category": "System",
             "show_in_global": false,
             "get_zmod_data_text": {
-                "0x": "===Using native Klipper=== 12",
+                "0xc": "===Using native Klipper=== 12",
                 "0m": "===Using native Klipper=== 11",
                 "1": "===Using Klipper 13==="
             }
