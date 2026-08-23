@@ -490,17 +490,6 @@
                 "1": "===Using Klipper 13==="
             }
         },
-        "nice": {
-            "type": "int",
-            "default": 20,
-            "category": "System",
-            "show_in_global": false,
-            "get_zmod_data_text": {
-                "*": "===Klipper process priority (1-min, 40-max): {znice}==="
-            },
-            "min_valid_value": 1,
-            "max_valid_value": 40
-        },
         "zcontrol_z": {
             "type": "int",
             "default": 10,
