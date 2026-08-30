@@ -24,7 +24,7 @@
             "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
-            "require_c5pro": 1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "*": "===Show {zallowed_tool_count} colors when file colors cannot be scanned==="
             },
@@ -81,7 +81,6 @@
                 "1": "===Display one-based tool indexes (Color 1, Color 2, etc)==="
             }
         },
-
 
         "print_leveling": {
             "type": "int",
@@ -221,7 +220,7 @@
             "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
-            "require_c5pro": 1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Don't Use trash when printing===",
                 "1": "===Use trash when printing===",
@@ -307,7 +306,7 @@
             "category": "Print End",
             "show_in_global": true,
             "require_ad5x": 1,
-            "require_c5pro": 1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Don't remove the filament after printing is completed===",
                 "1": "===Remove filament after printing is complete==="
@@ -345,7 +344,7 @@
             "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
-            "require_c5pro": 1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Don't Insert rod automatically===",
                 "1": "===Insert rod automatically==="
