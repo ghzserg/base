@@ -93,6 +93,17 @@
                 "1g": "===Build bed mesh on each print.==="
             }
         },
+        "print_autopa": {
+            "type": "int",
+            "default": 0,
+            "category": "Print Start",
+            "show_in_global": true,
+            "require_c5pro": 1,
+            "get_zmod_data_text": {
+                "0": "Off Auto PA",
+                "1": "Auto PA"
+            }
+        },
         "use_kamp": {
             "type": "int",
             "default": 0,
@@ -197,7 +208,7 @@
             "get_zmod_data_text": {
                 "0": "===Don't hide color selection when printing starts===",
                 "1": "===Hide color selection, print with IFS===",
-                "2": "===Hide color selection, print without IFS==="
+                "2x": "===Hide color selection, print without IFS==="
             }
         },
         "clear": {
