@@ -415,7 +415,7 @@
         },
         "web_screen": {
             "type": "int",
-            "default": 0,
+            "default": 1,
             "category": "System",
             "show_in_global": true,
             "require_c5pro": 1,
