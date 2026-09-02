@@ -413,6 +413,18 @@
             "min_valid_value": 0,
             "max_valid_value": 100
         },
+        "web_screen": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "require_c5pro": 1,
+            "get_zmod_data_text": {
+                "0": "==Show printer screen on web==",
+                "1": "==Don`t show printer screen on web=="
+            }
+        },
+
         "midi_on": {
             "type": "string",
             "default": "",

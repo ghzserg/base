@@ -450,3 +450,5 @@ Alter Screen is not used;L'écran alternatif n'est pas utilisé
 You're using native screen. No need to restart Alter Screen;Vous utilisez l'écran natif. Pas besoin de redémarrer l'écran alternatif
 You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Vous travaillez SANS écran natif avec HelixScreen // DISPLAY_OFF HELIX=1
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Utilisez le chargement Z-Offset depuis les paramètres globaux pour contrôler Z-Offset avec l'écran alternatif
+Show screen on web;Afficher l'écran sur le web
+Don't show screen on web;Ne pas afficher l'écran sur le web

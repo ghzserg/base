@@ -450,3 +450,5 @@ Alter Screen is not used;대체 화면이 사용되지 않음
 You're using native screen. No need to restart Alter Screen;네이티브 화면을 사용 중입니다. 대체 화면을 다시 시작할 필요가 없습니다
 You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;네이티브 화면 없이 HelixScreen으로 작업 중 // DISPLAY_OFF HELIX=1
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;전역 매개변수에서 Z-Offset 로딩을 사용하여 대체 화면으로 Z-Offset 제어
+Show screen on web;웹에 화면 표시
+Don't show screen on web;웹에 화면 표시 안 함
