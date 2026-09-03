@@ -420,8 +420,8 @@
             "show_in_global": true,
             "require_c5pro": 1,
             "get_zmod_data_text": {
-                "0": "==Show printer screen on web==",
-                "1": "==Don`t show printer screen on web=="
+                "0": "===Don`t show printer screen on web===",
+                "1": "===Show printer screen on web==="
             }
         },
 
