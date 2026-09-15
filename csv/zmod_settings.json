@@ -171,6 +171,7 @@
             "category": "Print Start",
             "show_in_global": true,
             "require_native_screen": -1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Don't load Z-Offset from global settings===",
                 "1": "===Load Z-Offset from global settings==="
