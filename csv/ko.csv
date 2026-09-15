@@ -452,3 +452,5 @@ You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;�
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;전역 매개변수에서 Z-Offset 로딩을 사용하여 대체 화면으로 Z-Offset 제어
 Show screen on web;웹에 화면 표시
 Don't show screen on web;웹에 화면 표시 안 함
+Waiting for temperature normalization. Bed:;온도 정상화 대기 중. 베드:
+Waiting for temperature normalization. Extruder:;온도 정상화 대기 중. 익스트루더:

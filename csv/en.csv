@@ -452,3 +452,5 @@ You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Yo
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen
 Show screen on web;Show screen on web
 Don't show screen on web;Don't show screen on web
+Waiting for temperature normalization. Bed:;Waiting for temperature normalization. Bed:
+Waiting for temperature normalization. Extruder:;Waiting for temperature normalization. Extruder:

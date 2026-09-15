@@ -452,3 +452,5 @@ You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;�
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;使用从全局参数加载 Z-Offset 来控制备用屏幕的 Z-Offset
 Show screen on web;在Web端显示屏幕
 Don't show screen on web;不在Web端显示屏幕
+Waiting for temperature normalization. Bed:;等待温度正常化。热床:
+Waiting for temperature normalization. Extruder:;等待温度正常化。挤出机:

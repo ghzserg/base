@@ -452,3 +452,5 @@ You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Pr
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Použijte načítání Z-Offset z globálních parametrů pro ovládání Z-Offset s Alternativní obrazovkou
 Show screen on web;Zobrazit obrazovku na webu
 Don't show screen on web;Nezobrazovat obrazovku na webu
+Waiting for temperature normalization. Bed:;Čekání na normalizaci teploty. Podložka:
+Waiting for temperature normalization. Extruder:;Čekání na normalizaci teploty. Extruder:
