@@ -456,3 +456,4 @@ Waiting for temperature normalization. Bed:;温度の正常化を待っていま
 Waiting for temperature normalization. Extruder:;温度の正常化を待っています。エクストルーダ:
 Front Door is Open!;フロントドアが開いています！
 Top Cover is Open!;トップカバーが開いています！
+Please remove the build plate first!;先にビルドプレートを取り外してください！
