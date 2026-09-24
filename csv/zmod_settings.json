@@ -246,14 +246,13 @@
             "category": "Printing",
             "show_in_global": false,
             "require_ad5x": 1,
-            "require_c5pro": 1,
+            "require_c5pro": -1,
             "require_native_screen": -1,
             "get_zmod_data_text": {
                 "0": "===Skip color change process if old and new color are the same physical IFS channel===",
                 "1": "===Do not skip color change process when old and new color are the same physical IFS channel==="
             }
         },
-
 
         "midi_end": {
             "type": "string",
@@ -397,6 +396,7 @@
             "default": 1,
             "category": "System",
             "show_in_global": true,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "0": "===Z-Mod Wifi Off===",
                 "1": "===Z-Mod Wifi On==="
