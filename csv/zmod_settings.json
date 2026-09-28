@@ -209,7 +209,8 @@
             "get_zmod_data_text": {
                 "0": "===Don't hide color selection when printing starts===",
                 "1": "===Hide color selection, print with IFS===",
-                "2x": "===Hide color selection, print without IFS==="
+                "2x": "===Hide color selection, print without IFS===",
+                "2c": "===Hide color selection, print with IFS=== AI"
             }
         },
         "clear": {
