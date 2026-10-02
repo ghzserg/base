@@ -457,7 +457,7 @@ Waiting for temperature normalization. Extruder:;温度の正常化を待って�
 Front Door is Open!;フロントドアが開いています！
 Top Cover is Open!;トップカバーが開いています！
 Please remove the build plate first!;先にビルドプレートを取り外してください！
-Turn off idle extruders in {unused_extruders_off_time} min;未使用のエクストルーダーを{unused_extruders_off_time}分後に停止
+Turn off idle extruders in {zunused_extruders_off_time} min;未使用のエクストルーダーを{zunused_extruders_off_time}分後に停止
 Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT0は{unused_extruders_off_time}分間不活性のため停止しました
 Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT1は{unused_extruders_off_time}分間不活性のため停止しました
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT2は{unused_extruders_off_time}分間不活性のため停止しました

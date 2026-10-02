@@ -457,7 +457,7 @@ Waiting for temperature normalization. Extruder:;Esperando la normalización de 
 Front Door is Open!;¡La puerta frontal está abierta!
 Top Cover is Open!;¡La cubierta superior está abierta!
 Please remove the build plate first!;¡Por favor, retire primero la placa de impresión!
-Turn off idle extruders in {unused_extruders_off_time} min;Apagar extrusores inactivos en {unused_extruders_off_time} min
+Turn off idle extruders in {zunused_extruders_off_time} min;Apagar extrusores inactivos en {zunused_extruders_off_time} min
 Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Extrusor T0 apagado por inactividad en {unused_extruders_off_time} min
 Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Extrusor T1 apagado por inactividad en {unused_extruders_off_time} min
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Extrusor T2 apagado por inactividad en {unused_extruders_off_time} min

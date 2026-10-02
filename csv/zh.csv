@@ -457,7 +457,7 @@ Waiting for temperature normalization. Extruder:;等待温度正常化。挤出�
 Front Door is Open!;前门已打开！
 Top Cover is Open!;顶盖已打开！
 Please remove the build plate first!;请先取下打印板！
-Turn off idle extruders in {unused_extruders_off_time} min;{unused_extruders_off_time} 分钟后关闭闲置挤出机
+Turn off idle extruders in {zunused_extruders_off_time} min;{zunused_extruders_off_time} 分钟后关闭闲置挤出机
 Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;挤出机 T0 因闲置超时在 {unused_extruders_off_time} 分钟后关闭
 Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;挤出机 T1 因闲置超时在 {unused_extruders_off_time} 分钟后关闭
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;挤出机 T2 因闲置超时在 {unused_extruders_off_time} 分钟后关闭
