@@ -454,3 +454,12 @@ Waiting for temperature normalization. Extruder:;Ждем нормализаци
 Front Door is Open!;Передняя дверца открыта!
 Top Cover is Open!;Верхняя крышка открыта!
 Please remove the build plate first!;Пожалуйста, сначала снимите печатную пластину!
+Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T0 выключен по таймауту простоя через {unused_extruders_off_time} мин
+Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T1 выключен по таймауту простоя через {unused_extruders_off_time} мин
+Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T2 выключен по таймауту простоя через {unused_extruders_off_time} мин
+Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T3 выключен по таймауту простоя через {unused_extruders_off_time} минPlease remove the build plate first!;Пожалуйста, сначала снимите печатную пластину!
+Turn off idle extruders in {unused_extruders_off_time} min;Отключать неактивные экструдеры через {unused_extruders_off_time} мин
+Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T0 выключен по таймауту простоя через {unused_extruders_off_time} мин
+Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T1 выключен по таймауту простоя через {unused_extruders_off_time} мин
+Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T2 выключен по таймауту простоя через {unused_extruders_off_time} мин
+Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Экструдер T3 выключен по таймауту простоя через {unused_extruders_off_time} мин

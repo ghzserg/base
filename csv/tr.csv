@@ -457,3 +457,8 @@ Waiting for temperature normalization. Extruder:;Sıcaklık normalleşmesi bekle
 Front Door is Open!;Ön kapak açık!
 Top Cover is Open!;Üst kapak açık!
 Please remove the build plate first!;Lütfen önce yapı plakasını çıkarın!
+Turn off idle extruders in {unused_extruders_off_time} min;Boştaki ekstrüderleri {unused_extruders_off_time} dk içinde kapat
+Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T0 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı
+Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T1 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı
+Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T2 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı
+Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T3 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı

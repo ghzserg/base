@@ -32,6 +32,21 @@
             "min_valid_value": 1,
             "max_valid_value": 16
         },
+        "unused_extruders_off_time": {
+            "type": "int",
+            "default": 0,
+            "category": "Color Selection",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "require_ad5x": -1,
+            "require_c5pro": 1,
+            "get_zmod_data_text": {
+                "*": "===Turn off idle extruders in {zunused_extruders_off_time} min==="
+            },
+            "global_set_values": [0, 5, 10, 20, 40, 60],
+            "min_valid_value": 0,
+            "max_valid_value": 60
+        },
         "scan_file_colors": {
             "type": "int",
             "default": 0,
