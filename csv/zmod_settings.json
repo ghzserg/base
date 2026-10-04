@@ -513,6 +513,7 @@
             "category": "System",
             "show_in_global": true,
             "require_native_screen": -1,
+            "require_c5pro": -1,
             "get_zmod_data_text": {
                 "*": "===Turn off native screen after (sec): {zdisplay_off_timeout}==="
             },
