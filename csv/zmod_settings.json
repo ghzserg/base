@@ -49,7 +49,7 @@
         },
         "scan_file_colors": {
             "type": "int",
-            "default": 0,
+            "default": 2,
             "category": "Color Selection",
             "show_in_global": true,
             "require_ad5x": 1,
@@ -62,7 +62,7 @@
         },
         "auto_assign_colors": {
             "type": "int",
-            "default": 0,
+            "default": 1,
             "category": "Color Selection",
             "show_in_global": true,
             "require_ad5x": 1,
