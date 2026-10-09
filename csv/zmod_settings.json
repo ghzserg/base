@@ -377,6 +377,16 @@
                 "1": "===Insert rod automatically==="
             }
         },
+        "convert_3mf": {
+            "type": "int",
+            "default": 1,
+            "category": "System",
+            "show_in_global": true,
+            "get_zmod_data_text": {
+                "0": "3mf -> 3mf",
+                "1": "3mf -> gcode"
+            }
+        },
         "fix_scv": {
             "type": "int",
             "default": 1,
