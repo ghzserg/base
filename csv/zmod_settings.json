@@ -47,6 +47,19 @@
             "min_valid_value": 0,
             "max_valid_value": 60
         },
+        "purge_all_extruders": {
+            "type": "int",
+            "default": 0,
+            "category": "Color Selection",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "require_ad5x": -1,
+            "require_c5pro": 1,
+            "get_zmod_data_text": {
+                "0": "===Purge first extruder===",
+                "1": "===Purge all used extruders==="
+            }
+        },
         "scan_file_colors": {
             "type": "int",
             "default": 2,

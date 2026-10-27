@@ -463,3 +463,5 @@ Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Estrusore T2 spento per inattività dopo {unused_extruders_off_time} min
 Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Estrusore T3 spento per inattività dopo {unused_extruders_off_time} min
 To load manually without pausing, press 'Manual';Per l'avanzamento manuale senza pausa, premere 'Manual'
+Purge first extruder;Spurgare il primo estrusore
+Purge all used extruders;Spurgare tutti gli estrusori usati

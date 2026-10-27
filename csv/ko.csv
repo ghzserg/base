@@ -463,3 +463,5 @@ Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;익스트루더 T2가 {unused_extruders_off_time}분 동안 유휴 상태여서 꺼졌습니다
 Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;익스트루더 T3가 {unused_extruders_off_time}분 동안 유휴 상태여서 꺼졌습니다
 To load manually without pausing, press 'Manual';일시 중지 없이 수동으로 공급하려면 'Manual'을 누르세요
+Purge first extruder;첫 번째 익스트루더 퍼지
+Purge all used extruders;사용하는 모든 익스트루더 퍼지

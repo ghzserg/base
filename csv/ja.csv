@@ -463,3 +463,5 @@ Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT2は{unused_extruders_off_time}分間不活性のため停止しました
 Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT3は{unused_extruders_off_time}分間不活性のため停止しました
 To load manually without pausing, press 'Manual';一時停止せずに手動で給糸するには「Manual」を押してください
+Purge first extruder;最初のエクストルーダーをパージ
+Purge all used extruders;使用する全エクストルーダーをパージ
