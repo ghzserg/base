@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;ベッドレベリング
 Auto close dialogs on native screen after 20 sec (fast);ネイティブ画面のダイアログを20秒で自動閉じ（高速）
 Auto close dialogs on native screen after 20 sec (slow);ネイティブ画面のダイアログを20秒で自動閉じ（低速）
 Auto disable motors after print/cancel in 25 sec;印刷/キャンセル後25秒でモーターを自動停止
-Automatic printer shutdown in {zpro_poweroff_timeout} min;{zpro_poweroff_timeout}分後にプリンタを自動シャットダウン
+Automatic printer shutdown in {pro_poweroff_timeout} min;{pro_poweroff_timeout}分後にプリンタを自動シャットダウン
 Automatic reboot in 1.5 minutes;1.5分後に自動再起動
 Auto reboot printer after 1.5 minutes;印刷後1.5分でプリンタを自動再起動
 Auto restart firmware after 1.5 minutes;印刷後1.5分でファームウェアを再起動
@@ -83,7 +83,7 @@ Don't save data for print recovery;印刷復旧データを保存しない
 Don't test bed mesh before printing;印刷前にベッドメッシュをテストしない
 Don't use KAMP instead of BED_MESH_CALIBRATE;BED_MESH_CALIBRATEの代わりにKAMPを使用しない
 Don't use nozzle pre-purge;ノズル事前パージを使用しない
-Download archive in 'Configuration' -> 'mod_data' -> config.tar;'設定' -> 'mod_data' -> config.tarからアーカイブをダウンロード
+Download archive in 'Configuration' -> 'mod_data' ->;アーカイブのダウンロード先: '設定' -> 'mod_data' ->
 Enable backlight;バックライトを有効化
 Enable camera on printer screen;プリンタ画面のカメラを有効化
 Enable/disable pause at specific layer;特定レイヤーでの一時停止を切り替え
@@ -105,14 +105,14 @@ Extrudes, if the extruder is hot enough;エクストルーダーが十分に加�
 Extruding 10 cm of filament;フィラメントを10cm押し出し
 Failed to close windows? Use fast close: FAST_CLOSE_DIALOGS;ウィンドウの閉じに失敗？高速閉じを使用: FAST_CLOSE_DIALOGS
 Fans control;ファン制御
-Far;遠い
+Far;奥
 Filament change requested. Load new filament and click 'Resume'.;フィラメント交換要求。新しいフィラメントを装填し「再開」をクリック。
 Filament Change;フィラメント交換
 Filament change;フィラメント変更
 Filament management;フィラメント管理
 Filament runout detected;フィラメント切れを検出
 Filament runout or jam detected;フィラメント切れまたは詰まりを検出
-Filament jam detected;フィラメント切れまたは詰まりを検出
+Filament jam detected;フィラメントの詰まりを検出
 Filament runout. Pausing in 30 seconds;フィラメント切れ。30秒後に一時停止
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;ファイル{filename}に円弧コマンド（G2, G3）が含まれています。無効化してください。Orcaで: プロセスプロファイル -> 円弧近似 -> チェックを外す
 File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;ファイル{filename}にMD5チェックサムがありません。Orcaで有効化してください。https://wiki.zmod.link/Recommendations/
@@ -174,10 +174,10 @@ Minimum map: %.3f mm | Delta: %.3f mm;最小マップ: %.3f mm | デルタ: %.3f
 Moonlight sonata;月光ソナタ
 Motors disabled;モーター停止
 moved to;移動完了
-Moving head to far right corner;ヘッドを右遠角に移動
+Moving head to far right corner;ヘッドを右奥の角に移動
 Mute sound;サウンドをミュート
 Native screen disabled;ネイティブ画面無効
-Near;近い
+Near;手前
 No need for leveling. Loaded profile: {cur_mesh};レベリング不要。プロファイル{cur_mesh}を読み込み
 Nozzle cleaning;ノズル清掃
 Nozzle line purge disabled. DISABLE_PRIMING={disable_priming};ノズルラインパージ無効。DISABLE_PRIMING={disable_priming}
@@ -295,7 +295,7 @@ Temporary Z-Mod disable;ZMODを一時無効化
 Test bed mesh before printing;印刷前にベッドメッシュをテスト
 Test bed mesh before printing + KAMP;印刷前にベッドメッシュをテスト+ KAMP
 Test EMMC;EMMCをテスト
-The printer was not homed (G28);プリンタがホームされていません（G28）
+The printer was not homed (G28);プリンタがホーミングされていません（G28）
 This will take some time (3-5 minutes);数分かかります（3-5分）
 Timezone change;タイムゾーン変更
 triggered;トリガーされました
@@ -347,11 +347,11 @@ Z-Mod parameters. Set via SAVE_ZMOD_DATA;ZMODパラメータ。SAVE_ZMOD_DATAで
 Z-Offset setup skipped, SKIP_ZOFFSET={skip_zoffset};Zオフセット設定をスキップ、SKIP_ZOFFSET={skip_zoffset}
 Available languages;利用可能な言語
 Restore backup config files from archive;アーカイブからバックアップ構成ファイルを復元する
-To restore the config, copy to 'Configuration' -> 'mod_data' -> and call RESTORE_TAR_CONFIG;設定を復元するには、「Configuration」->「mod_data」->「config.tar.gz」にコピーし、RESTORE_TAR_CONFIGを呼び出します。
+To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar.gz and call RESTORE_TAR_CONFIG;設定を復元するには、「Configuration」->「mod_data」->「config.tar.gz」にコピーし、RESTORE_TAR_CONFIGを呼び出します。
 Set LED;LEDを設定する
-Don't hide color selection when printing starts;印刷開始時にカラー選択を非表示にしないでください
-Hide color selection, print with IFS;カラー選択を非表示にして、IFSで印刷してください
-Hide color selection, print without IFS;カラー選択を非表示にして、IFSなしで印刷してください
+Don't hide color selection when printing starts;印刷開始時にカラー選択を非表示にしない
+Hide color selection, print with IFS;カラー選択を非表示にし、IFSで印刷
+Hide color selection, print without IFS;カラー選択を非表示にし、IFSなしで印刷
 Cutting the filament;フィラメントを切断
 Cleaning the nozzle on rubber;ノズルをゴムで清掃
 Loading filament;フィラメントをロード
@@ -365,22 +365,22 @@ Insert rod automatically;自動的にフィラメントを装填する
 Don't Insert rod automatically;自動的にフィラメントを装填しない
 Extracting filament from the extruder;エクストルーダからフィラメントを抽出
 Use trash when printing;印刷中にパージ容器を使用する
-Don't Use trash when printing;印刷中にパージ容器を使用しないでください
+Don't Use trash when printing;印刷中にパージ容器を使用しない
 Waiting for temperature normalization. Bed: {bed_temp-3}-{bed_temp+4}. Extruder: {extruder_temp-2}-{extruder_temp+4};温度の正常化を待っています。ベッド: {bed_temp-3}-{bed_temp+4}。エクストルーダ: {extruder_temp-2}-{extruder_temp+4}
 If it takes a long time, calibrate the PID of the extruder and bed;時間がかかる場合は、エクストルーダとベッドのPIDを校正してください
 Temperature normalization completed;温度の正常化が完了しました
-Don't remove the filament after printing is completed;印刷完了後にフィラメントを除去しないでください
-Remove filament after printing is complete;印刷完了後にフィラメントを除去してください
+Don't remove the filament after printing is completed;印刷完了後にフィラメントを除去しない
+Remove filament after printing is complete;印刷完了後にフィラメントを除去する
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;代替画面の読み込みに時間がかかりますか？デフォルト画面の読み込み時間を短縮します。
-Tired of problems with WiFi, let zmod manage it.;WiFiの問題に疲れていませんか？zmodに管理させましょう。
+Tired of problems with WiFi, let zmod manage it.;WiFiの問題でお困りですか？zmodに管理を任せましょう。
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;不正な開始コード START_PRINT EXTRUDER_TEMP BED_TEMP は1行で記述する必要があります !!
 Don't forget to turn off the camera on your printer's native screen.;プリンターのネイティブ画面でカメラをオフにすることを忘れないでください。
 START_PRINT has finished its work.;START_PRINTは作業を完了しました。
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;不正なMCUバージョン。UPDATE_MCU FORCE=13を実行してください
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;不正なZLINKデータ。http://zmod.link でプリンターを登録し、ZLINK文字列を受信してください。
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;LOAD_ZOFFSET_NATIVEを使用して、ネイティブ画面からZオフセットをコピーします。
-Turn on NOZZLE_CONTROL to control the nozzle impact on the table;ノズルのテーブルへの影響を制御するにはNOZZLE_CONTROLをオンにします
-Loading a similar rod from coil;コイルから類似のフィラメントをロード中
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;ノズルのベッドへの衝突を検出するにはNOZZLE_CONTROLを有効にしてください
+Loading a similar rod from coil;スプールから類似のフィラメントをロード中
 Use SAVE_ZMOD_DATA MESH_TEST=2 to automatically launch KAMP if an error occurs;エラーが発生した場合にKAMPを自動起動するにはSAVE_ZMOD_DATA MESH_TEST=2を使用します
 If any parameters were changed, it is recommended to reboot the printer;いずれかのパラメータが変更された場合、プリンターを再起動することをお勧めします
 Initial setting;初期設定
@@ -413,8 +413,8 @@ Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};一時停止: 復元: 
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};再開: 復元: {last_extruder_temp.restore}, 温度: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, ステータス: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;警告: 最終プローブが保存値を %.4f mm 超過しています！
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;エラー発生時にKAMPを自動起動するにはSAVE_ZMOD_DATA MESH_TEST=%dを使用します
-AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: オン // See https://wiki.zmod.link/Global/ mesh_test
-AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: オフ // See https://wiki.zmod.link/Global/ mesh_test
+AutoZOffset: on // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: オン // 参照: https://wiki.zmod.link/Global/ (mesh_test)
+AutoZOffset: off // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: オフ // 参照: https://wiki.zmod.link/Global/ (mesh_test)
 Photo;写真
 There will be a SCHEDULED reboot now;スケジュールされた再起動を今から実行します
 Parameters used in color selection menu;カラー選択メニューで使用されるパラメータ
@@ -462,6 +462,10 @@ Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min
 Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT1は{unused_extruders_off_time}分間不活性のため停止しました
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT2は{unused_extruders_off_time}分間不活性のため停止しました
 Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;エクストルーダーT3は{unused_extruders_off_time}分間不活性のため停止しました
-To load manually without pausing, press 'Manual';一時停止せずに手動で給糸するには「Manual」を押してください
+To load manually without pausing, press 'Manual';一時停止せずに手動でフィラメントを送るには「Manual」を押してください
 Purge first extruder;最初のエクストルーダーをパージ
 Purge all used extruders;使用する全エクストルーダーをパージ
+Helper: park toolhead used in PAUSE and CANCEL_PRINT;ヘルパー: PAUSEとCANCEL_PRINTで使用するヘッド退避
+Auto run _RESUME_MOTION_SENSOR;_RESUME_MOTION_SENSORを自動実行
+Z-Mod Wifi Off;Z-ModによるWiFi管理: オフ
+Z-Mod Wifi On;Z-ModによるWiFi管理: オン

@@ -11,9 +11,9 @@ All START_PRINT parameters for bed leveling are ignored;所有START_PRINT的调�
 Auto close dialogs on native screen after 20 sec (fast);20秒后自动关闭原生屏幕对话框（快速）
 Auto close dialogs on native screen after 20 sec (slow);20秒后自动关闭原生屏幕对话框（慢速）
 Auto disable motors after print/cancel in 25 sec;打印/取消后25秒自动禁用电机
-Automatic printer shutdown in {zpro_poweroff_timeout} min;{zpro_poweroff_timeout}分钟后自动关机
+Automatic printer shutdown in {pro_poweroff_timeout} min;{pro_poweroff_timeout}分钟后自动关机
 Automatic reboot in 1.5 minutes;1.5分钟后自动重启
-Auto reboot printer after 1.5 minutes;打印完成后1.5分钟后自动重启打印机
+Auto reboot printer after 1.5 minutes;打印完成1.5分钟后自动重启打印机
 Auto restart firmware after 1.5 minutes;1.5分钟后自动重启固件
 Backup config files to archive;备份配置文件到存档
 Bed calibration. Profile {profile}. Extruder temp: {extruder_temp} / Bed temp: {bed_temp};打印床校准。配置文件{profile}。喷头温度：{extruder_temp}/床温：{bed_temp}
@@ -63,15 +63,15 @@ Did you know you can enable KAMP globally?;您知道可以全局启用KAMP吗？
 Disable alternative camera;禁用替代摄像头
 Disable backlight;关闭背光
 Disable camera on printer screen;禁用打印机屏幕摄像头
-Disable check with: MESH;如需禁用检查：MESH
+Disable check with: MESH;禁用检查：MESH
 Disable circulation;禁用循环
 Disable filament sensor on native screen;禁用原生屏幕耗材传感器
 Disable heating and cooler;禁用加热和散热
 Disable nozzle line purge;禁用喷嘴线性清洗
 Disable SSH port forwarding;禁用SSH端口转发
 Disable stock screen;禁用原生屏幕
-Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;若不完全理解调平、Z偏移和START/END宏，请勿禁用屏幕
-Don't build bed mesh on each print.;不要在每次打印时都建立床网
+Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;若不完全理解调平、Z偏移和START_PRINT/END_PRINT宏，请勿禁用屏幕
+Don't build bed mesh on each print.;每次打印时不构建床面网格
 Don't check file MD5 checksum;不检查文件MD5
 Don't close dialogs on native screen;不自动关闭原生屏幕对话框
 Don't disable motors automatically after print/cancel;打印/取消后不自动禁用电机
@@ -112,7 +112,7 @@ Filament change;耗材更换
 Filament management;耗材管理
 Filament runout detected;检测到耗材用尽
 Filament runout or jam detected;检测到耗材用尽或堵塞
-Filament jam detected;检测到耗材用尽或堵塞
+Filament jam detected;检测到耗材堵塞
 Filament runout. Pausing in 30 seconds;耗材用尽。30秒后暂停
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;文件{filename}包含圆弧指令（G2/G3）。需禁用。在Orca中：流程配置->圆弧逼近->取消勾选
 File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;文件{filename}无MD5校验。需在Orca中启用。参考链接 https://wiki.zmod.link/Recommendations/
@@ -151,7 +151,7 @@ Left;左侧
 Linear move with gcode state save/restore;带G代码状态保存/恢复的线性移动
 LINE_PURGE forced;强制执行LINE_PURGE
 Load bed mesh: {mesh};加载床面网格：{mesh}
-Load cell reset error. Read FAQ: https://wiki.zmod.link/FAQ/;压力传感器重置错误。请阅读FAQ
+Load cell reset error. Read FAQ: https://wiki.zmod.link/FAQ/;压力传感器重置错误。请阅读FAQ：https://wiki.zmod.link/FAQ/
 Load cell reset successful. Weight: {we};压力传感器重置成功。重量：{we}
 Load cell triggered! Make sure the bed is clean!;压力传感器触发！请确保打印床清洁！
 Loaded offset from global settings %s=%.4f;已加载全局设置偏移 %s=%.4f
@@ -349,7 +349,7 @@ Available languages;可用语言
 Restore backup config files from archive;从存档中恢复备份配置文件
 To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar.gz and call RESTORE_TAR_CONFIG;要恢复配置，请复制到“配置”->“mod_data”-> config.tar.gz 并调用 RESTORE_TAR_CONFIG
 Set LED;设置 LED
-Don't hide color selection when printing starts;打印开始时不要隐藏颜色选择
+Don't hide color selection when printing starts;打印开始时不隐藏颜色选择
 Hide color selection, print with IFS;隐藏颜色选择，使用IFS打印
 Hide color selection, print without IFS;隐藏颜色选择，不使用IFS打印
 Cutting the filament;切断耗材
@@ -360,16 +360,16 @@ Heating the nozzle to {extruder_temp} degrees;将喷嘴加热到{extruder_temp}�
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_extruder_speed};排出耗材 {filament_drop_length} + {filament_drop_length_add}. 速度 {filament_extruder_speed}
 Go to trash;转到垃圾箱
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;使用 RESUME_MOTION_SENSOR 在挤出机内耗材用尽后恢复打印。
-Purge filament;Продувка филамента
-Insert rod automatically;自动装入线材
-Don't Insert rod automatically;不要自动装入线材
+Purge filament;清洗耗材
+Insert rod automatically;自动装入耗材
+Don't Insert rod automatically;不自动装入耗材
 Extracting filament from the extruder;从挤出机中取出耗材
 Use trash when printing;打印时使用清洗箱
 Don't Use trash when printing;打印时不使用清洗箱
 Waiting for temperature normalization. Bed: {bed_temp-3}-{bed_temp+4}. Extruder: {extruder_temp-2}-{extruder_temp+4};等待温度正常化。热床: {bed_temp-3}-{bed_temp+4}。挤出机: {extruder_temp-2}-{extruder_temp+4}
 If it takes a long time, calibrate the PID of the extruder and bed;如果耗时过长，请校准挤出机和热床的PID
 Temperature normalization completed;温度正常化已完成
-Don't remove the filament after printing is completed;打印完成后不要取出耗材
+Don't remove the filament after printing is completed;打印完成后不取出耗材
 Remove filament after printing is complete;打印完成后取出耗材
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;备用屏幕加载时间过长？减少默认屏幕的加载时间。
 Tired of problems with WiFi, let zmod manage it.;厌倦了WiFi问题？让zmod来管理它。
@@ -379,7 +379,7 @@ START_PRINT has finished its work.;START_PRINT已完成其工作。
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;MCU版本不正确。需要运行 UPDATE_MCU FORCE=13
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;ZLINK数据不正确。在 http://zmod.link 上注册您的打印机并获取ZLINK字符串。
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;使用 LOAD_ZOFFSET_NATIVE 从原生屏幕复制 Z 偏移量。
-Turn on NOZZLE_CONTROL to control the nozzle impact on the table;开启 NOZZLE_CONTROL 以控制喷嘴对平台的影响
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;开启 NOZZLE_CONTROL 以检测喷嘴撞击打印床
 Loading a similar rod from coil;从线轴加载相似耗材
 Use SAVE_ZMOD_DATA MESH_TEST=2 to automatically launch KAMP if an error occurs;使用 SAVE_ZMOD_DATA MESH_TEST=2 在发生错误时自动启动 KAMP
 If any parameters were changed, it is recommended to reboot the printer;如果任何参数被更改，建议重启打印机
@@ -393,9 +393,9 @@ Do not save the state of filament sensors;不保存耗材传感器状态
 Save the state of filament sensors;保存耗材传感器状态
 -Offset saved in global settings;-Offset 已保存到全局设置
 Z-Offset saved in the native screen;Z-Offset 已保存到原生屏幕
-Setting Z-Offset {zoffset};Z-Offset {zoffset} ayarlanıyor
-Using global Z-Offset control. Z_OFFSET parameter ignored;Genel Z-Offset kontrolü kullanılıyor. Z_OFFSET parametresi yok sayılıyor
-Z-Offset setup skipped;Z-Offset kurulumu atlandı
+Setting Z-Offset {zoffset};正在设置Z偏移 {zoffset}
+Using global Z-Offset control. Z_OFFSET parameter ignored;正在使用全局Z偏移控制。已忽略Z_OFFSET参数
+Z-Offset setup skipped;已跳过Z偏移设置
 The printer has started printing the file;打印机已开始打印文件
 The printer has finished printing the file;打印机已完成打印文件
 Error;错误
@@ -413,8 +413,8 @@ Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};暂停: 恢复: {resto
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};恢复: 恢复: {last_extruder_temp.restore}, 温度: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, 状态: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;警告：最后一次探测超出已保存值 %.4f 毫米！
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;使用 SAVE_ZMOD_DATA MESH_TEST=%d 在发生错误时自动启动 KAMP
-AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: 开启 // See https://wiki.zmod.link/Global/ mesh_test
-AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: 关闭 // See https://wiki.zmod.link/Global/ mesh_test
+AutoZOffset: on // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: 开启 // 参见 https://wiki.zmod.link/Global/ (mesh_test)
+AutoZOffset: off // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: 关闭 // 参见 https://wiki.zmod.link/Global/ (mesh_test)
 Photo;照片
 There will be a SCHEDULED reboot now;即将执行计划的重新启动
 Parameters used in color selection menu;颜色选择菜单中使用的参数
@@ -425,9 +425,9 @@ Check files for pre-prepared color / material data only;仅检查文件中预先
 Scan files for color / material data;扫描文件的颜色/材料数据
 Do not auto-assign colors;不自动分配颜色
 Auto-assign colors if file colors successfully scanned;如果文件颜色扫描成功，则自动分配颜色
-Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;成功扫描后自动分配，出现严重分配错误时停止静音模式打印
-Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;成功扫描后自动分配，出现任何分配错误时停止静音模式打印
-Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;成功扫描后自动分配，出现某些分配错误时停止静音模式打印
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;成功扫描后自动分配，出现严重分配错误时停止静默模式打印
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;成功扫描后自动分配，出现任何分配错误时停止静默模式打印
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;成功扫描后自动分配，出现某些分配错误时停止静默模式打印
 Display zero-based tool indexes (T0, T1, etc);显示从零开始的工具索引 (T0, T1 等)
 Display one-based tool indexes (Color 1, Color 2, etc);显示从一开始的工具索引 (Color 1, Color 2 等)
 Skip color change process if old and new color are the same physical IFS channel;如果新旧颜色为同一物理 IFS 通道，则跳过换色过程
@@ -435,10 +435,10 @@ Do not skip color change process when old and new color are the same physical IF
 Don't scan files for color data;不扫描文件的颜色数据
 Load pre-prepared color data only;仅加载预先准备的颜色数据
 Scan files for color data;扫描文件的颜色数据
-Auto-assign colors, silent mode halts on any error;自动分配颜色，静音模式在出现任何错误时停止
-Auto-assign colors, silent mode halts on major error;自动分配颜色，静音模式在出现重大错误时停止
+Auto-assign colors, silent mode halts on any error;自动分配颜色，静默模式在出现任何错误时停止
+Auto-assign colors, silent mode halts on major error;自动分配颜色，静默模式在出现重大错误时停止
 Auto-assign colors;自动分配颜色
-Auto-assign colors, silent mode halts on some errors;自动分配颜色，静音模式在出现某些错误时停止
+Auto-assign colors, silent mode halts on some errors;自动分配颜色，静默模式在出现某些错误时停止
 unknown value:;未知值:
 Unrecognized value for setting:;无法识别的设置值:
 custom value:;自定义值:
@@ -463,5 +463,9 @@ Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min
 Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;挤出机 T2 因闲置超时在 {unused_extruders_off_time} 分钟后关闭
 Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;挤出机 T3 因闲置超时在 {unused_extruders_off_time} 分钟后关闭
 To load manually without pausing, press 'Manual';如需在不暂停的情况下手动进料，请按 'Manual'
-Purge first extruder;冲刷第一个挤出机
-Purge all used extruders;冲刷所有使用的挤出机
+Purge first extruder;清洗第一个挤出机
+Purge all used extruders;清洗所有使用的挤出机
+Helper: park toolhead used in PAUSE and CANCEL_PRINT;辅助：PAUSE和CANCEL_PRINT使用的喷头停放
+Auto run _RESUME_MOTION_SENSOR;自动运行_RESUME_MOTION_SENSOR
+Z-Mod Wifi Off;Z-Mod WiFi管理：关闭
+Z-Mod Wifi On;Z-Mod WiFi管理：开启

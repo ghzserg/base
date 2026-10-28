@@ -1,7 +1,7 @@
-action:prompt_begin Resumption interrupted !!!;작업 재개가 중단되었습니다 !!!
-action:prompt_begin This is a test macro;이것은 테스트 매크로입니다
-action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg;mod_data/user.cfg에 _GUPPY_MACRO 추가
-action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg;_GUPPY_MACRO 예시는 mod/base.cfg에 있습니다
+action:prompt_begin Resumption interrupted !!!;action:prompt_begin 작업 재개가 중단되었습니다 !!!
+action:prompt_begin This is a test macro;action:prompt_begin 이것은 테스트 매크로입니다
+action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg;action:prompt_text mod_data/user.cfg에 _GUPPY_MACRO 추가
+action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg;action:prompt_text _GUPPY_MACRO 예시는 mod/base.cfg에 있습니다
 Adaptive bed;어댑티브 베드
 After clicking OK the printer will be powered off;확인을 누르면 프린터가 꺼집니다
 After macro execution press Ctrl + F5;매크로 실행 후 Ctrl + F5를 누르세요
@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;베드 레벨링 START_P
 Auto close dialogs on native screen after 20 sec (fast);기본 화면 대화상자 20초 후 자동 닫기 (빠름)
 Auto close dialogs on native screen after 20 sec (slow);기본 화면 대화상자 20초 후 자동 닫기 (느림)
 Auto disable motors after print/cancel in 25 sec;인쇄/취소 후 25초 모터 자동 차단
-Automatic printer shutdown in {zpro_poweroff_timeout} min;{zpro_poweroff_timeout}분 후 자동 프린터 종료
+Automatic printer shutdown in {pro_poweroff_timeout} min;{pro_poweroff_timeout}분 후 자동 프린터 종료
 Automatic reboot in 1.5 minutes;1.5분 후 자동 재부팅
 Auto reboot printer after 1.5 minutes;인쇄 후 1.5분 자동 재시작
 Auto restart firmware after 1.5 minutes;인쇄 후 1.5분 펌웨어 재시작
@@ -56,10 +56,10 @@ Cooling down to {cold_temp}°C;{cold_temp}°C로 냉각 중
 CoreXY half-axis test for belt frequency analysis;CoreXY 벨트 주파수 분석용 반축 테스트
 Currently printing: {filename} ({progress | round(1)}%), print recovery impossible;현재 인쇄: {filename} ({progress | round(1)}%), 복구 불가
 Current profile:;현재 프로필:
-Custom Guppy button;커스텀 개피 버튼
+Custom Guppy button;커스텀 Guppy 버튼
 Delete data;데이터 삭제
 Detect part detachment or nozzle hit;부품 분리/노즐 충돌 감지
-Did you know you can enable KAMP globally?;KAMP 전역 활성화 가능합니다
+Did you know you can enable KAMP globally?;KAMP를 전역으로 활성화할 수 있다는 것을 알고 계셨나요?
 Disable alternative camera;대체 카메라 비활성화
 Disable backlight;백라이트 끄기
 Disable camera on printer screen;프린터 화면 카메라 끄기
@@ -67,11 +67,11 @@ Disable check with: MESH;검사 비활성화: MESH
 Disable circulation;순환 끄기
 Disable filament sensor on native screen;기본 화면 필라멘트 센서 끄기
 Disable heating and cooler;가열/쿨러 끄기
-Disable nozzle line purge;노즐 라인 퓨지 끄기
+Disable nozzle line purge;노즐 라인 퍼지 끄기
 Disable SSH port forwarding;SSH 포트 포워딩 끄기
 Disable stock screen;기본 화면 끄기
-Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;베드 레벨링/Z-Offset/매크로 이해 없이 화면 끄지 마세요
-Don't build bed mesh on each print.;각 인쇄물에 침대 메시를 만들지 마세요
+Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;베드 레벨링, Z-Offset, START_PRINT/END_PRINT 매크로를 완전히 이해하지 못했다면 화면을 끄지 마세요
+Don't build bed mesh on each print.;인쇄 시마다 베드 메시 생성 안 함
 Don't check file MD5 checksum;파일 MD5 체크섬 검사 안 함
 Don't close dialogs on native screen;기본 화면 대화상자 닫지 않기
 Don't disable motors automatically after print/cancel;인쇄/취소 후 모터 자동 차단 안 함
@@ -82,14 +82,14 @@ Don't reboot printer automatically;프린터 자동 재부팅 안 함
 Don't save data for print recovery;인쇄 복구 데이터 저장 안 함
 Don't test bed mesh before printing;인쇄 전 베드 메시 테스트 안 함
 Don't use KAMP instead of BED_MESH_CALIBRATE;BED_MESH_CALIBRATE 대신 KAMP 사용 안 함
-Don't use nozzle pre-purge;노즐 사전 퓨지 사용 안 함
+Don't use nozzle pre-purge;노즐 사전 퍼지 사용 안 함
 Download archive in 'Configuration' -> 'mod_data' ->;config.tar.gz 다운로드 경로: '구성' -> 'mod_data'
 Enable backlight;백라이트 켜기
 Enable camera on printer screen;프린터 화면 카메라 켜기
 Enable/disable pause at specific layer;특정 레이어에서 일시정지 활성화/비활성화
 Enable external circulation;외부 순환 켜기
 Enable internal circulation;내부 순환 켜기
-Enable nozzle line purge;노즐 라인 퓨지 켜기
+Enable nozzle line purge;노즐 라인 퍼지 켜기
 Enable pause at next layer;다음 레이어에서 일시정지
 Enable stock screen and reboot;기본 화면 활성화 후 재부팅
 End G-code;종료 G-code
@@ -99,8 +99,8 @@ Error: File '{filename}' not specified. Print canceled.;오류: 파일 '{filenam
 Error: File '{filename}' was not verified in time. Print canceled.;오류: 파일 '{filename}' 시간 내 검증 실패. 인쇄 취소됨
 Error! Filename not specified.;오류! 파일명 미지정
 Error: {printer.print_stats.message};오류: {printer.print_stats.message}
-Extruder PID calibration;эк스트루더 PID 보정
-Extruder temperature: {extruder_temp};эк스트루더 온도: {extruder_temp}
+Extruder PID calibration;익스트루더 PID 보정
+Extruder temperature: {extruder_temp};익스트루더 온도: {extruder_temp}
 Extrudes, if the extruder is hot enough;충분히 뜨거울 때 압출
 Extruding 10 cm of filament;필라멘트 10cm 압출
 Failed to close windows? Use fast close: FAST_CLOSE_DIALOGS;창 닫기 실패 시 빠른 닫기 사용: FAST_CLOSE_DIALOGS
@@ -112,7 +112,7 @@ Filament change;필라멘트 변경
 Filament management;필라멘트 관리
 Filament runout detected;필라멘트 부족 감지
 Filament runout or jam detected;필라멘트 부족/막힘 감지
-Filament jam detected;필라멘트 부족/막힘 감지
+Filament jam detected;필라멘트 막힘 감지
 Filament runout. Pausing in 30 seconds;필라멘트 부족. 30초 후 일시정지
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;파일 {filename}에 호 명령(G2, G3) 포함. Orca에서 비활성화: 프로세스 프로필 -> 호 근사 -> 체크 해제
 File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;파일 {filename}에 MD5 체크섬 없음. Orca에서 활성화: https://wiki.zmod.link/Recommendations/
@@ -133,7 +133,7 @@ Get Z-Mod parameters;Z-Mod 매개변수 가져오기
 Global Z-Offset load: ignored (working with screen);전역 Z-Offset 로드 무시 (화면 사용 시)
 GuppyScreen is not used;GuppyScreen 미사용
 has detected that the filament has run out, please load it and press RESUME;필라멘트 부족 감지. 로드 후 RESUME 누르세요
-Heating bed and extruder.;베드/эк스트루더 가열 중
+Heating bed and extruder.;베드/익스트루더 가열 중
 Helper;도우미
 https://wiki.zmod.link/FAQ/;https://wiki.zmod.link/FAQ/
 Image saved: {png_out_path}. Configuration -> mod_data;이미지 저장됨: {png_out_path}. '구성' -> 'mod_data'
@@ -180,8 +180,8 @@ Native screen disabled;기본 화면 비활성화
 Near;근거리
 No need for leveling. Loaded profile: {cur_mesh};레벨링 불필요. 프로필 {cur_mesh} 로드됨
 Nozzle cleaning;노즐 청소
-Nozzle line purge disabled. DISABLE_PRIMING={disable_priming};노즐 라인 퓨지 비활성화. DISABLE_PRIMING={disable_priming}
-Nozzle line purge;노즐 라인 퓨지
+Nozzle line purge disabled. DISABLE_PRIMING={disable_priming};노즐 라인 퍼지 비활성화. DISABLE_PRIMING={disable_priming}
+Nozzle line purge;노즐 라인 퍼지
 Nozzle pre-cleaning;노즐 사전 청소
 Nozzle priming: disabled;노즐 프라이밍: 비활성화
 Nozzle priming: enabled;노즐 프라이밍: 활성화
@@ -225,11 +225,11 @@ Printing with bed mesh: {cur_mesh};베드 메시 {cur_mesh}로 인쇄 중
 Probe sensor {probe};프로브 센서 {probe}
 Profile or mesh matrix not found;프로필/메시 매트릭스 없음
 Pulling the filament;필라멘트 당김
-Purge algorithm: {zclear};퓨지 알고리즘: {zclear}
-Purge code from FF group;FF 그룹 퓨지 코드
-Purge code from Orca Slicer;Orca Slicer 퓨지 코드
-Purge code with cleaner from top-right to bottom;오른쪽 상단→하단 클리너 퓨지 코드
-Purge;퓨지
+Purge algorithm: {zclear};퍼지 알고리즘: {zclear}
+Purge code from FF group;FF 그룹 퍼지 코드
+Purge code from Orca Slicer;Orca Slicer 퍼지 코드
+Purge code with cleaner from top-right to bottom;오른쪽 상단→하단 클리너 퍼지 코드
+Purge;퍼지
 Reboot printer;프린터 재부팅
 Reboot to original system (no zmod);원본 시스템 재부팅 (zmod 없음)
 Redirect moonraker and camera to SSH server;Moonraker/카메라 SSH 서버 리다이렉트
@@ -262,7 +262,7 @@ Save parameters without stock screen freeze;기본 화면 고정 없이 매개�
 Save Z-Mod parameters;Z-Mod 매개변수 저장
 Save Z-Offset;Z-오프셋 저장
 Saving controlled by native screen;기본 화면 제어 저장
-Schreider purge code from top-right to bottom;슈라이더 오른쪽 상단→하단 퓨지 코드
+Schreider purge code from top-right to bottom;슈라이더 오른쪽 상단→하단 퍼지 코드
 Select action;작업 선택
 Select material to clean the nozzle;노즐 청소용 재료 선택
 Select material to load;로드할 재료 선택
@@ -309,7 +309,7 @@ Use alternative camera;대체 카메라 사용
 Use alternative NEW_SAVE_CONFIG;대체 NEW_SAVE_CONFIG 사용
 Use bed leveling mode from native screen.;기본 화면 베드 레벨링 모드 사용.
 Use Fluidd/Mainsail button settings from Z-Mod;ZMOD에서 Fluidd/Mainsail 버튼 설정 사용
-Use nozzle pre-purge;노즐 사전 퓨지 사용
+Use nozzle pre-purge;노즐 사전 퍼지 사용
 Use SCV = 5 for shaper graphs;쉐이퍼 그래프용 SCV = 5 사용
 Use SCV from config for shaper graphs;쉐이퍼 그래프용 SCV 설정값 사용
 Use standard SAVE_CONFIG;표준 SAVE_CONFIG 사용
@@ -323,7 +323,7 @@ Using KAMP from global settings.;전역 설정 KAMP 사용.
 Using KAMP;KAMP 사용 중
 Using Klipper 13;Klipper 13 사용 중
 Using native Klipper;기본 Klipper 사용 중
-Wait 10 seconds and power on again. MCU update will begin.;10초 후 재부팅. MCU 업데이트 시작됨
+Wait 10 seconds and power on again. MCU update will begin.;10초 기다린 후 다시 전원을 켜십시오. MCU 업데이트가 시작됩니다.
 Wait for the music and power off the printer.;음악 재생 후 프린터 종료
 Waiting for check to complete;검사 완료 대기 중
 Waiting for nozzle to heat up to {extruder_temp};노즐 {extruder_temp}°C 가열 대기 중
@@ -349,9 +349,9 @@ Available languages;사용 가능한 언어
 Restore backup config files from archive;아카이브에서 백업 구성 파일 복원
 To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar.gz and call RESTORE_TAR_CONFIG;구성을 복원하려면 '구성' -> 'mod_data' -> config.tar.gz로 복사하고 RESTORE_TAR_CONFIG를 호출하세요.
 Set LED;LED 설정
-Don't hide color selection when printing starts;인쇄 시작 시 컬러 선택 숨기지 마세요
-Hide color selection, print with IFS;컬러 선택 숨기고 IFS로 인쇄하세요
-Hide color selection, print without IFS;컬러 선택 숨기고 IFS 없이 인쇄하세요
+Don't hide color selection when printing starts;인쇄 시작 시 컬러 선택 숨기지 않음
+Hide color selection, print with IFS;컬러 선택 숨기고 IFS로 인쇄
+Hide color selection, print without IFS;컬러 선택 숨기고 IFS 없이 인쇄
 Cutting the filament;필라멘트 절단
 Cleaning the nozzle on rubber;노즐 고무 청소
 Loading filament;필라멘트 로딩
@@ -365,22 +365,22 @@ Insert rod automatically;필라멘트를 자동으로 삽입하기
 Don't Insert rod automatically;필라멘트를 자동으로 삽입하지 않기
 Extracting filament from the extruder;익스트루더에서 필라멘트 추출
 Use trash when printing;인쇄 시 퍼지 컨테이너 사용
-Don't Use trash when printing;인쇄 시 퍼지 컨테이너 사용하지 마십시오
+Don't Use trash when printing;인쇄 시 퍼지 컨테이너 사용 안 함
 Waiting for temperature normalization. Bed: {bed_temp-3}-{bed_temp+4}. Extruder: {extruder_temp-2}-{extruder_temp+4};온도 정상화 대기 중. 베드: {bed_temp-3}-{bed_temp+4}. 익스트루더: {extruder_temp-2}-{extruder_temp+4}
 If it takes a long time, calibrate the PID of the extruder and bed;시간이 오래 걸리면, 익스트루더와 베드의 PID를 교정하십시오
 Temperature normalization completed;온도 정상화 완료
-Don't remove the filament after printing is completed;인쇄 완료 후 필라멘트를 제거하지 마십시오
-Remove filament after printing is complete;인쇄 완료 후 필라멘트를 제거하십시오
+Don't remove the filament after printing is completed;인쇄 완료 후 필라멘트 제거 안 함
+Remove filament after printing is complete;인쇄 완료 후 필라멘트 제거
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;대체 화면 로딩 시간이 오래 걸리나요? 기본 화면 로딩 시간을 줄이세요.
 Tired of problems with WiFi, let zmod manage it.;WiFi 문제에 지치셨나요? zmod가 관리하도록 하세요.
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;잘못된 시작 코드 START_PRINT EXTRUDER_TEMP BED_TEMP는 한 줄에 작성해야 합니다 !!
 Don't forget to turn off the camera on your printer's native screen.;프린터의 기본 화면에서 카메라를 끄는 것을 잊지 마십시오.
 START_PRINT has finished its work.;START_PRINT가 작업을 완료했습니다.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;잘못된 MCU 버전. UPDATE_MCU FORCE=13을 실행하십시오
-Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;잘못된 ZLINK 데이터. http://zmod.link에서 프린터를 등록하고 ZLINK 문자열을 받으십시오.
+Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;잘못된 ZLINK 데이터. http://zmod.link 에서 프린터를 등록하고 ZLINK 문자열을 받으십시오.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;LOAD_ZOFFSET_NATIVE를 사용하여 기본 화면에서 Z-오프셋을 복사하십시오.
-Turn on NOZZLE_CONTROL to control the nozzle impact on the table;노즐의 테이블 영향력을 제어하려면 NOZZLE_CONTROL을 켜십시오
-Loading a similar rod from coil;코일 에서 유사한 필라멘트 로딩 중
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;노즐이 베드에 충돌하는지 감지하려면 NOZZLE_CONTROL을 켜십시오
+Loading a similar rod from coil;스풀에서 유사한 필라멘트 로딩 중
 Use SAVE_ZMOD_DATA MESH_TEST=2 to automatically launch KAMP if an error occurs;오류 발생 시 KAMP를 자동으로 시작하려면 SAVE_ZMOD_DATA MESH_TEST=2를 사용하십시오
 If any parameters were changed, it is recommended to reboot the printer;어떤 매개변수가 변경된 경우 프린터를 재부팅하는 것이 좋습니다
 Initial setting;초기 설정
@@ -413,8 +413,8 @@ Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};일시 정지: 복원:
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};재개: 복원: {last_extruder_temp.restore}, 온도: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, 상태: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;경고: 마지막 프로브가 저장된 값을 %.4f mm 초과했습니다!
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;오류 발생 시 KAMP를 자동으로 시작하려면 SAVE_ZMOD_DATA MESH_TEST=%d를 사용하십시오
-AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: 켜짐 // See https://wiki.zmod.link/Global/ mesh_test
-AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: 꺼짐 // See https://wiki.zmod.link/Global/ mesh_test
+AutoZOffset: on // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: 켜짐 // 참고: https://wiki.zmod.link/Global/ (mesh_test)
+AutoZOffset: off // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: 꺼짐 // 참고: https://wiki.zmod.link/Global/ (mesh_test)
 Photo;사진
 There will be a SCHEDULED reboot now;예정된 재시작을 지금 시작합니다
 Parameters used in color selection menu;색상 선택 메뉴에 사용되는 매개변수
@@ -425,9 +425,9 @@ Check files for pre-prepared color / material data only;준비된 색상/재질 
 Scan files for color / material data;색상/재질 데이터에 대해 파일을 스캔
 Do not auto-assign colors;색상을 자동 할당하지 않음
 Auto-assign colors if file colors successfully scanned;파일 색상이 성공적으로 스캔된 경우 색상 자동 할당
-Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;스캔 성공 시 자동 할당, 심각한 오류 발생 시 저소음 모드 인쇄 중단
-Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;스캔 성공 시 자동 할당, 모든 오류 발생 시 저소음 모드 인쇄 중단
-Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;스캔 성공 시 자동 할당, 일부 오류 발생 시 저소음 모드 인쇄 중단
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;스캔 성공 시 자동 할당, 심각한 오류 발생 시 사일런트 모드 인쇄 중단
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;스캔 성공 시 자동 할당, 모든 오류 발생 시 사일런트 모드 인쇄 중단
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;스캔 성공 시 자동 할당, 일부 오류 발생 시 사일런트 모드 인쇄 중단
 Display zero-based tool indexes (T0, T1, etc);0부터 시작하는 툴 인덱스 표시 (T0, T1 등)
 Display one-based tool indexes (Color 1, Color 2, etc);1부터 시작하는 툴 인덱스 표시 (Color 1, Color 2 등)
 Skip color change process if old and new color are the same physical IFS channel;이전 색상과 새 색상이 동일한 물리적 IFS 채널인 경우 색상 교체 프로세스 건너뛰기
@@ -435,10 +435,10 @@ Do not skip color change process when old and new color are the same physical IF
 Don't scan files for color data;색상 데이터에 대해 파일을 스캔하지 않음
 Load pre-prepared color data only;준비된 색상 데이터만 로드
 Scan files for color data;색상 데이터에 대해 파일을 스캔
-Auto-assign colors, silent mode halts on any error;색상 자동 할당, 오류 발생 시 저소음 모드 중단
-Auto-assign colors, silent mode halts on major error;색상 자동 할당, 주요 오류 발생 시 저소음 모드 중단
+Auto-assign colors, silent mode halts on any error;색상 자동 할당, 오류 발생 시 사일런트 모드 중단
+Auto-assign colors, silent mode halts on major error;색상 자동 할당, 주요 오류 발생 시 사일런트 모드 중단
 Auto-assign colors;색상 자동 할당
-Auto-assign colors, silent mode halts on some errors;색상 자동 할당, 일부 오류 발생 시 저소음 모드 중단
+Auto-assign colors, silent mode halts on some errors;색상 자동 할당, 일부 오류 발생 시 사일런트 모드 중단
 unknown value:;알 수 없는 값:
 Unrecognized value for setting:;설정값을 인식할 수 없습니다:
 custom value:;사용자 지정 값:
@@ -465,3 +465,7 @@ Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min
 To load manually without pausing, press 'Manual';일시 중지 없이 수동으로 공급하려면 'Manual'을 누르세요
 Purge first extruder;첫 번째 익스트루더 퍼지
 Purge all used extruders;사용하는 모든 익스트루더 퍼지
+Helper: park toolhead used in PAUSE and CANCEL_PRINT;도우미: PAUSE 및 CANCEL_PRINT에서 사용하는 헤드 파킹
+Auto run _RESUME_MOTION_SENSOR;_RESUME_MOTION_SENSOR 자동 실행
+Z-Mod Wifi Off;Z-Mod WiFi 관리: 끔
+Z-Mod Wifi On;Z-Mod WiFi 관리: 켬

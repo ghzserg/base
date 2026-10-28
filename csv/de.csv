@@ -2,7 +2,7 @@ action:prompt_begin Resumption interrupted !!!;action:prompt_begin Wiederaufnahm
 action:prompt_begin This is a test macro;action:prompt_begin Dies ist ein Test-Makro
 action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg;action:prompt_text Fügen Sie _GUPPY_MACRO zu mod_data/user.cfg hinzu
 action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg;action:prompt_text Beispiel für _GUPPY_MACRO befindet sich in mod/base.cfg
-Adaptive bed;Adaptive Bett
+Adaptive bed;Adaptives Bett-Mesh
 After clicking OK the printer will be powered off;Nach Klick auf OK wird der Drucker ausgeschaltet
 After macro execution press Ctrl + F5;Nach Makro-Ausführung Strg + F5 drücken
 Algorithm: {zclear};Algorithmus: {zclear}
@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;Alle START_PRINT-Paramet
 Auto close dialogs on native screen after 20 sec (fast);Dialoge automatisch nach 20 Sek. schließen (schnell)
 Auto close dialogs on native screen after 20 sec (slow);Dialoge automatisch nach 20 Sek. schließen (langsam)
 Auto disable motors after print/cancel in 25 sec;Motoren automatisch nach 25 Sek. abschalten
-Automatic printer shutdown in {zpro_poweroff_timeout} min;Automatische Drucker-Abschaltung in {zpro_poweroff_timeout} Min.
+Automatic printer shutdown in {pro_poweroff_timeout} min;Automatische Drucker-Abschaltung in {pro_poweroff_timeout} Min.
 Automatic reboot in 1.5 minutes;Automatischer Neustart in 1,5 Minuten
 Auto reboot printer after 1.5 minutes;Drucker automatisch nach 1,5 Min. neustarten
 Auto restart firmware after 1.5 minutes;Firmware automatisch nach 1,5 Min. neustarten
@@ -28,10 +28,10 @@ Bed temperature: {bed_temp};Betttemperatur: {bed_temp}
 Before measurements, don't forget to clean the nozzle with CLEAR_NOZZLE macro;Vor Messungen Düse mit CLEAR_NOZZLE-Makro reinigen
 Block Chinese clouds;Chinesische Clouds blockieren
 Build bed mesh on each print.;Bett-Mesh bei jedem Druck erstellen.
-Build bed mesh with native screen on each print.;Bett-Mesh mit natives Display bei jedem Druck erstellen.
+Build bed mesh with native screen on each print.;Bett-Mesh bei jedem Druck über das native Display erstellen.
 Building auto mesh (no loaded profile);Auto-Mesh wird erstellt (kein Profil geladen)
 Building bed mesh on each print.;Bett-Mesh bei jedem Druck erstellen.
-Building bed mesh with native screen on each print.;Bett-Mesh mit natives Display bei jedem Druck erstellen.
+Building bed mesh with native screen on each print.;Bett-Mesh wird bei jedem Druck über das native Display erstellt.
 Building default mesh (FORCE_LEVELING={force_leveling});Standard-Mesh wird erstellt (FORCE_LEVELING={force_leveling})
 Building full bed mesh.;Vollständiges Bett-Mesh wird erstellt.
 Building {mesh} mesh (not found). Save it AFTER print!;{mesh}-Mesh wird erstellt (nicht gefunden). Nach Druck speichern!
@@ -46,9 +46,9 @@ Check time;Uhrzeit überprüfen
 Clear EMMC;EMMC löschen
 Close dialogs on stock screen (fast);Dialoge auf Standard-Display schnell schließen
 Close dialogs on stock screen (slow);Dialoge auf Standard-Display langsam schließen
-Closing dialog windows on native screen (fast);Dialogfenster auf natives Display werden geschlossen (schnell)
-Closing dialog windows on native screen (slow);Dialogfenster auf natives Display werden geschlossen (langsam)
-Cold pull (nozzle cleaning) gently;Kalter Pull (Düsenreinigung) vorsichtig
+Closing dialog windows on native screen (fast);Dialogfenster auf dem nativen Display werden geschlossen (schnell)
+Closing dialog windows on native screen (slow);Dialogfenster auf dem nativen Display werden geschlossen (langsam)
+Cold pull (nozzle cleaning) gently;Cold Pull (Düsenreinigung), schonend
 Collecting X axis data;X-Achsen-Daten werden erfasst
 Collecting Y axis data;Y-Achsen-Daten werden erfasst
 Compare grid extremes with last probe;Gitter-Extrema mit letzter Messung vergleichen
@@ -65,15 +65,15 @@ Disable backlight;Hintergrundbeleuchtung deaktivieren
 Disable camera on printer screen;Kamera auf Drucker-Display deaktivieren
 Disable check with: MESH;Prüfung deaktivieren mit: MESH
 Disable circulation;Zirkulation deaktivieren
-Disable filament sensor on native screen;Filamentsensor auf natives Display deaktivieren
+Disable filament sensor on native screen;Filamentsensor auf dem nativen Display deaktivieren
 Disable heating and cooler;Heizung und Kühler deaktivieren
 Disable nozzle line purge;Düsenreinigungslinie deaktivieren
 Disable SSH port forwarding;SSH-Portweiterleitung deaktivieren
 Disable stock screen;Standard-Display deaktivieren
-Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;Display nicht deaktivieren, falls Sie Bett-Nivellierung, Z-Offset und Makros nicht vollständig verstehen
-Don't build bed mesh on each print.;Bauen Sie nicht bei jedem Druck ein Bettnetz ein
+Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;Display nicht deaktivieren, falls Sie Bett-Nivellierung, Z-Offset und die Makros START_PRINT/END_PRINT nicht vollständig verstehen
+Don't build bed mesh on each print.;Bett-Mesh nicht bei jedem Druck erstellen.
 Don't check file MD5 checksum;MD5-Prüfsumme nicht überprüfen
-Don't close dialogs on native screen;Dialoge auf natives Display nicht schließen
+Don't close dialogs on native screen;Dialoge auf dem nativen Display nicht schließen
 Don't disable motors automatically after print/cancel;Motoren nicht automatisch nach Druck/Abbruch abschalten
 Don't fix E0011 error;Fehler E0011 nicht beheben
 Don't fix E0017 error;Fehler E0017 nicht beheben
@@ -105,7 +105,7 @@ Extrudes, if the extruder is hot enough;Extrusion, wenn Extruder heiß genug
 Extruding 10 cm of filament;10 cm Filament extrudieren
 Failed to close windows? Use fast close: FAST_CLOSE_DIALOGS;Fenster nicht geschlossen? Schnell-Schließen verwenden: FAST_CLOSE_DIALOGS
 Fans control;Lüftersteuerung
-Far;Entfernt
+Far;Hinten
 Filament change requested. Load new filament and click 'Resume'.;Filamentwechsel erforderlich. Neues Filament laden und 'Fortsetzen' klicken.
 Filament Change;Filamentwechsel
 Filament change;Filamentwechsel
@@ -151,9 +151,9 @@ Left;Links
 Linear move with gcode state save/restore;Lineare Bewegung mit G-Code-Zustandsspeicherung
 LINE_PURGE forced;LINE_PURGE erzwungen
 Load bed mesh: {mesh};Bett-Mesh laden: {mesh}
-Load cell reset error. Read FAQ: https://wiki.zmod.link/FAQ/;Lastzellen-Fehler. FAQ lesen: (Link)
+Load cell reset error. Read FAQ: https://wiki.zmod.link/FAQ/;Lastzellen-Fehler. FAQ lesen: https://wiki.zmod.link/FAQ/
 Load cell reset successful. Weight: {we};Lastzellen-Reset erfolgreich. Gewicht: {we}
-Load cell triggered! Make sure the bed is clean!;Lastzelle ausgelöst! Stellen Sie sauberes Bett sicher!
+Load cell triggered! Make sure the bed is clean!;Lastzelle ausgelöst! Stellen Sie sicher, dass das Bett sauber ist!
 Loaded offset from global settings %s=%.4f;Offset aus globalen Einstellungen geladen %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Filament wird bei {extruder_temp}°C für {extrude_len}mm mit {speed/60} mm/s geladen
 Loading GuppyScreen;GuppyScreen wird geladen
@@ -165,19 +165,19 @@ Maintain frequency for vibration diagnostics;Frequenz für Vibrationsdiagnose au
 Manual filament loading / change;Manuelle Filamentladung/Wechsel
 Material selection for loading;Materialauswahl für Ladung
 Material selection;Materialauswahl
-Maximum map: %.3f mm | Last probe: %.3f mm;Maximale Karte: %.3f mm | Letzte Messung: %.3f mm
+Maximum map: %.3f mm | Last probe: %.3f mm;Mesh-Maximum: %.3f mm | Letzte Messung: %.3f mm
 MD5 check failed. Print canceled.;MD5-Prüfung fehlgeschlagen. Druck abgebrochen.
 MD5 check started;MD5-Prüfung gestartet
 MD5: disabled;MD5: deaktiviert
 MD5: enabled;MD5: aktiviert
-Minimum map: %.3f mm | Delta: %.3f mm;Minimale Karte: %.3f mm | Delta: %.3f mm
+Minimum map: %.3f mm | Delta: %.3f mm;Mesh-Minimum: %.3f mm | Delta: %.3f mm
 Moonlight sonata;Mondscheinsonate
 Motors disabled;Motoren deaktiviert
 moved to;verschoben nach
-Moving head to far right corner;Kopf in entfernte rechte Ecke bewegen
+Moving head to far right corner;Kopf in die hintere rechte Ecke bewegen
 Mute sound;Ton stummschalten
 Native screen disabled;Natives Display deaktiviert
-Near;Nahe
+Near;Vorne
 No need for leveling. Loaded profile: {cur_mesh};Keine Nivellierung erforderlich. Profil geladen: {cur_mesh}
 Nozzle cleaning;Düsenreinigung
 Nozzle line purge disabled. DISABLE_PRIMING={disable_priming};Düsenreinigungslinie deaktiviert. DISABLE_PRIMING={disable_priming}
@@ -190,7 +190,7 @@ OK;OK
 OK: Probe within mesh extremes;OK: Messung innerhalb Mesh-Extremen
 OK;OK
 OS check;Betriebssystem-Check
-Override to get pause_next_layer and pause_at_layer functions;Überschreiben um pause_next_layer und pause_at_layer zu erhalten
+Override to get pause_next_layer and pause_at_layer functions;Überschreiben, um pause_next_layer und pause_at_layer zu erhalten
 Parameters used at print end and cancellation [END_PRINT];Parameter für Druckende/Abbruch [END_PRINT]
 Parameters used at print start and bed leveling [START_PRINT];Parameter für Druckstart/Bett-Nivellierung [START_PRINT]
 Parameter;Parameter
@@ -213,13 +213,13 @@ Priming algorithm: {zclear};Reinigungsalgorithmus: {zclear}
 Print completed;Druck abgeschlossen
 Printer screen will freeze until pre-cleaning is complete.;Drucker-Display friert bis zur Vorabreinigung ein.
 Printer will boot into stock firmware;Drucker startet mit Standard-Firmware
-Print file from native screen;Datei vom natives Display drucken
-Print file with bed leveling from native screen;Datei mit Bett-Nivellierung vom natives Display drucken
+Print file from native screen;Datei vom nativen Display drucken
+Print file with bed leveling from native screen;Datei mit Bett-Nivellierung vom nativen Display drucken
 Print file;Datei drucken
-Printing file {filename} from native screen;Datei {filename} vom natives Display wird gedruckt
-Printing file {filename} with bed leveling from native screen;Datei {filename} mit Bett-Nivellierung vom natives Display wird gedruckt
-Printing file from native screen;Datei vom natives Display wird gedruckt
-Printing file with bed leveling from native screen;Datei mit Bett-Nivellierung vom natives Display wird gedruckt
+Printing file {filename} from native screen;Datei {filename} wird vom nativen Display gedruckt
+Printing file {filename} with bed leveling from native screen;Datei {filename} mit Bett-Nivellierung wird vom nativen Display gedruckt
+Printing file from native screen;Datei wird vom nativen Display gedruckt
+Printing file with bed leveling from native screen;Datei mit Bett-Nivellierung wird vom nativen Display gedruckt
 Printing in progress. Movement is disabled.;Druck läuft. Bewegung deaktiviert.
 Printing with bed mesh: {cur_mesh};Druck mit Bett-Mesh: {cur_mesh}
 Probe sensor {probe};Tastkopf-Sensor {probe}
@@ -239,7 +239,7 @@ Replace default start G-code;Standard-Start-G-Code ersetzen
 Replace Spiral/Auto Z-Hop. In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped;Spiral/Auto Z-Hop ersetzen. In Orca: Druckerprofil -> Extruder 1 -> Z-Hop-Typ -> Normal/Schräg
 Replace Spiral/Auto Z-Hop. Printer doesn't support it.;Spiral/Auto Z-Hop ersetzen. Drucker unterstützt es nicht.
 Requires 256MB RAM + enabled SWAP. !!;Erfordert 256MB RAM + aktivierten SWAP. !!
-Resending cancellation to native screen canceled;Abbruch-Wiederholung an natives Display abgebrochen
+Resending cancellation to native screen canceled;Erneutes Senden des Abbruchs an das native Display abgebrochen
 Reset load cell weight;Lastzellen-Gewicht zurücksetzen
 Resetting load cell weight;Lastzellen-Gewicht wird zurückgesetzt
 Restart alternative camera;Alternative Kamera neustarten
@@ -261,7 +261,7 @@ Save Fluidd/Mainsail button changes;Fluidd/Mainsail-Button-Änderungen speichern
 Save parameters without stock screen freeze;Parameter ohne Display-Einfrieren speichern
 Save Z-Mod parameters;Z-Mod-Parameter speichern
 Save Z-Offset;Z-Offset speichern
-Saving controlled by native screen;Speicherung durch natives Display gesteuert
+Saving controlled by native screen;Speicherung durch das native Display gesteuert
 Schreider purge code from top-right to bottom;Schreider-Reinigungscode von oben rechts nach unten
 Select action;Aktion auswählen
 Select material to clean the nozzle;Material für Düsenreinigung auswählen
@@ -281,13 +281,13 @@ SSH restart;SSH-Neustart
 Started MD5 check {filename};MD5-Prüfung für {filename} gestartet
 Start fluidd/mainsail and moonraker after STOP_ZMOD;Fluidd/Mainsail und Moonraker nach STOP_ZMOD starten
 Start of cleaning Z={zprobe+0.15};Reinigungsstart Z={zprobe+0.15}
-Start SSH if not running;SSH starten falls nicht aktiv
+Start SSH if not running;SSH starten, falls nicht aktiv
 Status: {state};Status: {state}
 Stop fluidd/mainsail and moonraker;Fluidd/Mainsail und Moonraker stoppen
 SWAP not used;SWAP nicht verwendet
 SWAP used on EMMC;SWAP auf EMMC verwendet
 SWAP used on USB FLASH;SWAP auf USB-Flash verwendet
-Switch to console to view recovery stages;Zur Konsole wechseln um Wiederherstellungsphasen anzuzeigen
+Switch to console to view recovery stages;Zur Konsole wechseln, um Wiederherstellungsphasen anzuzeigen
 Switch web interface (fluidd/mainsail);Webinterface wechseln (Fluidd/Mainsail)
 System-wide parameters;Systemweite Parameter
 temperature to;Temperatur auf
@@ -299,7 +299,7 @@ The printer was not homed (G28);Drucker nicht referenziert (G28)
 This will take some time (3-5 minutes);Dauert einige Minuten (3-5)
 Timezone change;Zeitzone ändern
 triggered;ausgelöst
-Trying to load bed mesh: {mesh};Versuche Bett-Mesh zu laden: {mesh}
+Trying to load bed mesh: {mesh};Versuche, Bett-Mesh zu laden: {mesh}
 Turn off native screen after (sec): {zdisplay_off_timeout};Natives Display nach (Sek.): {zdisplay_off_timeout} ausschalten
 Unload;Entladen
 Update MCU;MCU aktualisieren
@@ -307,7 +307,7 @@ Update printer via USB;Drucker per USB aktualisieren
 Use adaptive mesh (KAMP) where possible instead of full bed mesh;Adaptives Mesh (KAMP) anstatt Voll-Mesh verwenden
 Use alternative camera;Alternative Kamera verwenden
 Use alternative NEW_SAVE_CONFIG;Alternativen NEW_SAVE_CONFIG verwenden
-Use bed leveling mode from native screen.;Bett-Nivellierungsmodus vom natives Display verwenden.
+Use bed leveling mode from native screen.;Bett-Nivellierungsmodus des nativen Displays verwenden.
 Use Fluidd/Mainsail button settings from Z-Mod;Fluidd/Mainsail-Button-Einstellungen von Z-Mod verwenden
 Use nozzle pre-purge;Düsen-Vorabreinigung verwenden
 Use SCV = 5 for shaper graphs;SCV = 5 für Shaper-Graphen verwenden
@@ -358,7 +358,7 @@ Loading filament;Filament einführen
 Unloading filament;Filament auswerfen
 Heating the nozzle to {extruder_temp} degrees;Düse auf {extruder_temp} Grad aufheizen
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_extruder_speed};Filament abwerfen {filament_drop_length} + {filament_drop_length_add}. Geschwindigkeit {filament_extruder_speed}
-Go to trash;Zum Abfallbehälter gehen
+Go to trash;Zum Abfallbehälter fahren
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Verwenden Sie RESUME_MOTION_SENSOR, um den Druck fortzusetzen, nachdem das Filament im Extruder ausgegangen ist.
 Purge filament;Filament spülen
 Insert rod automatically;Filament automatisch einlegen
@@ -372,14 +372,14 @@ Temperature normalization completed;Temperatur-Normalisierung abgeschlossen
 Don't remove the filament after printing is completed;Filament nach Druckende nicht entfernen
 Remove filament after printing is complete;Filament nach Druckende entfernen
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;Lädt der alternative Bildschirm zu lange? Reduzieren Sie die Ladezeit des Standardbildschirms.
-Tired of problems with WiFi, let zmod manage it.;Müde von WiFi-Problemen? Lassen Sie zmod sich darum kümmern.
+Tired of problems with WiFi, let zmod manage it.;Genug von WLAN-Problemen? Lassen Sie zmod das übernehmen.
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Falscher Startcode START_PRINT EXTRUDER_TEMP BED_TEMP muss in einer Zeile geschrieben werden !!
-Don't forget to turn off the camera on your printer's native screen.;Vergessen Sie nicht, die Kamera auf dem native Bildschirm Ihres Druckers auszuschalten.
+Don't forget to turn off the camera on your printer's native screen.;Vergessen Sie nicht, die Kamera auf dem nativen Bildschirm Ihres Druckers auszuschalten.
 START_PRINT has finished its work.;START_PRINT hat seine Arbeit beendet.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Falsche MCU-Version. Führen Sie UPDATE_MCU FORCE=13 aus
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Falsche ZLINK-Daten. Registrieren Sie Ihren Drucker auf http://zmod.link und erhalten Sie einen ZLINK-String.
-Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Verwenden Sie LOAD_ZOFFSET_NATIVE, um den Z-Offset vom native Bildschirm zu kopieren.
-Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Aktivieren Sie NOZZLE_CONTROL, um den Düseneinfluss auf den Tisch zu steuern
+Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Verwenden Sie LOAD_ZOFFSET_NATIVE, um den Z-Offset vom nativen Bildschirm zu kopieren.
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Aktivieren Sie NOZZLE_CONTROL, um Düsenaufprall auf das Bett zu erkennen
 Loading a similar rod from coil;Laden eines ähnlichen Filaments von Spule
 Use SAVE_ZMOD_DATA MESH_TEST=2 to automatically launch KAMP if an error occurs;Verwenden Sie SAVE_ZMOD_DATA MESH_TEST=2, um KAMP bei einem Fehler automatisch zu starten
 If any parameters were changed, it is recommended to reboot the printer;Wenn Parameter geändert wurden, wird ein Neustart des Druckers empfohlen
@@ -387,16 +387,16 @@ Initial setting;Ersteinstellung
 You can browse and change global parameters if necessary. https://wiki.zmod.link/Global/;Sie können bei Bedarf globale Parameter durchsuchen und ändern. https://wiki.zmod.link/Global/
 Enable the recommendations plugin? It allows you to configure basic settings with one click.;Empfehlungs-Plugin aktivieren? Es ermöglicht die Konfiguration grundlegender Einstellungen mit einem Klick.
 Next;Weiter
-Z-Offset loaded from native screen;Z-Offset vom native Bildschirm geladen
+Z-Offset loaded from native screen;Z-Offset vom nativen Bildschirm geladen
 Did you know that you can access your printer remotely using zmod.link?;Wussten Sie, dass Sie mit zmod.link auf Ihren Drucker aus der Ferne zugreifen können?
 Do not save the state of filament sensors;Status der Filamentsensoren nicht speichern
 Save the state of filament sensors;Status der Filamentsensoren speichern
 -Offset saved in global settings;-Offset in globalen Einstellungen gespeichert
-Z-Offset saved in the native screen;Z-Offset im native Bildschirm gespeichert
+Z-Offset saved in the native screen;Z-Offset im nativen Bildschirm gespeichert
 Setting Z-Offset {zoffset};Einstellen von Z-Offset {zoffset}
 Using global Z-Offset control. Z_OFFSET parameter ignored;Globale Z-Offset-Steuerung wird verwendet. Z_OFFSET-Parameter ignoriert
 Z-Offset setup skipped;Z-Offset-Einrichtung übersprungen
-Start printer;Drucker The printer has started printing the file;Der Drucker hat mit dem Druck der Datei begonnen
+The printer has started printing the file;Der Drucker hat mit dem Druck der Datei begonnen
 The printer has finished printing the file;Der Drucker hat den Druck der Datei beendet
 Error;Fehler
 Printing canceled;Druck abgebrochen
@@ -404,7 +404,7 @@ Pause;Pause
 Resume printing;Druck fortsetzen
 Moving the bed down 5 mm;Das Bett wird um 5 mm abgesenkt
 Start printer;Drucker eingeschaltet
-Native Screen;Native Bildschirm
+Native Screen;Nativer Bildschirm
 Loading a similar rod for the tool;Laden eines ähnlichen Filaments für das Werkzeug
 this cleanup macro does NOT exist. LINE_PURGE is used;Dieses Reinigungs-Makro existiert NICHT. Es wird LINE_PURGE verwendet
 Available macros;Verfügbare Makros
@@ -413,9 +413,9 @@ Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Pause: Wiederherstelle
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Fortsetzen: Wiederherstellen: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;WARNUNG: Letzte Sonde ÜBERSTEIGT gespeicherten Wert um %.4f mm!
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Verwenden Sie SAVE_ZMOD_DATA MESH_TEST=%d, um KAMP bei einem Fehler automatisch zu starten
-AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: an // See https://wiki.zmod.link/Global/ mesh_test
-AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: aus // See https://wiki.zmod.link/Global/ mesh_test
-There will be a SCHEDULED reboot now;Ein GEplanter Neustart wird jetzt durchgeführt
+AutoZOffset: on // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: an // Siehe https://wiki.zmod.link/Global/ (mesh_test)
+AutoZOffset: off // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: aus // Siehe https://wiki.zmod.link/Global/ (mesh_test)
+There will be a SCHEDULED reboot now;Ein GEPLANTER Neustart wird jetzt durchgeführt
 Parameters used in color selection menu;Parameter für das Farbauswahlmenü
 Show {zallowed_tool_count} colors;Zeige {zallowed_tool_count} Farben
 Show {zallowed_tool_count} colors when file colors cannot be scanned;Zeige {zallowed_tool_count} Farben, wenn Dateifarben nicht gescannt werden können
@@ -434,10 +434,10 @@ Do not skip color change process when old and new color are the same physical IF
 Don't scan files for color data;Dateien nicht nach Farbdaten scannen
 Load pre-prepared color data only;Nur vorbereitete Farbdaten laden
 Scan files for color data;Dateien nach Farbdaten scannen
-Auto-assign colors, silent mode halts on any error;Automatische Farbuweisung, Silent-Modus stoppt bei jedem Fehler
-Auto-assign colors, silent mode halts on major error;Automatische Farbuweisung, Silent-Modus stoppt bei schwerem Fehler
+Auto-assign colors, silent mode halts on any error;Automatische Farbzuweisung, Silent-Modus stoppt bei jedem Fehler
+Auto-assign colors, silent mode halts on major error;Automatische Farbzuweisung, Silent-Modus stoppt bei schwerem Fehler
 Auto-assign colors;Farben automatisch zuweisen
-Auto-assign colors, silent mode halts on some errors;Automatische Farbuweisung, Silent-Modus stoppt bei einigen Fehlern
+Auto-assign colors, silent mode halts on some errors;Automatische Farbzuweisung, Silent-Modus stoppt bei einigen Fehlern
 unknown value:;unbekannter Wert:
 Unrecognized value for setting:;Unbekannter Wert für die Einstellung:
 custom value:;benutzerdefinierter Wert:
@@ -446,11 +446,11 @@ Slicer-controlled pooping;Slicer-gesteuerter Materialauswurf
 Go to rear edge via edges;Über die Kanten zur hinteren Kante fahren
 Restart Alter Screen;Alternativbildschirm neu starten
 Alter Screen is not used;Alternativbildschirm wird nicht verwendet
-You're using native screen. No need to restart Alter Screen;Sie verwenden den native Bildschirm. Kein Neustart des Alternativbildschirms erforderlich
-You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Sie arbeiten OHNE native Bildschirm mit HelixScreen // DISPLAY_OFF HELIX=1
+You're using native screen. No need to restart Alter Screen;Sie verwenden den nativen Bildschirm. Kein Neustart des Alternativbildschirms erforderlich
+You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Sie arbeiten OHNE nativen Bildschirm mit HelixScreen // DISPLAY_OFF HELIX=1
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Verwenden Sie das Laden des Z-Offset aus globalen Parametern, um Z-Offset mit dem Alternativbildschirm zu steuern
 Show screen on web;Bildschirm im Web anzeigen
-Don't show screen on web;Bildschirm не im Web anzeigen
+Don't show screen on web;Bildschirm nicht im Web anzeigen
 Waiting for temperature normalization. Bed:;Warte auf Temperaturstabilisierung. Bett:
 Waiting for temperature normalization. Extruder:;Warte auf Temperaturstabilisierung. Extruder:
 Front Door is Open!;Fronttür ist offen!
@@ -464,3 +464,7 @@ Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min
 To load manually without pausing, press 'Manual';Für manuelle Zufuhr ohne Pause 'Manual' drücken
 Purge first extruder;Ersten Extruder spülen
 Purge all used extruders;Alle verwendeten Extruder spülen
+Helper: park toolhead used in PAUSE and CANCEL_PRINT;Hilfsmakro: Druckkopf parken für PAUSE und CANCEL_PRINT
+Auto run _RESUME_MOTION_SENSOR;Automatischer Start von _RESUME_MOTION_SENSOR
+Z-Mod Wifi Off;WLAN-Verwaltung durch Z-Mod: aus
+Z-Mod Wifi On;WLAN-Verwaltung durch Z-Mod: an

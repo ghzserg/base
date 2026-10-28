@@ -11,10 +11,10 @@ All START_PRINT parameters for bed leveling are ignored;Todos los parámetros ST
 Auto close dialogs on native screen after 20 sec (fast);Cerrar automáticamente los diálogos en la pantalla nativa después de 20 segundos (rápido)
 Auto close dialogs on native screen after 20 sec (slow);Cerrar automáticamente los diálogos en la pantalla nativa después de 20 segundos (lento)
 Auto disable motors after print/cancel in 25 sec;Desactivar automáticamente los motores después de imprimir/cancelar en 25 segundos
-Automatic printer shutdown in {zpro_poweroff_timeout} min;Apagado automático de la impresora en {zpro_poweroff_timeout} min
-Automatic reboot in 1.5 minutes;Reinicio automático en 1.5 minutos
-Auto reboot printer after 1.5 minutes;Reinicio automático de la impresora después de 1.5 minutos
-Auto restart firmware after 1.5 minutes;Reinicio automático del firmware después de 1.5 minutos
+Automatic printer shutdown in {pro_poweroff_timeout} min;Apagado automático de la impresora en {pro_poweroff_timeout} min
+Automatic reboot in 1.5 minutes;Reinicio automático en 1,5 minutos
+Auto reboot printer after 1.5 minutes;Reinicio automático de la impresora después de 1,5 minutos
+Auto restart firmware after 1.5 minutes;Reinicio automático del firmware después de 1,5 minutos
 Backup config files to archive;Guardar archivos de configuración en un archivo
 Bed calibration. Profile {profile}. Extruder temp: {extruder_temp} / Bed temp: {bed_temp};Calibración de la cama. Perfil {profile}. Temperatura del extrusor: {extruder_temp} / Cama: {bed_temp}
 Bed calibration without temperature off;Calibración de la cama sin apagar la temperatura
@@ -71,7 +71,7 @@ Disable nozzle line purge;Deshabilitar purga de línea de la boquilla
 Disable SSH port forwarding;Deshabilitar reenvío de puerto SSH
 Disable stock screen;Deshabilitar pantalla nativa
 Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;No deshabilites la pantalla si no comprendes completamente el nivelado de la cama, el Z-Offset y las macros START_PRINT/END_PRINT
-Don't build bed mesh on each print.;No construya una malla de cama en cada impresión.
+Don't build bed mesh on each print.;No construir malla de cama en cada impresión.
 Don't check file MD5 checksum;No verificar suma MD5 del archivo
 Don't close dialogs on native screen;No cerrar diálogos en la pantalla nativa
 Don't disable motors automatically after print/cancel;No desactivar motores automáticamente después de imprimir/cancelar
@@ -112,12 +112,12 @@ Filament change;Cambio de filamento
 Filament management;Gestión de filamento
 Filament runout detected;Se detectó falta de filamento
 Filament runout or jam detected;Se detectó falta de filamento o atasco
-Filament jam detected;Se detectó falta de filamento o atasco
+Filament jam detected;Se detectó atasco de filamento
 Filament runout. Pausing in 30 seconds;Falta de filamento. Pausa en 30 segundos
 File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck;El archivo {filename} contiene comandos de arco (G2, G3). Desactívalos. En Orca: Perfil de proceso -> Aproximación de arco -> Desmarcar
-File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;El archivo {filename} no tiene suma MD5. Actívalo en Orca. https://wiki.zmod.link/Recommendations/
-File {filename} MD5 mismatch. File deleted. Print canceled;Suma MD5 no coincide. Archivo eliminado. Impresión cancelada
-File {filename} MD5 mismatch. Print canceled;Suma MD5 no coincide. Impresión cancelada
+File {filename} has no MD5 checksum. Enable it in Orca. https://wiki.zmod.link/Recommendations/;El archivo {filename} no tiene suma MD5. Actívala en Orca. https://wiki.zmod.link/Recommendations/
+File {filename} MD5 mismatch. File deleted. Print canceled;Suma MD5 de {filename} no coincide. Archivo eliminado. Impresión cancelada
+File {filename} MD5 mismatch. Print canceled;Suma MD5 de {filename} no coincide. Impresión cancelada
 File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.;El archivo {filename} usa comandos G17/G18/G19 no soportados. Reemplaza el tipo Z-Hop.
 File {filename} verified successfully. MD5 checksum matches.;Archivo {filename} verificado exitosamente. Suma MD5 coincide.
 File MD5 sum check;Verificación de suma MD5 del archivo
@@ -165,12 +165,12 @@ Maintain frequency for vibration diagnostics;Mantener frecuencia para diagnósti
 Manual filament loading / change;Carga/cambio manual de filamento
 Material selection for loading;Selección de material para carga
 Material selection;Selección de material
-Maximum map: %.3f mm | Last probe: %.3f mm;Máximo mapa: %.3f mm | Última sonda: %.3f mm
+Maximum map: %.3f mm | Last probe: %.3f mm;Máximo de la malla: %.3f mm | Última sonda: %.3f mm
 MD5 check failed. Print canceled.;Verificación MD5 fallida. Impresión cancelada.
 MD5 check started;Verificación MD5 iniciada
 MD5: disabled;MD5: deshabilitado
 MD5: enabled;MD5: habilitado
-Minimum map: %.3f mm | Delta: %.3f mm;Mínimo mapa: %.3f mm | Delta: %.3f mm
+Minimum map: %.3f mm | Delta: %.3f mm;Mínimo de la malla: %.3f mm | Delta: %.3f mm
 Moonlight sonata;Sonata al claro de luna
 Motors disabled;Motores desactivados
 moved to;movido a
@@ -295,7 +295,7 @@ Temporary Z-Mod disable;Deshabilitar temporalmente Z-Mod
 Test bed mesh before printing;Probar malla de cama antes de imprimir
 Test bed mesh before printing + KAMP;Probar malla de cama antes de imprimir + KAMP
 Test EMMC;Probar EMMC
-The printer was not homed (G28);La impresora no fue homed (G28)
+The printer was not homed (G28);La impresora no ha hecho homing (G28)
 This will take some time (3-5 minutes);Esto tomará algo de tiempo (3-5 minutos)
 Timezone change;Cambio de zona horaria
 triggered;activado
@@ -379,7 +379,7 @@ START_PRINT has finished its work.;START_PRINT ha terminado su trabajo.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Versión de MCU incorrecta. Ejecute UPDATE_MCU FORCE=13
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Datos ZLINK incorrectos. Registre su impresora en http://zmod.link y reciba una cadena ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Use LOAD_ZOFFSET_NATIVE para copiar el Z-Offset de la pantalla nativa.
-Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Active NOZZLE_CONTROL para controlar el impacto de la boquilla en la mesa
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Active NOZZLE_CONTROL para detectar golpes de la boquilla contra la cama
 Loading a similar rod from coil;Cargando filamento similar de la bobina
 Use SAVE_ZMOD_DATA MESH_TEST=2 to automatically launch KAMP if an error occurs;Use SAVE_ZMOD_DATA MESH_TEST=2 para lanzar automáticamente KAMP si se produce un error
 If any parameters were changed, it is recommended to reboot the printer;Si se cambiaron parámetros, se recomienda reiniciar la impresora
@@ -406,17 +406,17 @@ Moving the bed down 5 mm;Bajando la cama 5 mm
 Start printer;Impresora encendida
 Native Screen;Pantalla nativa
 Loading a similar rod for the tool;Cargando filamento similar para la herramienta
-this cleanup macro does NOT exist. LINE_PURGE is used;este macro de limpieza NO existe. Se utiliza LINE_PURGE
+this cleanup macro does NOT exist. LINE_PURGE is used;esta macro de limpieza NO existe. Se utiliza LINE_PURGE
 Available macros;Macros disponibles
 Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;Agregue la macro {macro_name|upper} a mod_data/user.cfg o desactive el uso de la línea de limpieza // SAVE_ZMOD_DATA DISABLE_PRIMING=1
 Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Pausa: Restaurar: {restore}, Temp: {temp}/{heater_bed_temp}
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Reanudar: Restaurar: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Estado: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;ADVERTENCIA: ¡La última sonda SUPERA el valor guardado por %.4f mm!
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Use SAVE_ZMOD_DATA MESH_TEST=%d para lanzar automáticamente KAMP si se produce un error
-AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: activado // See https://wiki.zmod.link/Global/ mesh_test
-AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: desactivado // See https://wiki.zmod.link/Global/ mesh_test
+AutoZOffset: on // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: activado // Ver https://wiki.zmod.link/Global/ (mesh_test)
+AutoZOffset: off // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: desactivado // Ver https://wiki.zmod.link/Global/ (mesh_test)
 Photo;Foto
-There will be a SCHEDULED reboot now;Se realizará un reinicio PROgramado ahora
+There will be a SCHEDULED reboot now;Se realizará un reinicio PROGRAMADO ahora
 Parameters used in color selection menu;Parámetros utilizados en el menú de selección de color
 Show {zallowed_tool_count} colors;Mostrar {zallowed_tool_count} colores
 Show {zallowed_tool_count} colors when file colors cannot be scanned;Mostrar {zallowed_tool_count} colores cuando no se puedan escanear los colores del archivo
@@ -465,3 +465,7 @@ Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min
 To load manually without pausing, press 'Manual';Para la alimentación manual sin pausa, pulse 'Manual'
 Purge first extruder;Purgar el primer extrusor
 Purge all used extruders;Purgar todos los extrusores usados
+Helper: park toolhead used in PAUSE and CANCEL_PRINT;Auxiliar: aparcar el cabezal para PAUSE y CANCEL_PRINT
+Auto run _RESUME_MOTION_SENSOR;Ejecución automática de _RESUME_MOTION_SENSOR
+Z-Mod Wifi Off;Gestión de WiFi por Z-Mod: desactivada
+Z-Mod Wifi On;Gestión de WiFi por Z-Mod: activada

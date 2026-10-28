@@ -1,4 +1,4 @@
-action:prompt_begin Resumption interrupted !!!;action:prompt_begin Yeniden başlatma kesildi !!!
+action:prompt_begin Resumption interrupted !!!;action:prompt_begin Devam ettirme iptal edildi !!!
 action:prompt_begin This is a test macro;action:prompt_begin Bu bir test makrosudur
 action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg;action:prompt_text mod_data/user.cfg dosyasına _GUPPY_MACRO ekleyin
 action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg;action:prompt_text _GUPPY_MACRO örneği mod/base.cfg dosyasındadır
@@ -11,10 +11,10 @@ All START_PRINT parameters for bed leveling are ignored;Yatak hizalama için tü
 Auto close dialogs on native screen after 20 sec (fast);Yerel ekrandaki iletişim kutularını 20 saniye sonra otomatik kapat (hızlı)
 Auto close dialogs on native screen after 20 sec (slow);Yerel ekrandaki iletişim kutularını 20 saniye sonra otomatik kapat (yavaş)
 Auto disable motors after print/cancel in 25 sec;Yazdırma/iptalden sonra motorları 25 saniyede otomatik devre dışı bırak
-Automatic printer shutdown in {zpro_poweroff_timeout} min;Yazıcının otomatik kapanması {zpro_poweroff_timeout} dakika içinde
-Automatic reboot in 1.5 minutes;Otomatik yeniden başlatma 1.5 dakika içinde
-Auto reboot printer after 1.5 minutes;Yazdırmadan sonra yazıcıyı 1.5 dakika içinde otomatik yeniden başlat
-Auto restart firmware after 1.5 minutes;Yazdırmadan sonra firmware'ı 1.5 dakika içinde otomatik yeniden başlat
+Automatic printer shutdown in {pro_poweroff_timeout} min;Yazıcının otomatik kapanması {pro_poweroff_timeout} dakika içinde
+Automatic reboot in 1.5 minutes;1,5 dakika içinde otomatik yeniden başlatma
+Auto reboot printer after 1.5 minutes;Yazdırmadan sonra yazıcıyı 1,5 dakika içinde otomatik yeniden başlat
+Auto restart firmware after 1.5 minutes;Yazdırmadan sonra firmware'ı 1,5 dakika içinde otomatik yeniden başlat
 Backup config files to archive;Yapılandırma dosyalarını arşive yedekle
 Bed calibration. Profile {profile}. Extruder temp: {extruder_temp} / Bed temp: {bed_temp};Yatak Kalibrasyonu. Profil {profile}. Ekstrüder sıcaklığı: {extruder_temp} / Yatak sıcaklığı: {bed_temp}
 Bed calibration without temperature off;Sıcaklık kapatılmadan yatak kalibrasyonu
@@ -42,7 +42,7 @@ Cancel;İptal
 Check file MD5 checksum;Dosya MD5 sağlama toplamını kontrol et
 Check {iter+1}. {clp}. Weight: {we};Kontrol {iter+1}. {clp}. Ağırlık: {we}
 Check memory usage;Bellek kullanımını kontrol et
-Check time;Süreyi kontrol et
+Check time;Saati kontrol et
 Clear EMMC;EMMC'yi Temizle
 Close dialogs on stock screen (fast);Stok ekranındaki iletişim kutularını kapat (hızlı)
 Close dialogs on stock screen (slow);Stok ekranındaki iletişim kutularını kapat (yavaş)
@@ -109,7 +109,7 @@ Far;Uzak
 Filament change requested. Load new filament and click 'Resume'.;Filament değişimi istendi. Yeni filament yükleyin ve 'Devam Et' butonuna tıklayın.
 Filament Change;Filament Değişimi
 Filament change;Filament değişimi
-Filament management;Filament Yükleme
+Filament management;Filament yönetimi
 Filament runout detected;Filament bitti algılandı
 Filament runout or jam detected;Filament bitti veya sıkıştı algılandı
 Filament jam detected;Filament sıkışması algılandı
@@ -132,7 +132,7 @@ Getting data for KAMP.;KAMP için veri alınıyor.
 Get Z-Mod parameters;Z-Mod parametrelerini al
 Global Z-Offset load: ignored (working with screen);Genel Z-Offset yükleme: yoksayıldı (ekranla çalışılıyor)
 GuppyScreen is not used;GuppyScreen kullanılmıyor
-has detected that the filament has run out, please load it and press RESUME;filamentin bittiğini algıladı, lütfen yükleyin ve DEVAM ET'e basın
+has detected that the filament has run out, please load it and press RESUME;filamentin bittiğini algıladı, lütfen yükleyin ve RESUME'a basın
 Heating bed and extruder.;Yatak ve ekstrüder ısıtılacak.
 Helper;Yardımcı
 https://wiki.zmod.link/FAQ/;https://wiki.zmod.link/FAQ/
@@ -204,7 +204,7 @@ Play MIDI file;MIDI dosyası çal
 Play MIDI on print pause: {zmidi_pause};Yazdırma duraklatıldığında MIDI çal: {zmidi_pause}
 Play MIDI on print start: {zmidi_start};Yazdırma başladığında MIDI çal: {zmidi_start}
 Play tone;Ton çal
-please heat it up and press RESUME again;lütfen ısıtın ve tekrar DEVAM ET'e basın
+please heat it up and press RESUME again;lütfen ısıtın ve tekrar RESUME'a basın
 Possible wrong profile loaded (different plate/temperature);Muhtemelen yanlış profil yüklendi (farklı tabla/sıcaklık)
 Power off FF5M Pro after (min): {zpro_poweroff_timeout};FF5M Pro'yu (dakika) sonra kapat: {zpro_poweroff_timeout}
 Power off printer;Yazıcıyı Kapat
@@ -251,7 +251,7 @@ Resume interrupted print;Yarıda kesilen yazdırmayı sürdür
 Resume print;Yazdırmayı Sürdür
 Resume the actual running print;Mevcut çalışan yazdırmayı sürdür
 Resume;Devam Et
-Resumption interrupted;Yeniden başlatma kesildi
+Resumption interrupted;Devam ettirme iptal edildi
 Retracts, if the extruder is hot enough;Ekstrüder yeterince sıcaksa geri çeker
 Right;Sağ
 Running native nozzle cleaning {extruder_temp}/{bed_temp};Yerel nozul temizliği çalıştırılıyor {extruder_temp}/{bed_temp}
@@ -334,7 +334,7 @@ Weight at error: {we};Hata anındaki ağırlık: {we}
 Work completed;İş Tamamlandı
 Yes;Evet
 You are NOT using native screen;Yerel ekranı KULLANMIYORSUNUZ
-You are using KAMP. Recommended to use LINE_PURGE:;KAMP kullanıyorsunuz. Çizgi temizleme kullanılması önerilir:
+You are using KAMP. Recommended to use LINE_PURGE:;KAMP kullanıyorsunuz. LINE_PURGE kullanılması önerilir:
 You are using native screen // DISPLAY_ON;Yerel ekranla çalışıyorsunuz // DISPLAY_ON
 You are using native screen;Yerel ekranla çalışıyorsunuz
 You are working WITHOUT native screen // DISPLAY_OFF GUPPY=0;Yerel ekran OLMADAN çalışıyorsunuz // DISPLAY_OFF GUPPY=0
@@ -359,10 +359,10 @@ Unloading filament;Filament boşaltılıyor
 Heating the nozzle to {extruder_temp} degrees;Nozul {extruder_temp} dereceye ısıtılıyor
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_extruder_speed};Filament bırakılıyor {filament_drop_length} + {filament_drop_length_add}. Hız {filament_extruder_speed}
 Go to trash;Çöp kutusuna park et
-Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Ekstrüderdeki filament bitene kadar yazdırmaya devam etmek için RESUME_MOTION_SENSOR kullanın.
+Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Ekstrüderdeki filament bittikten sonra yazdırmaya devam etmek için RESUME_MOTION_SENSOR kullanın.
 Purge filament;Filament temizleme
-Insert rod automatically;Çubuğu otomatik yerleştir
-Don't Insert rod automatically;Çubuğu otomatik yerleştirme
+Insert rod automatically;Filamenti otomatik yerleştir
+Don't Insert rod automatically;Filamenti otomatik yerleştirme
 Extracting filament from the extruder;Filament ekstrüderden çıkarılıyor
 Use trash when printing;Yazdırırken çöp kutusunu kullan
 Don't Use trash when printing;Yazdırırken çöp kutusunu kullanma
@@ -379,13 +379,13 @@ START_PRINT has finished its work.;START_PRINT işini tamamladı.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Hatalı MCU sürümü. UPDATE_MCU FORCE=13 komutunu çalıştırmanız gerekiyor.
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Hatalı ZLINK verisi. Yazıcınızı http://zmod.link adresinde kaydedin ve bir ZLINK dizesi alın.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Z-Offset'ı yerel ekrandan kopyalamak için LOAD_ZOFFSET_NATIVE kullanın.
-Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Nozulun masaya çarpmasını kontrol etmek için NOZZLE_CONTROL'ü açın
-Loading a similar rod from coil;Bobinden benzer bir çubuk yükleniyor
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Nozulun yatağa çarpmasını algılamak için NOZZLE_CONTROL'ü açın
+Loading a similar rod from coil;Bobinden benzer bir filament yükleniyor
 Use SAVE_ZMOD_DATA MESH_TEST=2 to automatically launch KAMP if an error occurs;Hata oluşursa KAMP'ı otomatik başlatmak için SAVE_ZMOD_DATA MESH_TEST=2 kullanın
 If any parameters were changed, it is recommended to reboot the printer;Herhangi bir parametre değiştirildiyse, yazıcıyı yeniden başlatmanız önerilir
 Initial setting;Başlangıç ayarı
 You can browse and change global parameters if necessary. https://wiki.zmod.link/Global/;Gerekirse genel parametreleri görüntüleyip değiştirebilirsiniz. https://wiki.zmod.link/Global/
-Enable the recommendations plugin? It allows you to configure basic settings with one click.;Öneri eklentisini etkinleştir? Temel ayarları tek tıklamayla yapılandırmanızı sağlar.
+Enable the recommendations plugin? It allows you to configure basic settings with one click.;Öneri eklentisi etkinleştirilsin mi? Temel ayarları tek tıklamayla yapılandırmanızı sağlar.
 Next;Sonraki
 Z-Offset loaded from native screen;Z-Offset yerel ekrandan yüklendi
 Did you know that you can access your printer remotely using zmod.link?;Yazıcınıza zmod.link kullanarak uzaktan erişebileceğinizi biliyor muydunuz?
@@ -402,7 +402,7 @@ Error;Hata
 Printing canceled;Yazdırma iptal edildi
 Pause;Duraklat
 Resume printing;Yazdırmaya devam et
-Moving the bed down 5 mm;Yatağı 5 mm aşağı hareket ettirme
+Moving the bed down 5 mm;Yatak 5 mm aşağı indiriliyor
 Start printer;Yazıcı açık
 Native Screen;Yerel Ekran
 Loading a similar rod for the tool;Alet için benzer bir filament yükleniyor
@@ -413,8 +413,8 @@ Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Duraklat: Geri Yükle:
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Devam Et: Geri Yükle: {last_extruder_temp.restore}, Sıcaklık: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Durum: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;UYARI: Son prob kaydedilmiş değeri %.4f mm AŞIYOR!
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Hata oluşursa KAMP'ı otomatik başlatmak için SAVE_ZMOD_DATA MESH_TEST=%d kullanın
-AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: açık // See https://wiki.zmod.link/Global/ mesh_test
-AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: kapalı // See https://wiki.zmod.link/Global/ mesh_test
+AutoZOffset: on // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: açık // Bkz. https://wiki.zmod.link/Global/ (mesh_test)
+AutoZOffset: off // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: kapalı // Bkz. https://wiki.zmod.link/Global/ (mesh_test)
 Photo;Foto
 There will be a SCHEDULED reboot now;Şimdi PLANLANAN bir yeniden başlatma gerçekleşecek
 Parameters used in color selection menu;Renk seçim menüsünde kullanılan parametreler
@@ -425,9 +425,9 @@ Check files for pre-prepared color / material data only;Dosyaları yalnızca ön
 Scan files for color / material data;Renk / malzeme verisi için dosyaları tara
 Do not auto-assign colors;Renkleri otomatik atama
 Auto-assign colors if file colors successfully scanned;Dosya renkleri başarıyla tarandıysa renkleri otomatik ata
-Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Başarıyla tarandıysa otomatik ata, ciddi atama hatalarında sessiz mod yazımını durdur
-Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Başarıyla tarandıysa otomatik ata, tüm atama hatalarında sessiz mod yazımını durdur
-Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Başarıyla tarandıysa otomatik ata, bazı atama hatalarında sessiz mod yazımını durdur
+Auto-assign colors if file colors successfully scanned, halt silent mode print on serious auto-assignment errors;Başarıyla tarandıysa otomatik ata, ciddi atama hatalarında sessiz modda yazdırmayı durdur
+Auto-assign colors if file colors successfully scanned, halt silent mode print on any auto-assignment errors;Başarıyla tarandıysa otomatik ata, tüm atama hatalarında sessiz modda yazdırmayı durdur
+Auto-assign colors if file colors successfully scanned, halt silent mode print on some auto-assignment errors;Başarıyla tarandıysa otomatik ata, bazı atama hatalarında sessiz modda yazdırmayı durdur
 Display zero-based tool indexes (T0, T1, etc);Sıfır tabanlı araç dizinlerini görüntüle (T0, T1, vb.)
 Display one-based tool indexes (Color 1, Color 2, etc);Bir tabanlı araç dizinlerini görüntüle (Color 1, Color 2, vb.)
 Skip color change process if old and new color are the same physical IFS channel;Eski ve yeni renk aynı fiziksel IFS kanalıysa renk değiştirme işlemini atla
@@ -458,10 +458,14 @@ Front Door is Open!;Ön kapak açık!
 Top Cover is Open!;Üst kapak açık!
 Please remove the build plate first!;Lütfen önce yapı plakasını çıkarın!
 Turn off idle extruders in {zunused_extruders_off_time} min;Boştaki ekstrüderleri {zunused_extruders_off_time} dk içinde kapat
-Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T0 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı
-Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T1 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı
-Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T2 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı
-Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T3 boştaki zaman aşımı nedeniyle {unused_extruders_off_time} dk içinde kapatıldı
+Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T0, {unused_extruders_off_time} dk boşta kaldığı için kapatıldı
+Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T1, {unused_extruders_off_time} dk boşta kaldığı için kapatıldı
+Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T2, {unused_extruders_off_time} dk boşta kaldığı için kapatıldı
+Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Ekstrüder T3, {unused_extruders_off_time} dk boşta kaldığı için kapatıldı
 To load manually without pausing, press 'Manual';Duraklatmadan manuel besleme için 'Manual' düğmesine basın
-Purge first extruder;İlk ekstruderi temizle
-Purge all used extruders;Kullanılan tüm ekstruderleri temizle
+Purge first extruder;İlk ekstrüderi temizle
+Purge all used extruders;Kullanılan tüm ekstrüderleri temizle
+Helper: park toolhead used in PAUSE and CANCEL_PRINT;Yardımcı: PAUSE ve CANCEL_PRINT için kafayı park et
+Auto run _RESUME_MOTION_SENSOR;_RESUME_MOTION_SENSOR otomatik çalıştırılıyor
+Z-Mod Wifi Off;Z-Mod WiFi yönetimi: kapalı
+Z-Mod Wifi On;Z-Mod WiFi yönetimi: açık

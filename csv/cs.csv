@@ -11,7 +11,7 @@ All START_PRINT parameters for bed leveling are ignored;Všechny parametry START
 Auto close dialogs on native screen after 20 sec (fast);Automaticky zavírat dialogy na nativním displeji po 20 sekundách (rychle)
 Auto close dialogs on native screen after 20 sec (slow);Automaticky zavírat dialogy na nativním displeji po 20 sekundách (pomalu)
 Auto disable motors after print/cancel in 25 sec;Automaticky vypnout motory po tisku/stornu za 25 sekund
-Automatic printer shutdown in {zpro_poweroff_timeout} min;Automatické vypnutí tiskárny za {zpro_poweroff_timeout} min
+Automatic printer shutdown in {pro_poweroff_timeout} min;Automatické vypnutí tiskárny za {pro_poweroff_timeout} min
 Automatic reboot in 1.5 minutes;Automatický restart za 1,5 minuty
 Auto reboot printer after 1.5 minutes;Automaticky restartovat tiskárnu po 1,5 minutě
 Auto restart firmware after 1.5 minutes;Automaticky restartovat firmware po 1,5 minutě
@@ -151,9 +151,9 @@ Left;Levý
 Linear move with gcode state save/restore;Lineární pohyb s uložením/obnovením stavu gcode
 LINE_PURGE forced;LINE_PURGE vynucen
 Load bed mesh: {mesh};Načíst síť podložky: {mesh}
-Load cell reset error. Read FAQ: https://wiki.zmod.link/FAQ/;Chyba resetu zátěžové články. Přečtěte si FAQ: https://wiki.zmod.link/FAQ/
-Load cell reset successful. Weight: {we};Reset zátěžové články úspěšný. Hmotnost: {we}
-Load cell triggered! Make sure the bed is clean!;Zátěžová článka aktivována! Ujistěte se, že podložka je čistá!
+Load cell reset error. Read FAQ: https://wiki.zmod.link/FAQ/;Chyba resetu zátěžového článku. Přečtěte si FAQ: https://wiki.zmod.link/FAQ/
+Load cell reset successful. Weight: {we};Reset zátěžového článku úspěšný. Hmotnost: {we}
+Load cell triggered! Make sure the bed is clean!;Zátěžový článek aktivován! Ujistěte se, že podložka je čistá!
 Loaded offset from global settings %s=%.4f;Načten offset z globálních nastavení %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Načítání filamentu při {extruder_temp} pro {extrude_len}mm při {speed/60} mm/s
 Loading GuppyScreen;Načítání GuppyScreen
@@ -211,7 +211,7 @@ Power off printer;Vypnout tiskárnu
 Pre-cleaning completed;Předčištění dokončeno
 Priming algorithm: {zclear};Algoritmus primingu: {zclear}
 Print completed;Tisk dokončen
-Printer screen will freeze until pre-cleaning is complete.;Displej tiskárny zamrzne dokud není předčištění dokončeno.
+Printer screen will freeze until pre-cleaning is complete.;Displej tiskárny zamrzne, dokud nebude předčištění dokončeno.
 Printer will boot into stock firmware;Tiskárna nabootuje do standardního firmware
 Print file from native screen;Tisknout soubor z nativního displeje
 Print file with bed leveling from native screen;Tisknout soubor s nivelací podložky z nativního displeje
@@ -240,8 +240,8 @@ Replace Spiral/Auto Z-Hop. In Orca: Printer Profile -> Extruder 1 -> Z Hop Type 
 Replace Spiral/Auto Z-Hop. Printer doesn't support it.;Nahradit Spiral/Auto Z-Hop. Tiskárna to nepodporuje.
 Requires 256MB RAM + enabled SWAP. !!;Vyžaduje 256MB RAM + povolený SWAP. !!
 Resending cancellation to native screen canceled;Opětovné odeslání storna na nativní displej zrušeno
-Reset load cell weight;Resetovat hmotnost zátěžové články
-Resetting load cell weight;Resetování hmotnosti zátěžové články
+Reset load cell weight;Resetovat hmotnost zátěžového článku
+Resetting load cell weight;Resetování hmotnosti zátěžového článku
 Restart alternative camera;Restartovat alternativní kameru
 Restart Guppy;Restartovat Guppy
 Restore Z-Offset;Obnovit Z-Offset
@@ -281,7 +281,7 @@ SSH restart;Restart SSH
 Started MD5 check {filename};Spuštěna kontrola MD5 {filename}
 Start fluidd/mainsail and moonraker after STOP_ZMOD;Spustit fluidd/mainsail a moonraker po STOP_ZMOD
 Start of cleaning Z={zprobe+0.15};Začátek čištění Z={zprobe+0.15}
-Start SSH if not running;Spustit SSH pokud neběží
+Start SSH if not running;Spustit SSH, pokud neběží
 Status: {state};Stav: {state}
 Stop fluidd/mainsail and moonraker;Zastavit fluidd/mainsail a moonraker
 SWAP not used;SWAP nepoužit
@@ -301,10 +301,10 @@ Timezone change;Změna časového pásma
 triggered;spuštěno
 Trying to load bed mesh: {mesh};Pokus o načtení sítě podložky: {mesh}
 Turn off native screen after (sec): {zdisplay_off_timeout};Vypnout nativní displej po (sek): {zdisplay_off_timeout}
-Unload;Vylodit
+Unload;Vysunout
 Update MCU;Aktualizovat MCU
 Update printer via USB;Aktualizovat tiskárnu přes USB
-Use adaptive mesh (KAMP) where possible instead of full bed mesh;Použít adaptivní síť (KAMP) kde je to možné místo plné sítě podložky
+Use adaptive mesh (KAMP) where possible instead of full bed mesh;Použít adaptivní síť (KAMP), kde je to možné, místo plné sítě podložky
 Use alternative camera;Použít alternativní kameru
 Use alternative NEW_SAVE_CONFIG;Použít alternativní NEW_SAVE_CONFIG
 Use bed leveling mode from native screen.;Použít režim nivelace podložky z nativního displeje.
@@ -333,7 +333,7 @@ WARNING: Last probe BELOW mesh minimum by %.3f mm!;VAROVÁNÍ: Poslední probe P
 Weight at error: {we};Hmotnost při chybě: {we}
 Work completed;Práce dokončena
 Yes;Ano
-You are NOT using native screen;NEPoužíváte nativní displej
+You are NOT using native screen;NEPOUŽÍVÁTE nativní displej
 You are using KAMP. Recommended to use LINE_PURGE:;Používáte KAMP. Doporučeno použít LINE_PURGE:
 You are using native screen // DISPLAY_ON;Používáte nativní displej // DISPLAY_ON
 You are using native screen;Používáte nativní displej
@@ -355,14 +355,14 @@ Hide color selection, print without IFS;Skrýt výběr barvy, tisknout bez IFS
 Cutting the filament;Řezání filamentu
 Cleaning the nozzle on rubber;Čištění trysky o gumu
 Loading filament;Načítání filamentu
-Unloading filament;Vylodění filamentu
+Unloading filament;Vysouvání filamentu
 Heating the nozzle to {extruder_temp} degrees;Ohřev trysky na {extruder_temp} stupňů
 Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_extruder_speed};Odhození filamentu {filament_drop_length} + {filament_drop_length_add}. Rychlost {filament_extruder_speed}
 Go to trash;Jít do koše
 Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.;Použijte RESUME_MOTION_SENSOR pro pokračování tisku po dojití filamentu v extruderu.
 Purge filament;Vyčistit filament
-Insert rod automatically:Vkládat prut automaticky
-Don't Insert rod automatically;Nevkládat prut automaticky
+Insert rod automatically;Vkládat filament automaticky
+Don't Insert rod automatically;Nevkládat filament automaticky
 Extracting filament from the extruder;Vysouvání filamentu z extruderu
 Use trash when printing;Použít koš při tisku
 Don't Use trash when printing;Nepoužívat koš při tisku
@@ -372,14 +372,14 @@ Temperature normalization completed;Normalizace teploty dokončena
 Don't remove the filament after printing is completed;Po dokončení tisku filament neodstraňujte
 Remove filament after printing is complete;Po dokončení tisku filament odstraňte
 Is the alternate screen taking a long time to load? Reduce the default screen's load time.;Trvá načítání alternativní obrazovky dlouho? Snižte dobu načítání výchozí obrazovky.
-Tired of problems with WiFi, let zmod manage it.;Unaveni z problémů s WiFi? Nechte zmod se o ni postarat.
+Tired of problems with WiFi, let zmod manage it.;Máte dost problémů s WiFi? Nechte to na zmod.
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Nesprávný startovní kód START_PRINT EXTRUDER_TEMP BED_TEMP musí být zapsán na jednom řádku !!
 Don't forget to turn off the camera on your printer's native screen.;Nezapomeňte vypnout kameru na nativní obrazovce tiskárny.
 START_PRINT has finished its work.;START_PRINT dokončil svou práci.
 Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Nesprávná verze MCU. Spusťte UPDATE_MCU FORCE=13
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Nesprávná data ZLINK. Zaregistrujte svou tiskárnu na http://zmod.link a získejte řetězec ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Použijte LOAD_ZOFFSET_NATIVE pro kopírování Z-Offsetu z nativní obrazovky.
-Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Zapněte NOZZLE_CONTROL pro kontrolu dopadu trysky na stůl
+Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Zapněte NOZZLE_CONTROL pro detekci nárazu trysky na podložku
 Loading a similar rod from coil;Načítání podobného filamentu z cívky
 Use SAVE_ZMOD_DATA MESH_TEST=2 to automatically launch KAMP if an error occurs;Použijte SAVE_ZMOD_DATA MESH_TEST=2 pro automatické spuštění KAMP v případě chyby
 If any parameters were changed, it is recommended to reboot the printer;Pokud byly změněny nějaké parametry, doporučuje se restartovat tiskárnu
@@ -406,17 +406,17 @@ Moving the bed down 5 mm;Posun podložky dolů o 5 mm
 Start printer;Tiskárna zapnuta
 Native Screen;Nativní obrazovka
 Loading a similar rod for the tool;Načítání podobného filamentu pro nástroj
-this cleanup macro does NOT exist. LINE_PURGE is used;tento čisticí makro NEexistuje. Používá se LINE_PURGE
+this cleanup macro does NOT exist. LINE_PURGE is used;toto čisticí makro NEEXISTUJE. Používá se LINE_PURGE
 Available macros;Dostupná makra
 Add the {macro_name|upper} macro to mod_data/user.cfg or disable the use of the cleanup line // SAVE_ZMOD_DATA DISABLE_PRIMING=1;Přidejte makro {macro_name|upper} do mod_data/user.cfg nebo vypněte použití čisticí linie // SAVE_ZMOD_DATA DISABLE_PRIMING=1
 Pause: Restore: {restore}, Temp: {temp}/{heater_bed_temp};Pauza: Obnovit: {restore}, Teplota: {temp}/{heater_bed_temp}
 Resume: Restore: {last_extruder_temp.restore}, Temp: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Status: {printer.idle_timeout.state | upper};Pokračovat: Obnovit: {last_extruder_temp.restore}, Teplota: {last_extruder_temp.temp}/{last_extruder_temp.heater_bed_temp}, Stav: {printer.idle_timeout.state | upper}
 WARNING: Last probe MORE saved by %.4f mm!;VAROVÁNÍ: Poslední sonda PŘEKROČILA uloženou hodnotu o %.4f mm!
 Use SAVE_ZMOD_DATA MESH_TEST=%d to automatically launch KAMP if an error occurs;Použijte SAVE_ZMOD_DATA MESH_TEST=%d pro automatické spuštění KAMP v případě chyby
-AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: on // See https://wiki.zmod.link/Global/ mesh_test
-AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test;AutoZOffset: off // See https://wiki.zmod.link/Global/ mesh_test
+AutoZOffset: on // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: on // Viz https://wiki.zmod.link/Global/ (mesh_test)
+AutoZOffset: off // See https://wiki.zmod.link/Global/ (mesh_test);AutoZOffset: off // Viz https://wiki.zmod.link/Global/ (mesh_test)
 Photo;Foto
-There will be a SCHEDULED reboot now;Nyní proběhne NAplánovaný restart
+There will be a SCHEDULED reboot now;Nyní proběhne NAPLÁNOVANÝ restart
 Parameters used in color selection menu;Parametry použité v menu výběru barev
 Show {zallowed_tool_count} colors;Zobrazit {zallowed_tool_count} barev
 Show {zallowed_tool_count} colors when file colors cannot be scanned;Zobrazit {zallowed_tool_count} barev, když nelze naskenovat barvy souboru
@@ -458,10 +458,14 @@ Front Door is Open!;Přední dvířka jsou otevřená!
 Top Cover is Open!;Horní kryt je otevřený!
 Please remove the build plate first!;Nejprve prosím odeberte tiskovou desku!
 Turn off idle extruders in {zunused_extruders_off_time} min;Vypnout neaktivní extrudery za {zunused_extruders_off_time} min
-Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Extrudér T0 vypnut z důvodu neaktivity za {unused_extruders_off_time} min
-Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Extrudér T1 vypnut z důvodu neaktivity za {unused_extruders_off_time} min
-Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Extrudér T2 vypnut z důvodu neaktivity za {unused_extruders_off_time} min
-Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Extrudér T3 vypnut z důvodu neaktivity za {unused_extruders_off_time} min
+Extruder T0 turned off due to inactivity timeout {unused_extruders_off_time} min;Extruder T0 vypnut z důvodu neaktivity po {unused_extruders_off_time} min
+Extruder T1 turned off due to inactivity timeout {unused_extruders_off_time} min;Extruder T1 vypnut z důvodu neaktivity po {unused_extruders_off_time} min
+Extruder T2 turned off due to inactivity timeout {unused_extruders_off_time} min;Extruder T2 vypnut z důvodu neaktivity po {unused_extruders_off_time} min
+Extruder T3 turned off due to inactivity timeout {unused_extruders_off_time} min;Extruder T3 vypnut z důvodu neaktivity po {unused_extruders_off_time} min
 To load manually without pausing, press 'Manual';Pro ruční podávání bez pauzy stiskněte 'Manual'
-Purge first extruder;Profouknout první extruder
-Purge all used extruders;Profouknout všechny použité extrudery
+Purge first extruder;Pročistit první extruder
+Purge all used extruders;Pročistit všechny použité extrudery
+Helper: park toolhead used in PAUSE and CANCEL_PRINT;Pomocník: parkování hlavy pro PAUSE a CANCEL_PRINT
+Auto run _RESUME_MOTION_SENSOR;Automatické spuštění _RESUME_MOTION_SENSOR
+Z-Mod Wifi Off;Správa WiFi přes Z-Mod: vypnuta
+Z-Mod Wifi On;Správa WiFi přes Z-Mod: zapnuta
