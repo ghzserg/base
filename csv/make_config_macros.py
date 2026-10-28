@@ -38,7 +38,7 @@ import re
 #                             setting does not match any of the available options. The value of the setting can be referenced
 #                             with the setting name prefixed with z, eg: {zuse_trash_on_print}
 #       "get_global_text": Same, but for GLOBAL. If absent, get_zmod_data_text values will be used for GLOBAL. If using a
-#                          seperate get_global_text, it must specify every value (ie: fallback to get_zmod_data_text is
+#                          separate get_global_text, it must specify every value (ie: fallback to get_zmod_data_text is
 #                          all-or-nothing).
 #       "global_set_values": A list of values that will be cycled through when using the GLOBAL menu to change the setting.
 #                            If absent, the values from get_global_text will be used (including the get_zmod_data_text
