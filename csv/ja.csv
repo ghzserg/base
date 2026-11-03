@@ -469,3 +469,5 @@ Helper: park toolhead used in PAUSE and CANCEL_PRINT;ヘルパー: PAUSEとCANCE
 Auto run _RESUME_MOTION_SENSOR;_RESUME_MOTION_SENSORを自動実行
 Z-Mod Wifi Off;Z-ModによるWiFi管理: オフ
 Z-Mod Wifi On;Z-ModによるWiFi管理: オン
+Don't emulate native screen;ネイティブ画面をエミュレートしない
+Emulate native screen;ネイティブ画面をエミュレートする

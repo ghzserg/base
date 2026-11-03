@@ -469,3 +469,5 @@ Helper: park toolhead used in PAUSE and CANCEL_PRINT;Yardımcı: PAUSE ve CANCEL
 Auto run _RESUME_MOTION_SENSOR;_RESUME_MOTION_SENSOR otomatik çalıştırılıyor
 Z-Mod Wifi Off;Z-Mod WiFi yönetimi: kapalı
 Z-Mod Wifi On;Z-Mod WiFi yönetimi: açık
+Don't emulate native screen;Yerel ekranı taklit etme
+Emulate native screen;Yerel ekranı taklit et

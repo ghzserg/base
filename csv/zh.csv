@@ -469,3 +469,5 @@ Helper: park toolhead used in PAUSE and CANCEL_PRINT;辅助：PAUSE和CANCEL_PRI
 Auto run _RESUME_MOTION_SENSOR;自动运行_RESUME_MOTION_SENSOR
 Z-Mod Wifi Off;Z-Mod WiFi管理：关闭
 Z-Mod Wifi On;Z-Mod WiFi管理：开启
+Don't emulate native screen;不模拟原生屏幕
+Emulate native screen;模拟原生屏幕

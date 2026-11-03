@@ -469,3 +469,5 @@ Helper: park toolhead used in PAUSE and CANCEL_PRINT;Ausiliario: parcheggio dell
 Auto run _RESUME_MOTION_SENSOR;Avvio automatico di _RESUME_MOTION_SENSOR
 Z-Mod Wifi Off;Gestione WiFi di Z-Mod: disattivata
 Z-Mod Wifi On;Gestione WiFi di Z-Mod: attivata
+Don't emulate native screen;Non emulare lo schermo nativo
+Emulate native screen;Emulare lo schermo nativo

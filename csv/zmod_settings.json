@@ -453,6 +453,17 @@
                 "1": "===Show screen on web==="
             }
         },
+        "orca_ff": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "require_native_screen": -1,
+            "get_zmod_data_text": {
+                "0": "===Don't emulate native screen===",
+                "1": "===Emulate native screen==="
+            }
+        },
 
         "midi_on": {
             "type": "string",

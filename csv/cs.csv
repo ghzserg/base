@@ -469,3 +469,5 @@ Helper: park toolhead used in PAUSE and CANCEL_PRINT;Pomocník: parkování hlav
 Auto run _RESUME_MOTION_SENSOR;Automatické spuštění _RESUME_MOTION_SENSOR
 Z-Mod Wifi Off;Správa WiFi přes Z-Mod: vypnuta
 Z-Mod Wifi On;Správa WiFi přes Z-Mod: zapnuta
+Don't emulate native screen;Neemulovat nativní obrazovku
+Emulate native screen;Emulovat nativní obrazovku
