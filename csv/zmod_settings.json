@@ -553,6 +553,18 @@
                 "1": "===Using Klipper 13==="
             }
         },
+        "klipper_c5": {
+            "type": "int",
+            "default": 0,
+            "category": "System",
+            "show_in_global": true,
+            "require_ad5x": -1,
+            "require_c5pro": 1,
+            "get_zmod_data_text": {
+                "0": "===Native shapers===",
+                "1": "===Klipper 13 shapers==="
+            }
+        },
         "zcontrol_z": {
             "type": "int",
             "default": 10,
