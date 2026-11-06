@@ -471,5 +471,7 @@ Z-Mod Wifi Off;Z-Mod WiFi管理：关闭
 Z-Mod Wifi On;Z-Mod WiFi管理：开启
 Don't emulate native screen;不模拟原生屏幕
 Emulate native screen;模拟原生屏幕
+AFC panel off;AFC 面板 关
+AFC panel on;AFC 面板 开
 Native shapers;原生整形器
 Klipper 13 shapers;Klipper 13 整形器

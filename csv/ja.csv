@@ -471,5 +471,7 @@ Z-Mod Wifi Off;Z-ModによるWiFi管理: オフ
 Z-Mod Wifi On;Z-ModによるWiFi管理: オン
 Don't emulate native screen;ネイティブ画面をエミュレートしない
 Emulate native screen;ネイティブ画面をエミュレートする
+AFC panel off;AFCパネル オフ
+AFC panel on;AFCパネル オン
 Native shapers;純正シェーパー
 Klipper 13 shapers;Klipper 13のシェーパー

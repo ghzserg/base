@@ -471,5 +471,7 @@ Z-Mod Wifi Off;Gestión de WiFi por Z-Mod: desactivada
 Z-Mod Wifi On;Gestión de WiFi por Z-Mod: activada
 Don't emulate native screen;No emular pantalla nativa
 Emulate native screen;Emular pantalla nativa
+AFC panel off;Panel AFC no
+AFC panel on;Panel AFC sí
 Native shapers;Shapers nativos
 Klipper 13 shapers;Shapers de Klipper 13

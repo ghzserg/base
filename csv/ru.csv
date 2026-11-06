@@ -468,5 +468,7 @@ Z-Mod Wifi Off;Z-Mod не управляет WiFi
 Z-Mod Wifi On;Z-Mod управляет WiFi
 Don't emulate native screen;Не эмулировать родной экран
 Emulate native screen;Эмулировать родной экран
+AFC panel off;Панель AFC выкл
+AFC panel on;Панель AFC вкл
 Native shapers;Родные шейперы
 Klipper 13 shapers;Шейперы Klipper 13

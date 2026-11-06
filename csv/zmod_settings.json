@@ -109,6 +109,18 @@
                 "1": "===Display one-based tool indexes (Color 1, Color 2, etc)==="
             }
         },
+        "afc": {
+            "type": "int",
+            "default": 0,
+            "category": "Color Selection",
+            "show_in_global": true,
+            "require_ad5x": 1,
+            "require_c5pro": 1,
+            "get_zmod_data_text": {
+                "0": "===AFC panel off===",
+                "1": "===AFC panel on==="
+            }
+        },
 
         "print_leveling": {
             "type": "int",
