@@ -473,5 +473,7 @@ Don't emulate native screen;不模拟原生屏幕
 Emulate native screen;模拟原生屏幕
 AFC panel off;AFC 面板 关
 AFC panel on;AFC 面板 开
+Infinite spool;无限料盘
+Replacement is picked by filament type and color;按耗材类型和颜色选择替换料
 Native shapers;原生整形器
 Klipper 13 shapers;Klipper 13 整形器

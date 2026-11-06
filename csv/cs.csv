@@ -473,5 +473,7 @@ Don't emulate native screen;Neemulovat nativní obrazovku
 Emulate native screen;Emulovat nativní obrazovku
 AFC panel off;Panel AFC vyp
 AFC panel on;Panel AFC zap
+Infinite spool;Nekonečná cívka
+Replacement is picked by filament type and color;Náhrada se vybírá podle typu a barvy filamentu
 Native shapers;Nativní shapery
 Klipper 13 shapers;Shapery z Klipper 13

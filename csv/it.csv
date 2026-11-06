@@ -473,5 +473,7 @@ Don't emulate native screen;Non emulare lo schermo nativo
 Emulate native screen;Emulare lo schermo nativo
 AFC panel off;Pannello AFC off
 AFC panel on;Pannello AFC on
+Infinite spool;Bobina infinita
+Replacement is picked by filament type and color;La sostituzione è scelta per tipo e colore del filamento
 Native shapers;Shaper nativi
 Klipper 13 shapers;Shaper di Klipper 13

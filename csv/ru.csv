@@ -470,5 +470,7 @@ Don't emulate native screen;Не эмулировать родной экран
 Emulate native screen;Эмулировать родной экран
 AFC panel off;Панель AFC выкл
 AFC panel on;Панель AFC вкл
+Infinite spool;Бесконечная катушка
+Replacement is picked by filament type and color;Замена подбирается по типу и цвету пластика
 Native shapers;Родные шейперы
 Klipper 13 shapers;Шейперы Klipper 13

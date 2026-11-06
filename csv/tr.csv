@@ -473,5 +473,7 @@ Don't emulate native screen;Yerel ekranı taklit etme
 Emulate native screen;Yerel ekranı taklit et
 AFC panel off;AFC paneli kapalı
 AFC panel on;AFC paneli açık
+Infinite spool;Sonsuz makara
+Replacement is picked by filament type and color;Yedek, filament türü ve rengine göre seçilir
 Native shapers;Yerel şekillendiriciler
 Klipper 13 shapers;Klipper 13 şekillendiricileri
