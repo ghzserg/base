@@ -72,6 +72,8 @@ Disable SSH port forwarding;Deshabilitar reenvío de puerto SSH
 Disable stock screen;Deshabilitar pantalla nativa
 Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;No deshabilites la pantalla si no comprendes completamente el nivelado de la cama, el Z-Offset y las macros START_PRINT/END_PRINT
 Don't build bed mesh on each print.;No construir malla de cama en cada impresión.
+Auto PA off;Auto PA no
+Auto PA on;Auto PA sí
 Don't check file MD5 checksum;No verificar suma MD5 del archivo
 Don't close dialogs on native screen;No cerrar diálogos en la pantalla nativa
 Don't disable motors automatically after print/cancel;No desactivar motores automáticamente después de imprimir/cancelar

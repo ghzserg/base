@@ -72,6 +72,8 @@ Disable SSH port forwarding;SSH port yönlendirmeyi devre dışı bırak
 Disable stock screen;Standart ekranı kapat
 Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;Yatak hizalamasının, Z-Offset'in ve START_PRINT/END_PRINT makrolarının nasıl çalıştığını tam olarak anlamıyorsanız ekranı devre dışı bırakmayın
 Don't build bed mesh on each print.;Her yazdırmada yatak ağı oluşturma
+Auto PA off;Auto PA kapalı
+Auto PA on;Auto PA açık
 Don't check file MD5 checksum;Dosya MD5 sağlama toplamını kontrol etme
 Don't close dialogs on native screen;Yerel ekrandaki iletişim kutularını kapatma
 Don't disable motors automatically after print/cancel;Yazdırma/iptalden sonra motorları otomatik devre dışı bırakma

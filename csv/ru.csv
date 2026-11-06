@@ -72,6 +72,8 @@ Disable SSH port forwarding;Отключить проброс портов SSH
 Disable stock screen;Выключить стандартный экран
 Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;Не отключайте экран, если вы чётко не понимаете, как работает карта стола, Z-Offset и макросы START_PRINT и END_PRINT
 Don't build bed mesh on each print.;Не строить карту стола при каждой печати
+Auto PA off;Авто PA выкл
+Auto PA on;Авто PA вкл
 Don't check file MD5 checksum;Не проверять MD5 сумму файла
 Don't close dialogs on native screen;Не закрывать диалоги на родном экране
 Don't disable motors automatically after print/cancel;Не выключать моторы автоматически после печати/отмены печати

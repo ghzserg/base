@@ -140,8 +140,8 @@
             "show_in_global": true,
             "require_c5pro": 1,
             "get_zmod_data_text": {
-                "0": "Off Auto PA",
-                "1": "Auto PA"
+                "0": "===Auto PA off===",
+                "1": "===Auto PA on==="
             }
         },
         "use_kamp": {

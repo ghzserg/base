@@ -72,6 +72,8 @@ Disable SSH port forwarding;Disable SSH port forwarding
 Disable stock screen;Disable native screen
 Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros
 Don't build bed mesh on each print.;Don't build bed mesh on each print.
+Auto PA off;Auto PA off
+Auto PA on;Auto PA on
 Don't check file MD5 checksum;Don't check file MD5 checksum
 Don't close dialogs on native screen;Don't close dialogs on native screen
 Don't disable motors automatically after print/cancel;Don't disable motors automatically after print/cancel

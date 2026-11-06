@@ -72,6 +72,8 @@ Disable SSH port forwarding;Zakázat SSH port forwarding
 Disable stock screen;Vypnout standardní displej
 Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;Nevypínejte displej, pokud plně nerozumíte nivelaci podložky, Z-Offsetu a makrům START_PRINT/END_PRINT
 Don't build bed mesh on each print.;Nevytvářet síť podložky při každém tisku
+Auto PA off;Auto PA vyp
+Auto PA on;Auto PA zap
 Don't check file MD5 checksum;Nekontrolovat MD5 kontrolní součet souboru
 Don't close dialogs on native screen;Nezavírat dialogy na nativním displeji
 Don't disable motors automatically after print/cancel;Nevypínat motory automaticky po tisku/stornu

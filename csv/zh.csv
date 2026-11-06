@@ -72,6 +72,8 @@ Disable SSH port forwarding;禁用SSH端口转发
 Disable stock screen;禁用原生屏幕
 Do not disable display if you don't fully understand bed leveling, Z-Offset and START_PRINT/END_PRINT macros;若不完全理解调平、Z偏移和START_PRINT/END_PRINT宏，请勿禁用屏幕
 Don't build bed mesh on each print.;每次打印时不构建床面网格
+Auto PA off;Auto PA 关
+Auto PA on;Auto PA 开
 Don't check file MD5 checksum;不检查文件MD5
 Don't close dialogs on native screen;不自动关闭原生屏幕对话框
 Don't disable motors automatically after print/cancel;打印/取消后不自动禁用电机
