@@ -160,6 +160,7 @@ Loaded offset from global settings %s=%.4f;已加载全局设置偏移 %s=%.4f
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;正在以{extruder_temp}℃加载{extrude_len}毫米耗材，速度{speed/60}毫米/秒
 Loading GuppyScreen;正在加载GuppyScreen
 Loading HelixScreen;正在加载HelixScreen
+Loading Rivet;正在加载Rivet
 Loading skew_profile;正在加载skew_profile
 Load Z-Offset from global settings;从全局设置加载Z偏移
 Load;加载
@@ -451,6 +452,7 @@ Restart Alter Screen;重启备用屏幕
 Alter Screen is not used;备用屏幕未使用
 You're using native screen. No need to restart Alter Screen;您正在使用原生屏幕。无需重启备用屏幕
 You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;您在没有原生屏幕的情况下使用 HelixScreen // DISPLAY_OFF HELIX=1
+You are working WITHOUT native screen with Rivet // DISPLAY_OFF RIVET=1;您在没有原生屏幕的情况下使用 Rivet // DISPLAY_OFF RIVET=1
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;使用从全局参数加载 Z-Offset 来控制备用屏幕的 Z-Offset
 Show screen on web;在Web端显示屏幕
 Don't show screen on web;不在Web端显示屏幕

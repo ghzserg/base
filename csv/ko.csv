@@ -160,6 +160,7 @@ Loaded offset from global settings %s=%.4f;전역 설정 오프셋 로드됨 %s=
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;{extruder_temp}°C에서 {speed/60}mm/s 속도로 {extrude_len}mm 필라멘트 로드
 Loading GuppyScreen;GuppyScreen 로딩 중
 Loading HelixScreen;HelixScreen 로딩 중
+Loading Rivet;Rivet 로딩 중
 Loading skew_profile;skew_profile 로딩 중
 Load Z-Offset from global settings;전역 설정 Z-Offset 로드
 Load;로드
@@ -451,6 +452,7 @@ Restart Alter Screen;대체 화면 다시 시작
 Alter Screen is not used;대체 화면이 사용되지 않음
 You're using native screen. No need to restart Alter Screen;네이티브 화면을 사용 중입니다. 대체 화면을 다시 시작할 필요가 없습니다
 You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;네이티브 화면 없이 HelixScreen으로 작업 중 // DISPLAY_OFF HELIX=1
+You are working WITHOUT native screen with Rivet // DISPLAY_OFF RIVET=1;네이티브 화면 없이 Rivet으로 작업 중 // DISPLAY_OFF RIVET=1
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;전역 매개변수에서 Z-Offset 로딩을 사용하여 대체 화면으로 Z-Offset 제어
 Show screen on web;웹에 화면 표시
 Don't show screen on web;웹에 화면 표시 안 함
