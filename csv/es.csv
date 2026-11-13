@@ -160,6 +160,7 @@ Loaded offset from global settings %s=%.4f;Desplazamiento cargado desde configur
 Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Cargando filamento a {extruder_temp} durante {extrude_len}mm a {speed/60} mm/s
 Loading GuppyScreen;Cargando GuppyScreen
 Loading HelixScreen;Cargando HelixScreen
+Loading Rivet;Cargando Rivet
 Loading skew_profile;Cargando skew_profile
 Load Z-Offset from global settings;Cargar Z-Offset desde configuraciones globales
 Load;Cargar
@@ -451,6 +452,7 @@ Restart Alter Screen;Reiniciar pantalla alternativa
 Alter Screen is not used;La pantalla alternativa no se utiliza
 You're using native screen. No need to restart Alter Screen;Estás usando la pantalla nativa. No es necesario reiniciar la pantalla alternativa
 You are working WITHOUT native screen with HelixScreen // DISPLAY_OFF HELIX=1;Estás trabajando SIN pantalla nativa con HelixScreen // DISPLAY_OFF HELIX=1
+You are working WITHOUT native screen with Rivet // DISPLAY_OFF RIVET=1;Estás trabajando SIN pantalla nativa con Rivet // DISPLAY_OFF RIVET=1
 Use Z-Offset loading from global parameters to control Z-Offset with Alter Screen;Use la carga de Z-Offset desde parámetros globales para controlar Z-Offset con la pantalla alternativa
 Show screen on web;Mostrar pantalla en la web
 Don't show screen on web;No mostrar pantalla en la web
