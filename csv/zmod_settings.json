@@ -396,7 +396,7 @@
             "show_in_global": true,
             "require_native_screen": -1,
             "require_ad5x": 1,
-            "require_c5pro": -1,
+            "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Don't Insert rod automatically===",
                 "1": "===Insert rod automatically==="
