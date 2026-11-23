@@ -554,7 +554,7 @@
             "global_set_values": [5, 20, 60],
             "min_valid_value": 5
         },
-        "klipper13": {
+        "klippernew": {
             "type": "int",
             "default": 0,
             "category": "System",
@@ -562,7 +562,7 @@
             "get_zmod_data_text": {
                 "0xc": "===Using native Klipper=== 12",
                 "0m": "===Using native Klipper=== 11",
-                "1": "===Using Klipper 13==="
+                "1": "===Using Klipper New==="
             }
         },
         "klipper_c5": {
@@ -574,7 +574,7 @@
             "require_c5pro": 1,
             "get_zmod_data_text": {
                 "0": "===Native shapers===",
-                "1": "===Klipper 13 shapers==="
+                "1": "===Klipper New shapers==="
             }
         },
         "zcontrol_z": {

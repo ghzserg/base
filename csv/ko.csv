@@ -324,7 +324,7 @@ Using filament presence sensor;필라멘트 존재 센서 사용 중
 Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;전역 Z-오프셋 제어 사용. SKIP_ZOFFSET/Z_OFFSET 무시됨
 Using KAMP from global settings.;전역 설정 KAMP 사용.
 Using KAMP;KAMP 사용 중
-Using Klipper 13;Klipper 13 사용 중
+Using Klipper New;Klipper New 사용 중
 Using native Klipper;기본 Klipper 사용 중
 Wait 10 seconds and power on again. MCU update will begin.;10초 기다린 후 다시 전원을 켜십시오. MCU 업데이트가 시작됩니다.
 Wait for the music and power off the printer.;음악 재생 후 프린터 종료
@@ -480,4 +480,4 @@ AFC panel on;AFC 패널 켜기
 Infinite spool;무한 스풀
 Replacement is picked by filament type and color;교체는 필라멘트 종류와 색상으로 선택됩니다
 Native shapers;기본 셰이퍼
-Klipper 13 shapers;Klipper 13 셰이퍼
+Klipper New shapers;Klipper New 셰이퍼

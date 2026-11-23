@@ -324,7 +324,7 @@ Using filament presence sensor;正在使用耗材存在传感器
 Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;使用全局Z偏移控制。SKIP_ZOFFSET和Z_OFFSET参数已忽略
 Using KAMP from global settings.;使用全局设置中的KAMP
 Using KAMP;正在使用KAMP
-Using Klipper 13;正在使用Klipper 13
+Using Klipper New;正在使用Klipper New
 Using native Klipper;正在使用原生Klipper
 Wait 10 seconds and power on again. MCU update will begin.;等待10秒后重新上电。MCU更新将开始
 Wait for the music and power off the printer.;等待音乐结束后关闭打印机
@@ -480,4 +480,4 @@ AFC panel on;AFC 面板 开
 Infinite spool;无限料盘
 Replacement is picked by filament type and color;按耗材类型和颜色选择替换料
 Native shapers;原生整形器
-Klipper 13 shapers;Klipper 13 整形器
+Klipper New shapers;Klipper New 整形器

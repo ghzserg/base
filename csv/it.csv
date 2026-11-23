@@ -324,7 +324,7 @@ Using filament presence sensor;Usando sensore di presenza del filamento
 Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;Usando controllo globale Z-Offset. Parametri SKIP_ZOFFSET e Z_OFFSET ignorati
 Using KAMP from global settings.;Usando KAMP dalle impostazioni globali.
 Using KAMP;Usando KAMP
-Using Klipper 13;Usando Klipper 13
+Using Klipper New;Usando Klipper New
 Using native Klipper;Usando Klipper nativo
 Wait 10 seconds and power on again. MCU update will begin.;Aspetta 10 secondi e riavvia. L'aggiornamento MCU inizierà.
 Wait for the music and power off the printer.;Aspetta la musica e spegni la stampante.
@@ -480,4 +480,4 @@ AFC panel on;Pannello AFC on
 Infinite spool;Bobina infinita
 Replacement is picked by filament type and color;La sostituzione è scelta per tipo e colore del filamento
 Native shapers;Shaper nativi
-Klipper 13 shapers;Shaper di Klipper 13
+Klipper New shapers;Shaper di Klipper New

@@ -324,7 +324,7 @@ Using filament presence sensor;Filament varlık sensörü kullanılıyor
 Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;Genel Z-Offset kontrolü kullanılıyor. SKIP_ZOFFSET ve Z_OFFSET parametreleri yoksayılıyor
 Using KAMP from global settings.;Genel ayarlardan KAMP kullanılıyor.
 Using KAMP;KAMP kullanılıyor
-Using Klipper 13;Klipper 13 kullanılıyor
+Using Klipper New;Klipper New kullanılıyor
 Using native Klipper;Yerel Klipper kullanılıyor
 Wait 10 seconds and power on again. MCU update will begin.;10 saniye bekleyin ve tekrar açın. MCU güncellemesi başlayacaktır.
 Wait for the music and power off the printer.;Müziği bekleyin ve yazıcının gücünü kapatın.
@@ -480,4 +480,4 @@ AFC panel on;AFC paneli açık
 Infinite spool;Sonsuz makara
 Replacement is picked by filament type and color;Yedek, filament türü ve rengine göre seçilir
 Native shapers;Yerel şekillendiriciler
-Klipper 13 shapers;Klipper 13 şekillendiricileri
+Klipper New shapers;Klipper New şekillendiricileri

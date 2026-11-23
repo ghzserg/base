@@ -324,7 +324,7 @@ Using filament presence sensor;Используется датчик налич�
 Using global Z-Offset control. Z_OFFSET parameter ignored;Используется глобальное управление Z-Offset. Параметр Z_OFFSET игнорируется
 Using KAMP from global settings.;Использую KAMP из глобальных параметров.
 Using KAMP;Использую KAMP
-Using Klipper 13;Используется Klipper 13
+Using Klipper New;Используется Klipper New
 Using native Klipper;Используется родной Klipper
 Wait 10 seconds and power on again. MCU update will begin.;Подождите 10 секунд и включите обратно. Начнется обновление MCU.
 Wait for the music and power off the printer.;Дождитесь музыкальной композиции и выключите питание принтера.
@@ -477,4 +477,4 @@ AFC panel on;Панель AFC вкл
 Infinite spool;Бесконечная катушка
 Replacement is picked by filament type and color;Замена подбирается по типу и цвету пластика
 Native shapers;Родные шейперы
-Klipper 13 shapers;Шейперы Klipper 13
+Klipper New shapers;Шейперы Klipper New

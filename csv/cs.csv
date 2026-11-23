@@ -324,7 +324,7 @@ Using filament presence sensor;Používá se senzor přítomnosti filamentu
 Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored;Používá se globální ovládání Z-Offset. Parametry SKIP_ZOFFSET a Z_OFFSET ignorovány
 Using KAMP from global settings.;Používá se KAMP z globálních nastavení.
 Using KAMP;Používá se KAMP
-Using Klipper 13;Používá se Klipper 13
+Using Klipper New;Používá se Klipper New
 Using native Klipper;Používá se nativní Klipper
 Wait 10 seconds and power on again. MCU update will begin.;Počkejte 10 sekund a znovu zapněte. Aktualizace MCU začne.
 Wait for the music and power off the printer.;Počkejte na hudbu a vypněte tiskárnu.
@@ -480,4 +480,4 @@ AFC panel on;Panel AFC zap
 Infinite spool;Nekonečná cívka
 Replacement is picked by filament type and color;Náhrada se vybírá podle typu a barvy filamentu
 Native shapers;Nativní shapery
-Klipper 13 shapers;Shapery z Klipper 13
+Klipper New shapers;Shapery z Klipper New
