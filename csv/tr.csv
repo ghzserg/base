@@ -379,7 +379,7 @@ Tired of problems with WiFi, let zmod manage it.;WiFi sorunlarından sıkıldın
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Hatalı başlangıç kodu START_PRINT EXTRUDER_TEMP BED_TEMP tek satırda yazılmalıdır !!
 Don't forget to turn off the camera on your printer's native screen.;Yazıcınızın yerel ekranındaki kamerayı kapatmayı unutmayın.
 START_PRINT has finished its work.;START_PRINT işini tamamladı.
-Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Hatalı MCU sürümü. UPDATE_MCU FORCE=13 komutunu çalıştırmanız gerekiyor.
+Incorrect MCU version. Need run UPDATE_MCU FORCE=new;Hatalı MCU sürümü. UPDATE_MCU FORCE=new komutunu çalıştırmanız gerekiyor.
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Hatalı ZLINK verisi. Yazıcınızı http://zmod.link adresinde kaydedin ve bir ZLINK dizesi alın.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Z-Offset'ı yerel ekrandan kopyalamak için LOAD_ZOFFSET_NATIVE kullanın.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Nozulun yatağa çarpmasını algılamak için NOZZLE_CONTROL'ü açın

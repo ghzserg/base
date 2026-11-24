@@ -379,7 +379,7 @@ Tired of problems with WiFi, let zmod manage it.;Cansado de problemas com WiFi? 
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;Código de início incorreto START_PRINT EXTRUDER_TEMP BED_TEMP deve ser escrito numa linha !!
 Don't forget to turn off the camera on your printer's native screen.;Não se esqueça de desligar a câmara no ecrã nativo da sua impressora.
 START_PRINT has finished its work.;START_PRINT terminou o seu trabalho.
-Incorrect MCU version. Need run UPDATE_MCU FORCE=13;Versão MCU incorreta. Execute UPDATE_MCU FORCE=13
+Incorrect MCU version. Need run UPDATE_MCU FORCE=new;Versão MCU incorreta. Execute UPDATE_MCU FORCE=new
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;Dados ZLINK incorretos. Registe a sua impressora em http://zmod.link e receba uma string ZLINK.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;Use LOAD_ZOFFSET_NATIVE para copiar o Z-Offset do ecrã nativo.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;Ligue NOZZLE_CONTROL para controlar o impacto do bico na mesa

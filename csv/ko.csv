@@ -379,7 +379,7 @@ Tired of problems with WiFi, let zmod manage it.;WiFi 문제에 지치셨나요?
 Incorrect start code START_PRINT EXTRUDER_TEMP BED_TEMP must be written in one line !!;잘못된 시작 코드 START_PRINT EXTRUDER_TEMP BED_TEMP는 한 줄에 작성해야 합니다 !!
 Don't forget to turn off the camera on your printer's native screen.;프린터의 기본 화면에서 카메라를 끄는 것을 잊지 마십시오.
 START_PRINT has finished its work.;START_PRINT가 작업을 완료했습니다.
-Incorrect MCU version. Need run UPDATE_MCU FORCE=13;잘못된 MCU 버전. UPDATE_MCU FORCE=13을 실행하십시오
+Incorrect MCU version. Need run UPDATE_MCU FORCE=new;잘못된 MCU 버전. UPDATE_MCU FORCE=new을 실행하십시오
 Incorrect ZLINK data. Register your printer on the http://zmod.link and receive a ZLINK string.;잘못된 ZLINK 데이터. http://zmod.link 에서 프린터를 등록하고 ZLINK 문자열을 받으십시오.
 Use LOAD_ZOFFSET_NATIVE to copy the Z-Offset from the native screen.;LOAD_ZOFFSET_NATIVE를 사용하여 기본 화면에서 Z-오프셋을 복사하십시오.
 Turn on NOZZLE_CONTROL to control the nozzle impact on the table;노즐이 베드에 충돌하는지 감지하려면 NOZZLE_CONTROL을 켜십시오
