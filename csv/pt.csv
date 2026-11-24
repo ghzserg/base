@@ -477,8 +477,8 @@ Don't emulate native screen;Não emular ecrã nativo
 Emulate native screen;Emular ecrã nativo
 AFC panel off;Painel AFC off
 AFC panel on;Painel AFC on
-Keep tool mapping after print;Manter o mapeamento de ferramentas após a impressão
-Reset tool mapping after print or cancel;Redefinir o mapeamento ao concluir ou cancelar a impressão
+AFC mapping reset: off;Reset mapeamento AFC: não
+AFC mapping reset: on;Reset mapeamento AFC: sim
 Infinite spool;Bobina infinita
 Replacement is picked by filament type and color;A substituição é escolhida por tipo e cor do filamento
 Native shapers;Shapers nativos

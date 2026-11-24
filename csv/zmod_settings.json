@@ -130,8 +130,8 @@
             "require_ad5x": 1,
             "require_c5pro": 1,
             "get_zmod_data_text": {
-                "0": "===Keep tool mapping after print===",
-                "1": "===Reset tool mapping after print or cancel==="
+                "0": "===AFC mapping reset: off===",
+                "1": "===AFC mapping reset: on==="
             }
         },
 
