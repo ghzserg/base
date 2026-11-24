@@ -474,6 +474,8 @@ Don't emulate native screen;Не эмулировать родной экран
 Emulate native screen;Эмулировать родной экран
 AFC panel off;Панель AFC выкл
 AFC panel on;Панель AFC вкл
+Keep tool mapping after print;Сохранять сопоставление цветов после печати
+Reset tool mapping after print or cancel;Сбрасывать сопоставление цветов после завершения или отмены печати
 Infinite spool;Бесконечная катушка
 Replacement is picked by filament type and color;Замена подбирается по типу и цвету пластика
 Native shapers;Родные шейперы
