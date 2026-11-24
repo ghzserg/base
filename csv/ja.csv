@@ -477,6 +477,8 @@ Don't emulate native screen;ネイティブ画面をエミュレートしない
 Emulate native screen;ネイティブ画面をエミュレートする
 AFC panel off;AFCパネル オフ
 AFC panel on;AFCパネル オン
+AFC mapping reset: off;AFC割り当てリセット：オフ
+AFC mapping reset: on;AFC割り当てリセット：オン
 Infinite spool;無限スプール
 Replacement is picked by filament type and color;交換品はフィラメントの種類と色で選ばれます
 Native shapers;純正シェーパー

@@ -477,6 +477,8 @@ Don't emulate native screen;Don't emulate native screen
 Emulate native screen;Emulate native screen
 AFC panel off;AFC panel off
 AFC panel on;AFC panel on
+AFC mapping reset: off;AFC mapping reset: off
+AFC mapping reset: on;AFC mapping reset: on
 Infinite spool;Infinite spool
 Replacement is picked by filament type and color;Replacement is picked by filament type and color
 Native shapers;Native shapers
