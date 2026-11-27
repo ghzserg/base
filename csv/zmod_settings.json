@@ -135,7 +135,7 @@
             }
         },
 
-        "restore_toolchange_accel": {
+        "restore_t_accel": {
             "type": "int",
             "default": 1,
             "category": "Color Selection",
