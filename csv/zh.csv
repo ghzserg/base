@@ -483,3 +483,5 @@ Infinite spool;无限料盘
 Replacement is picked by filament type and color;按耗材类型和颜色选择替换料
 Native shapers;原生整形器
 Klipper New shapers;Klipper New 整形器
+Do not restore acceleration;不恢复加速度
+Restore acceleration;恢复加速度

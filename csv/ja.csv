@@ -483,3 +483,5 @@ Infinite spool;無限スプール
 Replacement is picked by filament type and color;交換品はフィラメントの種類と色で選ばれます
 Native shapers;純正シェーパー
 Klipper New shapers;Klipper Newのシェーパー
+Do not restore acceleration;加速度を復元しない
+Restore acceleration;加速度を復元する
