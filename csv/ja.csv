@@ -483,5 +483,5 @@ Infinite spool;無限スプール
 Replacement is picked by filament type and color;交換品はフィラメントの種類と色で選ばれます
 Native shapers;純正シェーパー
 Klipper New shapers;Klipper Newのシェーパー
-Restore accel. after tool change (off);ツール交換後に加速度を復元（オフ）
-Restore accel. after tool change (on);ツール交換後に加速度を復元（オン）
+Restore accel. (off);加速度を復元 (オフ)
+Restore accel. (on);加速度を復元 (オン)

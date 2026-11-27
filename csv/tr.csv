@@ -483,5 +483,5 @@ Infinite spool;Sonsuz makara
 Replacement is picked by filament type and color;Yedek, filament türü ve rengine göre seçilir
 Native shapers;Yerel şekillendiriciler
 Klipper New shapers;Klipper New şekillendiricileri
-Restore accel. after tool change (off);Takım değişimi sonrası ivmeyi geri yükle (kapalı)
-Restore accel. after tool change (on);Takım değişimi sonrası ivmeyi geri yükle (açık)
+Restore accel. (off);İvmeyi geri yükle (kapalı)
+Restore accel. (on);İvmeyi geri yükle (açık)

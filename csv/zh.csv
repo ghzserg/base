@@ -483,5 +483,5 @@ Infinite spool;无限料盘
 Replacement is picked by filament type and color;按耗材类型和颜色选择替换料
 Native shapers;原生整形器
 Klipper New shapers;Klipper New 整形器
-Restore accel. after tool change (off);换料后恢复加速度（关闭）
-Restore accel. after tool change (on);换料后恢复加速度（开启）
+Restore accel. (off);恢复加速度 (关)
+Restore accel. (on);恢复加速度 (开)

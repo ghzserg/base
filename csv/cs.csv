@@ -483,5 +483,5 @@ Infinite spool;Nekonečná cívka
 Replacement is picked by filament type and color;Náhrada se vybírá podle typu a barvy filamentu
 Native shapers;Nativní shapery
 Klipper New shapers;Shapery z Klipper New
-Restore accel. after tool change (off);Obnova zrychlení po výměně nástroje (vyp.)
-Restore accel. after tool change (on);Obnova zrychlení po výměně nástroje (zap.)
+Restore accel. (off);Obnova zrychlení (vyp.)
+Restore accel. (on);Obnova zrychlení (zap.)

@@ -141,10 +141,9 @@
             "category": "Color Selection",
             "require_c5pro": 1,
             "require_native_screen": -1,
-            "require_condition": "'zmod' in printer and printer['zmod'].creator5",
             "get_zmod_data_text": {
-                "0": "===Restore accel. after tool change (off)===",
-                "1": "===Restore accel. after tool change (on)==="
+                "0": "===Restore accel. (off)===",
+                "1": "===Restore accel. (on)==="
             }
         },
 

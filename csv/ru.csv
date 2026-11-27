@@ -480,5 +480,5 @@ Infinite spool;Бесконечная катушка
 Replacement is picked by filament type and color;Замена подбирается по типу и цвету пластика
 Native shapers;Родные шейперы
 Klipper New shapers;Шейперы Klipper New
-Restore accel. after tool change (off);Возврат ускорения при смене (выкл.)
-Restore accel. after tool change (on);Возврат ускорения при смене (вкл.)
+Restore accel. (off);Возврат ускорения (выкл.)
+Restore accel. (on);Возврат ускорения (вкл.)
