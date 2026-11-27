@@ -482,3 +482,5 @@ Infinite spool;Endlosspule
 Replacement is picked by filament type and color;Ersatz wird nach Filamenttyp und Farbe gewählt
 Native shapers;Native Shaper
 Klipper New shapers;Shaper von Klipper New
+Restore accel. after tool change (off);Beschleunigung nach Werkzeugwechsel wiederherstellen (aus)
+Restore accel. after tool change (on);Beschleunigung nach Werkzeugwechsel wiederherstellen (an)

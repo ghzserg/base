@@ -483,3 +483,5 @@ Infinite spool;Bobina infinita
 Replacement is picked by filament type and color;La sostituzione è scelta per tipo e colore del filamento
 Native shapers;Shaper nativi
 Klipper New shapers;Shaper di Klipper New
+Restore accel. after tool change (off);Ripristino accelerazione dopo il cambio utensile (off)
+Restore accel. after tool change (on);Ripristino accelerazione dopo il cambio utensile (on)

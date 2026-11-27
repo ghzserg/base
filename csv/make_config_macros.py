@@ -21,6 +21,8 @@ import re
 #                         categories, or earlier parameters in the same category, by prefixing their name with a z, so for
 #                         example, you could write "zuse_trash_on_print == 0" to only show the option if USE_TRASH_ON_PRINT
 #                         is set to zero.
+#       "require_condition": Условие Jinja для чтения, записи и сброса параметра. Используется для показа,
+#                            если show_condition не задан.
 #       "show_in_global": Whether or not the parameter shows up in GLOBAL. Defaults to true if not specified.
 #       "require_native_screen": Set whether the setting requires a certain native screen state. 1 for only show if native
 #                                screen is on, -1 for only if it's off, 0 for always show. Default is always show.
@@ -245,7 +247,10 @@ def add_save_zmod_data(file_data, is_ad5x, is_c5pro, is_native_screen, categorie
             if not validate_setup(set_data.get('require_ad5x', 0), set_data.get('require_c5pro', 0), set_data.get('require_native_screen', 0), is_ad5x, is_c5pro, is_native_screen):
                 continue
 
-            file_data.append((indent_level * STANDARD_INDENT) + f"{{% if params.{setting.upper()} %}}")
+            condition = f"params.{setting.upper()}"
+            if set_data.get('require_condition'):
+                condition += f" and ({set_data['require_condition']})"
+            file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {condition} %}}")
             indent_level += 1
 
             if set_data.get('type', TYPE_ASSUMPTION) == 'string':
@@ -281,7 +286,7 @@ def add_get_zmod_data(file_data, is_ad5x, is_c5pro, is_native_screen, categories
             if not validate_setup(set_data.get("require_ad5x", 0), set_data.get("require_c5pro", 0), set_data.get("require_native_screen", 0), is_ad5x, is_c5pro, is_native_screen):
                 continue
 
-            condition = set_data.get('show_condition', None)
+            condition = set_data.get('show_condition', set_data.get('require_condition'))
             if condition != None:
                 file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {condition} %}}")
                 indent_level += 1
@@ -417,6 +422,11 @@ def add_reset_zmod(file_data, is_ad5x, is_c5pro, is_native_screen, categories, s
             if len(settable_values) == 0:
                 continue
 
+            condition = set_data.get('require_condition')
+            if condition:
+                file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {condition} %}}")
+                indent_level += 1
+
             setting_type = set_data.get('type', TYPE_ASSUMPTION)
             quotechar = '"' if setting_type == 'string' else ''
 
@@ -441,6 +451,10 @@ def add_reset_zmod(file_data, is_ad5x, is_c5pro, is_native_screen, categories, s
                 file_data.append((indent_level * STANDARD_INDENT) + f"SAVE_VARIABLE VARIABLE={setting.lower()} VALUE={set_data.get('default', DEFAULT_VALUE_ASSUMPTION)}")
 
             if valid_options['allow_generic']:
+                indent_level -= 1
+                file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
+
+            if condition:
                 indent_level -= 1
                 file_data.append((indent_level * STANDARD_INDENT) + "{% endif %}")
 
@@ -510,7 +524,7 @@ def add_global(file_data, is_ad5x, is_c5pro, is_native_screen, categories, setti
                 file_data.append('')
                 items_on_page += 1
             else:
-                extra_condition = set_data.get('show_condition', None)
+                extra_condition = set_data.get('show_condition', set_data.get('require_condition'))
                 if extra_condition != None:
                     file_data.append((indent_level * STANDARD_INDENT) + f"{{% if {extra_condition} %}}")
                     indent_level += 1

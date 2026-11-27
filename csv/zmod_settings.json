@@ -135,6 +135,19 @@
             }
         },
 
+        "restore_toolchange_accel": {
+            "type": "int",
+            "default": 1,
+            "category": "Color Selection",
+            "require_c5pro": 1,
+            "require_native_screen": -1,
+            "require_condition": "'zmod' in printer and printer['zmod'].creator5",
+            "get_zmod_data_text": {
+                "0": "===Restore accel. after tool change (off)===",
+                "1": "===Restore accel. after tool change (on)==="
+            }
+        },
+
         "print_leveling": {
             "type": "int",
             "default": 0,
