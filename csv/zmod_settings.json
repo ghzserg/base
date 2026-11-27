@@ -142,8 +142,8 @@
             "require_c5pro": 1,
             "require_native_screen": -1,
             "get_zmod_data_text": {
-                "0": "===Restore accel. (off)===",
-                "1": "===Restore accel. (on)==="
+                "0": "===Do not restore acceleration===",
+                "1": "===Restore acceleration==="
             }
         },
 

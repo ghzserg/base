@@ -483,5 +483,5 @@ Infinite spool;Bobine infinie
 Replacement is picked by filament type and color;Le remplacement est choisi selon le type et la couleur
 Native shapers;Shapers natifs
 Klipper New shapers;Shapers de Klipper New
-Restore accel. (off);Rétablir l’accélération (non)
-Restore accel. (on);Rétablir l’accélération (oui)
+Do not restore acceleration;Ne pas rétablir l’accélération
+Restore acceleration;Rétablir l’accélération
